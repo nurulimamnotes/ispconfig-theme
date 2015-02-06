@@ -1,0 +1,53 @@
+<!-- tabs -->
+<div id="tabs">
+    <ul class="tabsbar-buttons">
+        <li><a href="javascript:submitForm('pageForm','admin/client_message.php');" title="{tmpl_var name='btn_send_txt'}" class="positive iconstxt icoPositive"><span>{tmpl_var name='btn_send_txt'}</span></a></li>
+        <li><a href="javascript:loadContent('admin/client_list.php');" title="{tmpl_var name='btn_cancel_txt'}" class="negative iconstxt icoNegative"><span>{tmpl_var name='btn_cancel_txt'}</span></a></li>
+    </ul>
+</div>
+
+<!-- begin: modulebody -->
+<div id="module-title"><h1><tmpl_var name="page_head_txt"></h1></div>
+<div class="module-box boxlistcontent" id="modulecontainer">
+
+    <!-- desc --> 
+    <div id="module-desc"><tmpl_var name="form_legend_txt"></div>
+
+    <!-- messages/erros -->
+    <tmpl_if name="okmsg">
+        <div id="OKMsg"><p><tmpl_var name="okmsg"></p></div>
+    </tmpl_if>
+    <tmpl_if name="msg">
+        <div id="OKMsg"><p><tmpl_var name="msg"></p></div>
+    </tmpl_if>
+    <tmpl_if name="error">
+        <div id="errorMsg"><h3>ERROR</h3><ol><tmpl_var name="error"></ol></div>
+    </tmpl_if>
+
+    <!-- begin: modulecontent -->
+    <div class="panel panel_client">
+        <div class="ctrlHolder">
+            <label for="sender">{tmpl_var name='sender_txt'}</label>
+            <input name="sender" id="sender" value="{tmpl_var name='sender'}" style="width:500px" size="30" maxlength="255" type="text" class="textInput" />
+        </div>
+        <div class="ctrlHolder">
+            <label for="recipient">{tmpl_var name='recipient_txt'}</label>
+            <select name="recipient" id="recipient" class="selectInput">
+                {tmpl_var name='recipient'}
+            </select>
+        </div>
+        <div class="ctrlHolder">
+            <label for="subject">{tmpl_var name='subject_txt'}</label>
+            <input name="subject" id="subject" value="{tmpl_var name='subject'}" style="width:500px" size="30" maxlength="255" type="text" class="textInput" />
+        </div>
+        <div class="ctrlHolder">
+            <label for="message">{tmpl_var name='message_txt'}</label>
+            <textarea name="message" id="message" rows='' cols='' style="width:500px">{tmpl_var name='message'}</textarea>
+        </div>
+        <div class="ctrlHolder">
+            <p class="label" for="subject">{tmpl_var name="variables_txt"}</p>
+            {tmpl_var name="message_variables"}
+        </div>
+
+    </div><!-- end: modulecontent -->
+</div><!-- end: modulebody -->

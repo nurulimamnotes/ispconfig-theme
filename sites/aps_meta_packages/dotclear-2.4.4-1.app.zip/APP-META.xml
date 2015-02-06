@@ -1,0 +1,134 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>dotclear</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>2.4.4</version>
+  <release>1</release>
+  <homepage>http://www.dotclear.net/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>dotclear</default-prefix>
+
+  <summary>Dotclear is an open-source web publishing software</summary>
+  <description>Dotclear is an open-source web publishing software created in 2002 by Olivier Meunier. A one man's project at first, Dotclear soon gathered a team comprising different personalities with various backgrounds.
+
+The project's purpose is to provide a user-friendly tool allowing anyone to publish on the web, regardless of their technical skills.</description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/screenshot1.PNG">
+    <description>
+		Screenshot Description
+    </description>
+  </screenshot>
+  <screenshot path="images/screenshot2.PNG">
+  	<description>Presentation sample</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="2.4"/>
+  <changelog>
+    <version version="2.4" release="3">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="1" version="2.4.4">
+    	<entry>Dotclear 2.4.4 - 2012-08-13
+===========================================================
+* Bugfix: Programmed entries works again.
+* Compatibility fix: widgets are now fully php &gt;=5.3 compliant
+* Security fix: potential CSRF in user management
+* has_tag now part of dotclear core, moved from tag plugin.
+* empty title fixed on rss reader widget</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin/</path>
+      <label>Administrative interface</label>
+      <description></description>
+    </entry>
+    <entry>
+      <path>/</path>
+      <label>Site</label>
+      <description></description>
+    </entry>
+  </entry-points>
+
+	<installed-size>265456</installed-size>
+
+  <categories>
+	  <category>Web/Content management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_login" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" installation-only="true">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="6">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="admin_firstname" type="string" min-length="1">
+      	<name>Administrator's Firstname</name>
+      </setting>
+      <setting id="admin_lastname" type="string" min-length="1">
+      	<name>Administrator's Lastname</name>
+      </setting>
+    </group>
+    <group>
+    	<name>Blog's preferences</name>
+    	<setting id="blog_title" type="string" min-length="1" installation-only="true">
+      	<name>Blog Title</name>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.2"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>SimpleXML</php:extension>
+    <php:extension>iconv</php:extension>
+    <php:extension>mbstring</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>dotclear</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="cache">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="inc">
+    	<php:permissions writable="true"/>
+    </mapping>
+    <mapping url="public">
+    	<php:permissions writable="true"/>
+    </mapping>
+
+  </mapping>
+</application>

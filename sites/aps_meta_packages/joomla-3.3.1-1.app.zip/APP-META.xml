@@ -1,0 +1,311 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>joomla</name>
+	<packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+	<version>3.3.1</version>
+	<release>1</release>
+	<homepage>http://www.joomla.org/</homepage>
+	<package-homepage>http://www.sofcloudit.com</package-homepage>
+	<default-prefix>joomla</default-prefix>
+	
+	<summary>Content management system and Web application framework</summary>
+	<description>
+		Joomla! is a powerful open source content management system. It is used for managing 
+		simple Web sites and complex corporate applications. Joomla! is easy to install, simple 
+		to manage, and reliable. Once Joomla! is installed and running, it is simple for even 
+		non-technical users to add or edit content, update images, and to manage critical data. 
+		Anybody with basic word processing skills can easily learn to manage a Joomla! site.
+	</description>
+	
+	<icon path="images/icon.png"/>
+	
+	<screenshot path="images/main_screenshot.jpg">
+		<description>
+			Main screenshot.
+		</description>
+	</screenshot>
+	
+	<screenshot path="images/admin_screenshot.jpg">
+		<description>
+			Admin screenshot.
+		</description>
+	</screenshot>
+	
+	<license must-accept="true">
+		<text>
+			<name>GPLv2</name>
+			<file>htdocs/LICENSE.txt</file>
+		</text>
+	</license>
+	
+	<configuration-script-language>php</configuration-script-language>
+	
+	
+	<upgradable-from release="12" version="3.0.2"/>
+
+	<changelog>
+		<version release="1" version="3.3.1">
+				<entry>Joomla 3.3.1. Release notes: 
+http://www.joomla.org/announcements/release-news/5551-joomla-3-3-1-released.html</entry>
+		</version>
+<version release="3" version="3.3.0">
+			<entry>PHP min version cjanged</entry>
+		</version>
+<version release="1" version="3.3.0">
+				<entry>Joomla 3.3.0. Release notes: 
+http://www.joomla.org/announcements/release-news/5546-joomla-3-3-0-released.html</entry>
+		</version>
+<version release="3" version="3.2.3">
+			<entry>Fix for 'Internal error' while adding new menu item on Windows</entry>
+		</version>
+		<version release="1" version="3.2.3">
+			<entry>Joomla 3.2.3. Release notes: 
+http://www.joomla.org/announcements/release-news/5538-joomla-3-2-3-released.html</entry>
+		</version>
+		<version release="1" version="3.2.2">
+			<entry>Joomla 3.2.2. Release notes: 
+http://www.joomla.org/announcements/release-news/5531-joomla-3-2-2-released.html</entry>
+		</version>
+<version release="1" version="3.2.1">
+			<entry>Joomla 3.2.1. Release notes: 
+http://www.joomla.org/announcements/release-news/5523-joomla-3-2-1-released.html</entry>
+		</version>
+<version release="7" version="3.2.0">
+			<entry>New Selenium test added</entry>
+		</version>
+<version release="5" version="3.2.0">
+			<entry>Upgrade bug fixed (sql upgrade files were not ordered by default)</entry>
+		</version>
+<version release="3" version="3.2.0">
+			<entry>Application test updated</entry>
+		</version>
+<version release="1" version="3.2.0">
+			<entry>Joomla 3.2.0. Release notes: 
+http://www.joomla.org/announcements/release-news/5516-joomla-3-2-0-stable-released.html</entry>
+		</version>
+<version release="5" version="3.1.5">
+			<entry>Default tags menu link bug fixed</entry>
+		</version>
+<version release="3" version="3.1.5">
+			<entry>Default data install bug fixed</entry>
+		</version>
+<version release="1" version="3.1.5">
+			<entry>Joomla 3.1.5. Release notes: 
+http://www.joomla.org/announcements/release-news/5505-joomla-3-1-5-stable-released.html</entry>
+		</version>
+<version release="1" version="3.1.4">
+			<entry>Joomla 3.1.4. Release notes: 
+http://www.joomla.org/announcements/release-news/5504-joomla-3-1-4-stable-released.html</entry>
+		</version>
+<version release="5" version="3.1.1">
+			<entry>Uninstall bug fixed</entry>
+		</version>
+<version release="3" version="3.1.1">
+			<entry>php-cgi bug fixed</entry>
+		</version>
+<version release="1" version="3.1.1">
+			<entry>Joomla 3.1.1. Release notes: http://www.joomla.org/announcements/release-news/5499-joomla-3-1-1-stable-released.html</entry>
+		</version>
+<version release="1" version="3.1.0">
+			<entry>Joomla 3.1.0. Release notes: 
+http://www.joomla.org/announcements/release-news/5494-joomla-3-1-0-stable-released.html</entry>
+		</version>
+<version release="9" version="3.0.3">
+			<entry>manifest_cache added</entry>
+		</version>
+<version release="5" version="3.0.3">
+			<entry>Schema error fixed</entry>
+		</version>
+<version release="1" version="3.0.3">
+			<entry>Joomla 3.0.3. Release notes: 
+http://www.joomla.org/announcements/release-news/5478-joomla-3-0-3-released.html</entry>
+		</version>
+<version release="11" version="3.0.2">
+			<entry>Joomla 3.0.2. Release notes: 
+http://www.joomla.org/announcements/release-news/5471-joomla-3-0-2-released.html</entry>
+		</version>
+	</changelog>
+	
+	<entry-points>
+		<entry>
+			<path>/administrator/</path>
+			<label>Administrative interface</label>
+		</entry>
+		<entry>
+			<path>/</path>
+			<label>Site</label>
+		</entry>
+	</entry-points>
+	
+	
+	<installed-size>21004288</installed-size>
+	
+	<categories>
+		<category>Web/Content management</category>
+	</categories>
+	
+	<languages>
+		<language>en</language>
+	</languages>
+	
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting default-value="admin" id="admin_name" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+				<name>Administrator's login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" min-length="1" type="password">
+				<name>Password</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Administrator's email</name>
+			</setting>
+		</group>
+		<group>
+			<name>Main configuration</name>
+			<setting id="title" installation-only="true" min-length="1" type="string">
+				<name>Site name</name>
+			</setting>
+			
+			<setting default-value="yes" id="sample_data" installation-only="true" type="enum">
+				<name>Install Sample Data</name>
+				<choice id="yes">
+					<name>yes</name>
+				</choice>
+				<choice id="no">
+					<name>no</name>
+				</choice>
+			</setting>
+			<setting default-value="en-GB" id="locale" type="enum">
+				<name>Interface language</name>
+				<choice id="zh-CN">
+					<name>Chinese (Simplified)</name>
+				</choice>
+				<choice id="zh-TW">
+					<name>Chinese (Traditional)</name>
+				</choice>
+				<choice id="da-DK">
+					<name>Danish</name>
+				</choice>
+				<choice id="nl-NL">
+					<name>Dutch</name>
+				</choice>
+				<choice id="en-GB">
+					<name>English</name>
+				</choice>
+				<choice id="fr-FR">
+					<name>French</name>
+				</choice>
+				<choice id="de-DE">
+					<name>German</name>
+				</choice>
+				<choice id="it-IT">
+					<name>Italian</name>
+				</choice>
+				<choice id="ja-JP">
+					<name>Japanese</name>
+				</choice>
+				<choice id="nb-NO">
+					<name>Norwegian</name>
+				</choice>
+				<choice id="pl-PL">
+					<name>Polish</name>
+				</choice>
+				<choice id="ru-RU">
+					<name>Russian</name>
+				</choice>
+				<choice id="es-ES">
+					<name>Spanish</name>
+				</choice>
+			</setting>
+			<setting default-value="example.com" id="smtp_host" type="string">
+				<name>SMTP Host, which Joomla will use to send email</name>
+			</setting>
+			<setting default-value="25" id="smtp_port" type="integer">
+				<name>SMTP Port</name>
+			</setting>
+		</group>
+
+	</settings>
+	
+	
+	<requirements>
+		<php:magic-quotes-gpc xmlns:php="http://apstandard.com/ns/1/php">false</php:magic-quotes-gpc>
+		<php:version min="5.3.10" xmlns:php="http://apstandard.com/ns/1/php"/>
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">zlib</php:extension>    
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">xml</php:extension>    
+		<php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+		<php:file-uploads xmlns:php="http://apstandard.com/ns/1/php">true</php:file-uploads>
+		<php:register-globals xmlns:php="http://apstandard.com/ns/1/php">false</php:register-globals>
+		
+		<db:db xmlns:db="http://apstandard.com/ns/1/db">
+			<db:id>main</db:id>
+			<db:default-name>joomla</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>5.1</db:server-min-version>
+		</db:db>
+	</requirements>
+	
+	
+	<mapping path="htdocs" url="/">
+		<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		<php:handler xmlns:php="http://apstandard.com/ns/1/php">
+			<php:extension>php</php:extension>
+		</php:handler>
+		
+		<mapping url="administrator">
+			<mapping url="components">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+			<mapping url="language">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+			<mapping url="modules">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+			<mapping url="templates">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+			<mapping url="cache">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		</mapping>
+		
+		<mapping url="cache">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="components">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="images">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			<mapping url="banners">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		</mapping>
+		<mapping url="language">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="logs">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="modules">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="media">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="plugins">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="templates">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+		<mapping url="tmp">
+<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+</mapping>
+	</mapping>
+	
+</application>

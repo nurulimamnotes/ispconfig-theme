@@ -1,0 +1,243 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>mantis</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.2.15</version>
+  <release>4</release>
+  <homepage>http://www.mantisbt.org/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>mantis</default-prefix>
+  <summary>Issue tracking system</summary>
+  <description>Mantis is a free popular Web-based bugtracking system. It is written in the PHP scripting      language and works with MySQL, MS SQL, and PostgreSQL databases and a Web server. It comes      in 68 languages, and provides the following features: different user access level per      project; search and filters; e-mail notification; attachments; RSS feeds; sponsorships      support (users are able to place sponsorships for specific issues, also developers can      track such sponsorships or payments); self-service reset password support; export to csv,      Microsoft Excel, Microsoft Word; ability to extend functionality through custom functions;      Wiki integration; online chat, and many other features.</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot.jpg">
+    <description>This screen shows a list of all reported and assigned bugs and their status.</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/doc/LICENSE</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+	<upgradable-from version="1.0.6" release="1"/>
+
+  <changelog>
+    <version release="4" version="1.2.14">
+    	<entry>Changes in selenium scripts.</entry>
+    </version><version release="3" version="1.2.14">
+    	<entry>Minor changes.</entry>
+    </version><version release="2" version="1.2.14">
+    	<entry>Minor changes</entry>
+    </version><version release="1" version="1.2.14">
+    	<entry>New version packaged</entry>
+    </version><version version="1.2.3" release="9">
+    	<entry>Mantis 1.2.3 update. Release notes: http://sourceforge.net/projects/mantisbt/files/mantis-stable/1.2.3/RELEASE/view
+</entry>
+    </version><version version="1.1.8" release="7">
+      <entry>Correct error handling in upgrade process</entry>
+    </version>
+    <version version="1.1.8" release="6">
+      <entry>Mantis 1.1.8 update. Release notes: http://sourceforge.net/project/shownotes.php?release_id=688312</entry>
+    </version>
+    <version version="1.1.1" release="9">
+      <entry>Email configuration section is added</entry>
+    </version>
+    <version version="1.1.1" release="6">
+      <entry>Some settings are removed from installation</entry>
+    </version>
+    <version version="1.1.1" release="1">
+      <entry>New version packaged</entry>
+    </version>
+    <version version="1.0.6" release="1">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="1" version="1.2.15">
+    	<entry>Initial Package.</entry>
+    </version>
+    <version release="3" version="1.2.15">
+    	<entry>small changes</entry>
+    </version>
+    <version release="4" version="1.2.15">
+    	<entry>added install_aps.php file in admin folder</entry>
+    </version>
+  </changelog>
+  <installed-size>10193744</installed-size>
+  <categories>
+    <category>Front office/Help Desk</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    
+    <group>
+      <name>Mail Configuration</name>
+	  <setting id="webmaster_email" type="email">
+		<name>Webmaster email</name>
+	  </setting>
+	  <setting id="from_email" type="email">
+		<name>Sender email</name>
+	  </setting>
+	  <setting id="from_name" type="string" default-value="Mantis Bug Tracker">
+		<name>Sender Name</name>
+	  </setting>
+	  <setting id="return_path_email" type="email">
+		<name>Return bounced mail to</name>
+	  </setting>
+	</group>
+    <group>
+      <name>Language</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="bg-BG" >
+          <name>Bulgarian</name>
+        </choice>
+        <choice id="ca-ES" >
+          <name>Catalan</name>
+        </choice>
+        <choice id="zh-CN" >
+          <name>Chinese Simplified</name>
+        </choice>
+        <choice id="zh-TW" >
+          <name>Chinese Traditional</name>
+        </choice>
+        <choice id="hr-HR" >
+          <name>Croatian</name>
+        </choice>
+        <choice id="cz-CZ" >
+          <name>Czech</name>
+        </choice>
+        <choice id="da-DK" >
+          <name>Danish</name>
+        </choice>
+        <choice id="nl-NL" >
+          <name>Dutch</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="et-EE" >
+          <name>Estonian</name>
+        </choice>
+        <choice id="fi-FI" >
+          <name>Finnish</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="de-SI" >
+          <name>German (eintrag)</name>
+        </choice>
+        <choice id="el-GR" >
+          <name>Greek</name>
+        </choice>
+        <choice id="he-IL" >
+          <name>Hebrew</name>
+        </choice>
+        <choice id="hu-HU" >
+          <name>Hungarian</name>
+        </choice>
+        <choice id="is-IS" >
+          <name>Icelandic</name>
+        </choice>
+        <choice id="it-IT" >
+          <name>Italian</name>
+        </choice>
+        <choice id="ja-JP" >
+          <name>Japanese</name>
+        </choice>
+        <choice id="ko-KP" >
+          <name>Korean</name>
+        </choice>
+        <choice id="lv-LV" >
+          <name>Latvian</name>
+        </choice>
+        <choice id="lt-LT" >
+          <name>Lithuanian</name>
+        </choice>
+        <choice id="nb-NO" >
+          <name>Norwegian</name>
+        </choice>
+        <choice id="pl-PL" >
+          <name>Polish</name>
+        </choice>
+        <choice id="pt-PT" >
+          <name>Portuguese (Standard)</name>
+        </choice>
+        <choice id="pt-BR" >
+          <name>Portuguese (Brazil)</name>
+        </choice>
+        <choice id="ro-RO" >
+          <name>Romanian</name>
+        </choice>
+        <choice id="ru-RU" >
+          <name>Russian</name>
+        </choice>
+        <choice id="sr-RS" >
+          <name>Serbian</name>
+        </choice>
+        <choice id="sk-SK" >
+          <name>Slovak</name>
+        </choice>
+        <choice id="sl-SI" >
+          <name>Slovene</name>
+        </choice>
+        <choice id="es-ES" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="sv-SE" >
+          <name>Swedish</name>
+        </choice>
+        <choice id="tr-TR" >
+          <name>Turkish</name>
+        </choice>
+        <choice id="uk-UA" >
+          <name>Ukrainian</name>
+        </choice>
+        <choice id="ur-PK" >
+          <name>Urdu</name>
+        </choice>
+      </setting>
+    </group>
+    
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.2.0"/>
+    <php:extension>mysql</php:extension>
+	<php:register-globals>false</php:register-globals>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>mantis</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.1.1</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+	<mapping url="upload"><php:permissions writable="true"/></mapping>
+    
+  </mapping>
+</application>

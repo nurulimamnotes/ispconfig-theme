@@ -1,0 +1,63 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Trendy Site Builder</name>
+    <version>1.0.5</version>
+    <release>6</release>
+    <homepage>http://www.trendyflash.com/</homepage>
+    <package-homepage>http://www.trendyflash.com/</package-homepage>
+    <default-prefix>TrendySiteBuilder</default-prefix>
+    <summary>World's Favorite Flash Site Builder!</summary>
+    <description>Trendy Site Builder, is a stunning Flash Site Building tool that helps users build websites with a Wow! factor. The site builder includes features like image galleries, Mp3/Video player, Paypal integrated Online Store, Contact form, Online Greetings and much more.</description>
+    <icon path="images/trendyflash64.png" />
+    <screenshot path="images/ss1.png">
+    	<description>Trendy Site Builder, is a stunning Flash Site Building tool that helps users build websites with a Wow! factor. The site builder includes features like image galleries, Mp3/Video player, Paypal integrated Online Store, Contact form, Online Greetings and much more.</description>
+    </screenshot>
+    <screenshot path="images/ss2.png">
+    	<description>One of the stand out features is an absolutely stunning iPhone optimized website that is generated automatically for easy accessibility on iPhone and other smart phones.</description>
+    </screenshot>
+    <screenshot path="images/ss3.png">
+    	<description>Ranking on Google and other search engines becomes a 	breeze with the built in SEO optimization. Install it now to experience the amazing ease with which you can build a stunning website and find out why it is the World's Favorite Website Builder!</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<name>License</name>
+    		<file>images/license.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+	
+    <changelog>
+    	<version release="6" version="1.0.5">
+			<entry>metadata fix: using php:handler instead of cgi:handler</entry>
+    	</version>
+    	<version release="5" version="1.0.5">
+    		<entry>1) Added feature to back up old versions of content.
+2) Inbuilt License activation.
+3) Option to set Publish size for site.</entry>
+    	</version>
+    </changelog>
+    <installed-size>42999816</installed-size>
+    <categories>
+    	<category>Web/Tools</category>
+    	<category>Web/Site editing</category>
+    	<category>Web/Gallery</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    </languages>
+    <settings>
+    	<setting id="email" type="email">
+    		<name>Email</name>
+    	</setting>
+    </settings>
+    <requirements xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:extension>ionCube Loader</php:extension>
+    	<php:allow-url-fopen>true</php:allow-url-fopen>
+    	<php:version min="4.0.3"/>
+    </requirements>
+    <mapping url="/" path="htdocs" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers" xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:permissions writable="true"/>
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+    </mapping>
+</application>

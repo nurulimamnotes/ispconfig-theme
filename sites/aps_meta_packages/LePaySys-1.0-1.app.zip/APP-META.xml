@@ -1,0 +1,96 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>LePaySys</name>
+	<packager-uri>uuid:fd41bf80-fdb4-11e0-bad3-0002a5d5c51b</packager-uri>
+	<version>1.0</version>
+	<release>1</release>
+	<homepage>http://www.lepaysys.com/</homepage>
+	<package-homepage>http://www.lepaysys.com/</package-homepage>
+	<default-prefix>lepaysys</default-prefix>
+	<summary>LePaySys (light engine payment system)</summary>
+	<summary xml:lang="ru-RU">LePaySys (light engine payment system)  — легкий движок платежной системы</summary>
+	<description>LePaySys (light engine payment system) - a simple, easy and, what is more important, free engine for creation of a payment system and any service of property exchange (transfer). </description>
+	<description xml:lang="ru-RU">LePaySys (light engine payment system)  — это простой и легкий и, самое главное, бесплатный  движок для создания платежных систем и любых сервисов обмена (передачи) ценностей.</description>
+	<icon path="images/lps.png"/>
+	<screenshot path="images/screen1.jpg">
+           <description>Creation and setting of currencies</description>
+           <description xml:lang="ru-RU">Создание и настройка валют</description>
+         </screenshot>
+
+	<license must-accept="true">
+		<text>
+			<name>GPLv2</name>
+			<file>htdocs/LICENSE</file>
+		</text>
+	</license>
+
+	<configuration-script-language>php</configuration-script-language>
+
+	<changelog>
+		<version version="1.0" release="1"><entry>Новый инсталлятор</entry></version>
+	</changelog>
+
+	<installed-size>0</installed-size>
+
+	<categories>
+		<category>Web/Tools</category>
+		<category>Back office/Payroll</category>
+		<category>Back office/Accounting and Financial</category>
+		<category>Web/E-commerce</category>
+		<category>Collaboration/Project management</category>
+	</categories>
+
+	<languages>
+	    <language>en</language>
+		<language>ru</language>
+	</languages>
+
+	<settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <name xml:lang="ru-RU">Учетная запись администратора</name>
+      <setting id="admin_email" type="email" installation-only="true">
+        <name>Administrator's email</name>
+        <name xml:lang="ru-RU">Email администратора</name>
+      </setting>
+      <setting id="admin_password" type="password" min-length="6" max-length="30" >
+        <name>Administrator's password</name>
+        <name xml:lang="ru-RU">Пароль администратора</name>
+        <description>Пароль должен содержать от 6 до 20 символов.</description>
+      </setting>
+    </group>
+    <group>
+      <name>Application setting</name>
+      <name xml:lang="ru-RU">Application setting</name>
+      <setting id="purse_length" type="integer" min="3">
+        <name>Amount of characters in a purse name</name>
+        <name xml:lang="ru-RU">Количество символов в названии кошелька</name>
+      </setting>
+      <setting id="abbr_length" type="integer" min="2" max="5" default-value="3">
+        <name>Numdber of symbols in a currency name</name>
+        <name xml:lang="ru-RU">Количество символов сокращенного названия валюты</name>
+      </setting>
+    </group>
+	</settings>
+
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:apache="http://apstandard.com/ns/1/apache" xmlns:db="http://apstandard.com/ns/1/db">
+	    <apache:htaccess/>
+	    <apache:required-module>mod_rewrite</apache:required-module>
+	    <php:version min="5.2.4"/>
+	    <php:extension>mysql</php:extension>
+            <php:extension>PDO</php:extension>
+		<db:db>
+  			<db:id>MAIN</db:id> 
+  			<db:default-name>lepaysysDB</db:default-name> 
+  			<db:can-use-tables-prefix>true</db:can-use-tables-prefix> 
+  			<db:server-type>mysql</db:server-type> 
+  			<db:server-min-version>4.1</db:server-min-version> 
+  		</db:db>
+	</requirements>
+	
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+	</mapping>
+
+</application>

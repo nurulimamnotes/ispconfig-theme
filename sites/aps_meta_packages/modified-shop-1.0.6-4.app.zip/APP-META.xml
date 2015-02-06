@@ -1,0 +1,148 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>modified-shop</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.0.6</version>
+  <release>4</release>
+  <homepage>http://www.modified-shop.org/</homepage>
+  <package-homepage>http://www.modified-shop.org/</package-homepage>
+  <default-prefix>modified-shop</default-prefix>
+  <summary>Open source ecommerce webcart shop system.</summary>
+  <description>
+  modified-shop eCommerce software is an independent development.
+  It is maintained and developed by an independent community and is 
+  further developed under compliance of the GNU General Public Licence.
+  
+  The main advantages are
+  * Adjustments to the current "minimum legal requirements"
+  * Installation of many useful functions for use and administration
+  * Search engine optimizations (SEO)
+  * Double opt in for e-mail
+  * Delete account feature for the customer
+  * Current googlebase export module is adapted to legal requirements
+  * Security updates fully integrated and developed further
+  * Thickbox product display
+  * Optimized database queries for shops with more than 100.000 products
+  * Attachments in order mails to fit the legal requirements concerning the right of revocation
+  </description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/main_screenshot.jpg">
+    <description>This is the main page</description>
+  </screenshot>
+  <screenshot path="images/admin_screenshot.jpg">
+    <description>This is the administration backend</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE v2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+    <version version="1.0.6" release="1">
+      <entry>PHP 5.4 ready, also see Changelog.txt</entry>
+    </version>
+    <version version="1.0.6" release="2">
+      <entry>minor install fix</entry>
+    </version>    
+    <version version="1.0.6" release="4">
+      <entry>creating customer account on installation</entry>
+    </version>    
+  </changelog>
+  <installed-size>17899106</installed-size>
+  <categories>
+    <category>Web/E-commerce</category>
+  </categories>
+  <languages>
+    <language>en</language>
+    <language>de</language>    
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_p_name" type="string" default-value="Administrator" min-length="1">
+        <name>Administrator's name</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>      
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="company_name" type="string" min-length="1">
+        <name>Company name</name>
+      </setting>
+      <setting id="title" type="string" min-length="1">
+        <name>Store name</name>
+      </setting>      
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.3.3"/>
+    <php:register-globals>false</php:register-globals>
+    <php:safe-mode>false</php:safe-mode>
+    <php:extension>mysql</php:extension>
+    <php:extension>gd</php:extension>
+    <php:extension>curl</php:extension>   
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>modified</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.1.2</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="cache">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="export">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="import">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="images">
+      <php:permissions writable="true"/>
+      <mapping url="categories">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="banner">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="content">
+        <php:permissions writable="true"/>
+      </mapping>     
+      <mapping url="manufacturers">
+        <php:permissions writable="true"/>
+      </mapping>        
+      <mapping url="product_images/info_images">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="product_images/original_images">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="product_images/popup_images">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="product_images/thumbnail_images">
+        <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+    <mapping url="admin/backups">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="admin/images/graphs">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="admin/images/icons">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="templates_c">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

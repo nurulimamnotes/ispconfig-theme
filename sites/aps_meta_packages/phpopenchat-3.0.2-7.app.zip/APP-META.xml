@@ -1,0 +1,114 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>phpopenchat</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>3.0.2</version>
+  <release>7</release>
+  <homepage>http://phpopenchat.org/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>chat</default-prefix>
+
+  <summary>PHPOpenChat (POC) is a web-based chat system</summary>
+  <description>
+    PHPOpenChat (POC) is a web-based chat system written in PHP 4 as Open Source Software (OSS).
+    Your advantage is that you may use it without charge even for commercial purposes.
+    Your disadvantage is that you have no [anspruch] for support or fulfillement of any requirements
+    although some volunteers might give you support and some functionality may be provided.
+    To operate the chat system you won't need any commercial software packages, although it might run
+    with one of these too. Instead it is sufficient to have Linux, Apache, PHP 4 and MySQL (LAMP) and
+    of course a server computer attached to the internet (or any kind of TCP/IP network).
+  </description>
+
+  <icon path="images/icon.png"/>
+
+	<screenshot path="images/snap_admin_en.png"><description>Administration</description></screenshot>
+	<screenshot path="images/snap_chat_en.png"><description>Interface</description></screenshot>
+	<screenshot path="images/snap_configuration_en.png"><description>Configuration</description></screenshot>
+	<screenshot path="images/snap_mail_en.png"><description>Mail</description></screenshot>
+	<screenshot path="images/snap_moderation_en.png"><description>Moderation</description></screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="3.0.2" release="3">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>7526400</installed-size>
+
+  <categories>
+    <category>Collaboration/Chat</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1">
+        <name>Site name</name>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.2.2"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>phpopenchat</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="include/templates/openchat/images/icons/chatter">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+        
+
+</application>

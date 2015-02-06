@@ -1,0 +1,125 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>advancedguestbook</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>2.4.4</version>
+  <release>2</release>
+  <homepage>http://www.proxy2.de/scripts.php</homepage>
+  <package-homepage>http://swsoft.com/</package-homepage>
+  <default-prefix>advancedguestbook</default-prefix>
+
+  <summary>PHP-based guestbook script</summary>
+  <description>Advanced Guestbook is a PHP-based guestbook script. It includes many useful features such as preview, templates, e-mail notification, picture upload, page spanning , html tags handling, smilies, advanced guestbook codes and language support. The admin script lets you modify, view, and delete messages.</description>
+
+  <icon path="images/icon.png"/>
+  
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <url>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</url>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="2.4.4" release="2">
+	  <entry>fixed bug in add.class.php (reported by Carbonize)</entry>
+    </version>
+    <version version="2.4.3" release="6">
+	  <entry>Missed AUTO_INCREMENT added SQL schema file</entry>
+    </version>
+    <version version="2.4.3" release="5">
+      <entry>
+* Package moved to Web/Forum category.
+* Description updated.
+      </entry>
+    </version>
+    <version version="2.4.3" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin.php</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>1392640</installed-size>
+
+  <categories>
+    <category>Web/Forum</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+	<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+	<choice id="en-US" >
+	  <name>English</name>
+	</choice>
+        <choice id="fr-FR" >
+	  <name>French</name>
+	</choice>
+	<choice id="de-DE" >
+	  <name>German</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.1.0"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>guestbook</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.22.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="public">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="templates">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+</application>

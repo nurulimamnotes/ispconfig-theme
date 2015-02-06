@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	End User License Agreement (EULA) - SmarterTrack 3.x Help
+</title><meta id="CopyrightMeta" name="copyright" content="(c) 2002-2015 SmarterTools Inc." /><meta id="PageKeywords" name="keywords" /><meta id="PageDescription" name="description" /><meta name="rating" content="General" /><meta name="language" content="english, EN" /><meta name="author" content="SmarterTools Inc." /><meta name="robots" content="FOLLOW,INDEX" />
+	<link rel='stylesheet' type='text/css' href='/SmarterTrack/v3/Resource.ashx?id=SmarterTools.OnlineHelp.Scripts.Skin.css&autoversion=2_0_5408_40597' />
+
+	<link rel='stylesheet' type='text/css' href='/SmarterTrack/v3/Resource.ashx?id=SmarterTools.OnlineHelp.Scripts.Print.css&autoversion=2_0_5408_40597' media='print' />
+
+	<link rel="canonical" href="/smartertrack/v3/topics/misc/eula.aspx" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1819852-2']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        function smarterTrackWhosOn_TrackPage(a) {
+            a.TrackPage();
+        }
+        (function () {
+            var c = document.createElement('script');
+            c.type = 'text/javascript'; c.async = true;
+            c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'portal.smartertools.com/ST.ashx?scriptonly=true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(c, s);
+        })();
+    </script>
+
+<!-- KAutoSearch = [DISABLED] -->
+</head>
+<body>
+    <form name="form1" method="post" action="EULA.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjhkZExQJt9hGU0VFTO4/igV5uFkmuvmMBUpEeTIKrobfjKR" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+function PopupTranslation(value) { url = "http://translate.google.com/translate?u="+encodeURIComponent(location.href)+"&sl=en&tl="+value+"&hl=en&ie=UTF-8"; window.open(url, 'translated'); }try { if (parent == self) { window.location = "/SmarterTrack/v3/Default.aspx?qq=%2fsmartertrack%2fv3%2fTopics%2fMisc%2fEULA.aspx"; }} catch (err) {};
+//]]>
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACttcuuk5UkKRLzA9fjAsvgToB2SPpogtZq/m1u95t/N67FYLfyFw8+hrR1+gUOp+D5VKRDXrnaQj9YFmA+i0Ptl11Hn9MVWIdD1R8s/qRty6sFLSgqo7clgNYsc5YDNoc1DFv1fM/x90gPk5u4KBlDiSOAcnHcXFbIZvULm+R0ExgFPqeROQSH7NPVFSK3WkCkJ0QtiMo5r8EGk3DJies+AKxZR9A0ppLmYAXPscuQ/k1m7yr5cHIfWctmq+NIdet6WLK0ZQ0iGrKYqUBCu7Hp32eks9ssMrnIbIHX06NYFRZmet0g6dJEygnxUSvvn6aRROqGI8mCThFYMPFTV1gM0/K/9iujgsSTd2VF8Z3qvqHVxbrCUJF/R/WdVrvoir+KB208NZbdeHGsUM+HiZUTWK/+wCUwnXFjHm2ECEmLKnQ+fK+a2TlWzlylKBedyJP2C0dbZp6sjPr32heVEXGwpI+lpiXsbwun5yxitf3lIU8e6qM5lDNoeUJaLAd0NE+mtA1PGuNzUBfBCaNQoeFY8MeRKxfeFAldVzE1w21AHX0sbIYToeVvbpGR+SIfhTo2hX27ghm2u/2oVTP4gI6sgC8S2khYMvabgxL2S8+s3AxvW69EcGMtO6X0uYyIvfHrrYUzaI+HNwaQYeF0SYvD4Il4QhzznyHmqM6g0hgUIbtYgOyTM9wohVEq/1xIMCQPAy98Mz6JNd7ZsjkudoAp6jrW1Xj+jgnJP1bJ/PhJE1QE0X7Wf8v0cx6t1sAfzROBoWYyBH2yc+lR8bvgI6/NUvKg5pA9/+Vg5BveytDmM2Lux3IQj6LtwIJfaBRNegTKVZllKxXPCmLNVODnYe351WdgIxVKquBhjRCXqdBcwy3hkB+TWjF/TUg8zDXYwqU+OXasRtqp60jGaUAjng3pWbhxURqw8MXXUrTbresfLdGPNn9hvO3TI2+gjXiYFPGY=" />
+    <div class="ui-layout-north" id="ui-layout-north">
+        <div class="topbar">
+            <div class='rightlinks'>
+                <a href="http://www.smartertools.com" target="_blank">SmarterTools.com</a></div>
+            SmarterTrack 3.x Help
+        </div>
+        <div class="buttonbar">
+            <a href="/SmarterTrack/v3/Default.aspx?v=&p=" target="_top">Home</a>
+<a href="/SmarterTrack/v3/Topics/Misc/Search.aspx">Search</a>
+<a href="http://portal.smartertools.com/community/root.aspx" target="_blank">SmarterTools Community</a>
+<a href="http://portal.smartertools.com/KB/browse.aspx" target="_blank">Knowledge Base</a>
+<a href="http://www.youtube.com/user/SmarterTools?feature=mhsn#p/c/E4B047F814A43F26" target="_blank">Videos</a>
+<a href='/smartertrack/v3/Topics/Misc/EULA.aspx?printfriendly=true' target='_blank'>Print</a>
+<a rel='noindex nofollow' href='/SmarterTrack/v3/GeneratePdf.ashx?page=%2fsmartertrack%2fv3%2fTopics%2fMisc%2fEULA.aspx' target='_blank'>View PDF</a>
+
+        </div>
+    </div>
+    <div class="ui-layout-center" id="ui-layout-center">
+        
+        
+        <div class="contentarea">
+            
+
+       
+<h1>
+End User License Agreement (EULA)</h1>
+<h2>
+SMARTERTRACK END USER LICENSE AGREEMENT <br />
+SmarterTools, Inc. Software License Terms</h2>
+<p>
+This End User License Agreement ("EULA") is between SmarterTools, Inc. ("SmarterTools") and the end user ("You") of the software product this EULA accompanies ("Software"). It is important to read and understand all of the terms, limitations, and conditions contained in this EULA prior to installing and using the Software because they affect how You may use the Software. By explicitly accepting this EULA, or by installing, copying, downloading, accessing, or otherwise using the Software, You agree to be bound by the terms of this EULA. If, prior to using or installing the Software, You decide that You are unable or unwilling to agree to the terms of this EULA, promptly and completely uninstall and destroy any electronic copies of the Software and accompanying items in your possession.</p>
+<p>
+This EULA applies to:</p>
+<p>
+* This Software, including but not limited to the object code, source code, and any accompanying alphanumeric combinations used to enable certain Features Selection(s) in the Software (collectively, "License Keys")</p>
+<p>
+* Future Versions of this Software</p>
+<p>
+* Updates and plugins to this Software, as may be made available by SmarterTools from time to time, including but not limited to language packs, dictionaries, and skins (collectively "Updates")</p>
+<p>
+* Features selection(s), including "Professional," "Enterprise", and "Free" editions of the Software, and maximum allowed numbers of users, profiles, devices, email addresses domains, web sites, or agents ("level"); (collectively, "Features Selection")</p>
+<p>
+* Services, support, advice, and recommendations related to this Software that may be made available by SmarterTools on the Internet, in the Software documentation, or by telephone</p>
+<p>
+* Any and all Technical Support Services offered in connection with the Software</p>
+<p>
+Definitions:</p>
+<p>
+The following definitions shall apply for the purposes of this EULA</p>
+<p>
+* "Shared Hosting" shall refer to an individual, group, or organization ("Shared Host") that maintains a physical server device upon which software and/or tools are owned and installed by the Shared Host and made available to third parties for access or use; whether or not a fee or other compensation is exchanged; and in which the third parties do not have authorization or access to the activation areas of the Software and/or do not have authorization or access to system administration functions.</p>
+<p>
+* "Dedicated Hosting" shall refer to an individual, group, or organization ("Dedicated Host") that maintains a physical server device that is wholly or, in the case of Virtual Private Servers ("VPS"), a dedicated portion of a physical server device that is sold, leased, or otherwise made available to a third party; whether or not a fee or other compensation is exchanged; and in which the third party has authorization and/or access to the activation areas of the software and/or to system administration functions.</p>
+<p>
+1. License.</p>
+<p>
+A. Grant of License.</p>
+<p>
+Subject to the terms and conditions of this EULA, SmarterTools hereby grants You a revocable, non-exclusive, non-transferable license to use the Software ("License") in accordance with the terms and conditions of this EULA. This License shall commence on the effective date of this EULA and shall remain in effect until terminated in accordance with the terms of this EULA or superseded by another end user license agreement pursuant to installation of an Update or changes in Features Selection. SmarterTools, together with any third party content providers whose software code is incorporated in the Software or distributed with it, retains all right, title, and interest to the Software, including, but not limited to, copyrights, trademarks, proprietary methods, and trade secrets incorporated into the Software.</p>
+<p>
+This License is subject to any restrictions SmarterTools, in its sole discretion, may impose in this EULA or imposed as a condition of purchase, including but not limited to the particular Features Selection You chose at the time of purchase. Updates and Features Selection are subject to the terms and conditions of this EULA, or any other end user license agreement provided with such Update or Features Selection at the time of receipt or purchase, which shall supersede this EULA.</p>
+<p>
+This License to use the Software is conditioned upon You paying all related charges and fees imposed by SmarterTools for purchase or monthly-license of the Software. SmarterTools may, in its sole discretion, terminate this License if You fail to pay such charges or fees within the time allowed by SmarterTools.</p>
+<p>
+B. Use of the Software.</p>
+<p>
+You shall use the Software for Your own personal or internal business purposes. Personal or internal business purposes shall include the installation of the Software and activation of only one License key on a single personal computer or server, one instance of a Virtual Private Server, or as one instance within Your portion of a Shared Hosting environment, for Your own use or use by Your Customer(s) pursuant to the terms of section 1.C. below.</p>
+<p>
+C. Sublicense, Resale, Lease, Sub-lease ,or Transfer</p>
+<p>
+Dedicated Hosts and other authorized parties ("SmarterTools Authorized Reseller") may Resell, Lease, Sub-lease, or Transfer this License (collectively, "Transfer") to any third party subject and pursuant to a separate authorizing agreement in writing with SmarterTools. For the purposes of this EULA, Transfer shall refer to any transaction whereby sole use, management, ownership, and/or control of the software is assigned to any third-party for that party's benefit, pursuant to the terms and conditions of this EULA, whether or not a fee or other compensation is charged and whether or not such Transfer is permanent or temporary. Transfers by or between any party(ies) other than SmarterTools or a SmarterTools Authorized Reseller must be approved by SmarterTools in advance and in writing.</p>
+<p>
+You may install and maintain the Software on behalf of a third party; however, all SmarterTools Licenses in such circumstances must be purchased by the third party directly through SmarterTools or through a SmarterTools Authorized Reseller and the Software must be activated under the name of the related third party; thereby, the related third party assumes full ownership of the License subject to the terms and conditions of this EULA.</p>
+<p>
+D. Limitations on Use of the Software and License Keys</p>
+You shall not modify, reverse engineer, reverse assemble, decompile, disassemble, decrypt, reflect, or use reflection on the Software, or otherwise attempt to discover or obtain the source code or structure, sequence, or organization of the software in whole or in part, except as provided in Section 9 of this EULA. You may distribute copies of the software code in the same format that you received it, pursuant to the terms of this EULA, so long as You do not modify the Software in any way and so long as all copyright, trademark, and other notices contained in the Software remain intact.</p>
+<p>
+The Software may periodically and automatically contact SmarterTools pursuant to Section 10 of this EULA. This contact may occur without any notice to You of such contact, and You hereby consent to such contact with SmarterTools. You shall not disable, delay, dismantle, disrupt, or otherwise interfere with the ability of the Software to contact or communicate with SmarterTools or the authentication of License Keys. Further, You shall not attempt to bypass, circumvent, disable, design around, or obviate the License Keys for any reason, including but not limited to attempts to access features or capabilities in the Software not included in your Features Selection. Further, other than pursuant to Section 1.C. of this EULA, You shall not disclose or disseminate any License Keys associated or distributed with the Software, publicly or to any third party, nor shall You allow anyone else to use any such License Keys.</p>
+<p>
+You may reassign this Software to a different device owned, leased, or rented by You subject to SmarterTools' approval in its sole discretion, provided that You completely uninstall or delete the Software from any personal computer, server, Virtual Private Server, or other device on which the Software was previously installed. SmarterTools reserves the right to require, in its sole discretion, reauthorization, re-registration, or another form of authentication at no additional charge to enable reassignment of the Software, and may disable access to the Software if it determines, in its sole discretion, that such reassignment is prohibited by the terms of this EULA or constitutes fraud.</p>
+<p>
+You shall not use the Software to harm third parties, disseminate unsolicited communications (emails, etc.), requests, or harmful data or programs including but not limited to malicious scripts and viruses. You shall not use the Software to disseminate pornography, child pornography, or other harmful or illegal materials, or in any way that may disparage or bring disrepute to SmarterTools.</p>
+<p>
+2. Term and Termination.</p>
+<p>
+This EULA is effective as of the date You install or use the Software, or as of the date You accept this EULA, whichever is sooner. You may terminate this EULA by completely deleting and wholly destroying any copies of the Software and documentation in Your possession or control. SmarterTools may terminate the License or EULA if, in its sole discretion, SmarterTools determines that You have breached any of the terms and conditions of this EULA, with or without notice to You of such termination.</p>
+<p>
+Sections 1.B., 1.C., 1.D., 3, 5, 6, 7, 8, 9, 10, 11, and 12 shall survive termination of this EULA.</p>
+<p>
+3. Limited Warranty and Limitation of Liability.</p>
+<p>
+A. No Warranties</p>
+<p>
+SmarterTools does not warrant that the Software will meet Your requirements, that the operation of the Software will be uninterrupted or error-free; that any data supplied by the Software will be accurate; or that the Software will work with any 3rd-party or supplemental software or hardware furnished with or accompanying the Software. Further, SmarterTools does not warrant the efficacy, functionality, or operation of such Accompanying Software or Hardware. ALL HARDWARE, SOFTWARE, OR OTHER PRODUCTS OR SERVICES PROVIDED BY SMARTERTOOLS UNDER THIS EULA ARE PROVIDE AS-IS, AND SMARTERTOOLS EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>
+B. No Liability for Damages</p>
+<p>
+SmarterTools shall not be liable for any damages under this EULA, including but not limited to consequential, statutory, punitive, incidental, or indirect damages, including but not limited to any loss of data, loss of profits, loss of savings, loss of time or convenience, or additional cost arising out of the use of or inability to use the Software, documentation, or any 3rd-party or accompanying software or hardware; even if SmarterTools has been advised of the possibility of such damages. Further, SmarterTools shall not be liable for nor bound by any claims, representations, promises, assertions, or other statements made by anyone other than SmarterTools employees or officers, including but not limited to resellers and sales representatives. SmarterTools shall not be liable for any damages or inconvenience resulting from errant data or misreporting of data, nor failures to relay information that may be deemed important by the user, or for any damages arising from events listed in section 5 of this EULA.</p>
+<p>
+C. Limitation of Liability</p>
+<p>
+Your sole remedy under this Agreement shall be limited to replacement of the Software.</p>
+<p>
+4. Technical Support</p>
+<p>
+Currently, SmarterTools provides technical support for the Software via SmarterTools personnel, documentation, and Internet resources. Depending on Your Features Selection, including but not limited to pricing, volume, Software version, and the number of licenses You purchased, a certain amount of technical support may be included at no additional charge. Otherwise, technical support may be available for an additional charge on a per incident, per call, per time-frame basis, or in other support packages. The amount of these charges may vary from time to time. Technical support is provided AS-IS, and the provisions of section 3.B. and 3.C. apply to technical support.</p>
+<p>
+SmarterTools provides no guarantee, expressed or implied, regarding the efficacy or continuation of technical or other support for this Software or particular version of this Software for any length of time and SmarterTools may choose to discontinue such support at any time and for any reason.</p>
+<p>
+5. Indemnification.</p>
+<p>
+You shall defend, indemnify, and hold harmless SmarterTools and its suppliers, licensors, successors, affiliates, agents, employees, executives, and assigns (hereafter "SmarterTools Indemnified Parties") from any claims, damages, losses, or expenses (including without limitation attorney fees and costs) incurred in connection with any and all damages, losses, claims, suits, judgments, or causes of action asserted against SmarterTools Indemnified Parties by third parties or Your Customers related to:</p>
+<p>
+* Any claims arising from or related to Your use of the Software or use of the Software by Your Customers or any portion thereof, including but not limited to claims of infringement of patents, copyrights, or other intellectual property or proprietary rights arising from your use of the Software or from use of the Software or any portion thereof in combination with any other software, hardware, device, system, or service;</p>
+<p>
+* Damages arising from Your breach or Your Customer's breach of this EULA;</p>
+<p>
+* Any loss, misdirection, or inaccuracy of any and all data, message, and/or information (partial or complete) by or directed to You, Your Affiliates, Your Customers, Your vendors, Your assignees, or any related third party and from any action, inaction, or consequence arising out of such loss, misdirection, or inaccuracy of any data, message, or information;</p>
+<p>
+* Any misuse, abuse, hostile transmission, fraud, or unlawful action arising from or related to the use of the Software or any portion thereof by or directed at You, Your affiliates, Your Customers, Your vendors, Your assignees, and/or any related third party;</p>
+<p>
+* Any claim, damage, loss, or expense related to the installation, quality, use, operation, functionality, transfer, or deinstallation of the Software to You, Your Customer(s), or third parties.</p>
+<p>
+* Any charges imposed by You or third parties on You or Your Customers related to Your or Your Customer(s)'s use of the Software, including but not limited to charges for data transmission and bandwidth, regardless of whether you have followed any configuration recommendations provided with the Software or Software documentation.</p>
+<p>
+6. Transfers</p>
+<p>
+The rights under the License may be sublicensed under the terms of Section 1.C. or transferred to any of Your successors, heirs, or assigns upon prior written notice to SmarterTools. Any other attempt to sublicense, assign, or transfer any of the rights, duties, or obligations hereunder is void unless You have a separate written agreement with SmarterTools allowing for such transfer(s).</p>
+<p>
+7. Jurisdiction.</p>
+<p>
+This Agreement shall be governed in all respects by the laws of the United States and the State of Arizona, except for conflict of laws provisions. The parties agree that for any dispute, controversy or claim arising out of or in connection with this Agreement, venue and personal jurisdiction shall be in the federal, state or local court with competent jurisdiction located in Maricopa County, Arizona. The prevailing party will be entitled to an award of reasonable attorney's fees.</p>
+<p>
+In the case that You are an agency or entity of the United States Government, the following additional terms apply:</p>
+<p>
+* The Software qualifies as Restricted Computer Software, as defined in the Rights in Data-General clause at Federal Acquisition Regulations 52.227-14.</p>
+<p>
+* Use, duplication, or disclosure by the Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013.</p>
+<p>
+8. Payments.</p>
+<p>
+You shall pay the total fee(s) for the Software imposed by SmarterTools at the time of purchase. You shall pay all invoices rendered by SmarterTools within thirty (30) calendar days after the invoice date, or within another time frame set forth by SmarterTools in writing in a separate agreement. All payments shall be made in United States Dollars ($). If You fail to pay any amount due within the above timeframe, SmarterTools may impose late charges equal to the lesser of 1.5% per month or the highest interest rate allowable by applicable law, together with all related expenses and collection costs, including reasonable attorneys' fees, incurred by SmarterTools collecting any amounts owed under this EULA. Further, You shall reimburse SmarterTools for any out-of-pocket expenses incurred in connection with duties performed by SmarterTools hereunder. Upon request by You, SmarterTools shall provide You with reasonable documentation evidencing the out-of-pocket expenses incurred by SmarterTools.</p>
+<p>
+SmarterTools may disable License Keys for invoices that are not paid within a reasonable timeframe as determined by SmarterTools in its sole discretion. Licenses purchases that are made fraudulently, deceptively, or that result in a charge-back or disputed charge are considered to be not paid and are subject to disable.</p>
+<p>
+9. Limitations to Customization.</p>
+<p>
+Should You choose to alter the appearance and/or user interface of the Software (the "Skin") by using the custom style or Skin options included in certain versions of the Software or by using a third-party process to alter the appearance or interface of the Software, the following requirements must be met:</p>
+<p>
+* You shall maintain and not remove or obscure any proprietary notices in the Software. The SmarterTools name may be displayed in any font type or style, but it must be displayed in no smaller than 8-point font. The name of the Software shall remain visible to the naked eye and free from any clutter or similar color scheme (e.g. black font on a black or similarly dark background that would preclude the user from easily identifying the Software). Use of the qualifiers "powered by" and "provided by" is permitted (e.g. "Powered by SmarterMail"). Any deviation from these limitations must be approved in writing by SmarterTools in advance of implementation and may result in additional license fees, if applicable.</p>
+<p>
+* All applicable copyright and trademark information shall remain visible to the naked eye, free from any clutter or similar color scheme, and can be displayed in any font type or style but shall be displayed in no smaller than 8-point font.</p>
+<p>
+10. Transmission of Information and Communication.</p>
+<p>
+At purchase of the Software and at other times during the term of this EULA You will be required to supply certain information including, but not limited to, email address(es), password(s), personal and/or company information, payment information (e.g. credit card information), and/or other personally identifiable and potentially valuable information. Acceptance of this Agreement indicates Your willingness to provide this information and have it transmitted to SmarterTools via internet, phone, facsimile, verbally, or otherwise and Your assumption of the incumbent risks associated with such transfers. SmarterTools takes the privacy and security of data very seriously and will make efforts to protect data in accordance with our privacy policy. A copy of the SmarterTools privacy policy is available by request. In any event, SmarterTools and its suppliers, licensors, successors, affiliates, agents, employees, executives, and assigns shall not be liable for any stolen, misdirected, or otherwise mishandled information pursuant to this EULA.</p>
+<p>
+From time to time SmarterTools may contact You at any address, including any email address(es), You have provided to SmarterTools regarding the Software, available Updates or Features Selection for the Software, or for promotional purposes. You hereby expressly consent to such communications. If you do not wish to receive further notices, you may notify SmarterTools of your preferences.</p>
+<p>
+From time to time the Software may cause computers, servers, and/or other electronic devices on which You install and operate this Software to use the internet or other means to exchange data with computers, servers, or other electronic devices owned by SmarterTools in order to maintain licenses, communicate updates or instructions, track the location and install base of the Software, gauge performance, enforce SmarterTools' rights with regard to licensing and this EULA, or other information as is needed to properly maintain, protect, or update the Software. Acceptance of this Agreement indicates Your acceptance of this communication and Your assumption of the incumbent risks associated with such communication.</p>
+<p>
+11. Severability.</p>
+<p>
+The provisions of this Agreement will be deemed severable and the invalidity or unenforceability of any provision(s) will not affect the validity or enforceability of any other provision(s) herein.</p>
+<p>
+12. Entire Agreement.</p>
+<p>
+This EULA constitutes and expresses the entire agreement and understanding between the parties hereto with respect to the subject matter, all revisions discussions, promises, representation, and understanding relative thereto, if any, being herein merged. This Agreement replaces and supersedes any prior agreement entered into between the parties hereto with respect to the subject matter herein.</p>
+<br />
+<br />
+<br />
+<p>
+Thank You for choosing SmarterTools Software.</p>
+<br />
+<br />
+<br />
+<p>
+Rev. 20080428</p>
+
+    
+
+            
+        </div>
+    </div>
+    <div class="ui-layout-south" id="ui-layout-south">
+        <div class='bottombar'>
+            <div class='TranslationBox'>
+                <select name="ctl00$TranslationBox1" id="TranslationBox1" class="TranslationBox" onchange="PopupTranslation(this.value);">
+	<option value="sq">Albanian</option>
+	<option value="ar">Arabic</option>
+	<option value="bg">Bulgarian</option>
+	<option value="ca">Catalan</option>
+	<option value="zh-CN">Chinese (Simplified)</option>
+	<option value="zh-TW">Chinese (Traditional)</option>
+	<option value="hr">Croatian</option>
+	<option value="cs">Czech</option>
+	<option value="da">Danish</option>
+	<option value="nl">Dutch</option>
+	<option selected="selected" value="">English</option>
+	<option value="et">Estonian</option>
+	<option value="tl">Filipino</option>
+	<option value="fi">Finnish</option>
+	<option value="fr">French</option>
+	<option value="gl">Galician</option>
+	<option value="de">German</option>
+	<option value="el">Greek</option>
+	<option value="iw">Hebrew</option>
+	<option value="hi">Hindi</option>
+	<option value="hu">Hungarian</option>
+	<option value="id">Indonesian</option>
+	<option value="it">Italian</option>
+	<option value="ja">Japanese</option>
+	<option value="ko">Korean</option>
+	<option value="lv">Latvian</option>
+	<option value="lt">Lithuanian</option>
+	<option value="mt">Maltesee</option>
+	<option value="no">Norwegian</option>
+	<option value="pl">Polish</option>
+	<option value="pt">Portuguese</option>
+	<option value="ro">Romanian</option>
+	<option value="ru">Russian</option>
+	<option value="sr">Serbian</option>
+	<option value="sk">Slovak</option>
+	<option value="sl">Slovenian</option>
+	<option value="es">Spanish</option>
+	<option value="sv">Swedish</option>
+	<option value="th">Thai</option>
+	<option value="tr">Turkish</option>
+	<option value="uk">Ukranian</option>
+	<option value="vi">Vietnamese</option>
+
+</select>
+            </div>
+            <div class='copyright'>
+                <a class='pagelink' href='http://help.smartertools.com/smartertrack/v3/Topics/Misc/EULA.aspx' onclick='window.alert(window.location); return false;'>Link to this Page</a> |
+                &copy; 2002-2015 SmarterTools Inc.
+            </div>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        function doresize() {
+            var height = $(window).height();
+            var topheight = $("#ui-layout-north").height();
+            var bottomheight = $("#ui-layout-south").height();
+            var offset = 44;
+            $("#ui-layout-center").height(height - topheight - bottomheight - offset);
+        }
+        $(document).ready(function () {
+            doresize();
+        });
+        $(window).resize(doresize);
+    </script>
+</body>
+</html>

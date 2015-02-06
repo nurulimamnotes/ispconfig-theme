@@ -1,0 +1,224 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>LimeSurvey</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.91</version>
+  <release>4</release>
+  <homepage>https://limesurvey.org/</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>limesurvey</default-prefix>
+  <summary>LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <summary xml:lang="en-US">LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <summary xml:lang="de-DE">LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <summary xml:lang="fr-FR">LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <summary xml:lang="pl-PL">LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <summary xml:lang="es-ES">LimeSurvey is an open source online survey application written in PHP based on a MySQL, PostgreSQL or MSSQLdatabase.</summary>
+  <description>LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <description xml:lang="en-US">LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <description xml:lang="de-DE">LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <description xml:lang="fr-FR">LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <description xml:lang="pl-PL">LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <description xml:lang="es-ES">LimeSurvey basically contains everything you need for doing nearly every survey with grace.</description>
+  <icon path="images/logo.png"/>
+  <screenshot path="images/limescreen.png">
+    <description>Administration Screen.</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/LICENSE.php</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+  <version version="1.91" release="4">
+      <entry>directory 'upload' should be writable</entry>
+    </version>
+  <version version="1.91" release="3">
+      <entry>Rooturl definition forced</entry>
+    </version>
+  	<version version="1.91" release="2">
+      <entry>Updated the required minimum version of php</entry>
+    </version>
+    <version version="1.91" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+  	<entry>
+  		<path>/admin/admin.php</path>
+  		<label>Administrative interface</label>
+  	</entry>
+  </entry-points>
+  <installed-size>80678912</installed-size>
+  <categories>
+    <category>Web/Tools</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+   <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password" >
+        <name>Password</name>
+      </setting>
+       <setting id="admin_fname" min-length="1" type="string" >
+        <name>Administrator's Name</name>
+      </setting>
+       <setting id="admin_email" type="email" >
+        <name>Administrator's Email</name>
+      </setting>
+    </group>
+    
+    <group>
+      <name>Site´s preferences</name>
+       <setting id="site_name" min-length="1" type="string" >
+        <name>Site's Name</name>
+      </setting>
+      <setting id="lang" type="enum" default-value="en">
+        <name>Interface language</name>
+     	<choice id="ar">
+			<name>Arabic</name>
+	  	</choice>
+	 	<choice id="bg">
+			<name>Bulgarian</name>
+		</choice>
+		<choice id="bs">
+			<name>Bosnian</name>
+		</choice>
+		<choice id="ca">
+			<name>Catalan</name>
+		</choice>
+		<choice id="cs">
+			<name>Czech</name>
+		</choice>
+		<choice id="da">
+			<name>Danish</name>
+		</choice>
+		<choice id="de">
+			<name>German</name>
+		</choice>
+		<choice id="el">
+			<name>Greek</name>
+		</choice>
+		<choice id="en">
+			<name>English</name>
+		</choice>
+		<choice id="es">
+			<name>Spanish</name>
+		</choice>
+		<choice id="et">
+			<name>Estonian</name>
+		</choice>
+		<choice id="fi">
+			<name>Finnish</name>
+		</choice>
+		<choice id="fr">
+			<name>French</name>
+		</choice>
+		<choice id="he">
+			<name>Hebrew</name>
+		</choice>
+		<choice id="hr">
+			<name>Croatian</name>
+		</choice>
+		<choice id="hu">
+			<name>Hungarian</name>
+		</choice>
+		<choice id="is">
+			<name>Icelandic</name>
+		</choice>
+		<choice id="it">
+			<name>Italian</name>
+		</choice>
+		<choice id="ja">
+			<name>Japanese</name>
+		</choice>
+		<choice id="ko">
+			<name>Korean</name>
+		</choice>
+		<choice id="lt">
+			<name>Lithuanian</name>
+		</choice>
+		<choice id="lv">
+			<name>Latvian</name>
+		</choice>
+		<choice id="mk">
+			<name>Macedonian</name>
+		</choice>
+		<choice id="mt">
+			<name>Maltese</name>
+		</choice>
+		<choice id="nl">
+			<name>Dutch</name>
+		</choice>
+		<choice id="pl">
+			<name>Polish</name>
+		</choice>
+		<choice id="pt">
+			<name>Portuguese</name>
+		</choice>
+		<choice id="ro">
+			<name>Romanian</name>
+		</choice>
+		<choice id="ru">
+			<name>Russian</name>
+		</choice>
+		<choice id="sk">
+			<name>Slovak</name>
+		</choice>
+		<choice id="sl">
+			<name>Slovenian</name>
+		</choice>
+		<choice id="sq">
+			<name>Albanian</name>
+		</choice>
+		<choice id="sr">
+			<name>Serbian</name>
+		</choice>
+		<choice id="sv">
+			<name>Swedish</name>
+		</choice>
+		<choice id="th">
+			<name>Thai</name>
+		</choice>
+		<choice id="tr">
+			<name>Turkish</name>
+		</choice>
+	 	<choice id="vi">
+			<name>Vietnamese</name>
+		</choice>
+     </setting>
+    </group>
+  </settings>
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.1.2"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>LimeSurvey</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.1.0</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="upload">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="templates">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

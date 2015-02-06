@@ -1,0 +1,109 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>mailer</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>6.3</version>
+  <release>3</release>
+  <homepage>http://www.omnistarmailer.com/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>mailer</default-prefix>
+
+  <summary>PHP web based email marketing and autoresponder software solution.</summary>
+  <description>
+    Omnistar Mailer is PHP web based email marketing and autoresponder software solution written 
+    in PHP and used by many webmasters to manage their opt-in email list. Our email marketing 
+    software can automate your entire email marketing to allow you to increase profits through 
+    the use of autoresponders. Our email newsletter software also includes a reminder and survey 
+    system. Most competitors will charge extra for most of the components that are built into 
+    Omnistar Mailer.
+  </description>
+
+  <icon path="images/icon.jpg"/>
+
+  <screenshot path="images/admin_screenshot.jpg">
+    <description>
+	Admin page.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>omnistar license</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="6.3" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size></installed-size>
+
+  <categories>
+    <category>Collaboration/Email</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>ionCube Loader</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>mailer</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    
+    
+    
+  </mapping>
+
+        
+
+</application>

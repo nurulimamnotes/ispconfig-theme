@@ -1,0 +1,525 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>H.H.G. multistore CE</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>4.3.8900</version>
+	<release>3</release>
+	<homepage>http://www.hhg-multistore.com/</homepage>
+	<package-homepage>http://www.hhg-multistore.com/</package-homepage>
+	<default-prefix>hhg-multistore_CE</default-prefix>
+	<summary>Powerful ecommerce multilevel webcart shop system.</summary>
+	<description>
+		H.H.G. multistore is an Open Source Shopsoftware (GPL),
+		which primarily applies to the following groups:
+		* Wholesale
+		* Big portal operators
+		* Hosting provider with store rentals
+		* Shop online with several operators
+		H.H.G. multistore allows your B2B and B2C business in your business
+		more effective and to increase the possibility of an article in
+		several root systems without additional store to use can be essential
+		labor-intensive processes by up to 95% reduced.
+		In addition to hosting providers with just one click their new
+		store rent customers a fully operational shop available, without any
+		installation routines or adjustments. Each system can shop on their
+		own domain to operate, thus represents not only "ugly URLs, but also
+		lengthy installation and optimization processes.
+		By H.H.G. multistore
+		is available in the future of a crucial next step for successful and
+		professional e-business are available.
+	</description>
+	<icon path="images/icon.png" />
+	<screenshot path="images/main_screenshot.png">
+		<description>Main page.</description>
+	</screenshot>
+	<screenshot path="images/admin_screenshot.png">
+		<description>Admin page.</description>
+	</screenshot>
+	<license must-accept="true">
+		<text>
+			<name>GPLv2</name>
+			<file>htdocs/LICENSE</file>
+		</text>
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	<upgradable-from version="3.1.3040" release="1"/>
+	<changelog>
+		<version version="3.1.3040" release="1">
+			<entry>Initial package version</entry>
+		</version>
+		<version version="4.1.3568" release="1">
+			<entry>#3565	some fixes</entry>
+			<entry>#3561	removing greeting text</entry>
+			<entry>#3557	some clean ups</entry>
+			<entry>#3553	some clean ups</entry>
+			<entry>#3549	FSK18 pic update</entry>
+			<entry>#3545	introducing multi content assignment to startpage</entry>
+			<entry>#3541	product object assignment instead of preparing as array</entry>
+			<entry>#3537	bugfix return page before logout</entry>
+			<entry>#3537	setting fsk permission for admin</entry>
+			<entry>#3534	removing unneded wrapper</entry>
+			<entry>#3528	bugfix</entry>
+			<entry>#3524	moving plugin lang files to there own place</entry>
+			<entry>#3520	moving plugin lang files to there own place</entry>
+			<entry>#3515	bugfix plugin path</entry>
+			<entry>#3511	moving plugins to the right place</entry>
+			<entry>#3507	moving plugins to the right place</entry>
+			<entry>#3503	syncing folder names</entry>
+			<entry>#3499	moving plugins to the right place</entry>
+			<entry>#3496	moving plugins to new folder</entry>
+			<entry>#3489	returning to old place after logoff</entry>
+			<entry>#3484	some messages added for cart actions</entry>
+			<entry>#3475	som eclean ups</entry>
+			<entry>#3469	typo fix</entry>
+			<entry>#3464	removing unneeded key</entry>
+			<entry>#3460	some enhancements</entry>
+			<entry>#3457	introducing new store choice with multiselects instead of checkboxes</entry>
+			<entry>#3455	new method for selected stores</entry>
+			<entry>#3452	fixing forms to match right format</entry>
+			<entry>#3452	inserting multiselection for stored in tax_rates</entry>
+			<entry>#3448	introducing multiselection fields</entry>
+			<entry>#3448	cleaning up note wrappers</entry>
+			<entry>#3448	mergeing down to one pulldown function</entry>
+			<entry>#3445	some clean ups</entry>
+			<entry>#3441	removing unneeded wrapper</entry>
+			<entry>#3438	introducing new session class</entry>
+			<entry>#3435	removing include from unused function</entry>
+			<entry>#3431	some clean ups</entry>
+			<entry>#3428	removing unused file</entry>
+			<entry>#3425	removing unused class</entry>
+			<entry>#3422	removing unused function</entry>
+			<entry>#3419	removing unused function</entry>
+			<entry>#3416	removing unneeded wrapper</entry>
+			<entry>#3413	removing unused function</entry>
+			<entry>#3410	removing unused function</entry>
+			<entry>#3406	removing unused function</entry>
+			<entry>#3403	removing unused function</entry>
+			<entry>#3400	removing unneeded wrapper</entry>
+			<entry>#3397	removing unused function</entry>
+			<entry>#3397	merging missing parts</entry>
+			<entry>#3394	removing unneeded wrapper</entry>
+			<entry>#3391	removing unneeded wrapper</entry>
+			<entry>#3388	removing unused function</entry>
+			<entry>#3385	removing unneeded copy</entry>
+			<entry>#3382	removing unused function</entry>
+			<entry>#3379	renaming class</entry>
+			<entry>#3376	removing GD1 image_processing class</entry>
+			<entry>#3373	splitting import class to export and import</entry>
+			<entry>#3371	removing unneeded copy</entry>
+			<entry>#3367	removing unneeded includes</entry>
+			<entry>#3364	some more renamings</entry>
+			<entry>#3361	introducing autoload backported from dev</entry>
+			<entry>#3359	preparing classnames for autoload</entry>
+			<entry>#3354	update to new var</entry>
+			<entry>#3346	some clean ups</entry>
+			<entry>#3342	removing unneeded backup file configure.org.php</entry>
+			<entry>#3337	some cleanups</entry>
+			<entry>#3325	clean up</entry>
+			<entry>#3320	CloseTags replaced with strip_tags</entry>
+			<entry>#3316	reming admin menu entry</entry>
+			<entry>#3312	bugfix fuzzy theme assign</entry>
+			<entry>#3306	update to adodb 5.10</entry>
+			<entry>#3299	update to adodb 5.10</entry>
+			<entry>#3298	preparing for adodb update</entry>
+			<entry>#3294	removing breadcrumb link</entry>
+			<entry>#3291	update</entry>
+			<entry>#3285	putting category object directly to template</entry>
+			<entry>#3278	introducing hhg_mem for memusage</entry>
+			<entry>#3278	adding backtracing to debug</entry>
+			<entry>#3277	using category object to get data</entry>
+			<entry>#3276	bugfix HTTPS_SERVER in Admin</entry>
+			<entry>#3269	adding language sort</entry>
+			<entry>#3269	adding option category filter</entry>
+			<entry>#3265	using category object to get data</entry>
+			<entry>#3261	bugfix showing option categories</entry>
+			<entry>#3258	moving include to needed positions</entry>
+			<entry>#3251	bugfix category check</entry>
+			<entry>#3248	syncing categories class to products class</entry>
+			<entry>#3244	syncing categories class to products class</entry>
+			<entry>#3241	clean up</entry>
+			<entry>#3237	bugfix image check</entry>
+			<entry>#3233	bugfix product check</entry>
+			<entry>#3229	missing owner inserted</entry>
+			<entry>#3225	bugfix warning</entry>
+			<entry>#3221	reinserting page navigation vor accesskey</entry>
+			<entry>#3221	some code renicements</entry>
+			<entry>#3217	adding noscript part</entry>
+			<entry>#3213	bugfix filter</entry>
+			<entry>#3209	clean up</entry>
+			<entry>#3205	removing unneeded method</entry>
+			<entry>#3201	introducing new filter_list</entry>
+			<entry>#3197	moving specials to new product_listing</entry>
+			<entry>#3194	introducing new product_listing</entry>
+			<entry>#3191	moving xtc_button to inc folder with new name</entry>
+			<entry>#3190	copying hhg_button to the branches</entry>
+			<entry>#3187	copying product_list to the branches</entry>
+			<entry>#3180	copyright renicement</entry>
+			<entry>#3176	useing product object to get data for module specials</entry>
+			<entry>#3172	useing product object to get data for module new products</entry>
+			<entry>#3168	useing product object to get data for box lastviewed</entry>
+			<entry>#3163	useing product object to get data for box specials</entry>
+			<entry>#3159	useing product object to get data for box bestsellers</entry>
+			<entry>#3155	useing product object to get data for box new products</entry>
+			<entry>#3151	useing product object to get data for reverse cross sells</entry>
+			<entry>#3147	useing product object to get data for cross sells</entry>
+			<entry>#3143	bugfix parameter</entry>
+			<entry>#3139	missing include</entry>
+			<entry>#3139	bugfix parameter</entry>
+			<entry>#3135	useing product object to get data for also purchased</entry>
+			<entry>#3131	bugfix buynowlink</entry>
+			<entry>#3127	first clean up useing object in template</entry>
+			<entry>#3123	adding new data to product object</entry>
+			<entry>#3119	bugfix javascript position</entry>
+			<entry>#3115	removing unneeded js check</entry>
+			<entry>#3111	some clean ups</entry>
+			<entry>#3106	formatted price to object added</entry>
+			<entry>#3102	some cleanups</entry>
+			<entry>#3098	removing unneeded function</entry>
+			<entry>#3094	removing unused libs</entry>
+			<entry>#3088	removing unneeded info_message output entry</entry>
+			<entry>#3084	moving messages to messagestack</entry>
+			<entry>#3080	bugfix message stack assignment</entry>
+			<entry>#3076	bugfix missing changes for movind to modules</entry>
+			<entry>#3072	adding new messagestack outputs</entry>
+			<entry>#3072	removing old message entries</entry>
+			<entry>#3072	some clan ups</entry>
+			<entry>#3068	updateing content boxes to new menu constructor</entry>
+			<entry>#3064	some cleanups</entry>
+			<entry>#3060	introducing instance name</entry>
+			<entry>#3056	bugfix specialprice round</entry>
+			<entry>#3052	replacing old breadcrumb class with new flexible hhg_menu class</entry>
+			<entry>#3048	bugfix non iis folding</entry>
+			<entry>#3044	update sseq_lib filter</entry>
+		</version>
+		<version version="4.1.3606" release="1">
+			<entry>#3606	bugfix multi selection was missing</entry>
+			<entry>#3602	bugfix send_order plugin include</entry>
+			<entry>#3595	some bugfixes</entry>
+			<entry>#3591	some bugfixes</entry>
+			<entry>#3587	bugfix session check</entry>
+			<entry>#3583	bugfix redirect</entry>
+			<entry>#3579	bugfix checkboxes</entry>
+			<entry>#3574	some fixes</entry>
+		</version>
+		<version version="4.1.3688" release="1">
+			<entry>#3684	bugfix report</entry>
+			<entry>#3681	bugfix redirect links</entry>
+			<entry>#3672	wordwrap for url</entry>
+			<entry>#3668	new feature margin in sales report</entry>
+			<entry>#3664	changing order to sort_order value</entry>
+			<entry>#3660	bugfix store default setting after deletion</entry>
+			<entry>#3656	new feature, external link with content_heading_title</entry>
+			<entry>#3654	new feature, external link with content_heading_title</entry>
+			<entry>#3650	bugfix</entry>
+			<entry>#3646	new feature, external link with categories_heading_title</entry>
+			<entry>#3642	bugfix categories object for other stores</entry>
+			<entry>#3637	bugfix wrong object instance name</entry>
+			<entry>#3634	bugfix store deletion</entry>
+			<entry>#3630	bugfix SSEQ_LIB Token was missing in link</entry>
+			<entry>#3619	return to old version</entry>
+			<entry>#3615	bugfix missing columnvalues</entry>
+			<entry>#3614	bugfix categories image</entry>
+			<entry>#3610	bugfix pricefilter</entry>
+		</version>
+		<version version="4.1.4294" release="1">
+			<entry>#4290 	bugfix demo mode checks</entry>
+			<entry>#4283 	bugfix slaveproducts show flag hasn't been used</entry>
+			<entry>#4277 	removing unneeded function</entry>
+			<entry>#4275 	clean up</entry>
+			<entry>#4271 	clean up</entry>
+			<entry>#4268 	bugfix syntax</entry>
+			<entry>#4264 	bugfix group check</entry>
+			<entry>#4260 	adding ppu to export</entry>
+			<entry>#4256 	some copyright updates</entry>
+			<entry>#4252 	sync to each other</entry>
+			<entry>#4248 	bugfix store creation</entry>
+			<entry>#4245 	bugfix get parameter is missing on first call</entry>
+			<entry>#4239 	adding needed delivery time</entry>
+			<entry>#4235 	bugfix</entry>
+			<entry>#4231 	bugfix misspelled syntax</entry>
+			<entry>#4228 	database upgrade script</entry>
+			<entry>#4220 	update to PHPMailer 5.1</entry>
+			<entry>#4216 	preparing update to PHPMailer 5.1</entry>
+			<entry>#4212 	adding adodb driver patches</entry>
+			<entry>#4208 	update to adodb 5.11</entry>
+			<entry>#4204 	preparing update to adodb 5.11</entry>
+			<entry>#4200 	update to CKeditor 3.3.1</entry>
+			<entry>#4196 	preparing update to CKeditor 3.3.1</entry>
+			<entry>#4192 	bugfix typo</entry>
+			<entry>#4188 	setup</entry>
+			<entry>#4184 	update to kfm 1.4.7</entry>
+			<entry>#4180 	preparing update to kfm 1.4.7</entry>
+			<entry>#4177 	bugfix wrong query</entry>
+			<entry>#4172 	bugfix missing fields</entry>
+			<entry>#4168 	bugfix to_group entries</entry>
+			<entry>#4164 	bugfix store id missing</entry>
+			<entry>#4160 	bugfix string check</entry>
+			<entry>#4156 	bugfix language assign to new store</entry>
+			<entry>#4152 	bugfix state check</entry>
+			<entry>#4145 	setting default value to null</entry>
+			<entry>#4141 	bugfix stock decreasing by order from another store</entry>
+			<entry>#4137 	removing admin lock on customer status prices</entry>
+			<entry>#4133 	bugfix typo</entry>
+			<entry>#4130 	bugfix delivery address</entry>
+			<entry>#4126 	bugfix delivery address</entry>
+			<entry>#4122 	bugfix missing , in array</entry>
+			<entry>#4118 	setting new indexes to speed up</entry>
+			<entry>#4114 	bugfix and speedup for csv import</entry>
+			<entry>#4107 	bugfix and speedup for csv import</entry>
+			<entry>#4099 	bugfix cart separation</entry>
+			<entry>#4095 	bugfix showing carts from mall also if actual isn't filled</entry>
+			<entry>#4089 	bugfix setting Smarty Code protection for {foreach..}, {if}, {else} and {/..}</entry>
+			<entry>#4087 	bugfix setting Smarty Code protection for {foreach..}, {if} and {/..}</entry>
+			<entry>#4083 	some missing depracating changes</entry>
+			<entry>#4073 	bugfix missing ,</entry>
+			<entry>#4070 	bugfix</entry>
+			<entry>#4066 	merging all personal_offers_by_customers_status tables to one</entry>
+			<entry>#4059 	bugfix return to logoff</entry>
+			<entry>#4057 	bugfix forms on logoff</entry>
+			<entry>#4053 	bugfix broken form</entry>
+			<entry>#4044 	bugfix SubTLD hasn't been recognized</entry>
+			<entry>#4040 	Bugfix datastring hasn't been accepted</entry>
+			<entry>#4036 	filter update</entry>
+			<entry>#4032 	bugfix stock limit updates to early</entry>
+			<entry>#4028 	bugfix cookie hasnt been found due DIR_WS_CATALOG has been setting wrong</entry>
+			<entry>#4024 	bugfix DIR_WS_CATALOG was missing in path</entry>
+			<entry>#4020 	bugfix umlauts</entry>
+			<entry>#4014 	filter update</entry>
+			<entry>#4010 	bugfix empty reply_to field causes invalid address error</entry>
+			<entry>#4005 	removing fork notice</entry>
+			<entry>#4001 	bugfix missing registry object</entry>
+			<entry>#3997 	unit fields added to import / export modules</entry>
+			<entry>#3993 	bugfix sort order field</entry>
+			<entry>#3986 	removing unneeded array value</entry>
+			<entry>#3983 	bugfix plugin language file path</entry>
+			<entry>#3979 	bugfix use of deprecating function</entry>
+			<entry>#3976 	bugfix wrong function call</entry>
+			<entry>#3972 	bugfix Wrong Limit has been used</entry>
+			<entry>#3968 	bugfix customer group price for options</entry>
+			<entry>#3962 	bugfix wrong assign of customers_cid</entry>
+			<entry>#3956 	bugfix category list structure</entry>
+			<entry>#3952 	adding transparency support for png and gif</entry>
+			<entry>#3948 	filter update</entry>
+			<entry>#3944 	removing unused columns from db</entry>
+			<entry>#3934 	bugfix</entry>
+			<entry>#3930 	removing unneeded tables</entry>
+			<entry>#3927 	returning to old name</entry>
+			<entry>#3923 	merging all configuration tables to one and adding to object_to_store and object_type</entry>
+			<entry>#3919 	bugfix</entry>
+			<entry>#3915 	introducing new API Name to get exports normalized with erp's</entry>
+			<entry>#3911 	removing unneeded DOCUMENT_ROOT usage</entry>
+			<entry>#3907 	bugfix category links</entry>
+			<entry>#3893 	bugfix old wrapper call instead of direct call</entry>
+			<entry>#3889 	bugfix returning customer wishlist hasn't been shown</entry>
+			<entry>#3885 	update banktransfer validation</entry>
+			<entry>#3881 	filter update</entry>
+			<entry>#3874 	bugfix array was missing for one result itteration</entry>
+			<entry>#3870 	bugfix error message</entry>
+			<entry>#3866 	some updates</entry>
+			<entry>#3862 	bugfix unit price calculation by permitted price view</entry>
+			<entry>#3858 	bugfix search engine friendly urls wrong $PHP_SELF</entry>
+			<entry>#3854 	bugfix double tax addition on spy target</entry>
+			<entry>#3850 	bugfix possibly missing include</entry>
+			<entry>#3845 	changing continue button to send button</entry>
+			<entry>#3841 	bugfix column shift by unused column</entry>
+			<entry>#3839 	bugfix searching umlauts</entry>
+			<entry>#3835 	bugfix produkt filter prices</entry>
+			<entry>#3830 	removing store depanding tables by mails</entry>
+			<entry>#3827 	moving group_permission to object_to_group</entry>
+			<entry>#3823 	bugfix missing include</entry>
+			<entry>#3820 	moving tax_rates to object_type</entry>
+			<entry>#3817 	moving tax_class to object_type</entry>
+			<entry>#3814 	moving shipping_status to object_type</entry>
+			<entry>#3807 	moving products_xsell_groups to object_type</entry>
+			<entry>#3804 	moving products_vpe to object_type</entry>
+			<entry>#3800 	moving products to object_type</entry>
+			<entry>#3797 	moving products_groups to object_type</entry>
+			<entry>#3794 	moving orders_status to object_type</entry>
+			<entry>#3790 	moving manufacturers to object_type</entry>
+			<entry>#3787 	moving languages to object_type</entry>
+			<entry>#3783 	moving geo_zone to object_type</entry>
+			<entry>#3780 	moving customers to object_type</entry>
+			<entry>#3777 	moving customers_status to object_type</entry>
+			<entry>#3774 	moving currencies to object_type</entry>
+			<entry>#3770 	moving content_manager to object_type</entry>
+			<entry>#3767 	moving categories to object_type</entry>
+			<entry>#3764 	moving campaigns to object_type</entry>
+			<entry>#3761 	moving admin to object_type</entry>
+			<entry>#3758 	moving admin_groups to object_type</entry>
+			<entry>#3754 	introducing object type management</entry>
+			<entry>#3751 	rmeoving unused and unneeded param</entry>
+			<entry>#3747 	some clean ups</entry>
+			<entry>#3745 	moving $access object to registry</entry>
+			<entry>#3741 	moving $access object to registry</entry>
+			<entry>#3738 	some missing registry</entry>
+			<entry>#3734 	moving $store object to registry</entry>
+			<entry>#3731 	removing some php4 compatibilities</entry>
+			<entry>#3727 	moving cart object from sessin to registry</entry>
+			<entry>#3723 	bugfix missing registry object</entry>
+			<entry>#3717 	introducing registry</entry>
+			<entry>#3714 	backport registry from trunk</entry>
+			<entry>#3710 	missing function include</entry>
+			<entry>#3706 	adding autoloader for kfm</entry>
+			<entry>#3694 	bugfix manufacturer image url</entry>
+		</version>
+		<version version="4.3.8900" release="3">
+            <entry>#8900   bugfix image sortorder renamement</entry>
+            <entry>#8899   introducing new position for checkout mails</entry>
+            <entry>#8898   bugfix picture order change</entry>
+            <entry>#8897   bugfix htmlentities</entry>
+            <entry>#8895   bugfix turkish character set</entry>
+            <entry>#8894   adding turkish character handling</entry>
+            <entry>#8893   bugfix wrong html entity</entry>
+            <entry>#8892   localisation improvements</entry>
+            <entry>#8891   - CS
+                           - introducing vat_id</entry>
+            <entry>#8890   introducing gender, first and lastname to order object</entry>
+            <entry>#8889   trim to avoid whitespaces causing empty pdfs</entry>
+            <entry>#8888   bugfix recognition</entry>
+            <entry>#8887   - unescaping html chars
+                           - removing empty contents</entry>
+            <entry>#8886   bugfix</entry>
+            <entry>#8885   introducing content parsing</entry>
+            <entry>#8884   bugfix object cant handle array usage</entry>
+            <entry>#8883   bugfix wrong assignment</entry>
+            <entry>#8882   cleanup</entry>
+            <entry>#8881   typo</entry>
+            <entry>#8880   bugfix old code forgotten</entry>
+            <entry>#8879   introducing content entity</entry>
+            <entry>#8878   overflow hidden causes issues with anchors</entry>
+            <entry>#8877   jump to tab</entry>
+            <entry>#8876   bugfix smarty update</entry>
+            <entry>#8875   Update to Smarty 3.1.13</entry>
+            <entry>#8874   reverting bugfix which causes more issues then solving others</entry>
+            <entry>#8873   bugfix</entry>
+            <entry>#8872   language update</entry>
+            <entry>#8871   bugfix css buttons, coordinates aren't submitted anymore</entry>
+            <entry>#8870   missing turkish entry</entry>
+            <entry>#8869   bugfix missing object_to_store entry</entry>
+            <entry>#8863	- introducing CSS buttons
+                            - introducing turkish support
+                            - ckeditor update
+                            - sseq_lib update</entry>
+            <entry>#8862	sync to public versıon</entry>
+		</version>
+	</changelog>
+	<installed-size>9893423</installed-size>
+	<categories>
+		<category>Web/E-commerce</category>
+	</categories>
+	<languages>
+		<language>en</language>
+		<language>de</language>
+		<language>tr</language>
+	</languages>
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_p_name" type="string" default-value="Administrator"
+				min-length="1">
+				<name>Administrator's name</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Administrator's email</name>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Password</name>
+			</setting>
+			<setting id="company_name" type="string" min-length="1">
+				<name>Company name</name>
+			</setting>
+			<setting id="title" type="string" min-length="1">
+				<name>Store name</name>
+			</setting>
+		</group>
+	</settings>
+	<requirements xmlns:php="http://apstandard.com/ns/1/php"
+		xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="5.0.0" />
+		<php:register-globals>false</php:register-globals>
+		<php:safe-mode>false</php:safe-mode>
+		<php:extension>mysql</php:extension>
+		<php:extension>gd</php:extension>
+		<php:extension>curl</php:extension>
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>hhg_ms</db:default-name>
+			<db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>4.1.0</db:server-min-version>
+		</db:db>
+	</requirements>
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+		<mapping url="admin/images/graphs">
+			<php:permissions writable="true" />
+		</mapping>
+		<mapping url="core/logs">
+			<php:permissions writable="true" />
+		</mapping>
+		<mapping url="external/sseq-lib/seq_dump">
+			<php:permissions writable="true" />
+		</mapping>
+		<mapping url="external/sseq-lib/seq_lib">
+			<php:permissions writable="true" />
+		</mapping>
+		<mapping url="external/sseq-lib/seq_log">
+			<php:permissions writable="true" />
+		</mapping>
+		<mapping url="store_files">
+			<php:permissions writable="true" />
+			<mapping url="1">
+				<php:permissions writable="true" />
+				<mapping url="export">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="images">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="import">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="lang">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="media">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="themes">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="upload">
+					<php:permissions writable="true" />
+				</mapping>
+			</mapping>
+			<mapping url="dummy/new">
+				<php:permissions writable="true" />
+				<mapping url="export">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="images">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="import">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="lang">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="media">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="themes">
+					<php:permissions writable="true" />
+				</mapping>
+				<mapping url="upload">
+					<php:permissions writable="true" />
+				</mapping>
+			</mapping>
+		</mapping>
+		<mapping url="tmp">
+			<php:permissions writable="true" />
+		</mapping>
+	</mapping>
+</application>

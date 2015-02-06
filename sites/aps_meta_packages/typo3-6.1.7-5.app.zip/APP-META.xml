@@ -1,0 +1,119 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>typo3</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>6.1.7</version>
+  <release>5</release>
+  <homepage>http://typo3.org/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>typo3</default-prefix>
+  <summary>TYPO3 is the most advanced GPL content management framework available.</summary>
+  <description>TYPO3 is developed by the Danish programmer Kasper Skaarhoej. It is the most advanced GPL content management framework available and successfully competes with commercial products sold at US$50,000. TYPO3 is distributed under the GPL license. However, Kasper has expressed certain aims for the system that we ask you to respect (see typo3.com for more information).</description>
+
+  <icon path="images/typo3logo_mini.png"/>
+  <screenshot path="images/typo615r3-1.jpg">
+    <description>Application Screenshot</description>
+  </screenshot>
+  <screenshot path="images/typo615r3-3.jpg">
+  	<description>Application Screenshot</description>
+  </screenshot>
+<screenshot path="images/typo615r3-2.jpg">
+  	<description>Administration Screenshot</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/GPL.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="4.7"/>
+  
+  <changelog>
+   <version release="5" version="6.1.7">
+    	<entry>Initial Typo3 6.1 version</entry>
+  </version>
+</changelog>
+
+  <entry-points>
+    <entry>
+      <path>/typo3/index.php</path>
+      <label>Administrative interface</label>
+    </entry>
+    <entry>
+      <path>/</path>
+      <label>Site</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>164556800</installed-size>
+
+  <categories>
+      <category>Web/Content management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+		<setting default-value="admin" id="admin_name" type="string">
+        	<name>Administrator's login</name>
+        </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+      <setting id="title" min-length="1" type="string">
+        <name>Site name</name>
+      </setting>
+    </group>
+
+  </settings>
+
+  <requirements>
+    <php:version min="5.3.7" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">mbstring</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">curl</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">json</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">gd</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">filter</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">pcre</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">xml</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">standard</php:extension>
+	<php:extension xmlns:php="http://apstandard.com/ns/1/php">session</php:extension>
+    <php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+
+    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+      <db:id>main</db:id>
+      <db:default-name>typo3</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.1</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping path="htdocs" url="/">
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+      <php:extension>php</php:extension>
+    </php:handler>
+
+    <mapping url="typo3conf">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="fileadmin">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="typo3temp">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="uploads">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="typo3/ext">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+  </mapping>
+
+</application>

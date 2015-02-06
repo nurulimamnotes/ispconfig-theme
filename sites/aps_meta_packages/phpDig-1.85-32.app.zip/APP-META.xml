@@ -1,0 +1,108 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>phpDig</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.85</version>
+  <release>32</release>
+  <homepage>http://www.phpdig.net/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>phpdig</default-prefix>
+
+  <summary>phpDig is simple search engine for your site.</summary>
+  <description>
+    PhpDig is a http spider / php search engine
+    with a MySql database in backend.
+    Indexing after indexing, PhpDig builds a glossary with
+    the key words found in indexed pages.
+    On a search query, it displays a result page with documents
+    which contains the search keys, ranked by occurence.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/information/COPYING</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="1.85" release="21">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>934912</installed-size>
+
+  <categories>
+    <category>Web/Search</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>phpdig</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    <mapping url="text_content">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="includes">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="admin/temp">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+        
+
+</application>

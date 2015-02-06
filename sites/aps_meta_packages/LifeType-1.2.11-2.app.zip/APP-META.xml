@@ -1,0 +1,304 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>LifeType</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.2.11</version>
+  <release>2</release>
+  <homepage>http://lifetype.net/</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>/lifetype/</default-prefix>
+  
+  <summary>Blogging platform with support for multiple blogs and users in a single installation.</summary>
+  <summary xml:lang="de-DE">Blogging-Plattform, die die Erstellung mehrerer Blogs ermöglicht  und Mehrbenutzerverwaltung unterstützt...</summary>
+  <summary xml:lang="fr-FR">Plateforme de création de blogs prenant en charge la gestion de plusieurs blogs par plusieurs utilisateurs depuis une seule installation...</summary>
+  <summary xml:lang="es-ES">Plataforma de publicación de blog con compatibilidad de múltiples blogs y usuarios en una única instalación...</summary>
+  <summary xml:lang="pl-PL">LifeType to platforma do blogowania obslugujaca wiele blogów i uzytkowników...</summary>
+  <summary xml:lang="en-US">Blogging platform with support for multiple blogs and users in a single installation.</summary>
+  
+  <description>Features: integrated media management; templates; built-in anti-spam filter; support for trackbacks; mobile features; subdomains.</description>
+  <description xml:lang="en-US">Features: integrated media management; templates; built-in anti-spam filter; support for trackbacks; mobile features; subdomains.</description>
+  <description xml:lang="de-DE">Features: integriertes Media-Management; Templates; ein integrierter Anti-SPAM-Filter; Trackback-Support; Features für mobile Endgeräte; Subdomains.</description>
+  <description xml:lang="fr-FR">Fonctionnalités : gestion intégrée des médias ; modèles ; filtre anti-spam intégré ; prise en charge de rétroliens ; fonctionnalités pour terminaux mobiles ; sous-domaines.</description>
+  <description xml:lang="es-ES">Características: gestión multimedia integrada; plantillas; filtro antispam incorporado; compatibilidad con trackbacks; características móviles; subdominios.</description>
+  <description xml:lang="pl-PL">LifeType to platforma do blogowania obslugujaca wiele blogów i uzytkowników w jednej instalacji. 
+Cechy: zintegrowane zarzadzanie mediami; szablony; wbudowany filtr antyspamowy; wsparcie dla protokolów trackback, funkcje komórkowe; poddomeny.</description>  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot.jpg">
+    <description>Typical view</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="9" version="1.2.6"/>
+  <changelog>
+  	<version release="2" version="1.2.11">
+    	<entry>The config file overwriting process modified</entry>
+    </version><version release="1" version="1.2.11">
+    	<entry>Update to 1.2.11
+
+Those who upgrade from previous versions and have the manager's name as admin, www or ftp, will have to reconfigure the APS to change the administrator name a new one,  otherwise not be able to login.</entry>
+    </version><version release="13" version="1.2.6">
+      <entry>The config file overwriting process modified</entry>
+    </version>
+  	<version release="12" version="1.2.6">
+      <entry>schema.sql modified</entry>
+    </version>
+    <version release="11" version="1.2.6">
+    	<entry>new release</entry>
+    </version>
+     <version release="10" version="1.2.6">
+    	<entry>  include translations into multiple languages</entry>
+    </version>
+    <version version="1.2.6" release="9">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+    <entry>
+    	<path>/index.php</path>
+    	<label>Site</label>
+    </entry><entry>
+      <path>/admin.php</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+  <installed-size>11218708</installed-size>
+  <categories>
+	  <category>Web/Blog</category>
+  </categories>
+	  <languages>
+		<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+	  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="administrator" regex="(?!(?:admin|www|ftp)$)[a-z0-9\_]{3,}$" min-length="3" max-length="15">
+        <name>Administrator's name</name>
+        <description>Exclude Administrator's name: admin, www and ftp.
+If you have upgraded your AP and your Administrator's name is one of them, you need to change, otherwise not be able to login.</description>
+        <error-message>Allow only a-z, 0-9, _ chars, with a minimum length of 3.
+Exclude Administrator's name: admin, www and ftp.
+If you are upgrading your AP and your Administrator's name is one of them, you need to change it.</error-message>
+      </setting>
+      <setting id="admin_fullname" type="string" min-length="3" max-length="255">
+        <name>Administrator's full name</name>
+        <error-message>Length: 3 - 255 characters.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="6" max-length="32">
+        <name>Password</name>
+        <description>Length: 6 - 32 characters.</description>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's e-mail</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default blog locale</name>
+      <setting id="locale" type="enum" default-value="en-UK">
+        <name>Language</name>
+        <description>It only changes the default settings, used when a new blog is created. This does not change any of the existing blogs' locale.</description>
+        <choice id="ca-ES">
+          <name>Catalan</name>
+        </choice>
+        <choice id="de-DE">
+          <name>German</name>
+        </choice>
+        <choice id="en-UK">
+          <name>English (UK)</name>
+        </choice>
+        <choice id="en-US">
+          <name>English (US)</name>
+        </choice>
+        <choice id="es-ES">
+          <name>Spanish</name>
+        </choice>
+        <choice id="fr-FR">
+          <name>French</name>
+        </choice>
+        <choice id="gl-ES">
+          <name>Galician</name>
+        </choice>
+        <choice id="hu-HU">
+          <name>Hungarian</name>
+        </choice>
+        <choice id="it-IT">
+          <name>Italian</name>
+        </choice>
+        <choice id="nl-NL">
+          <name>Dutch</name>
+        </choice>
+        <choice id="ru-RU">
+          <name>Russian</name>
+        </choice>
+        <choice id="tt-RU">
+          <name>Tatar</name>
+        </choice>
+        <choice id="vi-VN">
+          <name>Vietnamese</name>
+        </choice>
+        <choice id="zh-CN">
+          <name>Chinese (China)</name>
+        </choice>
+        <choice id="zh-TW">
+          <name>Chinese (Taiwan)</name>
+        </choice>
+      </setting>
+      <setting id="CHARACTERSET" type="enum" default-value="utf8">
+        <name>Database encoding</name>
+        <description>Please select the encoding that is supported by your database. Note that MySQL in version earlier than 4 does not support "UTF-8 Unicode". This value will be used during the installation process and later for communication with the database. If it is changed during the reconfiguration and the database does not support the required translation, it may prevent the application from working correctly.</description>
+        <choice id="big5">
+          <name>Big5 Traditional Chinese</name>
+        </choice>
+        <choice id="dec8">
+          <name>DEC West European</name>
+        </choice>
+        <choice id="cp850">
+          <name>DOS West European</name>
+        </choice>
+        <choice id="hp8">
+          <name>HP West European</name>
+        </choice>
+        <choice id="koi8r">
+          <name>KOI8-R Relcom Russian</name>
+        </choice>
+        <choice id="latin1">
+          <name>cp1252 West European</name>
+        </choice>
+        <choice id="latin2">
+          <name>ISO 8859-2 Central European</name>
+        </choice>
+        <choice id="swe7">
+          <name>7bit Swedish</name>
+        </choice>
+        <choice id="ascii">
+          <name>US ASCII</name>
+        </choice>
+        <choice id="ujis">
+          <name>EUC-JP Japanese</name>
+        </choice>
+        <choice id="sjis">
+          <name>Shift-JIS Japanese</name>
+        </choice>
+        <choice id="hebrew">
+          <name>ISO 8859-8 Hebrew</name>
+        </choice>
+        <choice id="tis620">
+          <name>TIS620 Thai</name>
+        </choice>
+        <choice id="euckr">
+          <name>EUC-KR Korean</name>
+        </choice>
+        <choice id="koi8u">
+          <name>KOI8-U Ukrainian</name>
+        </choice>
+        <choice id="gb2312">
+          <name>GB2312 Simplified Chinese</name>
+        </choice>
+        <choice id="greek">
+          <name>ISO 8859-7 Greek</name>
+        </choice>
+        <choice id="cp1250">
+          <name>Windows Central European</name>
+        </choice>
+        <choice id="gbk">
+          <name>GBK Simplified Chinese</name>
+        </choice>
+        <choice id="latin5">
+          <name>ISO 8859-9 Turkish</name>
+        </choice>
+        <choice id="armscii8">
+          <name>ARMSCII-8 Armenian</name>
+        </choice>
+        <choice id="utf8">
+          <name>UTF-8 Unicode</name>
+        </choice>
+        <choice id="ucs2">
+          <name>UCS-2 Unicode</name>
+        </choice>
+        <choice id="cp866">
+          <name>DOS Russian</name>
+        </choice>
+        <choice id="keybcs2">
+          <name>DOS Kamenicky Czech-Slovak</name>
+        </choice>
+        <choice id="macce">
+          <name>Mac Central European</name>
+        </choice>
+        <choice id="macroman">
+          <name>Mac West European</name>
+        </choice>
+        <choice id="cp852">
+          <name>DOS Central European</name>
+        </choice>
+        <choice id="latin7">
+          <name>ISO 8859-13 Baltic</name>
+        </choice>
+        <choice id="cp1251">
+          <name>Windows Cyrillic</name>
+        </choice>
+        <choice id="cp1256">
+          <name>Windows Arabic</name>
+        </choice>
+        <choice id="cp1257">
+          <name>Windows Baltic</name>
+        </choice>
+        <choice id="binary">
+          <name>Binary pseudo charset</name>
+        </choice>
+        <choice id="geostd8">
+          <name>GEOSTD8 Georgian</name>
+        </choice>
+        <choice id="cp932">
+          <name>SJIS for Windows Japanese</name>
+        </choice>
+        <choice id="eucjpms">
+          <name>UJIS for Windows Japanese</name>
+        </choice>
+      </setting>
+    </group>
+    <group>
+      <name>First blog</name>
+      <setting id="blog_name" type="string" installation-only="true" default-value="Default blog">
+        <name>Name</name>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.3.0"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>iconv</php:extension>
+    <php:extension>session</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>ctype</php:extension>
+    <php:extension>gd</php:extension>
+    <php:safe-mode>false</php:safe-mode>
+    <php:file-uploads>true</php:file-uploads>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>lifetype</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.23</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping xmlns:php="http://apstandard.com/ns/1/php" url="/" path="htdocs">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="gallery">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+  
+</application>

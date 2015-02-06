@@ -1,0 +1,148 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>phpWiki</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.4.0rc1</version>
+  <release>14</release>
+  <homepage>http://phpwiki.sourceforge.net/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>phpwiki</default-prefix>
+
+  <summary>A WikiWikiWeb is a site where everyone can collaborate on the content.</summary>
+  <description>
+    PhpWiki is a WikiWikiWeb clone in PHP. A WikiWikiWeb is a site where anyone can edit the 
+    pages through an HTML form. Multiple storage backends, dynamic hyperlinking, themeable, 
+    scriptable by plugins, full authentication, ACL's.  
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+ <upgradable-from version="1.3.11" release="1"/>
+
+  <changelog>
+    <version version="1.4.0rc1" release="14">
+      <entry>1.4.0rc1 release</entry>
+    </version>
+    <version version="1.3.14" release="7">
+      <entry>Collaboration/Portals category removed</entry>
+    </version>
+    <version version="1.3.14" release="6">
+      <entry>Updated version</entry>
+    </version>
+    <version version="1.3.11" release="45">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>13683125</installed-size>
+
+  <categories>
+	  <category>Web/Wiki</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="title" type="string" default-value="phpWiki">
+        <name>Site name</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="nl-NL" >
+          <name>Dutch</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="it-IT" >
+          <name>Italian</name>
+        </choice>
+        <choice id="ja-JP" >
+          <name>Japanese</name>
+        </choice>
+        <choice id="es-ES" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="sv-SE" >
+          <name>Swedish</name>
+        </choice>
+      </setting>
+	  <setting id="debug" type="enum" default-value="0">
+		<name>Debug mode</name>
+		<choice id="0">
+			<name>Off</name>
+		</choice>
+		<choice id="1">
+			<name>On</name>
+		</choice>
+		<choice id="65">
+			<name>Verbose</name>
+		</choice>
+	   </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    
+    <php:version min="5.0"/>
+    <php:extension>mysql</php:extension>
+	<php:memory-limit>33943040</php:memory-limit>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>phpwiki</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="config">
+      <php:permissions writable="true"/>
+    </mapping>    
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>    
+  </mapping>
+
+</application>

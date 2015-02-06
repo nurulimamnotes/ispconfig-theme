@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">      
+    <head>
+        <!--Possible? Vars in lang= ?-->
+        <meta charset="<tmpl_var name="html_content_encoding">" />
+        <title><tmpl_var name="app_title"></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <link rel="shortcut icon" href="/themes/ispc-larry/images/favicon.ico" type="image/x-icon" />
+        <link href="themes/ispc-larry/styles.css" rel="stylesheet" media="screen" type="text/css" />
+        <link href="themes/ispc-larry/print.css" rel="stylesheet" media="print" type="text/css" />
+        <!--[if IE 9]><link href="themes/ispc-larry/iehacks.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if lte IE 8]><script type="text/javascript" src="themes/default/js/html5shiv.js"></script><![endif]-->
+        <!--[if lte IE 7]><link href="themes/ispc-larry/ie7hacks.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <link href="themes/ispc-larry/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="js/scrigo.js.php"></script>
+        <script type="text/javascript" src="js/uni-form/uni-form.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.ispconfigsearch.js"></script>
+        <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+        <script language="JavaScript" type="text/javascript">
+            jQuery(document).ready(function() {
+                loadInitContent();
+                
+                $("#pageForm").submit(function(e){
+                    //Prevent form submit: e.preventDefault() in lists
+                    if ($(".panel #Filter").length > 0) {
+                        e.preventDefault();
+                    }
+                });
+                
+                jQuery('.subsectiontoggle').live("click", function(){
+                    jQuery(this).children().toggleClass('showing').end().next().slideToggle();
+                });
+                
+                jQuery('#globalsearch').ispconfigSearch({
+                    dataSrc: '/dashboard/ajax_get_json.php?type=globalsearch',
+                    resultsLimit: '$ <tmpl_var name="globalsearch_resultslimit_of_txt"> % <tmpl_var name="globalsearch_resultslimit_results_txt">',
+                    noResultsText: '<tmpl_var name="globalsearch_noresults_text_txt">',
+                    noResultsLimit: '<tmpl_var name="globalsearch_noresults_limit_txt">',
+                    searchFieldWatermark: '<tmpl_var name="globalsearch_searchfield_watermark_txt">'
+                });
+                
+                jQuery('.ttip').tipsy({live: true, gravity: 'ne', html: true});
+                
+                tabChangeDiscard = '<tmpl_var name="tabchange_discard_enabled>';
+                tabChangeWarning = '<tmpl_var name="tabchange_warning_enabled>';
+                tabChangeWarningTxt = '<tmpl_var name="global_tabchange_warning_txt">';
+                tabChangeDiscardTxt = '<tmpl_var name="global_tabchange_discard_txt">';
+            });
+            
+            
+            jQuery(document).bind("change", function(event) {
+                var elName = event.target.localName;
+                if (jQuery(".panel #Filter").length > 0 && elName == 'select') {
+                    event.preventDefault();
+                    jQuery(".panel #Filter").trigger('click');
+                }
+                if(elName == 'select' || elName == 'input' || elName == 'textarea') {
+                    // set marker that something was changed
+                    pageFormChanged = true;
+                }
+            });
+            
+            jQuery(document).bind("keypress", function(event) {
+                //Use jQuery submit with keypress Enter in panel filterbar
+                if (event.which == '13' && jQuery(".panel #Filter").length > 0) {
+                    event.preventDefault();
+                    jQuery(".panel #Filter").trigger('click');
+                }
+                //Use jQuery submit with keypress Enter in forms
+                if (event.which == '13' && jQuery(".pnl_formsarea button.positive").length > 0 && event.target.localName != 'textarea') {
+                    event.preventDefault();
+                    jQuery(".pnl_formsarea button.positive:first").trigger('click');
+                }
+            });
+        </script>
+    </head>
+    <body>                  
+        <!-- begin: header -->
+        <header class="unselectable" unselectable="on">
+            <div id="top-line">
+                <div class="topleft">
+                    <!-- TODO: Add functionality for links to customer OR user support and more-->
+                    <a href="http://www.ispconfig.org/ispconfig-3/support/" target="_blank" title="ISPConfig Support">Support</a>
+                </div>
+                <div class="topright">
+                    <tmpl_if name="cpuser">
+                        <?php if(!isset($_SESSION["s"]["user"]["mailuser_id"])) { ?>
+                        <a href="#" onclick="capp('tools')" class="button-settings" title="<tmpl_var name="toolsarea_head_txt">">Settings <tmpl_var name="toolsarea_head_txt"></a>
+                        <?php } ; ?>
+                        <a href="#logout" onclick="loadContent('login/logout.php');" class="button-logout" title="Logout"><tmpl_var name="logout_txt"> <tmpl_var name="cpuser"></a>
+                    </tmpl_if>
+                </div>
+            </div>
+            <div id="middle-line">
+                <!-- begin: main navigation -->
+                <nav id="topNav"></nav>
+                <!-- end: main navigation -->
+                <hgroup>
+                    <h1><a href="#" onclick="capp('dashboard')" title="Dashboard"><img width="152" height="46" title="<tmpl_var name="app_title">" alt="<tmpl_var name="app_title">" src="<tmpl_var name='app_logo'>"></a></h1>
+                    <h2>hosting control panel</h2>
+                </hgroup>
+            </div>
+        </header>
+        <!-- end: header -->       
+        <!-- begin: #mainscreen -->
+        <section id="mainscreen">
+            <div id="mainscreen-left">
+                <tmpl_if name='usertype' op='==' value='normaluser'><input type="text" id="globalsearch" value="" /></tmpl_if>
+                <div id="sideNav-container" class="unselectable">
+                    <div id="sideNav" class="scroller">&nbsp;</div>
+                </div>
+            </div>
+            <div id="mainscreen-splitterv" class="splitter splitter-v"></div>
+            <div id="mainscreen-right">               
+                <!-- skiplink anchor: Content -->
+                <form method="post" action="" id="pageForm" name="pageForm" enctype="multipart/form-data" class="uniForm">
+                    <div id="pageContent"><!-- AJAX CONTENT --></div>
+                </form>
+                <!-- begin:footer -->
+                <footer>
+                    <div class="statusbar" id="message">
+                        <!-- TODO: CSS make div height flexible for help text display + #pageContent must be pressed upward by footer/div -->
+                        <p>Powered by <a href="<tmpl_var name="app_link">" target="_blank"><tmpl_var name="app_title"></a></p>
+                        <div class="loading" style="display: none;">Lädt…</div>
+                    </div>
+                </footer><!-- end: footer -->
+            </div>
+        </section><!-- end: #mainscreen -->
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>osTicket</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.7.0</version>
+  <release>2</release>
+  <homepage>http://www.osticket.com/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>osticket</default-prefix>
+
+  <summary>Support Ticket System.</summary>
+  <description>Support Ticket System. (v1.6.0)</description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPL</name>
+      <url>http://www.gnu.org/licenses/gpl.html</url>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="1.6.4" release="1"/>
+
+  <changelog>
+    <version version="1.6.r0" release="1">
+      <entry>osTicket v1.6.0</entry>
+    </version>
+    <version version="1.6.4" release="6">
+      <entry>Table prefix feature is declared in Metadata</entry>
+    </version>
+    <version version="1.6.4" release="5">
+      <entry>osTicket v1.6 RC4 is packaged</entry>
+    </version>
+    <version version="1.3.0" release="34">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="1" version="1.7.0">
+    	<entry>Initial Package</entry>
+    </version>
+    <version release="2" version="1.7.0">
+    	<entry>Change in upgrade.sql</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Helpdesk</label>
+    </entry>
+    <entry>
+      <path>/scp</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>326656</installed-size>
+
+  <categories>
+	  <category>Front office/Help Desk</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Website's preferences</name>
+      <setting id="title" type="string">
+        <name>Website name</name>
+      </setting>
+      <setting id="system_email" type="email">
+        <name>Default system email (e.g support@yourdomain.com) You can change or add more emails later.</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.4.0"/>
+    <php:extension>mysql</php:extension>
+	<php:register-globals>false</php:register-globals>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>osticket</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.4</db:server-min-version>
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="attachments">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+  
+
+</application>

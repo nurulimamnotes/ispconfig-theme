@@ -1,0 +1,148 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>CSLH</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>3.4.4</version>
+  <release>1</release>
+  <homepage>http://www.craftysyntax.com/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>cslh</default-prefix>
+  <summary>A multi-user, multi-operator, multi-department Live Help support chat system.</summary>
+  <description>A multi-user, multi-operator, multi-department Live Help support chat system that allows the     operators of the websites to monitor their visitors as they are browsing the site and proactively     open a chat session with that visitor. The modular structure and open source code allows for the     highest level of freedom in customization to fit your needs.</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot.jpg">
+    <description>Typical view</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/README_FILES/LICENSE.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="2.2" release="1"/>
+  <changelog>
+    <version release="1" version="3.4.4">
+    	<entry>Creating Initial Packaging</entry>
+    </version><version release="8" version="3.4.1">
+    	<entry>Minor changes</entry>
+    </version><version release="7" version="3.4.1">
+    	<entry>Changes inthe schema.sql file</entry>
+    </version><version release="6" version="3.4.1">
+    	<entry>C hanges in the tesitng scripts</entry>
+    </version><version release="5" version="3.4.1">
+    	<entry>Changes in selenium scripts</entry>
+    </version><version release="4" version="3.4.1">
+    	<entry>Changes in selenium scripts</entry>
+    </version><version release="3" version="3.4.1">
+    	<entry>changes in selenium scripts</entry>
+    </version><version release="2" version="3.4.1">
+    	<entry>Upgrade script</entry>
+    </version><version release="1" version="3.4.1">
+    	<entry>Initial Package</entry>
+    </version><version version="3.1.4" release="8">
+      <entry>Updated version</entry>
+    </version>
+    <version version="2.15.0" release="2">
+      <entry>Updated version</entry>
+    </version>
+    <version version="2.14.6" release="3">
+      <entry>Updated version</entry>
+    </version>
+    <version version="2.14.5" release="3">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+    <version version="2.12.2" release="23">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>3276800</installed-size>
+  <categories>
+	  <category>Front office/Help Desk</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="30" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="site_title" type="string" default-value="Live Help!">
+        <name>Site title</name>
+      </setting>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="nl-NL" >
+          <name>Dutch</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="en-UK" >
+          <name>English (UK)</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="el-EL" >
+          <name>Greek</name>
+        </choice>
+        <choice id="el-GR" >
+          <name>Greek (GR)</name>
+        </choice>
+        <choice id="it-IT" >
+          <name>Italian</name>
+        </choice>
+        <choice id="pl-PL" >
+          <name>Polish</name>
+        </choice>
+        <choice id="pt-BR" >
+          <name>Portuguese (Brazilian)</name>
+        </choice>
+        <choice id="pt-PT" >
+          <name>Portuguese (Portugal)</name>
+        </choice>
+        <choice id="es-ES" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="sv-SE" >
+          <name>Swedish</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:extension>mysql</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>cslh</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+  </mapping>
+</application>

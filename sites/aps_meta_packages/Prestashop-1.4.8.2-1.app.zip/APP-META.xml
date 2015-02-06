@@ -1,0 +1,133 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Prestashop</name>
+    <packager-uri>uuid:04b3876b-87f1-474a-8d7b-e7da1bf1c543</packager-uri>
+    <version>1.4.8.2</version>
+    <release>1</release>
+    <homepage>http://www.prestashop.com</homepage>
+    <package-homepage>http://www.glowtouch.com/</package-homepage>
+    <default-prefix>prestashop</default-prefix>
+    	
+    <summary>PrestaShop is the fastest, the lightest, and the most progressive Open Source e-commerce software.</summary>
+    <description>Download the No.1 Open-Source software in France and in Europe now, join more than 275,000 members in the Community, and experience the ease of use and management of this innovative solution, for a profitable e-commerce business !</description>
+    
+    
+    <icon path="images/prestashop_logo64.jpg" />
+    <screenshot path="images/Prestashop-Home.jpg">
+    	<description>Homepage</description>
+    </screenshot>
+    <screenshot path="images/prestashop - backoffice.jpg">
+    	<description>Backoffice page</description>
+    </screenshot>
+    <license must-accept="true">
+	       <text xml:lang="en-US">
+	       <name>GNU GENERAL PUBLIC LICENSE</name>
+	       <file>htdocs/docs/readme_en.txt</file>
+	       </text>
+	   </license>
+
+    <configuration-script-language>php</configuration-script-language>
+    <changelog>
+    	<version release="1" version="1.4.6.2">
+    		<entry>Init package</entry>
+    	</version>
+    	<version release="5" version="1.4.6.2">
+    		<entry>Bugs fixed in Windows platform</entry>
+    	</version>
+    	<version release="1" version="1.4.8.2">
+    		<entry>http://www.prestashop.com/en/press-releases</entry>
+    	</version>
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>/Backoffice/</path>
+    		<label>Backoffice Page</label>
+    		<description></description>
+    	</entry>
+    	<entry>
+    		<path>/index.php</path>
+    		<label>Index page</label>
+    	</entry>
+    </entry-points>
+    <installed-size>31506875</installed-size>
+    <categories>
+    	<category>Web/E-commerce</category>
+    </categories>
+    
+    <languages>
+    	<language>en</language>
+  	</languages>
+
+    <settings>
+		<group>
+			<name>Shop's preferences</name>
+			<setting id="SHOPNAME" type="string" default-value="Presta Shop" min-length="1">
+			<name>Shop name</name>
+			<error-message>Must contain at least one character.</error-message>
+		</setting>
+		<setting id="SHOPEMAIL" type="email" default-value="contact@prestashop.com" >
+			<name>Shop e-mail</name>
+			<error-message>Must contain a valid email.</error-message>		
+		</setting>
+		</group>
+		
+		
+		<group>
+			<name>Administrator's preferences</name>
+			
+		<setting id="FIRSTNAME" type="string" default-value="Admin" min-length="1">
+			<name>Administrator's firstname</name>
+			<error-message>Must contain at least one character.</error-message>
+		</setting>
+		<setting id="LASTNAME" type="string" default-value="A" min-length="1">
+			<name>Administrator's lastname</name>
+			<error-message>Must contain at least one character.</error-message>
+		</setting>
+		<setting id="ADMINEMAIL" type="email" default-value="admin@prestshop.com" >
+			<name>Administrator's mail</name>
+				<error-message>Must contain a valid email.</error-message>
+		</setting>
+		<setting id="ADMINPASSWORD" type="password" default-value="admin123" min-length="8">
+			<name>Administrator's password</name>
+			<error-message>Must contain at least eight character.</error-message>
+		</setting>
+		</group>
+
+    </settings>
+  
+	<requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+	<php:memory-limit>128000000</php:memory-limit>
+	<php:file-uploads>true</php:file-uploads>
+	<php:allow-url-fopen>true</php:allow-url-fopen>
+	<php:register-globals>false</php:register-globals>
+	<php:magic-quotes-gpc>false</php:magic-quotes-gpc>
+	<php:version min="5.0"/>
+	<php:extension>mysql</php:extension>
+	<php:extension>gd</php:extension>
+	<!--  <php:extension>mcrypt</php:extension>-->
+
+	<db:db>
+	  <db:id>main</db:id>
+	  <db:default-name>prestashop</db:default-name>
+	  <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+	  <db:server-type>mysql</db:server-type>
+	  <db:server-min-version>5.0</db:server-min-version>
+	</db:db>
+	</requirements>
+	
+	
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<mapping url="config"><php:permissions writable="true"/></mapping>
+		<mapping url="tools"><php:permissions writable="true"/>
+			<mapping url="smarty"><php:permissions writable="true"/>
+				<mapping url="compile"><php:permissions writable="true"/></mapping>
+				<mapping url="cache"><php:permissions writable="true"/></mapping>
+			</mapping>
+			<mapping url="smarty_v2"><php:permissions writable="true"/>
+				<mapping url="compile"><php:permissions writable="true"/></mapping>
+				<mapping url="cache"><php:permissions writable="true"/></mapping>
+			</mapping>
+		</mapping>
+		<mapping url="log"><php:permissions writable="true"/></mapping>
+		<mapping url="sitemap.xml"><php:permissions writable="true"/></mapping>
+	</mapping>
+</application>

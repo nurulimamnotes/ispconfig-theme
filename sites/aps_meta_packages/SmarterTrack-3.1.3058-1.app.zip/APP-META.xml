@@ -1,0 +1,127 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>SmarterTrack</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>3.1.3058</version>
+	<release>1</release>
+	<homepage>http://www.smartertools.com</homepage>
+	<package-homepage>http://swsoft.com</package-homepage>
+	<default-prefix>Portal</default-prefix>
+	<summary>
+		SmarterTrack 3.x is a robust support Help Desk, Ticket System, Live Chat, Cost Analysis, Data Mining, Knowledge Base, Reporting, and 
+		Analytics software application built upon  an Event-driven architecture and delivered through an elegant web interface for a complete Customer Service Software solution.
+	</summary>
+	<description>
+		SmarterTrack 3.x is a robust support Help Desk, Ticket System, Live Chat, Cost Analysis, Data Mining, Knowledge Base, Reporting, 
+		and Analytics software application through an elegant web interface. The Event-driven architecture available within SmarterTrack 
+		provides the flexibility to automate functions such as a Live Chat Invite System, dynamic SLA policies, and more through the use 
+		of Notifications and Actions. SmarterTrack's AJAX Web interface brings the performance of a desktop application to the Web. Run 
+		stand-alone or integrate with your existing customer database to provide a complete Customer Service Software solution.
+	</description>
+	<icon path="images/smartertracklogo.png" />
+	<screenshot path="images/smartertrack1.jpg">
+		<description>Portal Interface</description>
+	</screenshot>
+	<screenshot path="images/smartertrack2.jpg">
+		<description>Live Chat System</description>
+	</screenshot>
+	<screenshot path="images/smartertrack3.jpg">
+		<description>Portal Customization</description>
+	</screenshot>
+	<screenshot path="images/smartertrack4.jpg">
+		<description>Ticket Management</description>
+	</screenshot>
+	<screenshot path="images/smartertrack5.jpg">
+		<description>Reporting System</description>
+	</screenshot>
+	<license must-accept="true">
+		<text>
+			<name>SmarterTrack EULA</name>
+			<url>http://help.smartertools.com/smartertrack/v3/Topics/Misc/EULA.aspx</url>
+		</text>	   
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	<patchable-from version="3.0" release="1" />
+	<changelog>
+		<version version="3.1.3058" release="1">
+			<entry>ADDED: Canned replies can now be set as being for Tickets, Chats, or Both.</entry>
+			<entry>ADDED: New Event Action for KB Articles - Set Item Properties.</entry>
+			<entry>ADDED: New search option for Tickets that includes Active and Waiting tickets.</entry>
+			<entry>ADDED: New svcOrganization web service that allows querying of departments, groups, agents, and agent/group memberships.</entry>
+			<entry>ADDED: Tickets can now be pinned during the transfer process.</entry>
+			<entry>ADDED: Toolbar added to agent chat that supports Spell Check, Add Canned Reply, and HTML mode toggle.</entry>
+			<entry>CHANGED: More than one new ticket window can be opened at a time.</entry>
+			<entry>EFFICIENCY: KB and News sections enhanced for better performance.</entry>
+			<entry>EFFICIENCY: The order of loading files in browsers on the Customer Portal changed to make site appear faster.</entry>
+			<entry>FIXED: "Forgot login" email not using SmarterTrack Base URL setting in General Settings.</entry>
+			<entry>FIXED: "More Articles" link in KB in portal should not count private or draft items.</entry>
+			<entry>FIXED: "More Articles" link in KB section of portal changed to stand out a bit more and to more accurately reflect its purpose.</entry>
+			<entry>FIXED: "Verify email account" email not using SmarterTrack Base URL setting in General Settings.</entry>
+			<entry>FIXED: Additional security checks added to KB articles in private folders or marked as draft.</entry>
+			<entry>FIXED: Agent logout on MySQL throwing exception.</entry>
+			<entry>FIXED: Business hours failed checks if UTC adjusted time overlapped midnight.</entry>
+			<entry>FIXED: Changes to App_Theme\CSS\Portal were not being automatically detected as changed by SmarterTrack.</entry>
+			<entry>FIXED: Changing translation on Customer Portal not taking effect reliably.</entry>
+			<entry>FIXED: Chat messages occasionally being duplicated or lost over slow connections.</entry>
+			<entry>FIXED: Clicking on a row in Active Chat Groups or Active Ticket Groups will take you to the appropriate tab of the agent's Active Groups page.</entry>
+			<entry>FIXED: Content being cropped on KB Search results and News Summary view in the Customer Portal.</entry>
+			<entry>FIXED: Department page has a minor javascript error.</entry>
+			<entry>FIXED: KB and News Article content spaced incorrectly in portal.</entry>
+			<entry>FIXED: KB preview pane not indenting correctly in management interface.</entry>
+			<entry>FIXED: On connection failure, Management Interface stopped updating automatically.</entry>
+			<entry>FIXED: On Portal, user verification page not properly showing message on successful verification.</entry>
+			<entry>FIXED: Popular KB article lists were displaying items under private folders.</entry>
+			<entry>FIXED: Print icon should be available when viewing a ticket.</entry>
+			<entry>FIXED: Replying to a ticket and marking it waiting or closed should not immediately reassign it.</entry>
+			<entry>FIXED: Search indexing not working properly on MySQL.</entry>
+			<entry>FIXED: SetTicketCustomFields web service function was not working properly.</entry>
+			<entry>FIXED: Sound notifications on FireFox were making the main window steal focus and causing chat glitches.</entry>
+			<entry>FIXED: SQL Server 2000 "SET NULL" error on database upgrade.</entry>
+			<entry>FIXED: Ticket list would not show idle tickets longer than 90 days ago.</entry>
+			<entry>FIXED: Transfer not working when ticket viewed in Inline mode.</entry>
+			<entry>FIXED: Using "View this Ticket Online" to navigate to a deleted ticket now properly redirects to Customer Portal homepage.</entry>
+			<entry>FIXED: Verification email not correctly validating some users in certain time zones and in Entourage.</entry>
+			<entry>FIXED: When saving settings on Customer Portal settings page, custom links list clears out.</entry>
+		</version>
+	</changelog>
+	<entry-points>
+		<entry>
+			<path>/Default.aspx</path>
+			<label>Setup wizard and startup page</label>
+		</entry>
+	</entry-points>
+	<installed-size>29569844</installed-size>
+	<categories>
+		<category>Front Office/Help Desk</category>
+	</categories>
+	<languages>
+		<language>en</language>
+		<language>nl</language>
+	</languages>
+	<settings>
+		<group>
+			<name>Administrator's Preferences</name>
+			<setting id="admin_name" type="string" default-value="admin">
+				<name>Administrator's login</name>
+			</setting>
+			<setting id="admin_password" type="password" >
+				<name>Administrator's password</name>
+			</setting>
+		</group>
+	</settings>
+	<requirements xmlns:aspnet="http://apstandard.com/ns/1/aspnet" xmlns:db="http://apstandard.com/ns/1/db">
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>SmarterTrack</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>4.1</db:server-min-version>
+		</db:db>
+		<aspnet:version>2.0</aspnet:version>
+	</requirements>
+	<mapping url="/" path="htdocs" xmlns:aspnet="http://apstandard.com/ns/1/aspnet">
+		<aspnet:handler />
+		<mapping url="App_Data">
+			<aspnet:permissions writable="true"	/>
+		</mapping>
+    </mapping>
+</application>

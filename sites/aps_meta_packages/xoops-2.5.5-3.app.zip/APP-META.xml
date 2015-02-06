@@ -1,0 +1,147 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>xoops</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>2.5.5</version>
+	<release>3</release>
+	<homepage>http://www.xoops.org/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+	<default-prefix>xoops</default-prefix>
+
+	<summary>Open source content management system</summary>
+	<description>
+		XOOPS is a web application platform written in PHP for the MySQL database. Its object orientation makes it an ideal tool for developing small or large community websites, intra company and corporate portals, weblogs and much more.
+	</description>
+
+	<icon path="images/icon.png"/>
+
+	<screenshot path="images/app_screenshot_1.png">
+		<description>
+			This screen shows the administrator's control panel. Here you can manage all aspects of 
+			your Web site.
+		</description>
+	</screenshot>
+
+	<license must-accept="true">
+		<text>
+			<name>GNU LESSER GENERAL PUBLIC LICENSE Version 2.1</name>
+			<file>htdocs/class/mail/phpmailer/LICENSE</file>
+		</text>
+	</license>
+
+	<configuration-script-language>php</configuration-script-language>
+	<upgradable-from release="6" version="2.3.1b"/>
+
+	<changelog>
+		<version version="2.3.2b" release="6">
+			<entry>Fix issue with CAPTCHA refererer</entry>
+		</version>
+		<version version="2.3.2b" release="5">
+			<entry>Initial package version</entry>
+		</version>
+		<version version="2.2" release="49">
+			<entry>Initial package version</entry>
+		</version>
+		<version version="2.2" release="42">
+			<entry>Fix bug 120756</entry>
+		</version>
+		<version release="1" version="2.5.5">
+			<entry>Initial package</entry>
+		</version>
+		<version release="2" version="2.5.5">
+			<entry>Changes in config file</entry>
+		</version>
+		<version release="3" version="2.5.5">
+			<entry>Changes in test</entry>
+		</version>
+	</changelog>
+
+	<entry-points>
+		<entry>
+			<path>/</path>
+			<label>Application entry</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>13092587</installed-size>
+
+	<categories>
+		<category>Web/Content management</category>
+	</categories>
+
+	<languages>
+		<language>en</language>
+	</languages>
+
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+				<name>Administrator's login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password" min-length="1" >
+				<name>Password</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Administrator's email</name>
+			</setting>
+		</group>
+
+		<group>
+			<name>Language preferences</name>
+			<setting id="locale" type="enum" default-value="en-US">
+				<name>Interface language</name>
+				<choice id="en-US" >
+					<name>English</name>
+				</choice>
+			</setting>
+		</group>
+
+	</settings>
+
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="4.3.0"/>
+		<php:extension>mysql</php:extension>
+
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>xoops</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>3.23</db:server-min-version>
+		</db:db>
+	</requirements>
+
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+
+		<mapping url="uploads">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="cache">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="templates_c">
+			<php:permissions writable="true"/>
+		</mapping>
+
+		<mapping url="xoops_data">
+			<php:permissions writable="true"/>
+			<mapping url="caches">
+				<php:permissions writable="true"/>
+				<mapping url="xoops_cache">
+					<php:permissions writable="true"/>
+				</mapping>
+				<mapping url="smarty_cache">
+					<php:permissions writable="true"/>
+				</mapping>
+				<mapping url="smarty_compile">
+					<php:permissions writable="true"/>
+				</mapping>
+			</mapping>
+		</mapping>
+	</mapping>
+
+</application>

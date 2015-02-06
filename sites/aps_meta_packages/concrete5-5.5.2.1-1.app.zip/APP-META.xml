@@ -1,0 +1,116 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>concrete5</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>5.5.2.1</version>
+  <release>1</release>
+  <homepage>http://www.concrete5.org/</homepage>
+  <package-homepage>http://www.glowtouch.com</package-homepage>
+  <default-prefix>concrete5</default-prefix>
+  <summary>concrete5 makes running a website easy.</summary>
+  <summary xml:lang="en-US">concrete5 makes running a website easy.</summary>
+  <summary xml:lang="de-DE">concrete5 macht den Betrieb einer Homepage leicht.</summary>
+  <summary xml:lang="fr-FR">concrete5 transforme l'exploitation d'un site Web en un jeu d'enfant.</summary>
+  <summary xml:lang="pl-PL">concrete5 ułatwia zarządzanie stroną internetową.</summary>
+  <summary xml:lang="es-ES">concrete5 facilita la puesta en marcha de una web.</summary>
+  <description>Building and running a website are two very different challenges. Certainly, one person may wear both hats, but the process of launching a great website is far different from running a great website over time. concrete5 lets you do both: build and run great websites. Most other content management systems are built for one side of the equation or the other. Go to any page in your site, and an editing toolbar gives you all the controls you need to update your website. No intimidating manuals, no complicated administration interfaces - just point and click.</description>
+  <description xml:lang="en-US">Building and running a website are two very different challenges. Certainly, one person may wear both hats, but the process of launching a great website is far different from running a great website over time. concrete5 lets you do both: build and run great websites. Most other content management systems are built for one side of the equation or the other. Go to any page in your site, and an editing toolbar gives you all the controls you need to update your website. No intimidating manuals, no complicated administration interfaces - just point and click.</description>
+  <description xml:lang="de-DE">Die Erstellung und der Betrieb einer Homepage sind zwei grundverschiedene Herausforderungen. Natürlich kann sich eine Person um beides kümmern, aber die Aufgabe, eine erfolgreiche Homepage aufzusetzen, unterscheidet sich vollständig von der Aufgabe, eine Homepage dauerhaft erfolgreich zu betreiben. Mit concrete5 können Sie beides erledigen: Homepages erfolgreich aufsetzen und erfolgreich betreiben. Die meisten anderen Content Management Systeme sind entweder auf die eine oder auf die andere Aufgabe ausgerichtet. Wenn Sie eine Seite Ihrer Homepage laden, erscheint eine Bearbeitungsleiste, die Ihnen alle Möglichkeiten bietet, die zur Aktualisierung der Homepage erforderlich sind. Keine einschüchternden Handbücher, keine komplizierten Administrationsoberflächen ‒  einfach nur auswählen und anklicken!</description>
+  <description xml:lang="fr-FR">La construction et l'exploitation d'un site Web sont deux défis tout à fait différents. Certes, une personne peut endosser les deux rôles, mais le processus de lancement d'un bon site Web est très différent de l'exploitation d'un bon site Web dans la durée. concrete5 vous permet de réaliser les deux tâches : construire et exploiter de bons sites Web. La majorité des autres système de gestion des contenus sont construits soit pour un côté de l'équation, soit pour l'autre. Allez sur n'importe quelle page de votre site et une barre d'outils d'édition vous met à disposition toutes les commandes dont vous avez besoin pour mettre à jour votre site Web. Pas de manuels intimidants, pas d'interfaces d'administration compliquées : il vous suffit de pointer et de cliquer.</description>
+  <description xml:lang="pl-PL">Stworzenie strony i zarządzanie nią to dwa bardzo różne wyzwania. Oczywiście jedna osoba może zajmować się obydwoma zadaniami, lecz proces tworzenia świetnej strony bardzo się różni od procesu zarządzania stroną przez długi czas tak, aby pozostała ona równie świetna. concrete5 umożliwia Ci obydwie te rzeczy: tworzenie świetnych stron i zarządzanie nimi. Większość innych systemów zarządzania treścią uwzględnia najczęściej tylko jeden z tych dwóch aspektów. Gdy przejdziesz na dowolną stronę swojej witryny, pasek edycji udostępni Ci wszystkie narzędzia potrzebne Ci do zaktualizowania swojej strony. Bez wielkich instrukcji, bez skomplikowanych interfejsów zarządzania - po prostu naprowadź kursor i kliknij.</description>
+  <description xml:lang="es-ES">Diseñar y utilizar un sitio web son dos retos muy distintos. Hay gente que, sin duda, puede hacer ambas cosas a la vez. Pero el proceso de lanzar un gran sitio web es muy diferente al de gestionar un gran sitio web a lo largo del tiempo. concrete5 le permite hacer ambas cosas: construir y lanzar webs de gran calidad. La mayoría de los grandes gestores de contenido se diseñan para una cosa o para la otra. Visite cualquier página de su web y una herramienta de edición le ofrecerá los controles que necesita para actualizarla. Sin manuales intimidatorios ni programas complejos de administración; sólo hay que señalar con el ratón y hacer clic.</description>
+   
+  <icon path="images/logo.png"/>
+  <screenshot path="images/screen.png">
+    <description>Administration Screen.</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/LICENSE.TXT</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+  	<version release="1" version="5.5.2.1">
+    	<entry>Better update checking for new versions of concrete5. Attribute types have friendlier names (Checkbox instead of Boolean, etc...) . When a fixed footprint isn’t set, the image cropper in the file manager now defaults to the full size of the image.Improved performance of intelligent search</entry>
+    </version><version version="5.4.1" release="5">
+      <entry>DIR_REL corrected in case of installation in site root</entry>
+    </version>
+  	<version version="5.4.1" release="4">
+      <entry>mbstring requirement corrected</entry>
+    </version>
+  	<version version="5.4.1" release="3">
+      <entry>Database prefix deleted from sql files</entry>
+    </version>
+  	<version version="5.4.1" release="2">
+      <entry>Translations included</entry>
+    </version>
+    <version version="5.4.1" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+		<entry>
+			<path>/index.php/dashboard</path>
+			<label>Administrative interface</label>
+		</entry>
+	</entry-points>
+  <installed-size>15122432</installed-size>
+  <categories>
+    <category>Web/Content management</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+  <group>
+      <name>Administrator's preferences</name>
+      <setting id="title" type="string" min-length="1">
+        <name>Site Name</name>
+      </setting>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+       <setting id="admin_email" type="email" >
+        <name>email</name>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+    </group>
+  
+  </settings>
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.2"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>curl</php:extension>
+    <php:extension>mcrypt</php:extension>
+    <php:extension>openssl</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>Concrete5</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+	<mapping url="config">
+      <php:permissions writable="true"/>
+      <mapping url="site.php">
+      <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+    <mapping url="packages">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="files">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

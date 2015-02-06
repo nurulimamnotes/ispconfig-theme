@@ -1,0 +1,119 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Kajona4</name>
+    <packager-uri>1934dc03-52c2-4af1-92e0-645bbdf49936</packager-uri>
+    <version>4.3</version>
+    <release>1</release>
+    <homepage>http://www.kajona.de</homepage>
+    <package-homepage>http://www.kajona.de</package-homepage>
+    <default-prefix>kajona4</default-prefix>
+    <summary>Kajona - Open Source Content Management System, build on PHP and a SQL database. </summary>
+    <description>Kajona is a content management framework based on PHP5 and published as an open source project under the LGPL license.
+        Due to the modular design the system can be extended and adapted individually quite quick and easy. With a multiplicity of modules such as news, downloads, picture galleries or an integrated search, complex internet portals and web applications can be realized with Kajona within shortest time. The flexible and granular right management secures the individual access options of the users. A special value is the usability of Kajona. The end user - in addition, the system administrator - is able to use Kajona without a long training period. The portal editor offers the possibility of working with site-contents directly in the later layout (inside-editing). By the support of modern technologies such as UTF-8, XML, RSS, AJAX and a template-engine, Kajona can cover the usual requirements to a web page with ease. Further information, downloads and support around Kajona can be found on http://www.kajona.de.
+    </description>
+    <icon path="images/headerlogo.png" />
+    <screenshot path="images/image1.png">
+    	<description>The backend</description>
+    </screenshot>
+    <screenshot path="images/image2.png">
+    	<description>The sample-portal</description>
+    </screenshot>
+    <screenshot path="images/image3.png">
+    	<description>Editing page-content directly in the layout</description>
+    </screenshot>
+    <license must-accept="false">
+    	<text xml:lang="en-US">
+    		<name>GNU LGPL v 2.1</name>
+    		<file>htdocs/files/downloads/licence_lgpl.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <changelog>
+    	<version release="1" version="4.3">
+    		<entry>Initial packaging</entry>
+    	</version>
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>/index.php?admin=1</path>
+    		<label>Administraton</label>
+    		<description>The Kajona administration backend</description>
+    	</entry>
+		<entry>
+    		<path>/index.php</path>
+    		<label>Portal</label>
+    		<description>The portal of the new website</description>
+    	</entry>
+    </entry-points>
+    <installed-size>22416907</installed-size>
+    <categories>
+    	<category>Web/Content management</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    	<language>de</language>
+    	<language>pt</language>
+    	<language>bg</language>
+    	<language>ru</language>
+    	<language>sv</language>
+    </languages>
+    <settings>
+        <group>
+            <name>Administrator's preferences</name>
+		    <setting id="admin_name" type="string" default-value="admin" min-length="3" max-length="254" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+		        <name>Administrator's login</name>
+		        <description>Please enter a username between 3 and 20 characters in length.</description>
+		        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+		    </setting>
+		    <setting id="admin_password" type="password" min-length="4" max-length="254" >
+		        <name>Password</name>
+		        <description>Please enter a password between 4 and 30 characters in length.</description>
+		    </setting>
+		    <setting id="admin_email" type="email">
+		        <name>eMail adress</name>
+		    </setting>
+        </group>  
+    </settings>
+    <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    	<db:db>
+    		<db:id>main</db:id>
+    		<db:default-name>kajona</db:default-name>
+    		<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+    		<db:server-type>mysql</db:server-type>
+    		<db:server-min-version>4.1</db:server-min-version>
+    	</db:db>
+    	<php:extension>mysqli</php:extension>
+    	<php:extension>mbstring</php:extension>
+    	<php:extension>gd</php:extension>
+    	<php:extension>xml</php:extension>
+    	<php:version min="5.3"/>
+    </requirements>
+    
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+	    <php:handler><php:extension>php</php:extension></php:handler>
+	        
+	    <mapping url="project">
+	       <mapping url="system">
+	           <mapping url="config"><php:permissions writable="true"/></mapping>
+	       </mapping>
+           <mapping url="dbdumps"><php:permissions writable="true"/></mapping>
+           <mapping url="log"><php:permissions writable="true"/></mapping>
+           <mapping url="temp"><php:permissions writable="true"/></mapping>
+	    </mapping>
+
+        <mapping url="files">
+            <mapping url="cache"><php:permissions writable="true"/></mapping>
+            <mapping url="images"><php:permissions writable="true"/></mapping>
+            <mapping url="public"><php:permissions writable="true"/></mapping>
+            <mapping url="downloads"><php:permissions writable="true"/></mapping>
+        </mapping>
+
+	    <mapping url="core">
+	       <php:permissions writable="true"/>
+	    </mapping>
+
+        <mapping url="templates">
+            <mapping url="default"><php:permissions writable="true"/></mapping>
+        </mapping>
+	   
+	</mapping>
+</application>

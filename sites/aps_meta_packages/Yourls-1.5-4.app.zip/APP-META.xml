@@ -1,0 +1,84 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Yourls</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+    <version>1.5</version>
+    <release>4</release>
+    <homepage>http://yourls.org/</homepage>
+    <package-homepage>http://www.softec-internet.com/</package-homepage>
+    <default-prefix>yourls</default-prefix>
+    <summary>YOURLS is a small set of PHP scripts that will allow you to run your own URL shortening service (à la TinyURL). You can make it private or public, you can pick custom keyword URLs, it comes with its own API.</summary>
+    <summary xml:lang="de-DE">YOURLS ist ein kleines PHP-Skript-Set, mit dessen Hilfe Sie Ihren eigenen URL-Shortening-Service (à la TinyURL) betreiben können. Sie können dies privat oder öffentlich tun, Sie können Custom Keyword URL's auswählen; das Programm verfügt über ein eigenes API.</summary>
+  	<summary xml:lang="en-US">YOURLS is a small set of PHP scripts that will allow you to run your own URL shortening service (à la TinyURL). You can make it private or public, you can pick custom keyword URLs, it comes with its own API.</summary>
+  	<summary xml:lang="fr-FR">YOURLS est un petit set de scripts PHP, qui vous permet de gérer votre propre réducteur d'URL (à la TinyURL). Vous pouvez le gérer de façon privée et publique et choisir une URL avec des mots-clé personnalisés ; le programme dispose de son propre API.</summary>
+  	<summary xml:lang="es-ES">YOURLS es un pequeño conjunto de scripts en PHP que le permitirá disponer de su propio servicio de abreviación de URL (a lo TinyURL). Puede hacerlo público o mantenerlo privado, también puede usar URL personalizadas con palabras clave e incorpora su propio API.</summary>
+  	<summary xml:lang="pl-PL">YOURLS to niewielki zbiór skryptów PHP, które umożliwią Ci oferowanie usługi skracania URL (à la TinyURL). Możesz zdecydować, czy ma ona być prywatna czy publiczna, możesz wybrać URL z indywidualnymi słowami kluczowymi, ma swoje własne API.</summary>
+    <description>YOURLS is a small set of PHP scripts that will allow you to run your own URL shortening service (à la TinyURL). You can make it private or public, you can pick custom keyword URLs, it comes with its own API.</description>
+    <description xml:lang="de-DE">YOURLS ist ein kleines PHP-Skript-Set, mit dessen Hilfe Sie Ihren eigenen URL-Shortening-Service (à la TinyURL) betreiben können. Sie können dies privat oder öffentlich tun, Sie können Custom Keyword URL's auswählen; das Programm verfügt über ein eigenes API.</description>
+  	<description xml:lang="en-US">YOURLS is a small set of PHP scripts that will allow you to run your own URL shortening service (à la TinyURL). You can make it private or public, you can pick custom keyword URLs, it comes with its own API.</description>
+  	<description xml:lang="fr-FR">YOURLS est un petit set de scripts PHP, qui vous permet de gérer votre propre réducteur d'URL (à la TinyURL). Vous pouvez le gérer de façon privée et publique et choisir une URL avec des mots-clé personnalisés ; le programme dispose de son propre API.</description>
+  	<description xml:lang="es-ES">YOURLS es un pequeño conjunto de scripts en PHP que le permitirá disponer de su propio servicio de abreviación de URL (a lo TinyURL). Puede hacerlo público o mantenerlo privado, también puede usar URL personalizadas con palabras clave e incorpora su propio API.</description>
+  	<description xml:lang="pl-PL">YOURLS to niewielki zbiór skryptów PHP, które umożliwią Ci oferowanie usługi skracania URL (à la TinyURL). Możesz zdecydować, czy ma ona być prywatna czy publiczna, możesz wybrać URL z indywidualnymi słowami kluczowymi, ma swoje własne API.</description>
+    	
+    <icon path="images/yourls.png" />
+    <screenshot path="images/yourls_screenshot.png">
+    <description>Screenshot</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<name>GPL</name>
+    		<file>htdocs/GPL.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <changelog>
+    	<version release="4" version="1.5">
+    		<entry>APS tag 'package-homepage' fixed</entry>
+    	</version>
+    	<version release="3" version="1.5">
+    		<entry>GPL license file</entry>
+    	</version>
+    	<version release="2" version="1.5">
+    		<entry>Translations</entry>
+    	</version>
+    	<version release="1" version="1.5">
+    		<entry>Initial package version</entry>
+    	</version>
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>/admin/</path>
+    		<label>Management Area</label>
+    	</entry>
+    </entry-points>
+    <installed-size>2161512</installed-size>
+    <categories>
+    	<category>Web/Tools</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    </languages>
+    <settings>
+    	<setting id="admin_name" type="string">
+    	<name>User</name>
+    	</setting>
+    	<setting id="admin_password" type="password">
+    	<name>Password</name>
+    	</setting>
+    </settings>
+    <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    	<apache:htaccess />
+    	<db:db>
+    		<db:id>main</db:id>
+    		<db:default-name>yourls</db:default-name>
+    		<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+    		<db:server-type>mysql</db:server-type>
+    		<db:server-min-version>4.1</db:server-min-version>
+    	</db:db>
+    	<php:version min="4.3"/>
+    </requirements>
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    </mapping>
+</application>

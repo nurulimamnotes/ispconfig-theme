@@ -1,0 +1,446 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>4images</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.7.11</version>
+  <release>1</release>
+  <homepage>http://www.4homepages.de/</homepage>
+  <package-homepage>http://www.4homepages.de/</package-homepage>
+  <default-prefix>/4images/</default-prefix>
+  <summary>4images is a powerful web-based image gallery management system.</summary>
+  <description>4images is a powerful web-based image gallery management system. Features include comment system, user registration and management, password protected administration area with browser-based upload and HTML templates for page layout and design. By using the integrated template system the design and layout can be customized easily. 4images is multilingual: an external language file can be used for translation in other languages. 4images can also be used for other media types like video, audio or PDF. More features are: RSS feeds, search engine, automatic thumbnail generation, extensive user administration, upload function for users, showing IPTC and EXIF data of images, rating of images, spam protection, protection against hotlinking, newsletter function, e-cards, integrated database backup function, etc.</description>
+  <icon path="images/icon.png"/>
+  
+  <screenshot path="images/front_01.jpg">
+    <description>Front End Home</description>
+  </screenshot> 
+  
+  <screenshot path="images/front_02.jpg">
+    <description>Details</description>
+  </screenshot> 
+  
+  <screenshot path="images/front_03.jpg">
+    <description>Top Images</description>
+    <description xml:lang="de-DE">Top Bilder</description>
+  </screenshot> 
+  
+  <screenshot path="images/front_04.jpg">
+    <description>Search Images</description>
+    <description xml:lang="de-DE">Bilder suchen</description>
+  </screenshot>     
+  
+  <screenshot path="images/home.jpg">
+    <description>Control Panel Home</description>
+  </screenshot>
+  
+  <screenshot path="images/settings.jpg">
+    <description>Configuration</description>
+    <description xml:lang="de-DE">Konfiguration</description>
+  </screenshot>
+  
+  <screenshot path="images/categories.jpg">
+    <description>Edit Categories</description>
+    <description xml:lang="de-DE">Kategorien bearbeiten</description>
+  </screenshot>
+  
+  <screenshot path="images/add_user.jpg">
+    <description>Add Users</description>
+    <description xml:lang="de-DE">User hinzufügen</description>
+  </screenshot>
+  
+  <screenshot path="images/thumbnailer.jpg">
+    <description>Auto-Thumbnailer</description>
+  </screenshot>
+ 
+  <license must-accept="true">
+    <text>
+      <name>License Agreement for 4images</name>
+      <file>htdocs/docs/Licence.english.txt</file>
+    </text>
+    <text xml:lang="de-DE">
+      <name>Lizenzbestimmungen für 4images</name>
+      <file>htdocs/docs/Licence.deutsch.txt</file>
+    </text>
+  </license>
+ 
+  <configuration-script-language>php</configuration-script-language>
+  
+  <changelog>
+    <version version="1.7.11" release="1">
+      <entry>Some minor improvements, bugfixes and security fixes</entry>
+      <entry>Changed database default settings from TYPE to ENGINE</entry>
+	  <entry>Template with 960px width used as default</entry>
+    </version>  
+
+    <version version="1.7.10" release="1">
+      <entry>Some improvements, bugfixes, security fixes and minor changes</entry>
+      <entry>Improved password encryption using salted hashes</entry>
+	  <entry>New Version of Rebuild Search Index Plugin</entry>  	  
+      <entry>Added settings to define type of indexing of fields</entry>
+    </version>  
+	
+    <version version="1.7.6" release="1">
+      <entry>New features and fixed bugs</entry>
+      <entry>Improved download of big files (like videos)</entry>
+      <entry>Updated URL for ICQ status image</entry>  	  
+      <entry>Added success message after posting a comment</entry>
+      <entry>Disabled download button in lightbox if there are no download permissions for all images in the lightbox</entry>
+      <entry>"Delete lightbox" link is now hidden if the lightbox is empty</entry>
+      <entry>Added possibility to sort by filenames in CP image search form</entry>  
+      <entry>Added onchange javascript for "per page" dropdown</entry>                      
+    </version>
+	
+    <version version="1.7.5" release="6">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+	
+    <version version="1.7.1" release="31">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  
+  <entry-points>
+    <entry>
+      <path>/admin/index.php</path>
+      <label>Administrative interface</label>
+    </entry>
+    <entry>
+      <path>/index.php</path>
+      <label>Gallery</label>
+    </entry>	
+  </entry-points>
+  
+  <installed-size>5033984</installed-size>
+  
+  <categories>
+    <category>Web/Gallery</category>
+  </categories>
+  
+  <languages>
+    <language>de</language>
+  </languages>
+  
+  <settings>
+    <group>
+	  <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin">
+        <name>Administrator's name</name>
+      </setting>
+      
+	  <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      
+	  <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+	
+    <group>
+      <name>Language</name>
+      <setting id="locale" type="enum" default-value="en-US">
+	  
+        <name>Language</name>
+        <name xml:lang="de-DE">Sprache</name>
+		
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+		
+        <choice id="de-DE" >
+          <name>Deutsch</name>
+        </choice>
+		
+      </setting>
+    </group>
+	
+    <group>
+      <name>Caching</name>
+      <setting id="cache_enable" type="enum" default-value="0">
+        <name>Enable cache</name>
+        <name xml:lang="de-DE">Aktivieren das Caching System</name>
+        <description>Enables the caching system. Default value is NO.</description>
+        <description xml:lang="de-DE">Aktiviert das Caching System. Der Standard-Wert ist NEIN.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="cache_lifetime" type="integer" default-value="3600">
+        <name>Cache lifetime [s]</name>
+        <name xml:lang="de-DE">Die Lebensdauer der Dateien im Zwischenspeicher [s]</name>
+        <description>The lifetime of the cache files in seconds. Default value is 3600 (1 hour).</description>
+        <description xml:lang="de-DE">Die Lebensdauer der Dateien im Zwischenspeicher in Sekunden.       Der Standard-Wert ist 3600 (1 Stunde).</description>
+      </setting>
+      <setting id="cache_page_index" type="enum" default-value="1">
+        <name>Cache "index" page</name>
+        <name xml:lang="de-DE">Aktivieren das Zwischenspeichern von "index" Inhalten</name>
+        <description>Enables the caching of the contents generated by index.php. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktiviert das Zwischenspeichern von Inhalten generiert von index.php. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="cache_page_categories" type="enum" default-value="1">
+        <name>Cache "categories" page</name>
+        <name xml:lang="de-DE">Aktivieren das Zwischenspeichern von "categories" Inhalten</name>
+        <description>Enables the caching of the contents generated by categories.php. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktiviert das Zwischenspeichern von Inhalten generiert von categories.php. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="cache_page_top" type="enum" default-value="1">
+        <name>Cache "top" page</name>
+        <name xml:lang="de-DE">Aktivieren das Zwischenspeichern von "top" Inhalten</name>
+        <description>Enables the caching of the contents generated by top.php. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktiviert das Zwischenspeichern von Inhalten generiert von top.php. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="cache_page_rss" type="enum" default-value="1">
+        <name>Cache "rss" page</name>
+        <name xml:lang="de-DE">Aktivieren das Zwischenspeichern von "rss" Inhalten</name>
+        <description>Enables the caching of the contents generated by rss.php. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktiviert das Zwischenspeichern von Inhalten generiert von rss.php. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+    </group>
+	
+    <group>
+      <name>CAPTCHA</name>
+      <setting id="captcha_enable" type="enum" default-value="1">
+        <name>Enable captcha</name>
+        <name xml:lang="de-DE">Aktivieren das CAPTCHA System</name>
+        <description>Enables the CAPTCHA system. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktiviert das CAPTCHA System. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_enable_comments" type="enum" default-value="1">
+        <name>Enable the CAPTCHA system for the comments form</name>
+        <name xml:lang="de-DE">Aktivieren das CAPTCHA System für das Kommentar-Formular</name>
+        <description>Enables the CAPTCHA system for the comments form. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktivieren das CAPTCHA System für das Kommentar-Formular. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_enable_upload" type="enum" default-value="1">
+        <name>Enable the CAPTCHA system for the upload form</name>
+        <name xml:lang="de-DE">Aktivieren das CAPTCHA System für das Upload-Formularr</name>
+        <description>Enables the CAPTCHA system for the upload form. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktivieren das CAPTCHA System für das Upload-Formular. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_enable_registration" type="enum" default-value="1">
+        <name>Enable the CAPTCHA system for the registration form</name>
+        <name xml:lang="de-DE">Aktivieren das CAPTCHA System für das Registrierungs-Formular</name>
+        <description>Enables the CAPTCHA system for the registration form. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktivieren das CAPTCHA System für das Registrierungs-Formular. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_enable_postcards" type="enum" default-value="1">
+        <name>Enable the CAPTCHA system for the e-cards form</name>
+        <name xml:lang="de-DE">Aktivieren das CAPTCHA System für das E-Cards-Formular</name>
+        <description>Enables the CAPTCHA system for the e-cards form. Default value is YES.</description>
+        <description xml:lang="de-DE">Aktivieren das CAPTCHA System für das E-Cards-Formular. Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_chars" type="string" default-value="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" min-length="1">
+        <name>Seed letters</name>
+        <name xml:lang="de-DE">Zeichen</name>
+        <description>A list of letters which will be used for the randomly generated CAPTCHA strings. Default value is "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".</description>
+        <description xml:lang="de-DE">Eine Liste mit Zeichen und/oder Ziffern die für       die zufällig generierten Zeichenfolgen verwendet werden. Der Standard-Wert ist "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".</description>
+      </setting>
+      <setting id="captcha_length" type="integer" default-value="5">
+        <name>Letters of the CAPTCHA strings</name>
+        <name xml:lang="de-DE">Anzahl der Zeichen</name>
+        <description>Number of letters of the CAPTCHA strings. Default value is 5.</description>
+        <description xml:lang="de-DE">Anzahl der Zeichen und/oder Ziffern der zufällig generierten Zeichenfolgen. Der Standard-Wert ist 5.</description>
+      </setting>
+      <setting id="captcha_wordfile" type="enum" default-value="0">
+        <name>Use wordfile</name>
+        <name xml:lang="de-DE">Wort aus der Datei "wordlist"</name>
+        <description>If this option is set to YES, a word from "captcha/wordlist.txt" is used. Default value is NO.</description>
+        <description xml:lang="de-DE">Ist diese Anweisung auf JA gesetzt, wird anstatt einer generierten Zeichenfolge ein zufällig ausgewähltes Wort aus der Datei "captcha/wordlist.txt" verwendet. Der Standard-Wert ist NEIN.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_width" type="integer" default-value="200">
+        <name>Image width [pixel]</name>
+        <name xml:lang="de-DE">Breite des Bilder [Pixel]</name>
+        <description>Width of the CAPTCHA image in pixel. Default value is 200.</description>
+        <description xml:lang="de-DE">Breite des angezeigte CAPTCHA Bilder in Pixel. Der Standard-Wert ist 200.</description>
+      </setting>
+      <setting id="captcha_height" type="integer" default-value="70">
+        <name>Image height [pixel]</name>
+        <name xml:lang="de-DE">Höhe des Bilder [Pixel]</name>
+        <description>Height of the CAPTCHA image in pixel. Default value is 200.</description>
+        <description xml:lang="de-DE">Höhe des angezeigte CAPTCHA Bilder in Pixel. Der Standard-Wert ist 200.</description>
+      </setting>
+      <setting id="captcha_text_color" type="string" default-value="#000000" regex="#{1}[0-9a-fA-F]{6}">
+        <name>Text color</name>
+        <name xml:lang="de-DE">Farbangabe</name>
+        <description>Color (Hex) of the CAPTCHA text. Default value is "#000000" (black).</description>
+        <description xml:lang="de-DE">Farbangabe (Hex) des angezeigte CAPTCHA Textes. Der Standard-Wert ist "#000000" (schwarz).</description>
+      </setting>
+      <setting id="captcha_text_size" type="integer" default-value="25">
+        <name>Text size</name>
+        <name xml:lang="de-DE">Schriftgröße</name>
+        <description>Size of the CAPTCHA text. Default value is 25.</description>
+        <description xml:lang="de-DE">Schriftgröße des angezeigten CAPTCHA Textes. Der Standard-Wert ist 25.</description>
+      </setting>
+      <setting id="captcha_text_transparency" type="integer" default-value="60">
+        <name>Text transparency</name>
+        <name xml:lang="de-DE">Transparenz</name>
+        <description>Transparency of the CAPTCHA text. Default value is 60.</description>
+        <description xml:lang="de-DE">Transparenz-Wert für den CAPTCHA Text. Der Standard-Wert ist 60.</description>
+      </setting>
+      <setting id="captcha_filter_text" type="enum" default-value="1">
+        <name>Filter text</name>
+        <name xml:lang="de-DE">Filterung des Textes</name>
+        <description>If this option is set to YES, the CAPTCHA text will       be filtered ("obscured"). Default value is YES.</description>
+        <description xml:lang="de-DE">Ein Wert von JA bewirkt einen Filterung des angezeigten       CAPTCHA Textes ("Verschleierung"). Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+      <setting id="captcha_filter_bg" type="enum" default-value="1">
+        <name>Filter background</name>
+        <name xml:lang="de-DE">Filterung des Hintergrund</name>
+        <description>If this option is set to YES, the CAPTCHA background image will be filtered ("obscured"). Default value is YES.</description>
+        <description xml:lang="de-DE">Ein Wert von JA bewirkt einen Filterung des Hintergrund des CAPTCHA Bildes ("Verschleierung"). Der Standard-Wert ist JA.</description>
+        <choice id="1">
+          <name>YES</name>
+          <name xml:lang="de-DE">JA</name>
+        </choice>
+        <choice id="0">
+          <name>NO</name>
+          <name xml:lang="de-DE">NEIN</name>
+        </choice>
+      </setting>
+    </group>
+	
+  </settings>
+  
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.5"/>
+    <php:extension>mysql</php:extension>
+    <php:safe-mode>false</php:safe-mode>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>4images</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.23</db:server-min-version>
+    </db:db>
+  </requirements>
+  
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="cache">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="data">
+      <php:permissions writable="true"/>
+      <mapping url="database">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="thumbnails">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="tmp_media">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="media">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="tmp_thumbnails">
+        <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+    <mapping url="templates">
+      <php:permissions writable="true"/>
+      <mapping url="default">
+        <php:permissions writable="true"/>
+        <mapping url="media">
+          <php:permissions writable="true"/>
+        </mapping>
+      </mapping>
+    </mapping>
+  </mapping>
+  
+</application>

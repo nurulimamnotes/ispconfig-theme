@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<application xmlns="http://apstandard.com/ns/1">
+	<name>dotProject</name>
+	<packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+	<version>2.1.7</version>
+	<release>5</release>
+	<homepage>http://www.dotproject.net/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+	<default-prefix>/dotproject/</default-prefix>
+	  
+  
+  <summary>Open source system for managing projects</summary>
+  <summary xml:lang="de-DE">Open-Source-System zur Projektverwaltung...</summary>
+  <summary xml:lang="fr-FR">Système libre pour la gestion de projets...</summary>
+  <summary xml:lang="es-ES">Sistema de código abierto para gestionar proyectos...</summary>
+  <summary xml:lang="pl-PL">dotproject to system open source do zarzadzania projektami...</summary>
+  <summary xml:lang="en-US">Open source system for managing projects</summary>
+  
+  <description>Features include: user management; email based trouble ticket system, (integrated voxel.net's ticketsmith); client/company management; project listings; hierarchical task list; file repository; contact list; calendar; discussion forum; resource based permissions.</description>
+  <description xml:lang="en-US">Features include: user management; email based trouble ticket system, (integrated voxel.net's ticketsmith); client/company management; project listings; hierarchical task list; file repository; contact list; calendar; discussion forum; resource based permissions.</description>
+  <description xml:lang="de-DE">Features: Benutzerverwaltung; E-Mail-basiertes Trouble-Ticket-System (Ticketsmith von voxel.net integriert); Kunden- und Unternehmensverwaltung; hierarchische Aufgabenlisten; 
+Datei-Repository; Kontaktlisten; Kalenderfunktion; Diskussionsforum; resourcenbasiertes Berechtigungssystem.
+</description>
+  <description xml:lang="fr-FR">Fonctionnalités : gestion des utilisateurs ; système de tickets d'anomalie par courrier électronique (dotProject intègre le système Ticketsmith de voxel dot net) ; 
+gestion des clients / de la société ; liste des projets ; liste hiérarchique des tâches ; référentiel de fichiers ; liste des contacts ; calendrier ; forum de discussion ; permissions en fonction des ressources.
+</description>
+  <description xml:lang="es-ES">Características incluidas: gestión de usuarios; sistema de registro de problemas (trouble ticket) basado en correo electrónico (voxel.net's ticketsmith integrado); 
+gestión de cliente/empresa; listados de proyectos; lista de tareas jerárquica; recopilación de archivos; lista de contactos; calendario; foro de debate; autorizaciones de usuarios basadas en recursos.
+</description>
+  <description xml:lang="pl-PL">dotproject to system open source do zarzadzania projektami. Oto niektóre z cech: zarzadzanie uzytkownikami; e-mailowy system sledzenia problemów, (zintegrowany ticketsmith voxel.net); 
+zarzadzanie klientami/firma; listy projektów; hierarchiczna lista zadan; repozytorium plików; lista kontaktów; kalendarz; forum dyskusyjne; zezwolenia w oparciu o zasoby. </description>	<icon path="images/icon.png"/>
+	<screenshot path="images/screenshot.jpg">
+		<description>Typical view</description>
+	</screenshot>
+	<license must-accept="true">
+		<text>
+			<name>GNU GENERAL PUBLIC LICENSE</name>
+			<file>htdocs/LICENSEandCOPYING</file>
+		</text>
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	<upgradable-from release="1" version="2.1.2"/>
+	<changelog>
+		<version release="1" version="2.1.5">
+			<entry>Version 2.1.5</entry>
+		</version>
+		<version release="2" version="2.1.5">
+			<entry>Bug fixed in  re-configuration script</entry>
+		</version>
+		<version release="1" version="2.1.7">
+			<entry>Initial Package</entry>
+		</version>
+		<version release="3" version="2.1.7">
+			<entry>Changes in Upgrade.sql</entry>
+		</version>
+		<version release="4" version="2.1.7">
+			<entry>Minor changes</entry>
+		</version>
+		<version release="5" version="2.1.7">
+			<entry>Changes in test script</entry>
+		</version>
+	</changelog>
+	<installed-size>10248879</installed-size>
+	<categories>
+		<category>Collaboration/Project management</category>
+	</categories>
+	  <languages>
+		<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+	  </languages>
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_name" type="string" default-value="admin">
+				<name>Administrator's name</name>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Password</name>
+			</setting>
+		</group>
+	</settings>
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="4.1"/>
+		<php:extension>mysql</php:extension>
+		<php:extension>gd</php:extension>
+		<php:safe-mode>false</php:safe-mode>
+		<php:register-globals>false</php:register-globals>
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>dotproject</db:default-name>
+			<db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>3.23.51</db:server-min-version>
+		</db:db>
+	</requirements>
+	<mapping xmlns:php="http://apstandard.com/ns/1/php" url="/" path="htdocs">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+
+		<mapping url="files">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="locales/en">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="session">
+			<php:permissions writable="true"/>
+		</mapping>
+	</mapping>
+
+</application>

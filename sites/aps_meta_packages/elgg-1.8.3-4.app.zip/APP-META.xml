@@ -1,0 +1,188 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>elgg</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.8.3</version>
+  <release>4</release>
+  <homepage>http://www.elgg.org</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>elgg</default-prefix>
+
+  <summary>Elgg is an award-winning open source social networking engine that provides a robust framework for building all kinds of social environments, from a campus-wide social network for your university, school or college or an internal collaborative platform for your organization to a brand-building communications tool for your company and its clients.</summary>
+  <summary xml:lang="de-DE">Elgg ist eine preisgekrönte Open-Source-Software zum Erstellen von Webgemeinschaften mit einer robusten Grundstruktur, auf welcher Webgemeinschaften aller Art aufgebaut werden können - von einem Campus-weiten sozialen Netzwerk für Ihre Universität, Schule oder Hochschule, oder einer internen Plattform für Zusammenarbeit für Ihren Betrieb bis zu markenbildenden Kommunikations-Tools für Ihr Unternehmen und seine Kunden.</summary>
+  <summary xml:lang="en-US">Elgg is an award-winning open source social networking engine that provides a robust framework for building all kinds of social environments, from a campus-wide social network for your university, school or college or an internal collaborative platform for your organization to a brand-building communications tool for your company and its clients.</summary>
+  <summary xml:lang="fr-FR">Elgg est un logiciel Open-Source primé, qui permet de créer des communautés en ligne avec une structure de base robuste, sur laquelle peut reposer tout type de communautés - du réseau social limité au campus d'une université, d'une école ou d'une grande école, à une plateforme de collaboration interne pour votre entreprise, en passant par des outils de communication faisant l'image de marque de votre entreprise et ses clients.</summary>
+  <summary xml:lang="es-ES">Elgg es un galardonado motor de red social de código abierto que proporciona un marco estable crear todo tipo de entornos sociales, desde una red social para un campus universitario, escuela o instituto hasta una plataforma colaborativa interna para su entidad, pasando por una herramienta de comunicación para su empresa y sus clientes.</summary>
+  <summary xml:lang="pl-PL">Elgg to uhonorowany nagrodami program do tworzenia sieci społecznych, zapewniający solidną ramę, na której można budować środowiska społecznościowe wszelkiego rodzaju, od sieci społecznej obejmującej cały kampus dla Twojego uniwersytetu, szkoły czy kolegium, przez wewnętrzną platformę umożliwiającą współpracę w Twojej organizjacji po narzędzie komunikacji do budowania marki dla Twojej firmy i jej klientów.</summary>
+  
+  <description>
+		Elgg is an award-winning open source social networking engine that provides a robust framework for building all kinds of social environments, from a campus-wide social network for your university, school or college or an internal collaborative platform for your organization to a brand-building communications tool for your company and its clients.
+  </description>
+  <description xml:lang="de-DE">
+		Elgg ist eine preisgekrönte Open-Source-Software zum Erstellen von Webgemeinschaften mit einer robusten Grundstruktur, auf welcher Webgemeinschaften aller Art aufgebaut werden können - von einem Campus-weiten sozialen Netzwerk für Ihre Universität, Schule oder Hochschule, oder einer internen Plattform für Zusammenarbeit für Ihren Betrieb bis zu markenbildenden Kommunikations-Tools für Ihr Unternehmen und seine Kunden.
+  </description>
+  <description xml:lang="en-US">
+		Elgg is an award-winning open source social networking engine that provides a robust framework for building all kinds of social environments, from a campus-wide social network for your university, school or college or an internal collaborative platform for your organization to a brand-building communications tool for your company and its clients.
+  </description>
+  
+  <description xml:lang="fr-FR">
+		Elgg est un logiciel Open-Source primé, qui permet de créer des communautés en ligne avec une structure de base robuste, sur laquelle peut reposer tout type de communautés - du réseau social limité au campus d'une université, d'une école ou d'une grande école, à une plateforme de collaboration interne pour votre entreprise, en passant par des outils de communication faisant l'image de marque de votre entreprise et ses clients.
+  </description>
+  <description xml:lang="es-ES">
+		Elgg es un galardonado motor de red social de código abierto que proporciona un marco estable crear todo tipo de entornos sociales, desde una red social para un campus universitario, escuela o instituto hasta una plataforma colaborativa interna para su entidad, pasando por una herramienta de comunicación para su empresa y sus clientes.
+  </description>
+  <description xml:lang="pl-PL">
+		Elgg to uhonorowany nagrodami program do tworzenia sieci społecznych, zapewniający solidną ramę, na której można budować środowiska społecznościowe wszelkiego rodzaju, od sieci społecznej obejmującej cały kampus dla Twojego uniwersytetu, szkoły czy kolegium, przez wewnętrzną platformę umożliwiającą współpracę w Twojej organizjacji po narzędzie komunikacji do budowania marki dla Twojej firmy i jej klientów.
+  </description>
+  
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/screenshot.png">
+    <description>Screenshot of elgg.</description>
+    <description xml:lang="de-DE">
+		Screenshot of elgg.
+	</description>
+    <description xml:lang="en-US">
+    	Screenshot of elgg.
+	</description>
+    <description xml:lang="fr-FR">
+    	Screenshot of elgg.
+	</description>
+    <description xml:lang="es-ES">
+      Screenshot of elgg.
+	</description>
+    <description xml:lang="pl-PL">
+    	Screenshot of elgg.
+	</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="de-DE">
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="en-US">
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="fr-FR">
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="es-ES">
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="pl-PL">
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="1.7.7"/>
+  <changelog>
+  	<version release="4" version="1.8.3">
+  		<entry>Version 1.8.3</entry>
+  	</version>
+  </changelog>
+  <entry-points>
+  	<entry>
+  		<path>/</path>
+  		<label>index page</label>
+  		<description></description>
+  	</entry>
+  </entry-points>
+
+
+  <installed-size>14057472</installed-size>
+
+  <categories>
+    <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+    <language>de</language>
+    <language>fr</language>
+    <language>es</language>
+    <language>pl</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Preferences</name>
+      <name xml:lang="de-DE">Preferences</name>
+      <name xml:lang="en-US">Preferences</name>
+      <name xml:lang="fr-FR">Preferences</name>
+      <name xml:lang="es-ES">Preferences</name>
+      <name xml:lang="pl-PL">Preferences</name>
+      <setting id="admin" type="string" default-value="Admin" regex="^[A-Za-z]{1}[0-9a-zA-Z_\-]{0,32}">
+        <name>Admin Username</name>
+        <name xml:lang="de-DE">Admin Username</name>
+      	<name xml:lang="en-US">Admin Username</name>
+       	<name xml:lang="fr-FR">Admin Username</name>
+      	<name xml:lang="es-ES">Admin Username</name>
+      	<name xml:lang="pl-PL">Admin Username</name>
+        <error-message>Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="de-DE">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="en-US">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="fr-FR">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="es-ES">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="pl-PL">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      	<name xml:lang="de-DE">Password</name>
+      	<name xml:lang="en-US">Password</name>
+      	<name xml:lang="fr-FR">Password</name>
+      	<name xml:lang="es-ES">Password</name>
+      	<name xml:lang="pl-PL">Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Admin's email</name>
+		<name xml:lang="de-DE">Admin's email</name>
+		<name xml:lang="en-US">Admin's email</name>
+		<name xml:lang="fr-FR">Admin's email</name>
+		<name xml:lang="es-ES">Admin's email</name>
+		<name xml:lang="pl-PL">Admin's email</name>
+      </setting>
+      <setting id="site_name" type="string" default-value="new site">
+      	<name>Site Name</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="5.2"/>
+    <php:extension>mysql</php:extension>
+    <php:memory-limit>20000000</php:memory-limit>
+    <php:safe-mode>false</php:safe-mode>
+	<apache:required-module>mod_rewrite</apache:required-module>
+	<apache:htaccess/>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>elgg</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler><php:permissions writable="true"/>
+        
+    <mapping url="data">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="engine">
+    	<php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

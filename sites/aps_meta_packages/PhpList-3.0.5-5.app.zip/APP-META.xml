@@ -1,0 +1,263 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>PhpList</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+    <version>3.0.5</version>
+    <release>5</release>
+    <homepage>http://www.phplist.com/</homepage>
+    <package-homepage>http://www.sofcloudit.com</package-homepage>
+    <default-prefix>/phplist/</default-prefix>
+   	<summary>phplist is the world's most popular open source email campaign manager.</summary>
+    <summary xml:lang="de-DE">Bei phplist handelt es sich um den weltweit bekanntesten auf Open Source basierenden E-Mail-Kampagnen-Manager.</summary>
+    <summary xml:lang="en-CA">phplist is the world's most popular open source email campaign manager.</summary>
+    <summary xml:lang="en-GB">phplist is the world's most popular open source email campaign manager.</summary>
+    <summary xml:lang="en-US">phplist is the world's most popular open source email campaign manager.</summary>
+    <summary xml:lang="es-ES">phplist es el gestor de campañas de correo electrónico de código abierto más popular.</summary>
+    <summary xml:lang="fr-FR">phplist est le gestionnaire de campagne e-mail open source le plus populaire au monde.</summary>
+    <summary xml:lang="pl-PL">phplist to najpopularniejszy na świecie system do zarządzania kampaniami e-mail, oparty na otwartym dostępie do kodu źródłowego.</summary>
+    <description xml:lang="de-DE">phplist kann kostenlos heruntergeladen, installiert und verwendet werden. Außerdem lässt es sich auf jeder Website integrieren. Pro Monat wird es mehr als 10.000-mal heruntergeladen.</description>
+	<description xml:lang="en-CA">phplist is free to download, install and use, and is easy to integrate with any website. phplist is downloaded more than 10,000 times per month.</description>
+	<description xml:lang="en-GB">phplist is free to download, install and use, and is easy to integrate with any website. phplist is downloaded more than 10,000 times per month.</description>
+	<description xml:lang="en-US">phplist is free to download, install and use, and is easy to integrate with any website. phplist is downloaded more than 10,000 times per month.</description>
+	<description xml:lang="es-ES">phplist puede descargarse, instalarse y usarse gratuitamente y se integra con facilidad en cualquier sitio web. phplist es descargado más de 10.000 veces al mes.</description>
+	<description xml:lang="fr-FR">phplist est un logiciel disponible en téléchargement, installation et utilisation gratuite, facile à intégrer à tout site Web. phplist est téléchargé plus de 10 000 fois par mois.</description>
+	<description xml:lang="pl-PL">System phplist można pobrać, zainstalować i wykorzystywać bezpłatnie. W prosty sposób można go zintegrować z każdą witryną. Co miesiąc system phplist pobierany jest ponad 10 000 razy.</description>
+	<icon path="images/phplist-logo.png"/>
+    <screenshot path="images/Screenshot.PNG">
+    	<description>Main page.</description>
+    </screenshot>
+     <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+  </license>
+    <configuration-script-language>php</configuration-script-language>
+    <upgradable-from release="6" version="2.10.17"/>
+
+    <changelog>
+     	<version release="5" version="3.0.5">
+    		<entry>Upgrade bug fixed</entry>
+    	</version>
+<version release="1" version="3.0.5">
+    		<entry>New 3.0.5 PhpList version</entry>
+    	</version>
+<version release="3" version="3.0.2">
+    		<entry>New 3.0.2 PhpList version</entry>
+    	</version>
+<version release="4" version="2.10.19">
+    		<entry>Bugfix and security update</entry>
+    	</version>
+<version release="2" version="2.10.19">
+    		<entry>Installation bugs fixed and new validation and languages added</entry>
+    	</version>
+<version release="1" version="2.10.19">
+    		<entry>New 2.10.19 PhpList version</entry>
+    	</version>
+	<version release="2" version="2.10.17">
+    		<entry>File for licence included</entry>
+    	</version>
+    <version release="1" version="2.10.17">
+    		<entry>PHP version changed</entry>
+    	</version>
+    	<version release="0" version="2.10.17">
+    		<entry>Init Package</entry>
+    	</version>
+    	<version release="4" version="2.10.17">
+    		<entry>Icon resized.
+</entry>
+    	</version>
+    	<version release="5" version="2.10.17">
+    		<entry>schema.sql bug fixed.</entry>
+    	</version>
+    	<version release="6" version="2.10.17">
+    		<entry>Selenium tests updated</entry>
+    	</version>
+    </changelog>
+    
+    <entry-points>
+    	<entry>
+    		<path>/admin/</path>
+    		<label>Administrative Access</label>
+    		<description>Administrative Access</description>
+    	</entry>
+    	<entry>
+    		<path>/</path>
+    		<label>Newsletter Lists</label>
+    		<description>Newsletter Lists</description>
+	</entry>
+    </entry-points>
+    <installed-size>8005678</installed-size>
+    <categories>
+    	<category>Front office/On-line Marketing</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+    </languages>
+<settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting default-value="admin" id="ADMIN_NAME" type="string">
+        <name>Administrator's login</name>
+        <name xml:lang="de-DE">Administratoranmeldung</name>
+        <name xml:lang="en-CA">Administrator's login</name>
+        <name xml:lang="en-GB">Administrator's login</name>
+        <name xml:lang="en-US">Administrator's login</name>
+        <name xml:lang="es-ES">Inicio de sesión del administrador</name>
+        <name xml:lang="fr-FR">Mot de passe administrateur</name>
+        <name xml:lang="pl-PL">Logowanie administratora</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="de-DE">Der von Ihnen eingegebene Text muss mit einem Buchstaben beginnen, gefolgt von Zahlen, Buchstaben, Unterstreichungen oder Bindestrichen.</error-message>
+        <error-message xml:lang="en-CA">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-GB">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="es-ES">Asegúrese de que el texto que ha introducido comienza con una letra y continúa con números, letras, guiones bajos o guiones.</error-message>
+        <error-message xml:lang="fr-FR">Vérifiez que le texte saisi commence par une lettre et contient uniquement des chiffres, lettres, caractères de soulignement ou traits-d'union.</error-message>
+        <error-message xml:lang="pl-PL">Upewnij się, że wprowadzony tekst rozpoczyna się od litery, po której następują cyfry, litery, znaki podkreślenia lub myślniki.</error-message>
+      </setting>
+      <setting id="ADMIN_PASSWORD" type="password">
+       	<name>Password</name>
+        <name xml:lang="de-DE">Passwort</name>
+        <name xml:lang="en-CA">Password</name>
+        <name xml:lang="en-GB">Password</name>
+        <name xml:lang="en-US">Password</name>
+        <name xml:lang="es-ES">Contraseña</name>
+        <name xml:lang="fr-FR">Mot de passe</name>
+        <name xml:lang="pl-PL">Hasło</name>
+      </setting>
+     <setting default-value="PHPlist" id="TITLE" type="string">
+        <name>Installation name</name>
+        <name xml:lang="de-DE">Installationsname</name>
+		<name xml:lang="en-CA">Installation Name</name>
+		<name xml:lang="en-GB">Installation Name</name>
+		<name xml:lang="en-US">Installation Name</name>
+		<name xml:lang="es-ES">Nombre de la instalación</name>
+		<name xml:lang="fr-FR">Nom d'installation</name>
+		<name xml:lang="pl-PL">Nazwa instalacji</name>
+        <description>if you use multiple installations of PHPlist you can set this to something to identify this one. it will be prepended to email report subjects</description>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting default-value="en-US" id="LOCALE" type="enum">
+        <name>Interface language</name>
+        <name xml:lang="de-DE">Benutzeroberflächensprache</name>
+        <name xml:lang="en-CA">Interface language</name>
+        <name xml:lang="en-GB">Interface language</name>
+        <name xml:lang="en-US">Interface language</name>
+        <name xml:lang="es-ES">Idioma de la interfaz</name>
+        <name xml:lang="fr-FR">Langue de l'interface</name>
+        <name xml:lang="pl-PL">Język interfejsu</name>
+        <name xml:lang="it-IT">Lingua dell'interfaccia utente</name>
+        <name xml:lang="es-MX">Idioma de la interfaz del usuario</name>        
+        <choice id="af-ZA">
+<name>Afrikaans</name>
+</choice>
+        <choice id="hr-HR">
+<name>Hrvatski</name>
+</choice>
+        <choice id="cs-CZ">
+<name>čeština</name>
+</choice>
+        <choice id="da-DK">
+<name>Dansk</name>
+</choice>
+        <choice id="nl-NL">
+<name>Nederlands</name>
+</choice>
+        <choice id="en-US">
+<name>English USA</name>
+</choice>
+        <choice id="en-GB">
+<name>English</name>
+</choice>
+        <choice id="et-EE">
+<name>Eesti</name>
+</choice>
+        <choice id="fr-FR">
+<name>français</name>
+</choice>
+        <choice id="de-DE">
+<name>Deutsch</name>
+</choice>
+        <choice id="el-GR">
+<name>Ελληνικά</name>
+</choice>
+        <choice id="he-IL">
+<name>עברית</name>
+</choice>
+        <choice id="it-IT">
+<name>italiano</name>
+</choice>
+        <choice id="ja-JP">
+<name>日本語</name>
+</choice>
+        <choice id="la-VA">
+<name>Latin</name>
+</choice>
+        <choice id="no-NO">
+<name>Norsk</name>
+</choice>
+        <choice id="pl-PL">
+<name>polski</name>
+</choice>
+        <choice id="pt-BR">
+<name>português brasileiro</name>
+</choice>
+        <choice id="pt-PT">
+<name>português</name>
+</choice>
+        <choice id="ro-RO">
+<name>Română</name>
+</choice>
+        <choice id="ru-RU">
+<name>Pyccĸий</name>
+</choice>
+        <choice id="sl-SL">
+<name>Slovenščina</name>
+</choice>
+        <choice id="es-ES">
+<name>Español</name>
+</choice>
+        <choice id="sv-SE">
+<name>svenska</name>
+</choice>
+        <choice id="de-CH">
+<name>Swissgerman</name>
+</choice>
+        <choice id="zh-CN">
+<name>中文</name>
+</choice>
+        <choice id="tr-TR">
+<name>Tϋrkçe</name>
+</choice>
+        <choice id="uk-UA">
+<name>Українська</name>
+</choice>
+      </setting>
+    </group>
+  </settings>
+    <requirements>
+	    <php:magic-quotes-gpc xmlns:php="http://apstandard.com/ns/1/php">true</php:magic-quotes-gpc>
+	    <php:version min="4.3" xmlns:php="http://apstandard.com/ns/1/php"/>
+	    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+	    <php:extension xmlns:php="http://apstandard.com/ns/1/php">imap</php:extension>
+	    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+	      <db:id>main</db:id>
+	      <db:default-name>phplist</db:default-name>
+	      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+	      <db:server-type>mysql</db:server-type>
+	      <db:server-min-version>4.0</db:server-min-version>
+	    </db:db>
+  	</requirements>
+
+  	<mapping path="htdocs" url="/">
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:extension>php</php:extension>
+    </php:handler>
+    
+  </mapping>
+</application>

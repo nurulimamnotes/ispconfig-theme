@@ -1,0 +1,139 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>bbclone</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>0.61</version>
+  <release>4</release>
+  <homepage>http://bbclone.de/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>bbclone</default-prefix>
+
+  <summary>Feature rich counter</summary>
+  <description>  BBclone is a web counter written in PHP. It looks similar to Big Brother Webstats.
+  But it is not *just* a counter : BBClone gives a detailed view of the visitors of your web site.
+  It does it by displaying the n-th last users (and the data they provided, like their IP, browser and so on) that went
+  of the web site, not just showing a number of visitors. This is very handy
+  for slow to medium traffic web site webmasters that want to see who visit
+  their sites, what browser people use, where do they come from etc. Please
+  note that it's very design, BBclone is not useful for high traffic websites
+  where you only need agregated data.
+ </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/bbcl.JPG">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/doc/copying.txt</file>
+    </text>
+  </license>  
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="31" version="0.48"/>
+
+  <changelog>
+    <version release="3" version="0.61">
+  		<entry>Test script patches</entry>
+  	</version><version release="2" version="0.61">
+    	<entry>Minor changes</entry>
+    </version>
+    <version release="1" version="0.61">
+    	<entry>GeoIP detection IPv4 language code change to utf-8  Update: New detections for Browsers, OS and Robots. With thanks to all forum users who submitted updates
+Update: Added new domains as there where some new additions (.asia .cat .pro .tel etc)
+</entry>
+    </version><version release="1" version="0.6.0">
+    	<entry>    Update: Upgrade from GPL version 2 to version 3 for better protection
+    NEW: Moved extension/country look-up into plug-in mechanism
+    NEW: Over-right feature for version detections (use text:version)
+    NEW: Now load-time can be displayed (configurable) on the bottom of each page
+    NEW: Moved layout to CSS, meaning some configuration parts (like font sizes etc.) are now moved into CSS
+    Update: Time-format is now translated and not system specific (especially within time-stats)
+    Update: Title bar is now more flexible, by default a fixed language specific text
+    Change: Selected statistics page is now highlighted in navigation menu
+    Change: The &quot;who is&quot; option, now configurable and from detailed view for IP numbers only
+    Update: New detections for Browsers, OS and Robots. With thanks to all forum users who submitted updates
+    Update: Added new domains as there where some new additions (.asia .cat .pro .tel etc)
+</entry>
+    </version><version release="1" version="0.5.0">
+    	<entry>    Add support to export the detailed stats to XML
+    Add experimental SQL backend
+    Add menu for development features
+</entry>
+    </version><version release="1" version="0.4.9">
+    	<entry>    add many robots and many browser
+    add favorite weekend mod from the forums
+    add regression suite to evaluate correctness of expressions
+    add most of the mobile browsers out there
+    add some rare user agents like the PSP
+    add color in detailed stats for access of the local ip-adress to spot yourself in the log
+    Updated ip2ext database
+</entry>
+    </version><version release="1" version="0.4.8b">
+    	<entry>    Fixed wrong reference usage in io.php
+    Fixed broken referrers once they contain multibyte characters
+    Replaced broken cyrillic detection with mb_detect_encoding
+    Replaced Javascript redirector with conventional Javascript generated links
+    Changed processing order in lib/marker.php to block unwanted things as early as possible
+    Changed behaviour of $BBC_IGNORE_REFER to truly ignore visitors/bots with unwanted referrers
+    Added Korean and Thai translation
+    Updated Greek and Spanish translation
+    Updated a lot of broken detection patterns
+    Updated W3C validator url
+    Updated ip2ext database
+</entry>
+    </version><version release="1" version="0.48.a">
+    	<entry>    Fixed uninitialised variable with $BBC_IGNORE_AGENT set to &quot;1&quot; (Dave)
+    Fixed language not recognised in Opera if multiple languages are set (Olliver)
+    Fixed implicit usage of multibyte function in lib/referrer.php (Olliver)
+    Don't list www*. aliases of multiple frontends as separated referrers (Olliver)
+    Open external links in new window again (Nanna Ellegaard)
+    Added &quot;noscript&quot; for javascript links to address &quot;Cynthia Says&quot; warnings (Olliver)
+    Extended javascript code to create anchor tags as well (Olliver)
+    Updated both Ukrainian and Russian translation (Leppa)
+    Doc updates (Olliver)
+</entry>
+    </version><version version="0.48" release="31">
+      <entry>Initial package version</entry>
+    </version>
+  	<version release="4" version="0.61">
+  		<entry>Changes in the script</entry>
+  	</version>
+  </changelog>
+
+  <installed-size>2759680</installed-size>
+
+  <categories>
+	  <category>Web/Analytics</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" >
+    <php:version min="4.0.0"/>
+
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="var">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+        
+
+</application>

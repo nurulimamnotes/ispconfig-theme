@@ -1,0 +1,134 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>serendipity</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.1.2</version>
+  <release>31</release>
+  <homepage>http://s9y.org/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>serendipity</default-prefix>
+
+  <summary>PHP-powered, flexible blogging/CMS application</summary>
+  <description>
+    Serendipity is a PHP-powered weblog application which gives the user an easy way to 
+    maintain an online diary, weblog or even a complete homepage. Serendipity provides 
+    the following features: WYSIWYG and HTML editing; built-in, powerful media database; 
+    multiple authors, configurable permission/usergroup system; threaded comments, nested 
+    categories, post to multiple categories; multiple languages; online plugin and template 
+    repository for easy plug-and-play installation; plugins: category-based sub-blogs, 
+    podcasting, RSS planet/aggregator, static pages; robust spam blocking; one-click upgrading 
+    from any version; can be embedded into existing Web pages; native import from earlier blog 
+    applications (WordPress, Textpattern, Moveable Type, bblog).
+  </description>
+
+  <icon path="images/icon.png"/>
+  
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      This screen shows the administrative panel. Here you can add and manage entries in your blog.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>BSD License</name>
+      <file>htdocs/docs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="1.1.2" release="31">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>14586000</installed-size>
+
+  <categories>
+	  <category>Web/Blog</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_p_name" type="string" default-value="admin" min-length="1">
+        <name>Administrator's name</name>
+      </setting>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email" >
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Blog's preferences</name>
+      <setting id="title" type="string" min-length="1">
+        <name>Blog's name</name>
+      </setting>
+      <setting id="blog_descr" type="string" min-length="1">
+        <name>Blog's description</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.1.2"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>serendipity</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.23.2</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="templates_c">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="archives">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="uploads">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+        
+
+</application>

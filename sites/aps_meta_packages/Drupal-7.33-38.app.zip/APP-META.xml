@@ -1,0 +1,510 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>Drupal</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>7.33</version>
+	<release>38</release>
+	<homepage>http://drupal.org/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+	<default-prefix>drupal</default-prefix>
+	<summary>Open source content management system and blogging engine</summary>
+	<summary xml:lang="de-DE">Open source content manager system und blogging software</summary>
+	<summary xml:lang="en-US">Open source content management system and blogging engine</summary>
+	<summary xml:lang="en-GB">Open source content management system and blogging engine</summary>
+	<summary xml:lang="fr-FR">Ouvrez système de gestion de contenu source et moteur de blogs</summary>
+	<summary xml:lang="es-ES">Abrir el sistema de gestión de contenido de código y el motor de blogging</summary>
+	<summary xml:lang="pl-PL">Open Source Content System zarzadzania i silnik blogów</summary>
+	<summary xml:lang="en-CA">Open source content management system and blogging engine</summary>
+	<description>Drupal is an open source content management system which supports pluggable modules which enable additional behaviors. The modules available for Drupal provide a wide assortment of features, including e-commerce systems, photo galleries, mailing list management, and CVS integration.</description>
+<description xml:lang="de-DE">Drupal ist ein CMS auf Open-Source-Basis, welches mit Modulen zur Aktivierung zusätzlicher Eigenschaften erweiterbar ist. Die für Drupal erhältlichen Module bieten ein breitgefächertes Sortiment an Features, einschließlich E-Commerce-Systeme, Fotogallerien, Mailinglistenverwaltung, und CVS-Integration.</description>
+        <description xml:lang="en-US">Drupal is an open source content management system that supports pluggable modules that enable additional behaviors. The modules available for Drupal provide a wide assortment of features, including e-commerce systems, photo galleries, mailing list management, and CVS integration.</description>
+        <description xml:lang="en-GB">Drupal is an open source content management system that supports pluggable modules that enable additional behaviours. The modules available for Drupal provide a wide assortment of features, including e-commerce systems, photo galleries, mailing list management, and CVS integration.</description>
+        <description xml:lang="fr-FR">Drupal est un CMS basé sur Open-Source, qui peut être enrichi de modules permettant d'activer des fonctionnalités supplémentaires. Les modules disponibles pour Drupal offrent un large éventail de fonctionnalités, y compris des systèmes e-commerce, des galeries photos, la gestion de listes de diffusion par email et l'intégration CVS.</description>
+        <description xml:lang="es-ES">Drupal es un sistema de gestión de contenidos de código abierto ampliable con módulos para permitir funciones adicionales. Los módulos disponibles para Drupal proporcionan una amplia gama de funciones, como sistemas de comercio electrónico, galerías de fotografías, gestión de listas de correo electrónico e integración CVS.</description>
+        <description xml:lang="pl-PL">Drupal to system open source do zarzadzania trescia, który obsluguje dodawalne moduly, dzieki którym mozna uzyskac wiecej rodzajów zachowan. Moduly dostepne dla Drupala dostarczaja wiele funkcji, w tym systemy e-commerce, galerie zdjec, zarzadzanie listami mailingowymi i integracje CVS.</description>
+        <description xml:lang="en-CA">Drupal is an open source content management system that supports pluggable modules that enable additional behaviors. The modules available for Drupal provide a wide assortment of features, including e-commerce systems, photo galleries, mailing list management, and CVS integration.</description>
+	<icon path="images/icon.png"/>
+	<screenshot path="images/screenshot.png">
+		<description>This is the screen where you adjust the global settings for the appearance of your site:			 logo image, color scheme, appearance of hyperlinks.</description>
+		<description xml:lang="en-US">This is the screen where you adjust the global settings for the appearance of your site:			 logo image, color scheme, appearance of hyperlinks.</description>
+		<description xml:lang="en-GB">This is the screen where you adjust the global settings for the appearance of your site:			 logo image, color scheme, appearance of hyperlinks.</description>
+		<description xml:lang="de-DE">Dies ist der Bildschirm, wo Sie passen Sie die globalen Einstellungen für das Aussehen Ihrer Website: logo Bild, Farbschema, Aussehen von Hyperlinks.</description>
+		<description xml:lang="fr-FR">C'est l'écran où vous réglez les paramètres globaux pour l'apparence de votre site: image du logo, les couleurs, l'apparence des liens hypertexte.</description>
+		<description xml:lang="es-ES">Esta es la pantalla que permite ajustar la configuración global de la apariencia de su sitio: Imagen del logotipo, combinación de colores, la apariencia de los hipervínculos.</description>
+		<description xml:lang="pl-PL">Jest to ekran, na którym mozna dostosowac ustawienia globalne dla wygladu witryny: image logo, kolorystyka, wyglad hiperlaczy.</description>
+		<description xml:lang="en-CA">This is the screen where you adjust the global settings for the appearance of your site:			 logo image, color scheme, appearance of hyperlinks.</description>
+	</screenshot>
+	<license must-accept="true">
+		<text>
+			<name>GNU GENERAL PUBLIC LICENSE</name>
+			<file>htdocs/LICENSE.txt</file>
+		</text>
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	
+	<upgradable-from release="1" version="7.0"/>
+	<changelog>
+		<version release="1" version="7.21">
+			<entry>Maintenance and security release of the Drupal 7 series.
+This release fixes security vulnerabilities. Sites are urged to upgrade immediately after reading the security announcement:
+No other fixes are included.
+No changes have been made to the .htaccess, robots.txt or settings.php files in this release, so upgrading custom versions of those files is not necessary.
+Release Notes: 
+http://drupal.org/drupal-7.21-release-notes</entry>
+		</version>
+<version release="1" version="7.20">
+			<entry>Maintenance and security release of the Drupal 7 series.
+This release fixes security vulnerabilities. Sites are urged to upgrade immediately after reading the security announcement:
+No other fixes are included.
+No changes have been made to the .htaccess, robots.txt or settings.php files in this release, so upgrading custom versions of those files is not necessary.
+Release Notes: 
+http://drupal.org/drupal-7.20-release-notes</entry>
+		</version>
+<version release="3" version="7.19">
+			<entry>Changes in Config file</entry>
+		</version>
+<version release="2" version="7.19">
+			<entry>Changes in config file</entry>
+		</version>
+<version release="1" version="7.19">
+			<entry>Maintenance and security release of the Drupal 7 series.
+This release fixes security vulnerabilities. Sites are urged to upgrade immediately after reading the security announcement:
+No other fixes are included.
+No changes have been made to the .htaccess, robots.txt or settings.php files in this release, so upgrading custom versions of those files is not necessary.
+Release Notes: 
+http://drupal.org/drupal-7.19-release-notes</entry>
+		</version>
+		<version release="5" version="7.18">
+			<entry>Change in the  Config file</entry>
+		</version>
+<version release="4" version="7.18">
+			<entry>Change in the  web.config.txt</entry>
+		</version>
+<version release="3" version="7.18">
+			<entry>Change in the  web.config.txt</entry>
+		</version>
+<version release="2" version="7.18">
+			<entry>Adding files translation folder</entry>
+		</version>
+<version release="1" version="7.18">
+			<entry>Maintenance and security release of the Drupal 7 series.
+This release fixes security vulnerabilities. Sites are urged to upgrade immediately after reading the security announcement:
+No other fixes are included.
+Release Notes: 
+http://drupal.org/drupal-7.18-release-notes</entry>
+		</version>
+<version release="5" version="7.17">
+			<entry>Changes in upgrade and images</entry>
+		</version>
+<version release="3" version="7.17">
+			<entry>Removed paches version and relase in upgrade policy</entry>
+		</version>
+<version release="2" version="7.17">
+			<entry>Increased memory limit 256M in upgrade-app.php</entry>
+		</version>
+<version release="1" version="7.17">
+			<entry>Maintenance release of the Drupal 7 series. Includes bugfixes and small API/feature improvements only (no major new functionality).
+Release Notes: 
+http://drupal.org/drupal-7.17-release-notes</entry>
+		</version>
+<version release="3" version="7.16">
+			<entry>Updated POA and Plesk Document in docs folder</entry>
+		</version>
+		<version release="2" version="7.16">
+			<entry>small changes in schema</entry>
+		</version>
+<version release="1" version="7.16">
+			<entry>Maintenance release of the Drupal 7 series. Includes bugfixes and small API/feature improvements only (no major new functionality).
+Release Notes: http://drupal.org/node/1815904</entry>
+		</version>
+<version release="4" version="7.15">
+			<entry>Minor changes and patches in the package</entry>
+		</version>
+<version release="2" version="7.15">
+			<entry>Minor changes in the package.</entry>
+		</version>
+<version release="1" version="7.15">
+			<entry>Maintenance release of the Drupal 7 series. Includes bugfixes and small API/feature improvements only (no major new functionality).
+Release Notes: http://drupal.org/node/1815904</entry>
+		</version>
+<version release="2" version="7.14">
+			<entry>Security and bugfixing patch. http://drupal.org/drupal-7.14</entry>
+		</version>
+		<version release="3" version="7.12">
+			<entry>Security and bugfixing patch. Release notes: http://drupal.org/node/1425104</entry>
+		</version>
+		<version release="2" version="7.10">
+			<entry>Version 7.10. Release notes: http://drupal.org/node/1361968</entry>
+			<entry>Locale module is enabled by default</entry>
+		</version>
+		<version release="4" version="7.9">
+			<entry>Release notes: http://drupal.org/node/1322736</entry>
+		</version>
+		<version release="2" version="7.7">
+			<entry>Release notes: http://drupal.org/node/1231586, http://drupal.org/node/1231826</entry>
+		</version>
+		<version release="5" version="7.4">
+			<entry>Mysql version checking is added; Upgrade from Drupal 6.x is disabled</entry>
+		</version>
+		<version release="4" version="7.4">
+			<entry>Release notes http://drupal.org/node/1204634</entry>
+		</version>
+		<version release="2" version="7.2">
+			<entry>Release notes http://drupal.org/node/1168946</entry>
+		</version>
+		<version release="17" version="7.0">
+			<entry>do not urlencode DB password removed to preserve special symbols</entry>
+		</version>
+		<version release="16" version="7.0">
+			<entry>
+	Cleanup old Drupal6 files on upgrade	
+			</entry>
+		</version>
+		<version release="15" version="7.0">
+			<entry>
+	Drupal 7.0 release
+			</entry>
+		</version>
+		<version release="2" version="6.19">
+			<entry>
+	Security patch Drupal 6.18. Release notes http://drupal.org/node/880546
+			</entry>
+		</version>
+		<version release="3" version="6.16">
+			<entry>
+	remove 'semaphore' table on application removal
+			</entry>
+		</version>
+		<version release="2" version="6.16">
+			<entry>
+	Security and other bug fixes. Release notes: http://drupal.org/node/732000
+			</entry>
+		</version>
+		<version release="1" version="6.15">
+			<entry>
+	Security and other bug fixes. Release notes: http://drupal.org/node/661600
+			</entry>
+		</version>
+		<version release="7" version="6.14">
+			<entry>
+	update dblog.module version in DB
+			</entry>
+		</version>
+		<version release="5" version="6.14">
+			<entry>
+	workaround for 6.14-3 upgrade bug
+			</entry>
+		</version>
+		<version release="4" version="6.14">
+			<entry>
+	DB version set up to date after upgrade
+			</entry>
+		</version>
+		<version release="3" version="6.14">
+			<entry>
+	This release fixes security vulnerabilities. Release notes: http://drupal.org/node/579476
+			</entry>
+		</version>
+		<version release="5" version="6.13">
+			<entry>
+	Settings file is not writable during upgrade - fixed
+			</entry>
+		</version>
+		<version release="4" version="6.13">
+			<entry>
+		Missed file upgrade-6.10.sql is included
+			</entry>
+		</version>
+		<version release="3" version="6.13">
+			<entry>
+		Upgrade from version greater than 6.9 is corrected
+			</entry>
+		</version>
+		<version release="2" version="6.13">
+			<entry>
+- Fixed security issues (Local file inclusion on Windows, Cross site scripting and limited information
+  disclosure, Input format access bypass and Password leakage in URL), 
+  see SA-CORE-2009-003, SA-CORE-2009-005, SA-CORE-2009-006, SA-CORE-2009-007.
+- Fixed performance issues with the menu router cache, the update
+  status cache and improved cache invalidation
+- Fixed node_feed() so custom fields can show up in RSS feeds.
+- Improved PostgreSQL compatibility.
+- Fixed a variety of small bugs.
+			</entry>
+		</version>
+		<version release="5" version="6.9">
+			<entry>
+					- Warning about security risk eliminated
+					- Write permissions on document root
+			</entry>
+		</version>
+		<version release="3" version="6.9">
+			<entry>
+					Add poormanscron module.
+			</entry>
+		</version>
+		<version release="2" version="6.9">
+			<entry>
+- Fixed security issues, (Access Bypass, Validation Bypass and Hardening
+  against SQL injection), see SA-CORE-2009-001
+- Made HTTP request checking more robust and informative.
+- Fixed HTTP_HOST checking to work again with HTTP 1.0 clients and
+  basic shell scripts.
+- Removed t() calls from all schema documentation. Suggested best practice
+  changed for contributed modules, see http://drupal.org/node/322731.
+- Fixed a variety of small bugs.
+			</entry>
+		</version>
+		<version release="1" version="6.9">
+			<entry>
+- Fixed security issues, (Cross site request forgery and Cross site scripting), see SA-2008-073
+- Updated robots.txt and .htaccess to match current file use.
+- Fixed a variety of small bugs.
+			</entry>
+		</version>
+		<version release="6" version="6.6">
+			<entry>Updated version</entry>
+		</version>
+		<version release="3" version="6.4">
+			<entry>Updated version</entry>
+		</version>
+		<version release="8" version="6.3">
+			<entry>Updated version</entry>
+		</version>
+		<version release="4" version="6.1">
+			<entry>Fixed security issues</entry>
+		</version>
+		<version release="4" version="6.0">
+			<entry>New version of the package</entry>
+		</version>
+		<version release="4" version="4.7.8">
+			<entry>Initial package version</entry>
+		</version>
+		<version release="4" version="7.19">
+			<entry>Changes in Schema.sql</entry>
+		</version>
+		<version release="1" version="7.22">
+			<entry>Maintenance and security release of the Drupal 7 series.
+This release fixes security vulnerabilities. Sites are urged to upgrade immediately after reading the security announcement:
+No other fixes are included.
+No changes have been made to the .htaccess, robots.txt or settings.php files in this release, so upgrading custom versions of those files is not necessary.
+Release Notes: 
+http://drupal.org/drupal-7.22-release-notes</entry>
+		</version>
+		<version release="13" version="7.23">
+			<entry>Release Notes: 
+http://drupal.org/drupal-7.23-release-notes</entry>
+		</version>
+		<version release="19" version="7.23">
+			<entry>Added language translation for summary,decriptions,settings</entry>
+		</version>
+		<version release="1" version="7.24">
+			<entry>  This release contains a small change to the form API. It will have no effect on standard form API usage, but could affect code which does highly custom form processing; in particular, any code which calls functions like drupal_process_form() or drupal_validate_form() to process a form directly should be aware that when the form is validated, validation will now stop immediately in the case where the form's cross-site request forgery (CSRF) token fails validation. Previously all subsequent validation handlers would still be executed in this case.
+    There is a new drupal_random_key() API function. Its usage is recommended for any code that needs to obtain a permanent, randomly-generated string which is safe to insert in HTML pages and URLs.
+</entry>
+		</version>
+		<version release="2" version="7.24">
+			<entry>Corrected paths in configure file</entry>
+		</version>
+		<version release="3" version="7.24">
+			<entry>updated configure</entry>
+		</version>
+		<version release="4" version="7.24">
+			<entry>commented webconfig rename for plesk windows</entry>
+		</version>
+		<version release="21" version="7.24">
+			<entry>Updated schema</entry>
+		</version>
+		<version release="27" version="7.25">
+			<entry>     Added an optional feature to the Statistics module to allow node views to be tracked by Ajax requests rather than during the server-side generation of the page. This allows the node counter to work on sites that use external page caches (string change and new administrative option: https://drupal.org/node/2164069).
+    Fixed a bug in node_save() which prevented the saved node from being updated in hook_node_insert() and other similar hooks.
+    Added a meta tag to install.php to prevent it from being indexed by search engines even when Drupal is installed in a subfolder (minor markup change).
+    Fixed a bug in the database API that caused frequent deadlock errors when running merge queries on some servers.
+    Performance improvement: Prevented block rehashing from writing blocks to the database on every cache clear and cron run when the blocks have not changed. This fix results in an extra 'saved' key which is added and set to TRUE for each block returned by _block_rehash() that actually is saved to the database (data structure change).
+    Added an optional 'skip on cron' parameter to hook_cron_queue_info() to allow queues to avoid being automatically processed on cron runs (API addition).
+    Fixed a bug which caused hook_block_view_MODULE_DELTA_alter() to never be invoked if the block delta had a hyphen in it. To implement the hook when the block delta has a hyphen, modules should now replace hyphens with underscores when constructing the function name for the hook implementation.
+    Fixed a bug which caused cached pages to sometimes be sent to the browser with incorrect compression. The fix adds a new 'page_compressed' key to the $cache-&gt;data array returned by drupal_page_get_cache() (minor data structure change).
+    Fixed broken tests on PHP 5.5.
+    Made the File and Image modules more robust when saving entities that have deleted files attached. The code in file_field_presave() will now remove the record of the deleted file from the entity before saving (minor data structure change).
+    Standardized menu callback functions throughout Drupal core to return MENU_NOT_FOUND and MENU_ACCESS_DENIED rather than printing their own "page not found" or "access denied" pages (minor API change in the return value of these functions under some circumstances).
+    Fixed a bug in which caches were not properly cleared when a node was deleted via the administrative interface.
+    Changed the Bartik theme to render content contained in &lt;pre&gt;, &lt;code&gt; and similar tags in a larger font size, so it is easier to read.
+    Fixed a bug in the Search module that caused exceptions to be thrown during searches if the server was not configured to represent decimal points as a period.
+    Fixed a regression in the Image module that made image_style_url() not work when a relative path (rather than a complete file URI) was passed to it.
+    Added a link to the drupal.org documentation page for cron to the Cron settings page (string change).
+    Added a 'drupal_anonymous_user_object' variable to allow the anonymous user object returned by drupal_anonymous_user() to be overridden with a classed object (API addition).
+    Changed the database API to allow inserts based on a SELECT * query to work correctly.
+    Changed the database schema of the {file_managed} table to allow Drupal to manage files larger than 4 GB.
+    Changed the File module's hook_field_load() implementation to prevent file entity properties which have the same name as file or image field properties from overwriting the field properties (minor API change).
+</entry>
+		</version>
+		<version release="28" version="7.26">
+			<entry>The database schema of the OpenID module's "openid_association" table has changed in this release (the "idp_endpoint_uri" column is now the primary key, rather than the "assoc_handle" column). During the update all existing entries in this table will be removed, but the table only stores temporary data and therefore the change is not expected to affect site operation or OpenID logins.
+A new, optional $form_state['programmed_bypass_access_check'] element has been added to the form API, for use with drupal_form_submit(). If this is provided and set to FALSE, drupal_form_submit() will perform the normal form access checks against the current user while submitting the form, rather than bypassing them like it normally does for programmatic form submissions. Any code which passes untrusted data (provided by the current user) to drupal_form_submit() is recommended to use this parameter for security reasons.
+</entry>
+		</version>
+		<version release="31" version="7.27">
+			<entry>Initial release</entry>
+		</version>
+		<version release="32" version="7.28">
+			<entry>	Fixed a regression introduced in Drupal 7.27 that caused JavaScript to break on older browsers (such as Internet Explorer 8 and earlier) when Ajax was used.
+	Increased the timeout used by the Update Manager module when it fetches data from drupal.org (from 5 seconds to 30 seconds), to work around a problem which causes incomplete information about security updates to be presented to site administrators. This fix may lead to a performance slowdown on the Update Manager administration pages, when installing Drupal distributions, and (for sites that use the automated cron feature) on occasional page loads by site visitors.
+	Fixed the behavior of the token system's "[node:summary]" token when the body field does not have a manual summary.
+	Changed the behavior of db_query_temporary() so that it works on SELECT queries even when they have leading comments/whitespace. A side effect of this fix is that db_query_temporary() will now fail with an error if it is ever used on non-SELECT queries.
+	Added a "node_admin_filter" tag to the database query used to build the list of nodes on the content administration page, to make it easier to alter.
+	Made the cron queue system log any exceptions that are thrown while an item in the queue is being processed, rather than stopping the entire PHP request.
+	Improved screen reader support by adding an aria-live HTML attribute to file upload fields when there is an error uploading the file (minor markup change).
+	Made the pager on the Tracker module listing pages show the same number of items as other pagers throughout Drupal core (minor UI change).
+	Fixed a bug which caused caches not to be properly cleared when a file entity was saved or deleted.
+	Added several missing countries to the default list returned by country_get_list() (string change).
+	Replaced the term "weight" with "influence" in the content ranking settings for search, and added help text for administrators (string change).
+	Fixed untranslatable text strings in the administrative interface for the "Crop" effect provided by the Image module (minor string change).
+	Fixed a bug in the Taxonomy module update function introduced in Drupal 7.26 that caused memory and CPU problems on sites with very large numbers of unpublished nodes.
+</entry>
+		</version>
+		<version release="33" version="7.29">
+			<entry>SA-CORE-2014-003 - Drupal core - Multiple vulnerabilities</entry>
+		</version>
+		<version release="34" version="7.30">
+			<entry>Maintainence release</entry>
+		</version>
+		<version release="36" version="7.31">
+			<entry>SA-CORE-2014-004 - Drupal core - Denial of service</entry>
+		</version>
+		<version release="37" version="7.32">
+			<entry>This release contain fixes for security vulnerabilities.</entry>
+		</version>
+		<version release="38" version="7.33">
+			<entry> Added an entity_view_mode_prepare() API function to allow entity-defining modules to properly invoke hook_entity_view_mode_alter(), and used it throughout Drupal core to fix bugs with the invocation of that hook (API change: https://www.drupal.org/node/2369141).
+Added a "theme_hook_original" variable to templates and theme functions and an optional sitewide theme debug mode, to provide contextual information in the page's HTML to theme developers. The theme debug mode is based on the one used with Twig in Drupal 8 and can be accessed by setting the "theme_debug" variable to TRUE (API addition).
+Began storing the file modification time of each module and theme in the {system} database table so that contributed modules can use it to identify recently changed modules and themes (minor data structure change to the return value of system_get_info() and other related functions).
+Added a "Did you mean?" feature to the run-tests.sh script for running automated tests from the command line, to help developers who are attempting to run a particular test class or group.
+Changed the date format used in various HTTP headers output by Drupal core from RFC 1123 format to RFC 7231 format.
+Added a "block_cache_bypass_node_grants" variable to allow sites which have node access modules enabled to use the block cache if desired (API addition).
+Made image derivative generation HTTP requests return a 404 error (rather than a 500 error) when the source image does not exist.
+Fixed a bug which caused user pictures to be removed from the user object after saving, and resulted in data loss if the user account was subsequently re-saved.
+Fixed a bug in which field_has_data() did not return TRUE for fields that only had data in older entity revisions, leading to loss of the field's data when the field configuration was edited.
+Fixed a bug which caused the Ajax progress throbber to appear misaligned in many situatons (minor styling change).
+Prevented the Bartik theme from lower-casing the "Permalink" link on comments, for improved multilingual support (minor UI change).
+Added a "preferred_menu_links" tag to the database query that is used by menu_link_get_preferred() to find the preferred menu link for a given path, to make it easier to alter.
+Increased the maximum allowed length of block titles to 255 characters (database schema change to the {block} table).
+Removed the Field module's field_modules_uninstalled() function, since it did not do anything when it was invoked.
+Security improvement: Made the database API's orderBy() method sanitize the sort direction ("ASC" or "DESC") for queries built with db_select(), so that calling code does not have to.
+Changed the RDF module to consistently output RDF metadata for nodes and comments near where the node is rendered in the HTML (minor markup and data structure change).
+Added an HTML class to RDFa metatags throughout Drupal to prevent them from accidentally affecting the site appearance (minor markup change).
+Fixed a bug in the Unicode requirements check which prevented installing Drupal on PHP 5.6.
+Fixed a bug which caused drupal_get_bootstrap_phase() to abort the bootstrap when called early in the page request.
+Renamed the "Search result" view mode to "Search result highlighting input" to better reflect how it is used (UI change).
+Improved database queries generated by EntityFieldQuery in the case where delta or language condition groups are used, to reduce the number of INNER JOINs (this is a minor data structure change affecting code which implements hook_query_alter() on these queries).
+Removed special-case behavior for file uploads which allowed user #1 to bypass maximum file size and user quota limits.
+</entry>
+		</version>
+	</changelog>
+    <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Site</label>
+    </entry>
+    <entry>
+      <path>/?q=user</path>
+      <label>Administrative interface</label>
+    </entry>
+	</entry-points>
+
+	<installed-size>4136960</installed-size>
+	<categories>
+		<category>Web/Content management</category>
+	</categories>
+	<languages>
+		<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+	</languages>
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting default-value="admin" id="admin_name" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+				<name>Administrator's login</name>
+				<name xml:lang="de-DE">Login administratora</name>
+				<name xml:lang="en-US">Administrator's login</name>
+				<name xml:lang="en-GB">Administrator's login</name>
+				<name xml:lang="fr-FR">La connexion de l'administrateur</name>
+				<name xml:lang="es-ES">Inicio de sesión de administrador</name>
+				<name xml:lang="pl-PL">Login administratora</name>
+				<name xml:lang="en-CA">Administrator's login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+				<error-message xml:lang="de-DE">Bitte stellen Sie sicher, dass der von Ihnen eingegebene Text beginnt mit einem Buchstaben und fährt entweder mit Zahlen, Buchstaben, Unterstriche oder Bindestriche.</error-message>
+				<error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+				<error-message xml:lang="en-GB">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+				<error-message xml:lang="fr-FR">S'il vous plaît assurez-vous que le texte que vous avez entré commence par une lettre et se poursuit avec des nombres, des lettres, des caractères de soulignement ou des tirets.</error-message>
+				<error-message xml:lang="es-ES">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+				<error-message xml:lang="pl-PL">Upewnij sie, ze wpisany tekst zaczyna sie od litery i nadal zarówno z cyfr, liter, podkreslen i myslników.</error-message>
+				<error-message xml:lang="en-CA">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Password</name>
+				<name xml:lang="de-DE">Kennwort</name>
+				<name xml:lang="en-US">Password</name>
+				<name xml:lang="en-GB">Password</name>
+				<name xml:lang="fr-FR">mot de passe</name>
+				<name xml:lang="es-ES">contraseña</name>
+				<name xml:lang="pl-PL">haslo</name>
+				<name xml:lang="en-CA">Password</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Administrator's email</name>
+				<name xml:lang="de-DE">Administrator E-Mail</name>
+				<name xml:lang="en-US">Administrator's email</name>
+				<name xml:lang="en-GB">Administrator's email</name>
+				<name xml:lang="fr-FR">L'e-mail de l'administrateur</name>
+				<name xml:lang="es-ES">Correo electrónico del administrador</name>
+				<name xml:lang="pl-PL">E-mail administratora</name>
+				<name xml:lang="en-CA">Administrator's email</name>
+			</setting>
+    			<setting default-value="Drupal" id="title" min-length="1" type="string">
+            			<name>Site name</name>
+						<name xml:lang="de-DE">Site name</name>
+						<name xml:lang="en-US">Site name</name>
+						<name xml:lang="en-GB">Site name</name>
+						<name xml:lang="fr-FR">Nom du site</name>
+						<name xml:lang="es-ES">nombre del sitio</name>
+						<name xml:lang="pl-PL">Nazwa strony</name>
+						<name xml:lang="en-CA">Site name</name>
+	        	</setting>
+		</group>
+	</settings>
+	<requirements>
+		<php:version min="5.2.5" xmlns:php="http://apstandard.com/ns/1/php"/>
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+		<php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+		<php:register-globals xmlns:php="http://apstandard.com/ns/1/php">false</php:register-globals>
+		<php:memory-limit xmlns:php="http://apstandard.com/ns/1/php">41943040</php:memory-limit>
+		<db:db xmlns:db="http://apstandard.com/ns/1/db">
+			<db:id>main</db:id>
+			<db:default-name>drupal</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>5.0.15</db:server-min-version>
+		</db:db>
+	</requirements>
+	<mapping path="htdocs" url="/">
+		<php:handler xmlns:php="http://apstandard.com/ns/1/php">
+			<php:extension>php</php:extension>
+		</php:handler>
+		<mapping url="sites">
+			<mapping url="all/modules">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+			<mapping url="all/themes">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+			<mapping url="default">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+		</mapping>
+		<mapping url="tmp">
+		    	<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+	</mapping>
+</application>

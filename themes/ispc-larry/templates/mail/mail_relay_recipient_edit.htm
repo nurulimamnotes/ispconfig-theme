@@ -1,0 +1,56 @@
+<!-- tabs -->
+<div id="tabs">
+    <ul class="tabsbar">
+        <tmpl_loop name="formTab">
+            <tmpl_if name="active">
+                <li class="active"><a href="javascript:changeTab('<tmpl_var name='name'>','<tmpl_var name='app_module'>/<tmpl_var name='form_action'>')"><tmpl_var name='title'></a></li>
+                <tmpl_else>
+                    <li><a href="javascript:changeTab('<tmpl_var name='name'>','<tmpl_var name='app_module'>/<tmpl_var name='form_action'>')"><tmpl_var name='title'></a></li>
+            </tmpl_if>
+        </tmpl_loop>
+    </ul>
+    <ul class="tabsbar-buttons">
+        <li><a href="javascript:submitForm('pageForm','mail/mail_relay_recipient_edit.php');" title="{tmpl_var name='btn_save_txt'}" class="positive iconstxt icoPositive"><span>{tmpl_var name='btn_save_txt'}</span></a></li>
+        <li><a href="javascript:loadContent('mail/mail_relay_recipient_list.php');" title="{tmpl_var name='btn_cancel_txt'}" class="negative iconstxt icoNegative"><span>{tmpl_var name='btn_cancel_txt'}</span></a></li>
+    </ul>
+</div>
+
+<!-- begin: modulebody -->
+<div id="module-title"><h1><tmpl_var name="form_hint"></h1></div>
+<div class="module-box boxlistcontent" id="modulecontainer">
+
+    <!-- desc -->
+    <div id="module-desc"><tmpl_var name="page_desc_txt"></div>
+
+    <!-- messages/erros -->  
+    <tmpl_if name="msg">
+        <div id="OKMsg"><p><tmpl_var name="msg"></p></div>
+    </tmpl_if>
+    <tmpl_if name="error">
+        <div id="errorMsg"><h3>ERROR</h3><ol><tmpl_var name="error"></ol></div>
+    </tmpl_if>
+
+    <!-- begin: modulecontent -->
+    <div class="panel panel_mail_relay_recipient">
+        <div class="ctrlHolder">
+            <label for="server_id">{tmpl_var name='server_id_txt'}</label>
+            <select name="server_id" id="server_id" class="selectInput">
+                {tmpl_var name='server_id'}
+            </select>
+        </div>
+        <div class="ctrlHolder">
+            <label for="source">{tmpl_var name='source_txt'}</label>
+            <input name="source" id="source" value="{tmpl_var name='source'}" size="30" maxlength="255" type="text" class="textInput" />
+        </div>
+        <div class="ctrlHolder">
+            <p class="label">{tmpl_var name='active_txt'}</p>
+            <div class="multiField">
+                {tmpl_var name='active'}
+            </div>
+        </div>
+
+        <input type="hidden" name="id" value="{tmpl_var name='id'}">
+        <input type="hidden" name="access" value="OK">
+
+    </div><!-- end: modulecontent -->
+</div><!-- end: modulebody -->

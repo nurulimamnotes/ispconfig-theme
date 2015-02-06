@@ -1,0 +1,416 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>moodle</name>
+  <packager-uri></packager-uri>
+  <version>2.4.3</version>
+  <release>1</release>
+  <homepage>http://moodle.org/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>moodle</default-prefix>
+
+  <summary>Open source software for creating online education sites</summary>
+  <description>Moodle is a course management system (CMS) - a free, open source software package designed using sound pedagogical principles, to help educators create effective online learning communities. It can scale from a single-teacher site to a 50,000-student university.</description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot.png">
+    <description>This screen shows the front page of a Moodle site. Here you can view a list of available learning programs and choose the one you need.</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 2.1</name>
+      <file>htdocs/lib/bennu/LICENSE.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="2" version="2.4"/>
+
+  <changelog>
+    <version release="1" version="2.4.2">
+    	<entry>http://docs.moodle.org/dev/Moodle_2.4.2_release_notes</entry>
+    </version><version release="2" version="2.4.1">
+    	<entry>Minor changes.</entry>
+    </version><version release="1" version="2.4.1">
+    	<entry>http://docs.moodle.org/dev/Moodle_2.4.1_release_notes</entry>
+    </version><version release="2" version="2.4">
+    	<entry>Change in Upgrade script</entry>
+    </version><version release="1" version="2.4">
+    	<entry>Release Notes:-
+http://docs.moodle.org/dev/Moodle_2.4_release_notes</entry>
+    </version><version release="3" version="2.3.3">
+    	<entry>minor changes</entry>
+    </version><version release="2" version="2.3.3">
+    	<entry>Shema file changes</entry>
+    </version>
+    <version release="1" version="2.3.3">
+    	<entry>New Release</entry>
+    </version><version release="1" version="2.3.2">
+    	<entry>More information : http://docs.moodle.org/dev/Moodle_2.3.2_release_notes</entry>
+    </version>
+    <version release="4" version="2.3.1">
+    	<entry>Entry point corrected</entry>
+    </version>
+    <version release="3" version="2.3.1">
+    	<entry>Moodle 2.3 release notes: http://docs.moodle.org/23/en/Upgrading_to_Moodle_2.3</entry>
+    </version>
+    <version version="2.0.4" release="10">
+      <entry>checking for empty url port is added</entry>
+    </version>
+    <version version="2.0.4" release="9">
+      <entry>Moodle 2.0.4 release notes: http://docs.moodle.org/dev/Moodle_2.0.4_release_notes</entry>
+    </version>
+    <version version="1.9.9" release="6">
+      <entry>Moodle 1.9.9 release notes: http://docs.moodle.org/en/Moodle_1.9.9_release_notes</entry>
+    </version>
+    <version version="1.9.3" release="3">
+      <entry>Personal/eLearning category removed</entry>
+    </version>
+    <version version="1.9.3" release="2">
+      <entry>Updated version</entry>
+    </version>
+    <version version="1.8" release="32">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="4" version="2.3.3">
+    	<entry>Changes in url mapping</entry>
+    </version>
+    <version release="3" version="2.4.1">
+    	<entry>Sql chnages.</entry>
+    </version>
+    <version release="4" version="2.4.2">
+    	<entry>Changes  Upgrade.sql</entry>
+    </version>
+    <version release="1" version="2.4.3">
+    	<entry>http://docs.moodle.org/dev/Moodle_2.4.2_release_notes</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/login/index.php</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>56985600</installed-size>
+
+  <categories>
+	  <category>Web/eLearning</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" default-value="admin">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email" default-value="admin@glowtouch.com">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="admin_city" type="string" default-value="Mysore">
+        <name>Administrator's city/town</name>
+      </setting>
+      <setting id="admin_country" type="enum" default-value="IN">
+        <name>Administrator's country</name>
+        <choice id="AF"><name>Afghanistan</name></choice>
+        <choice id="AL"><name>Albania</name></choice>
+        <choice id="DZ"><name>Algeria</name></choice>
+        <choice id="AS"><name>American Samoa</name></choice>
+        <choice id="AD"><name>Andorra</name></choice>
+        <choice id="AO"><name>Angola</name></choice>
+        <choice id="AI"><name>Anguilla</name></choice>
+        <choice id="AQ"><name>Antarctica</name></choice>
+        <choice id="AG"><name>Antigua and Barbuda</name></choice>
+        <choice id="AR"><name>Argentina</name></choice>
+        <choice id="AM"><name>Armenia</name></choice>
+        <choice id="AW"><name>Aruba</name></choice>
+        <choice id="AU"><name>Australia</name></choice>
+        <choice id="AT"><name>Austria</name></choice>
+        <choice id="AZ"><name>Azerbaijan</name></choice>
+        <choice id="BS"><name>Bahamas</name></choice>
+        <choice id="BH"><name>Bahrain</name></choice>
+        <choice id="BD"><name>Bangladesh</name></choice>
+        <choice id="BB"><name>Barbados</name></choice>
+        <choice id="BY"><name>Belarus</name></choice>
+        <choice id="BE"><name>Belgium</name></choice>
+        <choice id="BZ"><name>Belize</name></choice>
+        <choice id="BJ"><name>Benin</name></choice>
+        <choice id="BM"><name>Bermuda</name></choice>
+        <choice id="BT"><name>Bhutan</name></choice>
+        <choice id="BO"><name>Bolivia</name></choice>
+        <choice id="BA"><name>Bosnia and Herzegovina</name></choice>
+        <choice id="BW"><name>Botswana</name></choice>
+        <choice id="BV"><name>Bouvet Island</name></choice>
+        <choice id="BR"><name>Brazil</name></choice>
+        <choice id="IO"><name>British Indian Ocean Territory</name></choice>
+        <choice id="BN"><name>Brunei Darussalam</name></choice>
+        <choice id="BG"><name>Bulgaria</name></choice>
+        <choice id="BF"><name>Burkina Faso</name></choice>
+        <choice id="BI"><name>Burundi</name></choice>
+        <choice id="KH"><name>Cambodia</name></choice>
+        <choice id="CM"><name>Cameroon</name></choice>
+        <choice id="CA"><name>Canada</name></choice>
+        <choice id="CV"><name>Cape Verde</name></choice>
+        <choice id="KY"><name>Cayman Islands</name></choice>
+        <choice id="CF"><name>Central African Republic</name></choice>
+        <choice id="TD"><name>Chad</name></choice>
+        <choice id="CL"><name>Chile</name></choice>
+        <choice id="CN"><name>China</name></choice>
+        <choice id="CX"><name>Christmas Island</name></choice>
+        <choice id="CC"><name>Cocos (Keeling) Islands</name></choice>
+        <choice id="CO"><name>Colombia</name></choice>
+        <choice id="KM"><name>Comoros</name></choice>
+        <choice id="CG"><name>Congo</name></choice>
+        <choice id="CK"><name>Cook Islands</name></choice>
+        <choice id="CR"><name>Costa Rica</name></choice>
+        <choice id="CI"><name>Cote D'Ivoire</name></choice>
+        <choice id="HR"><name>Croatia (Hrvatska)</name></choice>
+        <choice id="CU"><name>Cuba</name></choice>
+        <choice id="CY"><name>Cyprus</name></choice>
+        <choice id="CZ"><name>Czech Republic</name></choice>
+        <choice id="DK"><name>Denmark</name></choice>
+        <choice id="DJ"><name>Djibouti</name></choice>
+        <choice id="DM"><name>Dominica</name></choice>
+        <choice id="DO"><name>Dominican Republic</name></choice>
+        <choice id="TP"><name>East Timor</name></choice>
+        <choice id="EC"><name>Ecuador</name></choice>
+        <choice id="EG"><name>Egypt</name></choice>
+        <choice id="SV"><name>El Salvador</name></choice>
+        <choice id="GQ"><name>Equatorial Guinea</name></choice>
+        <choice id="ER"><name>Eritrea</name></choice>
+        <choice id="EE"><name>Estonia</name></choice>
+        <choice id="ET"><name>Ethiopia</name></choice>
+        <choice id="FK"><name>Falkland Islands (Malvinas)</name></choice>
+        <choice id="FO"><name>Faroe Islands</name></choice>
+        <choice id="FJ"><name>Fiji</name></choice>
+        <choice id="FI"><name>Finland</name></choice>
+        <choice id="FR"><name>France</name></choice>
+        <choice id="FX"><name>France; Metropolitan</name></choice>
+        <choice id="GF"><name>French Guiana</name></choice>
+        <choice id="PF"><name>French Polynesia</name></choice>
+        <choice id="TF"><name>French Southern Territories</name></choice>
+        <choice id="GA"><name>Gabon</name></choice>
+        <choice id="GM"><name>Gambia</name></choice>
+        <choice id="GE"><name>Georgia</name></choice>
+        <choice id="DE"><name>Germany</name></choice>
+        <choice id="GH"><name>Ghana</name></choice>
+        <choice id="GI"><name>Gibraltar</name></choice>
+        <choice id="GR"><name>Greece</name></choice>
+        <choice id="GL"><name>Greenland</name></choice>
+        <choice id="GD"><name>Grenada</name></choice>
+        <choice id="GP"><name>Guadeloupe</name></choice>
+        <choice id="GU"><name>Guam</name></choice>
+        <choice id="GT"><name>Guatemala</name></choice>
+        <choice id="GW"><name>Guinea-Bissau</name></choice>
+        <choice id="GN"><name>Guinea</name></choice>
+        <choice id="GY"><name>Guyana</name></choice>
+        <choice id="HT"><name>Haiti</name></choice>
+        <choice id="HM"><name>Heard and Mc Donald Islands</name></choice>
+        <choice id="HN"><name>Honduras</name></choice>
+        <choice id="HK"><name>Hong Kong</name></choice>
+        <choice id="HU"><name>Hungary</name></choice>
+        <choice id="IS"><name>Iceland</name></choice>
+        <choice id="IN"><name>India</name></choice>
+        <choice id="ID"><name>Indonesia</name></choice>
+        <choice id="IR"><name>Iran (Islamic Republic of)</name></choice>
+        <choice id="IQ"><name>Iraq</name></choice>
+        <choice id="IE"><name>Ireland</name></choice>
+        <choice id="IL"><name>Israel</name></choice>
+        <choice id="IT"><name>Italy</name></choice>
+        <choice id="JM"><name>Jamaica</name></choice>
+        <choice id="JP"><name>Japan</name></choice>
+        <choice id="JO"><name>Jordan</name></choice>
+        <choice id="KZ"><name>Kazakhstan</name></choice>
+        <choice id="KE"><name>Kenya</name></choice>
+        <choice id="KI"><name>Kiribati</name></choice>
+        <choice id="KP"><name>Korea; Democratic People's Republic of</name></choice>
+        <choice id="KR"><name>Korea; Republic of</name></choice>
+        <choice id="KO"><name>Kosovo</name></choice>
+        <choice id="KW"><name>Kuwait</name></choice>
+        <choice id="KG"><name>Kyrgyzstan</name></choice>
+        <choice id="LA"><name>Lao People's Democratic Republic</name></choice>
+        <choice id="LV"><name>Latvia</name></choice>
+        <choice id="LB"><name>Lebanon</name></choice>
+        <choice id="LS"><name>Lesotho</name></choice>
+        <choice id="LR"><name>Liberia</name></choice>
+        <choice id="LY"><name>Libyan Arab Jamahiriya</name></choice>
+        <choice id="LI"><name>Liechtenstein</name></choice>
+        <choice id="LT"><name>Lithuania</name></choice>
+        <choice id="LU"><name>Luxembourg</name></choice>
+        <choice id="MO"><name>Macau</name></choice>
+        <choice id="MK"><name>Macedonia; Former Yugoslav Republic of</name></choice>
+        <choice id="MG"><name>Madagascar</name></choice>
+        <choice id="MW"><name>Malawi</name></choice>
+        <choice id="MY"><name>Malaysia</name></choice>
+        <choice id="MV"><name>Maldives</name></choice>
+        <choice id="ML"><name>Mali</name></choice>
+        <choice id="MT"><name>Malta</name></choice>
+        <choice id="MH"><name>Marshall Islands</name></choice>
+        <choice id="MQ"><name>Martinique</name></choice>
+        <choice id="MR"><name>Mauritania</name></choice>
+        <choice id="MU"><name>Mauritius</name></choice>
+        <choice id="YT"><name>Mayotte</name></choice>
+        <choice id="MX"><name>Mexico</name></choice>
+        <choice id="FM"><name>Micronesia; Federated States of</name></choice>
+        <choice id="MD"><name>Moldova; Republic of</name></choice>
+        <choice id="MC"><name>Monaco</name></choice>
+        <choice id="MN"><name>Mongolia</name></choice>
+        <choice id="MS"><name>Montserrat</name></choice>
+        <choice id="MA"><name>Morocco</name></choice>
+        <choice id="MZ"><name>Mozambique</name></choice>
+        <choice id="MM"><name>Myanmar</name></choice>
+        <choice id="NA"><name>Namibia</name></choice>
+        <choice id="NR"><name>Nauru</name></choice>
+        <choice id="NP"><name>Nepal</name></choice>
+        <choice id="AN"><name>Netherlands Antilles</name></choice>
+        <choice id="NL"><name>Netherlands</name></choice>
+        <choice id="NC"><name>New Caledonia</name></choice>
+        <choice id="NZ"><name>New Zealand</name></choice>
+        <choice id="NI"><name>Nicaragua</name></choice>
+        <choice id="NG"><name>Nigeria</name></choice>
+        <choice id="NE"><name>Niger</name></choice>
+        <choice id="NU"><name>Niue</name></choice>
+        <choice id="NF"><name>Norfolk Island</name></choice>
+        <choice id="MP"><name>Northern Mariana Islands</name></choice>
+        <choice id="NO"><name>Norway</name></choice>
+        <choice id="OM"><name>Oman</name></choice>
+        <choice id="PK"><name>Pakistan</name></choice>
+        <choice id="PW"><name>Palau</name></choice>
+        <choice id="PS"><name>Palestine</name></choice>
+        <choice id="PA"><name>Panama</name></choice>
+        <choice id="PG"><name>Papua New Guinea</name></choice>
+        <choice id="PY"><name>Paraguay</name></choice>
+        <choice id="PE"><name>Peru</name></choice>
+        <choice id="PH"><name>Philippines</name></choice>
+        <choice id="PN"><name>Pitcairn</name></choice>
+        <choice id="PL"><name>Poland</name></choice>
+        <choice id="PT"><name>Portugal</name></choice>
+        <choice id="PR"><name>Puerto Rico</name></choice>
+        <choice id="QA"><name>Qatar</name></choice>
+        <choice id="RE"><name>Reunion</name></choice>
+        <choice id="RO"><name>Romania</name></choice>
+        <choice id="RU"><name>Russian Federation</name></choice>
+        <choice id="RW"><name>Rwanda</name></choice>
+        <choice id="KN"><name>Saint Kitts and Nevis</name></choice>
+        <choice id="LC"><name>Saint Lucia</name></choice>
+        <choice id="VC"><name>Saint Vincent and the Grenadines</name></choice>
+        <choice id="WS"><name>Samoa</name></choice>
+        <choice id="SM"><name>San Marino</name></choice>
+        <choice id="ST"><name>Sao Tome and Principe</name></choice>
+        <choice id="SA"><name>Saudi Arabia</name></choice>
+        <choice id="SN"><name>Senegal</name></choice>
+        <choice id="CS"><name>Serbia and Montenegro</name></choice>
+        <choice id="SC"><name>Seychelles</name></choice>
+        <choice id="SL"><name>Sierra Leone</name></choice>
+        <choice id="SG"><name>Singapore</name></choice>
+        <choice id="SK"><name>Slovakia (Slovak Republic)</name></choice>
+        <choice id="SI"><name>Slovenia</name></choice>
+        <choice id="SB"><name>Solomon Islands</name></choice>
+        <choice id="SO"><name>Somalia</name></choice>
+        <choice id="ZA"><name>South Africa</name></choice>
+        <choice id="ES"><name>Spain</name></choice>
+        <choice id="LK"><name>Sri Lanka</name></choice>
+        <choice id="SH"><name>St. Helena</name></choice>
+        <choice id="PM"><name>St. Pierre and Miquelon</name></choice>
+        <choice id="SD"><name>Sudan</name></choice>
+        <choice id="SR"><name>Suriname</name></choice>
+        <choice id="SJ"><name>Svalbard and Jan Mayen Islands</name></choice>
+        <choice id="SZ"><name>Swaziland</name></choice>
+        <choice id="SE"><name>Sweden</name></choice>
+        <choice id="CH"><name>Switzerland</name></choice>
+        <choice id="SY"><name>Syrian Arab Republic</name></choice>
+        <choice id="TW"><name>Taiwan</name></choice>
+        <choice id="TJ"><name>Tajikistan</name></choice>
+        <choice id="TZ"><name>Tanzania; United Republic of</name></choice>
+        <choice id="TH"><name>Thailand</name></choice>
+        <choice id="TG"><name>Togo</name></choice>
+        <choice id="TK"><name>Tokelau</name></choice>
+        <choice id="TO"><name>Tonga</name></choice>
+        <choice id="TT"><name>Trinidad and Tobago</name></choice>
+        <choice id="TN"><name>Tunisia</name></choice>
+        <choice id="TR"><name>Turkey</name></choice>
+        <choice id="TM"><name>Turkmenistan</name></choice>
+        <choice id="TC"><name>Turks and Caicos Islands</name></choice>
+        <choice id="TV"><name>Tuvalu</name></choice>
+        <choice id="UG"><name>Uganda</name></choice>
+        <choice id="UA"><name>Ukraine</name></choice>
+        <choice id="AE"><name>United Arab Emirates</name></choice>
+        <choice id="GB"><name>United Kingdom</name></choice>
+        <choice id="US"><name>United States of America</name></choice>
+        <choice id="UY"><name>Uruguay</name></choice>
+        <choice id="UZ"><name>Uzbekistan</name></choice>
+        <choice id="VU"><name>Vanuatu</name></choice>
+        <choice id="VA"><name>Vatican City State (Holy See)</name></choice>
+        <choice id="VE"><name>Venezuela</name></choice>
+        <choice id="VN"><name>Vietnam</name></choice>
+        <choice id="VG"><name>Virgin Islands (British)</name></choice>
+        <choice id="VI"><name>Virgin Islands (U.S.)</name></choice>
+        <choice id="WA"><name>Wales</name></choice>
+        <choice id="WF"><name>Wallis And Futuna Islands</name></choice>
+        <choice id="EH"><name>Western Sahara</name></choice>
+        <choice id="YE"><name>Yemen</name></choice>
+        <choice id="ZR"><name>Zaire</name></choice>
+        <choice id="ZM"><name>Zambia</name></choice>
+        <choice id="ZW"><name>Zimbabwe</name></choice>
+      </setting>
+    </group>
+    <group>
+      <name>Default preferences</name>
+      <setting id="full_site_name" type="string" min-length="1" default-value="Moodle">
+        <name>Full site name</name>
+      </setting>
+      <setting id="short_site_name" type="string" min-length="1" default-value="Moodle">
+        <name>Short name for site</name>
+      </setting>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.3.2"/>
+    <php:extension>mysql</php:extension>
+    <php:safe-mode>false</php:safe-mode>
+    <php:register-globals>false</php:register-globals>
+    <php:file-uploads>true</php:file-uploads>
+	<php:memory-limit>134217728</php:memory-limit>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>moodle</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.1.33</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="mod">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="theme">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="moodledata">
+    	<php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+</application>

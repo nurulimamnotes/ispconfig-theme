@@ -1,0 +1,633 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>WordPress</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>4.1</version>
+	<release>36</release>
+	<homepage>http://wordpress.org/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+  	<default-prefix>wordpress</default-prefix>
+  
+  	<summary>WordPress is a state-of-the-art semantic personal publishing platform with a focus on aesthetics, web standards, and usability.</summary>
+		<summary xml:lang="da-DK">WordPress er intet mindre end det mest benyttede cms (Content Management System) i verden og du er nok havnet her, fordi du gerne vil i gang med WordPress på dansk.</summary>
+		<summary xml:lang="de-DE">WordPress - eine zeitgemäße semantische Publishing-Plattform mit Augenmerk auf Ästhetik, Web-Standards und Benutzerfreundlichkeit.</summary>
+		<summary xml:lang="el-GR">Το WordPress είναι ένα σύγχρονο σύστημα διαδικτυακών δημοσιεύσεων και διαχείρισης περιεχομένου·</summary>
+		<summary xml:lang="es-ES">WordPress es una plataforma de publicación personal semántica altamente desarrollada con especial prioridad enn la estética, los estándares web y la usabilidad.</summary>
+		<summary xml:lang="fi-FI">WordPress on moderni henkilökohtainen julkaisualusta. Sen painopisteinä ovat esteettisyys, web-standardit ja käytettävyys.</summary>
+		<summary xml:lang="fr-FR">La dernière version francisée de WordPress sera toujours accessible depuis cette page. Il vous suffit de cliquer sur le bouton se trouvant ici à droite pour la télécharger.</summary>
+		<summary xml:lang="it-IT">WordPress è una piattaforma di editoria personale allo “stato dell’arte” che si focalizza sul’estetica, sugli standard web e sull’usabilità. WordPress è uno strumento che al tempo stesso è gratuito e senza prezzo per le sue infinite possibilità.</summary>
+		<summary xml:lang="ja-JP">WordPress (ワードプレス) は、オープンソースのブログ／CMS プラットフォームです。セマンティック Web、コードやデザインの美しさ、Web 標準、ユーザビリティなどを意識して開発されており、無料でダウンロードして使うことができます。</summary>
+		<summary xml:lang="ko-KR">워드프레스는 아름다움, 웹표준, 그리고 사용성에 중점을 둔 최신 기술의 시맨틱 개인 출판 플랫폼입니다. 워드프레스는 무료이지만 그 가치는 무한합니다.</summary>
+		<summary xml:lang="nb-NO">WordPress er et toppmoderne publiseringsverktøy med fokus på utseende, nettstandarder og brukervennlighet.</summary>
+		<summary xml:lang="nl-NL">WordPress is een persoonlijk publicatie platform gericht op schoonheid, webstandaarden en gebruiksgemak.</summary>
+		<summary xml:lang="pt-BR">O WordPress é uma plataforma semântica de vanguarda para publicação pessoal, com foco na estética, nos Padrões Web e na usabilidade. </summary>
+		<summary xml:lang="pt-PT">O WordPress é um sistema de gestão de conteúdo que lhe permite criar e manter, de maneira simples e robusta, todo o conteúdo de um site. </summary>
+		<summary xml:lang="pl-PL">WordPress jest nowoczesną, semantyczną, osobistą platformą publikacyjną, koncentrującą się na estetyce, zgodności z internetowymi standardami i użyteczności.</summary>
+		<summary xml:lang="ru-RU">WordPress — идеальная платформа для публикации, ориентированная на красоту, поддержку стандартов и удобство использования.</summary>
+		<summary xml:lang="sv-SE">WordPress är ett modernt publiceringsverktyg med fokus på utseende, webbstandard och användarvänlighet.</summary>
+		<summary xml:lang="tr-TR">WordPress, dünyada en çok kullanılan blog sistemlerinden biridir, açık kaynaklı ve ücretsiz olarak dağıtılmaktadır.</summary>
+		<summary xml:lang="uk-UA">Отримати свою копію найкращої в світі платформи персональної публікації, що зфокусована на естетичність, веб-стандарти та легкість у використанні — дуже легко.</summary>
+		<summary xml:lang="zh-CN">WordPress是一个注重美学、易用性和网络标准的个人信息发布平台。WordPress虽为免费的开源软件，但其价值无法用金钱来衡量。</summary>
+		<summary xml:lang="zh-TW">WordPress 是一個開放原始碼網誌／内容管理系统，專注於美學、網頁標準和易用性的個人發佈平台。</summary>
+		<description> WordPress is a state-of-the-art semantic personal publishing platform with a focus on aesthetics, web standards, and usability. What a mouthful. WordPress is both free and priceless at the same time. More simply, WordPress is what you use when you want to work with your blogging software, not fight it.</description>
+		<description xml:lang="da-DK">WordPress er intet mindre end det mest benyttede cms (Content Management System) i verden og du er nok havnet her, fordi du gerne vil i gang med WordPress på dansk. Hvis du vil mere om WordPress, så har vi skrevet lidt Om WordPress.</description>
+		<description xml:lang="de-DE">WordPress ist eine Web-Software, mit der du moderne Internetpräsenzen, Websites, Blogs und Online-Shops umsetzen kannst. WordPress ist Freie Software, die du kostenlos nutzen darfst und zu deren Qualität du jederzeit beitragen kannst, wenn du möchtest.</description>
+		<description xml:lang="el-GR">Το WordPress είναι ένα σύγχρονο σύστημα διαδικτυακών δημοσιεύσεων και διαχείρισης περιεχομένου· μ’ άλλα λόγια, ένα μέσο για να φτιάξετε έναν ιστότοπο (site) ή ιστολόγιο (blog) ωραία και απλά και να δημοσιεύετε κάθε είδους περιεχόμενο: άρθρα, σκέψεις, φωτογραφίες, βίντεο, πληροφορίες για προϊόντα και υπηρεσίες – ό,τι θέλετε!.</description>
+		<description xml:lang="es-ES">WordPress es una avanzada plataforma semántica de publicación personal orientada a la estética, los estándares web y la usabilidad. WordPress es libre y, al mismo tiempo, gratuito.Dicho de forma más sencilla, WordPress es el sistema que utilizas cuando deseas trabajar con tu herramienta de publicación en lugar de pelearte con ella.</description>
+		<description xml:lang="fi-FI">WordPress on moderni henkilökohtainen julkaisualusta. Sen painopisteinä ovat esteettisyys, web-standardit ja käytettävyys. WordPress on sekä ilmainen että samalla korvaamaton.</description>
+		<description xml:lang="fr-FR">WordPress - plateforme sémantique de publication personnelle alliant esthétique, standard du Web et convivialité. Gratuit, WordPress possède une valeur inestimable. Plus simplement, WordPress est ce qu’il vous faut si vous voulez avancer grâce à un système de blog, plutôt que vous battre contre lui.</description>
+		<description xml:lang="it-IT">WordPress è una piattaforma di editoria personale allo “stato dell’arte” che si focalizza sul’estetica, sugli standard web e sull’usabilità. WordPress è uno strumento che al tempo stesso è gratuito e senza prezzo per le sue infinite possibilità.</description>
+		<description xml:lang="ja-JP">WordPress (ワードプレス) は、オープンソースのブログ／CMS プラットフォームです。セマンティック Web、コードやデザインの美しさ、Web 標準、ユーザビリティなどを意識して開発されており、無料でダウンロードして使うことができます。WordPress を使って、思い通りにカスタマイズしたブログサイトを作り上げてみませんか。</description>
+		<description xml:lang="ko-KR">워드프레스는 아름다움, 웹표준, 그리고 사용성에 중점을 둔 최신 기술의 시맨틱 개인 출판 플랫폼입니다. 워드프레스는 무료이지만 그 가치는 무한합니다.</description>
+		<description xml:lang="nb-NO">WordPress er et toppmoderne publiseringsverktøy med fokus på utseende, nettstandarder og brukervennlighet. Det er et perfekt verktøy for såvel privatpersoner som selskaper. WordPress er både gratis og uvurderlig samtidig!</description>
+		<description xml:lang="nl-NL">WordPress is een persoonlijk publicatie platform gericht op schoonheid, webstandaarden en gebruiksgemak. WordPress is van onschatbare waarde en dat geheel gratis.</description>
+		<description xml:lang="pt-BR">O WordPress é uma plataforma semântica de vanguarda para publicação pessoal, com foco na estética, nos Padrões Web e na usabilidade. Ao mesmo tempo é um software livre, gratuito e feito por você. Em outras palavras, o WordPress é o que você usa quando quer trabalhar e não lutar com seu software de publicação de conteúdo, sendo hoje a maior plataforma de Gerenciamento de Conteúdo do Mundo, com quase 70% do mercado.</description>
+		<description xml:lang="pt-PT">O WordPress é um sistema de gestão de conteúdo que lhe permite criar e manter, de maneira simples e robusta, todo o conteúdo de um site.  Combina estética, standards da Web et usabilidade. Apesar de ser grátis, tem um valor inestimável.</description>
+		<description xml:lang="pl-PL">WordPress jest nowoczesną, semantyczną, osobistą platformą publikacyjną, koncentrującą się na estetyce, zgodności z internetowymi standardami i użyteczności. WordPress jest zarówno wolny (od słowa „wolność”), jak i darmowy.</description>
+		<description xml:lang="ru-RU">WordPress — идеальная платформа для публикации, ориентированная на красоту, поддержку стандартов и удобство использования. WordPress бесплатен и свободен к распространению.</description>
+		<description xml:lang="sv-SE">WordPress är ett modernt publiceringsverktyg med fokus på utseende, webbstandard och användarvänlighet. Det perfekta verktyget för privatperson som företag. WordPress är gratis och ovärderligt på en och samma gång.</description>
+		<description xml:lang="tr-TR">WordPress, dünyada en çok kullanılan blog sistemlerinden biridir, açık kaynaklı ve ücretsiz olarak dağıtılmaktadır. WordPress kullanarak kısa süre içinde kendi sunucunuza kurulum yapabilir, sitenizi yayınlayabilir ve sitenize içerik eklemeye yani bloglamaya başlayabilirsiniz.</description>
+		<description xml:lang="uk-UA">Отримати свою копію найкращої в світі платформи персональної публікації, що зфокусована на естетичність, веб-стандарти та легкість у використанні — дуже легко. Що там казати — WordPress безоплатний та безкоштовний одночасно!</description>
+		<description xml:lang="zh-CN">WordPress 是一個開放原始碼網誌／内容管理系统，專注於美學、網頁標準和易用性的個人發佈平台。WordPress 兼具自由與無價，你可以下載並且免費使用。</description>
+		<description xml:lang="zh-TW">WordPress是一个注重美学、易用性和网络标准的个人信息发布平台。WordPress虽为免费的开源软件，但其价值无法用金钱来衡量。WordPress的图形设计在性能上易于操作、易于浏览；在外观上优雅大方、风格清新、色彩诱人。</description>
+	
+  	
+  	<icon path="images/icon.png"/>
+  	
+  	<screenshot path="images/admin_page.jpg">
+  		<description>Admin page.</description>
+  	</screenshot>
+  	
+  	<license must-accept="true">
+    	<text>
+      		<name>GPLv2</name>
+			<file>htdocs/license.txt</file>
+    	</text>
+  	</license>  
+	
+	<configuration-script-language>php</configuration-script-language>
+	<upgradable-from release="0" version="2.0"/>
+
+	<changelog>
+	<version release="4" version="3.6">
+    	<entry>http://wordpress.org/news/2013/08/oscar/</entry>
+    </version>
+<version release="1" version="3.5.2">
+    	<entry>http://wordpress.org/news/2013/06/wordpress-3-5-2/</entry>
+    </version>
+<version release="1" version="3.5.1">
+    	<entry>http://wordpress.org/news/2013/01/wordpress-3-5-1/</entry>
+    </version>
+<version release="9" version="3.5">
+	<entry>Fix for table prefix rewriting bug</entry>
+	</version>
+    <version release="2" version="3.5">
+    	<entry>Added the Installation Dcoumnets</entry>
+    </version>
+<version release="1" version="3.5">
+    	<entry>http://wordpress.org/news/2012/09/wordpress-3-5-beta-1/</entry>
+    </version>
+<version release="3" version="3.4.2">
+		<entry>Adding DB port to DB_HOST if port is not default</entry>
+	</version>
+	<version release="1" version="3.4.2">
+		<entry>WordPress 3.4.2 Maintenance and Security Release http://wordpress.org/news/2012/09/wordpress-3-4-2/</entry>
+	</version>
+	<version release="3" version="3.4.1">
+		<entry>Updating urls in wp_posts table on re-configuration</entry>
+	</version>
+	<version release="1" version="3.4.1">
+		<entry>WordPress 3.4.1 Maintenance and Security Release http://wordpress.org/news/2012/06/wordpress-3-4-1/</entry>
+	</version>
+	<version release="1" version="3.4">
+        <entry>WordPress 3.4 "Green" http://wordpress.org/news/2012/06/green/</entry>
+   </version>
+	<version release="1" version="3.3.2">
+        <entry>WordPress 3.3.2 Security Update http://wordpress.org/news/2012/01/wordpress-3-3-2/</entry>
+   </version>
+   <version release="3" version="3.3.1">
+        <entry>WordPress 3.3 "Sonny" http://wordpress.org/news/2011/12/sonny/</entry>
+        <entry>WordPress 3.3.1 Security and Maintenance Release http://wordpress.org/news/2012/01/wordpress-3-3-1/</entry>
+    </version>
+    <version release="3" version="3.2.1">
+        <entry>WordPress 3.2.1 reslease notes: http://codex.wordpress.org/Version_3.2.1</entry>
+    </version>
+    <version release="1" version="3.1.4">
+        <entry>WordPress 3.1.4 reslease notes: http://codex.wordpress.org/Version_3.1.4</entry>
+    </version>
+
+		<version release="1" version="3.1.3">
+			<entry>Packaged into APS 1.0. with extra plugins. Description updated. Adding Polish language.</entry>
+		</version>		
+    <version release="1" version="3.1.3">
+        <entry>WordPress 3.1.3 reslease notes: http://codex.wordpress.org/Version_3.1.3</entry>
+    </version>
+    <version release="3" version="3.1.2">
+        <entry>WordPress 3.1.2 reslease notes: http://codex.wordpress.org/Version_3.1.2</entry>
+    </version>
+    <version release="3" version="3.1.1">
+        <entry>WordPress 3.1.1 reslease notes: http://codex.wordpress.org/Version_3.1.1</entry>
+    </version>
+    <version release="3" version="3.1">
+        <entry>deployment fix: dummy file is place under htdocs/tmp</entry>
+    </version>
+    <version release="1" version="3.1">
+        <entry>WordPress 3.1 reslease notes: http://codex.wordpress.org/Version_3.1</entry>
+    </version>
+    <version release="1" version="3.0.4">
+        <entry>Upgrade to WordPress 3.0.4</entry>
+    </version>
+    <version release="1" version="3.0.3">
+        <entry>Upgrade to WordPress 3.0.3</entry>
+    </version>
+    <version release="3" version="3.0">
+        <entry>Upgrade to WordPress 3.0</entry>
+    </version>
+    <version release="6" version="2.9.2">
+        <entry>Top application directory became writable to support auto-upgrade and test mode</entry>
+    </version>
+    <version release="5" version="2.9.2">
+        <entry>ChangeLog http://codex.wordpress.org/Version_2.9.2</entry>
+        <entry>FS_METHOD set to 'direct' in wp-config.php to improve plug-ins upload</entry>
+    </version>
+    <version release="1.2" version="2.9.1">
+        <entry>ChangeLog http://codex.wordpress.org/Version_2.9.1</entry>
+    </version>
+    <version release="1.2" version="2.9.0">
+      <entry>ChangeLog http://codex.wordpress.org/Version_2.9</entry>
+      <entry>ES, FR, NL localizations included</entry>
+    </version>
+    <version release="3" version="2.8.4">
+      <entry>ChangeLog http://codex.wordpress.org/Version_2.8.4</entry>
+    </version>
+    <version release="6" version="2.8">
+      <entry>Obsoleted category removed</entry>
+    </version>
+    <version release="5" version="2.8">
+      <entry>ChangeLog http://codex.wordpress.org/Version_2.8;
+             Plugin Compatibility list: http://codex.wordpress.org/Plugins/Plugin_Compatibility/2.8;
+             Theme Compatibility list: http://codex.wordpress.org/Themes/Theme_Compatibility/2.8
+      </entry>
+    </version>
+    <version release="1" version="2.7.1">
+      <entry>ChangeLog http://codex.wordpress.org/Changelog/2.7.1</entry>
+    </version>
+    <version release="5" version="2.7.0">
+      <entry>'PHP safe mode off' requirement is added </entry>
+    </version>
+    <version release="4" version="2.7.0">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="3" version="3.5.1">
+    	<entry>Changes in DB and made small chages to create user name with &amp;amp;quot;.&amp;amp;quot; .</entry>
+    </version>
+    <version release="1" version="3.6.1">
+    	<entry>Block unsafe PHP unserialization that could occur in limited situations and setups, which can lead to remote code execution. 
+Prevent a user with an Author role, using a specially crafted request, from being able to create a post “written by” another user. 
+Fix insufficient input validation that could result in redirecting or leading a user to another website. 
+ 
+Additionally, we’ve adjusted security restrictions around file uploads to mitigate the potential for cross-site scripting.
+</entry>
+    </version>
+    <version release="2" version="3.6.1">
+    	<entry>Updated release for testing</entry>
+    </version>
+    <version release="5" version="3.6.1">
+    	<entry>Updated release for testing</entry>
+    </version>
+    <version release="1" version="3.7">
+    	<entry>Updates while you sleep: With WordPress 3.7, you don’t have to lift a finger to apply maintenance and security updates. Most sites are now able to automatically apply these updates in the background. The update process also has been made even more reliable and secure, with dozens of new checks and safeguards.
+    Stronger password recommendations: Your password is your site’s first line of defense. It’s best to create passwords that are complex, long, and unique. To that end, our password meter has been updated in WordPress 3.7 to recognize common mistakes that can weaken your password: dates, names, keyboard patterns (123456789), and even pop culture references.
+    Better global support: Localized versions of WordPress will receive faster and more complete translations. WordPress 3.7 adds support for automatically installing the right language files and keeping them up to date, a boon for the many millions who use WordPress in a language other than English.
+</entry>
+    </version>
+    <version release="2" version="3.7">
+    	<entry>updated</entry>
+    </version>
+    <version release="3" version="3.7">
+    	<entry>disabled autoupgrade</entry>
+    </version>
+    <version release="1" version="3.7.1">
+    	<entry>Images with captions no longer appear broken in the visual editor.
+Allow some sites running on old or poorly configured servers to continue to check for updates from WordPress.org.
+Avoid fatal errors with certain plugins that were incorrectly calling some WordPress functions too early.
+Fix hierarchical sorting in get_pages(), exclusions in wp_list_categories(), and in_category() when called with empty values.
+Fix a warning that may occur in certain setups while performing a search, and a few other notices.</entry>
+    </version>
+    <version release="8" version="3.7.1">
+    	<entry>Changed</entry>
+    </version>
+    <version release="10" version="3.7.1">
+    	<entry>Corrected Localization</entry>
+    </version>
+    <version release="1" version="3.8">
+    	<entry>New release</entry>
+    </version>
+    <version release="2" version="3.8">
+    	<entry>updated</entry>
+    </version>
+    <version release="13" version="3.8">
+    	<entry>updated</entry>
+    </version>
+    <version release="1" version="3.8.1">
+    	<entry>Version 3.8.1 is a maintenance releases that addresses 31 bugs in 3.8, including various fixes and improvements for the new dashboard design and new themes admin screen. An issue with taxonomy queries in WP_Query was resolved. And if you’ve been frustrated by submit buttons that won’t do anything when you click on them (or thought you were going crazy, like some of us), we’ve found and fixed this “dead zone” on submit buttons.
+
+It also contains a fix for embedding tweets (by placing the URL to the tweet on its own line), which was broken due to a recent Twitter API change. </entry>
+    </version>
+    <version release="2" version="3.8.1">
+    	<entry>Version 3.8.1 is a maintenance releases that addresses 31 bugs in 3.8, including various fixes and improvements for the new dashboard design and new themes admin screen. An issue with taxonomy queries in WP_Query was resolved. And if you’ve been frustrated by submit buttons that won’t do anything when you click on them (or thought you were going crazy, like some of us), we’ve found and fixed this “dead zone” on submit buttons.
+
+It also contains a fix for embedding tweets (by placing the URL to the tweet on its own line), which was broken due to a recent Twitter API change. </entry>
+    </version>
+    <version release="15" version="3.8.1">
+    	<entry>Version 3.8.1 is a maintenance releases that addresses 31 bugs in 3.8, including various fixes and improvements for the new dashboard design and new themes admin screen. An issue with taxonomy queries in WP_Query was resolved. And if you’ve been frustrated by submit buttons that won’t do anything when you click on them (or thought you were going crazy, like some of us), we’ve found and fixed this “dead zone” on submit buttons.
+
+It also contains a fix for embedding tweets (by placing the URL to the tweet on its own line), which was broken due to a recent Twitter API change. </entry>
+    </version>
+    <version release="18" version="3.8.1">
+    	<entry>Version 3.8.1 is a maintenance releases that addresses 31 bugs in 3.8, including various fixes and improvements for the new dashboard design and new themes admin screen. An issue with taxonomy queries in WP_Query was resolved. And if you’ve been frustrated by submit buttons that won’t do anything when you click on them (or thought you were going crazy, like some of us), we’ve found and fixed this “dead zone” on submit buttons.
+
+It also contains a fix for embedding tweets (by placing the URL to the tweet on its own line), which was broken due to a recent Twitter API change. </entry>
+    </version>
+    <version release="20" version="3.8.2">
+    	<entry>Potential authentication cookie forgery. CVE-2014-0166.
+Privilege escalation: prevent contributors from publishing posts. CVE-2014-0165.
+(Hardening) Pass along additional information when processing pingbacks to help hosts identify potentially abusive requests.
+(Hardening) Fix a low-impact SQL injection by trusted users.
+(Hardening) Prevent possible cross-domain scripting through Plupload, the third-party library WordPress uses for uploading files. </entry>
+    </version>
+    <version release="4" version="3.8.3">
+    	<entry>new</entry>
+    </version>
+    <version release="22" version="3.9">
+    	<entry>Initial release</entry>
+    </version>
+    <version release="23" version="3.9.1">
+    	<entry>New Release</entry>
+    </version>
+    <version release="24" version="3.9.1">
+    	<entry>Updated</entry>
+    </version>
+    <version release="1" version="3.9.1">
+    	<entry>Fixes a possible but unlikely code execution when processing widgets (WordPress is not affected by default), discovered by Alex Concha of the WordPress security team.
+Prevents information disclosure via XML entity attacks in the external GetID3 library, reported by Ivan Novikov of ONSec.
+Adds protections against brute attacks against CSRF tokens, reported by David Tomaschik of the Google Security Team.
+Contains some additional security hardening, like preventing cross-site scripting that could be triggered only by administrators.
+</entry>
+    </version>
+    <version release="27" version="3.9.2">
+    	<entry>Initial release</entry>
+    </version>
+    <version release="1" version="4.0">
+    	<entry>Manage your media with style
+Working with embeds has never been easier
+Focus on your content
+Finding the right plugin
+The Ensemble
+</entry>
+    </version>
+    <version release="29" version="4.0">
+    	<entry>Reconfigure changed</entry>
+    </version>
+    <version release="30" version="4.0">
+    	<entry>Locale modified</entry>
+    </version>
+    <version release="31" version="4.0">
+    	<entry>Added Brazillian portuguese</entry>
+    </version>
+    <version release="34" version="4.0">
+    	<entry>Added more locale</entry>
+    </version>
+    <version release="35" version="4.0.1">
+    	<entry>Version 4.0.1 does address these eight security issues:
+Three cross-site scripting issues that a contributor or author could use to compromise a site. Discovered by Jon Cave, Robert Chapin, and John Blackbourn of the WordPress security team.
+A cross-site request forgery that could be used to trick a user into changing their password.
+An issue that could lead to a denial of service when passwords are checked. Reported by Javier Nieto Arevalo and Andres Rojas Guerrero.
+Additional protections for server-side request forgery attacks when WordPress makes HTTP requests. Reported by Ben Bidner (vortfu).
+An extremely unlikely hash collision could allow a user’s account to be compromised, that also required that they haven’t logged in since 2008 (I wish I were kidding). Reported by David Anderson.
+WordPress now invalidates the links in a password reset email if the user remembers their password, logs in, and changes their email address. Reported separately by Momen Bassel, Tanoy Bose, and Bojan Slavković of ManageWP.
+</entry>
+    </version>
+    <version release="36" version="4.0.1">
+    	<entry>updated</entry>
+    </version>
+    <version release="36" version="4.1">
+    	<entry>Introducing Twenty Fifteen
+Distraction-free writing
+Complex Queries
+Metadata, date, and term queries now support advanced conditional logic, like nested clauses and multiple operators — A AND ( B OR C ).
+Customizer API
+The customizer now supports conditionally showing panels and sections based on the page being previewed.
+Added locale for Greek, Finland, Indonesia, Korean , Norway, Brasil, Sweden and Ukraine</entry>
+    </version>
+
+	</changelog>
+		
+	<entry-points>
+		<entry>
+			<path>/wp-admin/</path>
+			<label>Administrative interface</label>
+			<description>Administrative interface</description>
+		</entry>
+		<entry>
+			<path>/</path>
+			<label>Blog</label>
+			<description>Blog</description>
+		</entry>
+		<entry>
+			<path>/wp-login.php?redirect_to=wp-admin/theme-uploader.php</path>
+			<label>Upload theme</label>
+			</entry>
+
+		<entry>
+			<path>/wp-login.php?redirect_to=wp-admin/plugin-uploader.php</path>
+			<label>Upload plugin</label>
+		</entry>
+	</entry-points>
+		
+	<installed-size>22148168</installed-size>
+  	
+  	<categories>
+		<category>Web/Blog</category>
+  	</categories>
+	
+	<languages>
+    	<language>en</language>
+			<language>da</language>
+			<language>de</language>
+			<language>el</language>
+			<language>es</language>
+			<language>fi</language>
+			<language>fr</language>
+			<language>it</language>
+			<language>ja</language>
+			<language>ko</language>
+			<language>nb</language>
+			<language>nl</language>
+			<language>pt</language>
+			<language>br</language>
+			<language>pl</language>
+			<language>ru</language>
+			<language>sv</language>
+			<language>tr</language>
+			<language>uk</language>
+			<language>cn</language>
+			<language>tw</language>
+  	</languages>
+	
+<settings>
+			<group>
+				<name>Administrator's preferences</name>
+				<name xml:lang="en-US">Administrator's preferences</name>
+					<name xml:lang="fr-FR">Les préférences de l'administrateur</name>
+					<name xml:lang="de-DE">Präferenzen Administrator</name>
+					<name xml:lang="es-ES">Preferencias del administrador</name>
+					<name xml:lang="pl-PL">Logowanie administratora</name>
+					<name xml:lang="ru-RU">Настройки авторизации</name>
+					<name xml:lang="pt-BR">Preferências do administrador</name>
+				<setting default-value="admin" id="admin_name" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_.\-]*" type="string">
+					<name>Administrator's login</name>
+					<name xml:lang="en-US">Administrator's login</name>
+					<name xml:lang="fr-FR">La connexion de l'administrateur</name>
+					<name xml:lang="de-DE">Login beheerder</name>
+					<name xml:lang="es-ES">Inicio de sesión del administrador</name>
+					<name xml:lang="pl-PL">Logowanie administratora</name>
+					<name xml:lang="ru-RU">Логин администратора</name>
+					<name xml:lang="pt-BR">De login do administrador</name>
+					<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+					<error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+					<error-message xml:lang="ru-RU">Пожалуйста, убедитесь, что текст, который вы ввели начинается с буквы и продолжается либо цифры, буквы, подчеркивание или дефиса.</error-message>
+					<error-message xml:lang="fr-FR">S'il vous plaît assurez le texte saisi commence par une lettre et se poursuit avec deux chiffres, des lettres, souligne ou des traits d'union.</error-message>
+					<error-message xml:lang="de-DE">Zorg ervoor dat de ingevoerde tekst begint met een brief en blijft met beide cijfers, letters, onderstreept of koppeltekens.</error-message>
+					<error-message xml:lang="pl-PL">Prosimy upewnić się, że tekst, który wszedł zaczyna się od litery i kontynuuje zarówno liczby, litery, podkreślenia lub myślników.</error-message>
+					<error-message xml:lang="es-ES">Por favor, asegúrese de que el texto que ha introducido comienza con una letra y continúa, ya sea con números, letras, guiones o guiones.</error-message>
+				    <error-message xml:lang="pt-BR">Por favor, certifique-se o texto digitado começa com uma letra e continua com tanto números, letras, sublinhados ou hífens.</error-message>
+				
+				</setting>
+				<setting id="admin_password" min-length="1" type="password">
+					<name>Password</name>
+					<name xml:lang="en-US">Password</name>
+					<name xml:lang="da-DK">Adgangskode</name>
+					<name xml:lang="de-DE">wachtwoord</name>
+					<name xml:lang="el-GR">Κωδικός πρόσβασης</name>
+					<name xml:lang="es-ES">Contraseña</name>
+					<name xml:lang="fi-FI">Salasana</name>
+					<name xml:lang="fr-FR">Mot de passe</name>
+					<name xml:lang="it-IT">Password</name>
+					<name xml:lang="ja-JP">パスワード</name>
+					<name xml:lang="ko-KR">암호</name>
+					<name xml:lang="nb-NO">Passord</name>
+					<name xml:lang="nl-NL">Wachtwoord</name>
+					<name xml:lang="pt-BR">Senha</name>
+					<name xml:lang="pt-PT">Palavra-passe</name>
+					<name xml:lang="pl-PL">Hasło</name>
+					<name xml:lang="ru-RU">Пароль</name>
+					<name xml:lang="sv-SE">Lösenord</name>
+					<name xml:lang="tr-TR">Parola</name>
+					<name xml:lang="uk-UA">Пароль</name>
+					<name xml:lang="zh-CN">密码</name>
+					<name xml:lang="zh-TW">密碼</name>
+				</setting>
+			</group>
+			<group>
+				<name>Main configuration</name>
+				<name xml:lang="en-US">Main configuration</name>
+				<name xml:lang="da-DK">E-mailkonfiguration</name>
+				<name xml:lang="de-DE">E-Mail-Konfiguration</name>
+				<name xml:lang="el-GR">Ρυθμίσεις αλληλογραφίας</name>
+				<name xml:lang="es-ES">Configuración del correo</name>
+				<name xml:lang="fi-FI">Sähköpostin määritykset</name>
+				<name xml:lang="fr-FR">Configuration de la messagerie</name>
+				<name xml:lang="it-IT">Configurazione della posta</name>
+				<name xml:lang="ja-JP">メール構成</name>
+				<name xml:lang="ko-KR">메일 구성</name>
+				<name xml:lang="nb-NO">E-postkonfigurasjon</name>
+				<name xml:lang="nl-NL">Mailinstellingen</name>
+				<name xml:lang="pt-BR">Configuração de caxia de e-mail</name>
+				<name xml:lang="pt-PT">Configuração de correio</name>
+				<name xml:lang="pl-PL">Konfiguracja poczty</name>
+				<name xml:lang="ru-RU">Настройка почты</name>
+				<name xml:lang="sv-SE">E-postkonfiguration</name>
+				<name xml:lang="tr-TR">Posta yapılandırması</name>
+				<name xml:lang="uk-UA">Поштове конфігурація</name>
+				<name xml:lang="zh-CN">邮件配置</name>
+				<name xml:lang="zh-TW">郵件配置</name>
+				
+					<setting id="admin_email" type="email">
+						<name>Administrator's email</name>
+						<name xml:lang="en-US">Administrator's email</name>
+						<name xml:lang="da-DK">Administratorens e-mail </name>
+						<name xml:lang="de-DE">E-Mail-Adresse des Administrators</name>
+						<name xml:lang="el-GR">Διεύθυνση ηλεκτρονικού ταχυδρομείου διαχειριστή</name>
+						<name xml:lang="es-ES">Email del administrador</name>
+						<name xml:lang="fi-FI">Järjestelmänvalvojan sähköposti</name>
+						<name xml:lang="fr-FR">Adresse mail de l'administrateur</name>
+						<name xml:lang="it-IT">Email dell'amministratore</name>
+						<name xml:lang="ja-JP">管理者のメールアドレス</name>
+						<name xml:lang="ko-KR">관리자 이메일</name>
+						<name xml:lang="nb-NO">Administrators e-post</name>
+						<name xml:lang="nl-NL">E-mail van beheerder</name>
+						<name xml:lang="pt-BR">E-mail do administrador</name>
+						<name xml:lang="pt-PT">E-mail do administrador</name>
+						<name xml:lang="pl-PL">Adres e-mail administratora</name>
+						<name xml:lang="ru-RU">Почта администратора</name>
+						<name xml:lang="sv-SE">Administratörens e-post</name>
+						<name xml:lang="tr-TR">Yöneticinin e-postası</name>
+						<name xml:lang="uk-UA">Поштови адрес адміністратора</name>
+						<name xml:lang="zh-CN">管理员的电子邮件</name>
+						<name xml:lang="zh-TW">管理員的電子郵件</name>
+					</setting>
+				
+				
+                    <setting default-value="My CMS" id="title" min-length="1" type="string">
+                    	<name>Site name</name>
+                        <name xml:lang="en-US">Site name</name>
+						<name xml:lang="da-DK">Webstedsnavn</name>
+						<name xml:lang="de-DE">Website-Name</name>
+						<name xml:lang="el-GR">Όνομα τοποθεσίας</name>
+						<name xml:lang="es-ES">Nombre del sitio</name>
+						<name xml:lang="fi-FI">Sivuston nimi</name>
+						<name xml:lang="fr-FR">Nom du site</name>
+						<name xml:lang="it-IT">Nome del sito</name>
+						<name xml:lang="ja-JP">サイト名</name>
+						<name xml:lang="ko-KR">사이트 이름</name>
+						<name xml:lang="nb-NO">Områdenavn</name>
+						<name xml:lang="nl-NL">Sitenaam</name>
+						<name xml:lang="pt-BR">Nome do site</name>
+						<name xml:lang="pt-PT">Nome do Site</name>
+						<name xml:lang="pl-PL">Nazwa strony</name>
+						<name xml:lang="ru-RU">Имя сайта</name>
+						<name xml:lang="sv-SE">Webplatsnamn</name>
+						<name xml:lang="tr-TR">Tesis adı</name>
+						<name xml:lang="uk-UA">Ім’я сайту</name>
+						<name xml:lang="zh-CN">网站名称</name>
+						<name xml:lang="zh-TW">網站名稱</name>
+                    </setting>
+                
+			</group>
+			<group>
+			<setting default-value="en-US" id="locale" type="enum">
+				<name>Interface language</name>
+				<name xml:lang="en-US">Interface language</name>
+				<name xml:lang="da-DK">Grænsefladesprog</name>
+				<name xml:lang="de-DE">Sprache der Benutzeroberfläche</name>
+				<name xml:lang="el-GR">Γλώσσα περιβάλλοντος εργασίας</name>
+				<name xml:lang="es-ES">Idioma del interfaz</name>
+				<name xml:lang="fi-FI">Käyttöliittymän kieli</name>
+				<name xml:lang="fr-FR">Langue de l'interface</name>
+				<name xml:lang="it-IT">Lingua dell'interfaccia</name>
+				<name xml:lang="ja-JP">インターフェース言語</name>
+				<name xml:lang="ko-KR">인터페이스 언어</name>
+				<name xml:lang="nb-NO">Grensesnitt språk</name>
+				<name xml:lang="nl-NL">Schermtaal</name>
+				<name xml:lang="pt-BR">Idioma da interface</name>
+				<name xml:lang="pt-PT">Língua da interface</name>
+				<name xml:lang="pl-PL">Język interfejsu</name>
+				<name xml:lang="ru-RU">Язык интерфейса</name>
+				<name xml:lang="sv-SE">Gränssnittsspråk</name>
+				<name xml:lang="tr-TR">Arayüz Dili</name>
+				<name xml:lang="uk-UA">Мова інтерфейсу</name>
+				<name xml:lang="zh-CN">界面语言</name>
+				<name xml:lang="zh-TW">介面語言</name>
+				 <choice id="zh-CN">
+                  <name>Chinese Simplified</name>
+                </choice>
+                <choice id="zh-TW">
+                  <name>Chinese Traditional</name>
+                </choice>
+                <choice id="da-DK">
+                  <name>Danish</name>
+                </choice>
+				<choice id="nl-NL">
+					<name>Dutch</name>
+				</choice>
+				<choice id="de-DE">
+					<name>German</name>
+				</choice>
+				<choice id="en-US">
+					<name>English</name>
+				</choice>
+				<choice id="fr-FR">
+					<name>French</name>
+				</choice>
+				<choice id="it-IT">
+					<name>Italian</name>
+				</choice>
+				<choice id="ja-JP">
+				    <name>Japanese</name>
+				</choice>
+				<choice id="ru-RU">
+					<name>Russian</name>
+				</choice>
+                <choice id="pl-PL">
+                  <name>Polish</name>
+                </choice>
+				<choice id="pt-PT">
+					<name>Portuguese (Portugal)</name>
+				</choice>
+<choice id="es-ES">
+					<name>Spanish</name>
+				</choice>
+				<choice id="tr-TR">
+					<name>Turkish</name>
+				</choice>
+				<choice id="pt-BR">
+					<name>Portuguese (Brazil)</name>
+				</choice>
+				<choice id="el-EL">
+					<name>Greek</name>
+				</choice>
+				<choice id="fi-FI">
+					<name>Finland</name>
+				</choice>
+				<choice id="id-ID">
+					<name>Indonesia</name>
+				</choice>
+				<choice id="ko-KR">
+					<name>Korean</name>
+				</choice>
+				<choice id="nb-NO">
+					<name>Norwegian</name>
+				</choice>
+				<choice id="sv-SE">
+					<name>Swedish</name>
+				</choice>
+				<choice id="uk-UA">
+					<name>Ukraine</name>
+				</choice>
+			</setting>
+			</group>
+
+		</settings>
+		
+ <requirements>
+    <php:version min="5.2.4" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+    <php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+
+    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+      <db:id>main</db:id>
+      <db:default-name>wordpress</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.15</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping path="htdocs" url="/">
+    <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+      <php:extension>php</php:extension>
+    </php:handler>
+
+    <mapping url="blogs/media">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="wp-content">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="tmp">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+  </mapping>
+
+</application>

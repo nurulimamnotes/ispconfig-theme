@@ -1,0 +1,350 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>smf</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>2.0.7</version>
+  <release>12</release>
+  <homepage>http://www.simplemachines.org/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>smf</default-prefix>
+
+  <summary>Online forum based on PHP and MySQL</summary>
+  <summary xml:lang="de-DE">PHP- und MySQL-basiertes Online-Forum...</summary>
+  <summary xml:lang="en-CA">Online forum based on PHP and MySQL</summary>
+  <summary xml:lang="en-GB">Online forum based on PHP and MySQL</summary>
+  <summary xml:lang="en-US">Online forum based on PHP and MySQL</summary>
+  <summary xml:lang="es-ES">Foro online basado en PHP y MySQL...</summary>
+  <summary xml:lang="fr-FR">Forum en ligne basé sur PHP et MySQL...</summary>
+  <summary xml:lang="pl-PL">SMF to internetowe forum dyskusyjne wykorzystujące PHP i MySQL...</summary>
+  <description>SMF is an online forum based on PHP and MySQL. It provides the following features: advanced 
+    permission and user management; multiple languages; multi-media output (XHTML, XML, RSS, WAP); 
+    tracking of new and old unread topics; maintenance mode, allowing only admins to login; 
+    word censoring, either full word or partial; ability to trace user actions; tracking of 
+    topics, messages, new members, and hits per day; ability to send a topic to a friend; 
+    ability to view a printer-friendly" version of topics</description>
+  <description xml:lang="de-DE">smf ist ein Online-Forum, dass auf PHP und MySQL basiert.  Es verfügt über folgende Features: erweiterte Nutzer- und Berechtigungsverwaltung; mehrere Sprachen; Multimedia-Output (XHTML, XML, RSS, WAP); 
+Tracking von neuen und ungelesenen Topics; Wartungsmodus, Zugriffsbeschränkung auf Administratoren; Wortzensur, ganze Wörter oder Wortfragmente; Möglichkeit Nutzerverhalten zu verfolgen; 
+Tracking von Topics, Nachrichten, neuen Mitgliedern und Zugriffen pro Tag; Möglichkeit ein Topic an einen Freund zu verschicken; Möglichkeit der Anzeige einer Druckansicht der Topics; 
+Nutzersperrung basierend auf Nutzernamen, E-Mail-Adresse, IP-Adresse oder dem Hostnamen (mit Angabe einer Ablauffrist).</description>
+  <description xml:lang="en-CA">SMF is an online forum based on PHP and MySQL. It provides the following features: advanced 
+    permission and user management; multiple languages; multi-media output (XHTML, XML, RSS, WAP); 
+    tracking of new and old unread topics; maintenance mode, allowing only admins to login; 
+    word censoring, either full word or partial; ability to trace user actions; tracking of 
+    topics, messages, new members, and hits per day; ability to send a topic to a friend; 
+    ability to view a printer-friendly" version of topics</description>
+  <description xml:lang="en-GB">SMF is an online forum based on PHP and MySQL. It provides the following features: advanced
+permission and user management; multiple languages; multi-media output (XHTML, XML, RSS, WAP); 
+    tracking of new and old unread topics; maintenance mode, allowing only administrators to login; 
+    word censoring, either full word or partial; ability to trace user actions; tracking of
+ topics, messages, new members, and hits per day; ability to send a topic to a friend; 
+    ability to view a “printer-friendly" version of topics</description>
+  <description xml:lang="en-US">SMF is an online forum based on PHP and MySQL. It provides the following features: advanced 
+    permission and user management; multiple languages; multi-media output (XHTML, XML, RSS, WAP); 
+    tracking of new and old unread topics; maintenance mode, allowing only admins to login; 
+    word censoring, either full word or partial; ability to trace user actions; tracking of 
+    topics, messages, new members, and hits per day; ability to send a topic to a friend; 
+    ability to view a printer-friendly" version of topics</description>
+  <description xml:lang="es-ES">smf es un foro online basado en PHP y MySQL. Cuenta con las siguientes caracteríasticas: gestión avanzada de permisos y usuarios; varios idiomas; salida multimedia (XHTML, XML, RSS, WAP); 
+seguimiento de temas no leídos nuevos y antiguos; modo de mantenimiento que solo permite el acceso a los administradores; censura de palabras, total o parcial; seguimiento de las acciones de los usuarios; 
+seguimiento de temas, mensajes, nuevos miembros y resultados por día; posibilidad de enviar un tema a un amigo; vista apta para impresión" de los temas
+</description>
+  <description xml:lang="fr-FR">smf est un forum en ligne basé sur PHP et MySQL. L'application fournit les fonctionnalités suivantes : gestion des permissions et utilisateurs ; plusieurs langues ; sortie multimédia (XHTML, XML, RSS, WAP) ; 
+suivi des topics nouveaux et non lus ; mode maintenance ; possibilité de limiter la connexion aux administrateurs ; censure de mots, mots entiers ou partiels ; possibilité de suivre les actions des utilisateurs ; 
+suivi des topics, messages, nouveaux membres et des accès par jour ; possibilité d'envoyer un topic à un ami ; possibilité d'afficher une version pour impression des topics ; 
+exclusion de membres basée sur leurs noms d'utilisateur, adresse email, adresse IP ou nom d'hôte (avec date d'expiration).</description>
+  <description xml:lang="pl-PL">SMF to internetowe forum dyskusyjne wykorzystujace PHP i MySQL. Jego glówne zalety to zaawansowany system zarzadzania kontami uzytkowników i przydzielania im przywilejów, 
+wiele wersji jezykowych, mozliwosc generowania forum w technologii XHTML, XML, RSS oraz WAP, sledzenie nowych oraz nieczytanych tematów, system awaryjny, ograniczanie logowania tylko dla administratorów, 
+cenzura calych slów lub ciagów znaków, sledzenie uzytkowników, tematów, wiadomosci, nowych kont, dziennych klikniec, mozliwosc wyslania powiadomienia o temacie do znajomych, 
+wyswietlanie tematów w wersji do druku, banowanie (równiez czasowe) uzytkowników na podstawie nicku, adresu e-mail, adresu IP lub adresu hosta.</description>
+
+  <icon path="images/icon.png"/>
+  
+  <screenshot path="images/app_screenshot-1-en.png">
+	<description>
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+  <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="en-US">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+    <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="en-CA">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+    <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="en-GB">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+    <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="fr-FR">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+    <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="es-ES">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+    <screenshot path="images/app_screenshot-1-en.png">
+	<description xml:lang="pl-PL">
+      This screen shows the front page for the forum. Here you can view and manage forum posts.
+    </description>
+  </screenshot>
+  <screenshot path="images/app_screenshot-1-de.png">
+	<description xml:lang="de-DE">
+	 Das Bild zeigt die Startseite des Forums. Hier können Sie Forenbeiträge sehen und bearbeiten.
+	</description>
+  </screenshot>
+  <license must-accept="true">
+	<text>
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="en-US">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="en-CA">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="en-GB">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="fr-FR">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="es-ES">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="pl-PL">
+		<name>Simple Machines License</name>
+		<file>htdocs/license.txt</file>
+	</text>
+	<text xml:lang="de-DE">
+		<name>Einzelplatz-Lizenz</name>
+		<file>htdocs/license.txt</file>
+	</text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <upgradable-from release="20" version="1.1.2"/>
+	<changelog>
+		<version release="12" version="2.0.7">
+			<entry>New 2.0.7 version</entry>
+		</version>
+<version release="2" version="2.0.6">
+			<entry>Translations added and user password bug fixed</entry>
+		</version>
+<version release="1" version="2.0.6">
+			<entry>2.0.6 version added</entry>
+		</version>
+<version release="5" version="2.0.5">
+			<entry>2.0.5 version added</entry>
+		</version>
+<version release="1" version="2.0.4">
+			<entry>2.0.4 version added</entry>
+		</version>
+<version release="2" version="2.0.3">
+			<entry>Upgrade bug fixed</entry>
+		</version>
+<version release="1" version="2.0.3">
+			<entry>2.0.3 version added</entry>
+		</version>
+<version release="2" version="2.0.2">
+			<entry>Cache and Sorce path declared as 'writable'</entry>
+		</version>
+<version release="1" version="2.0.2">
+			<entry>2.0.2 version added</entry>
+		</version>
+<version release="12" version="1.1.11">
+			<entry>Upgrade to version 1.1.11</entry>
+			<entry xml:lang="de-DE">Upgrade auf Version 1.1.11</entry>
+		</version>
+<version release="7" version="1.1.8">
+			<entry>url mapping corrected</entry>
+			<entry xml:lang="de-DE">url mapping corrected</entry>
+		</version>
+<version release="6" version="1.1.8">
+			<entry>Fixes in Metadata</entry>
+			<entry xml:lang="de-DE">Fixes in Metadata</entry>
+		</version>
+<version release="5" version="1.1.8">
+			<entry>Upgrade to version 1.1.8</entry>
+			<entry xml:lang="de-DE">Upgrade auf Version 1.1.8</entry>
+		</version>
+<version release="1" version="1.1.2">
+			<entry>Initial package version</entry>
+			<entry xml:lang="de-DE">Ursprüngliche Paketversion</entry>
+		</version>
+	</changelog>
+
+  <installed-size>7175168</installed-size>
+
+  <categories>
+	  <category>Web/Forum</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+	<language>de</language>
+	<language>fr</language>
+	<language>es</language>
+	<language>pl</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+	  <name xml:lang="en-US">Administrator's preferences</name>
+      <name xml:lang="en-CA">Administrator's preferences</name>
+      <name xml:lang="en-GB">Administrator's preferences</name>
+      <name xml:lang="fr-FR">Administrator's preferences</name>
+      <name xml:lang="es-ES">Administrator's preferences</name>
+      <name xml:lang="pl-PL">Administrator's preferences</name>
+	  <name xml:lang="de-DE">Administrator-Einstellungen</name>
+      <setting default-value="admin" id="admin_name" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+        <name>Administrator's login</name>
+		<name xml:lang="de-DE">Administratoranmeldung</name>
+        <name xml:lang="en-CA">Administrator's login</name>
+        <name xml:lang="en-GB">Administrator's login</name>
+        <name xml:lang="en-US">Administrator's login</name>
+        <name xml:lang="es-ES">Inicio de sesión del administrador</name>
+        <name xml:lang="fr-FR">Mot de passe administrateur</name>
+        <name xml:lang="pl-PL">Logowanie administratora</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="de-DE">Der von Ihnen eingegebene Text muss mit einem Buchstaben beginnen, gefolgt von Zahlen, Buchstaben, Unterstreichungen oder Bindestrichen.</error-message>
+        <error-message xml:lang="en-CA">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-GB">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="es-ES">Asegúrese de que el texto que ha introducido comienza con una letra y continúa con números, letras, guiones bajos o guiones.</error-message>
+        <error-message xml:lang="fr-FR">Vérifiez que le texte saisi commence par une lettre et contient uniquement des chiffres, lettres, caractères de soulignement ou traits-d'union.</error-message>
+        <error-message xml:lang="pl-PL">Upewnij się, że wprowadzony tekst rozpoczyna się od litery, po której następują cyfry, litery, znaki podkreślenia lub myślniki.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password">
+        <name>Password</name>
+         <name xml:lang="de-DE">Kennwort</name>
+        <name xml:lang="en-CA">Password</name>
+        <name xml:lang="en-GB">Password</name>
+        <name xml:lang="en-US">Password</name>
+        <name xml:lang="es-ES">Contraseña</name>
+        <name xml:lang="fr-FR">Mot de passe</name>
+        <name xml:lang="pl-PL">Hasło</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+        <name xml:lang="de-DE">E-Mail-Adresse des Administrators</name>
+		<name xml:lang="en-CA">Administrator's email</name>
+		<name xml:lang="en-GB">Administrator's email</name>
+		<name xml:lang="en-US">Administrator's email</name>
+		<name xml:lang="es-ES">Correo del administrador</name>
+		<name xml:lang="fr-FR">Courrier électronique de l'administrateur</name>
+		<name xml:lang="pl-PL">Poczta administratora</name>
+      </setting>
+      <setting id="title" max-length="100" min-length="1" type="string">
+        <name>Forum name</name>
+        <name xml:lang="de-DE">Forenname</name>
+		<name xml:lang="en-CA">Forum Name</name>
+		<name xml:lang="en-GB">Forum Name</name>
+		<name xml:lang="en-US">Forum Name</name>
+		<name xml:lang="es-ES">Nombre del foro</name>
+		<name xml:lang="fr-FR">Nom du forum</name>
+		<name xml:lang="pl-PL">Nazwa forum</name>
+      </setting>
+    </group>
+    <group>
+		<name>Default preferences</name>
+		<name xml:lang="en-US">Default preferences</name>
+		<name xml:lang="en-CA">Default preferences</name>
+		<name xml:lang="en-GB">Default preferences</name>
+		<name xml:lang="fr-FR">Default preferences</name>
+		<name xml:lang="es-ES">Default preferences</name>
+		<name xml:lang="pl-PL">Default preferences</name>
+		<name xml:lang="de-DE">Standardeinstellungen</name>
+		<setting default-value="en-US" id="locale" type="enum">
+			<name>Interface language</name>
+			<name xml:lang="de-DE">Benutzeroberflächensprache</name>
+	        <name xml:lang="en-CA">Interface language</name>
+	        <name xml:lang="en-GB">Interface language</name>
+	        <name xml:lang="en-US">Interface language</name>
+	        <name xml:lang="es-ES">Idioma de la interfaz</name>
+	        <name xml:lang="fr-FR">Langue de l'interface</name>
+	        <name xml:lang="pl-PL">Język interfejsu</name>
+			<choice id="en-US">
+				<name>English</name>
+				<name xml:lang="de-DE">Englisch</name>
+			</choice>
+			<choice id="de-DE">
+				<name>German</name>
+				<name xml:lang="de-DE">Deutsch</name>
+			</choice>
+			<choice id="fr-FR">
+				<name>French</name>
+				<name xml:lang="de-DE">Französisch</name>
+			</choice>
+			<choice id="it-IT">
+				<name>Italian</name>
+			</choice>
+			<choice id="pl-PL">
+				<name>Polish</name>
+			</choice>
+			<choice id="es-ES">
+				<name>Spanish</name>
+			</choice>
+		</setting>
+    </group>
+  </settings>
+
+  <requirements>
+    <php:file-uploads xmlns:php="http://apstandard.com/ns/1/php">true</php:file-uploads>
+    <php:version min="4.1.0" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">curl</php:extension>
+
+    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+      <db:id>main</db:id>
+      <db:default-name>smf</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.0.18</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping path="htdocs" url="/">
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="attachments">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="avatars">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="cache">
+    	<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+<mapping url="Packages">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="Smileys">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="Themes">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="Sources">
+    	<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+<mapping url="Settings_bak.php">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+  </mapping>
+</application>

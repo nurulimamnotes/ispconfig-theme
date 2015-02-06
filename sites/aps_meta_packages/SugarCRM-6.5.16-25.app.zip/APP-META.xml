@@ -1,0 +1,240 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>SugarCRM</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+	<version>6.5.16</version>
+	<release>25</release>
+	<homepage>http://www.sugarcrm.com/crm/</homepage>
+	<package-homepage>http://www.sofcloudit.com</package-homepage>
+	<default-prefix>sugarcrm</default-prefix>
+
+	<summary>Sugar CRM Community Edition</summary>
+	<description>
+		Sugar CRM Community Edition enables organizations to efficiently organize, populate, and maintain information on all aspects of their customer relationships. It provides integrated management of corporate information on customer accounts and contacts, sales leads and opportunities, plus activities such as calls, meetings, and assigned tasks. The system seamlessly blends all of the functionality required to manage information on many aspects of your business into an intuitive and user-friendly graphical interface.
+	</description>
+
+	<icon path="images/icon.png"/>
+
+	<screenshot path="images/screen_home.png">
+<description>Home Screen</description>
+</screenshot>
+	<screenshot path="images/screen_admin.png">
+<description>Admin Screen</description>
+</screenshot>
+	<screenshot path="images/screen_dashboard.png">
+<description>Dashboard View</description>
+</screenshot>
+	<screenshot path="images/screen_accounts.png">
+<description>Account Details</description>
+</screenshot>
+	<screenshot path="images/screen_campaigns.png">
+<description>Marketing Campaigns</description>
+</screenshot>
+	<screenshot path="images/screen_bug_tracker.png">
+<description>Bug Tracker</description>
+</screenshot>
+	<screenshot path="images/screen_calendar.png">
+<description>Calendar</description>
+</screenshot>
+	<screenshot path="images/screen_documents.png">
+<description>Documents</description>
+</screenshot>
+
+	<license must-accept="true">
+		<text>
+			<name>GPLv3</name>
+			<file>htdocs/LICENSE.txt</file>
+		</text>
+	</license>
+
+	<configuration-script-language>php</configuration-script-language>
+
+	<upgradable-from release="1" version="5.5.1"/>
+
+	<changelog>
+	<version release="25" version="6.5.16">
+			<entry>6.5.16 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.16</entry>
+		</version>
+<version release="20" version="6.5.15">
+			<entry>Upgrade bug fixed</entry>
+		</version>
+	<version release="1" version="6.5.15">
+			<entry>6.5.15 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.15</entry>
+		</version>
+	<version release="1" version="6.5.14">
+			<entry>6.5.14 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.14</entry>
+		</version>
+		<version release="1" version="6.5.13">
+			<entry>6.5.13 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.13</entry>
+		</version>
+	<version release="1" version="6.5.12">
+			<entry>6.5.12 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.12</entry>
+		</version>
+<version release="1" version="6.5.11">
+			<entry>6.5.11 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.11</entry>
+		</version>
+	<version release="1" version="6.5.10">
+			<entry>6.5.10 Update. Release notes: 
+http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.10</entry>
+		</version>
+<version release="1" version="6.5.9">
+			<entry>6.5.9 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.9</entry>
+		</version>
+<version release="1" version="6.5.8">
+			<entry>6.5.8 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.8</entry>
+		</version>
+	<version release="1" version="6.5.6">
+			<entry>6.5.6 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.6</entry>
+		</version>
+<version release="3" version="6.5.5">
+		<entry>Writable folders added into htdocs</entry>
+	</version>
+	<version release="1" version="6.5.5">
+		<entry>6.5.5 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.5</entry>
+	</version>
+	<version release="3" version="6.5.4">
+		<entry>Application version to check changed</entry>
+	</version>
+	<version release="1" version="6.5.4">
+		<entry>New version</entry>
+	</version>
+	<version release="2" version="6.5.2">
+		<entry>Patches to fix some php warnings and change min mysql version</entry>
+	</version>
+	<version release="1" version="6.5.2">
+			<entry>6.5.2 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.2</entry>
+		</version>
+		<version release="1" version="6.5.0">
+			<entry>6.5.0 Update. Release notes: http://support.sugarcrm.com/02_Documentation/01_Sugar_Editions/05_Sugar_Community_Edition/Sugar_Community_Edition_6.5/Sugar_Community_Edition_Release_Notes_6.5.0</entry>
+		</version>
+		<version release="5" version="6.4.2">
+			<entry>6.4.2 Update. Release notes: http://www.sugarcrm.com/crm/support/documentation/SugarCommunityEdition/6.0/-docs-Release_Notes-Sugar_CommunityEdition_ReleaseNotes_6.0-RN_Title_HTML.html</entry>
+		</version>
+		<version release="7" version="5.5.4">
+			<entry>Fixing file permissions in CGI mode</entry>
+		</version>
+		 <version release="6" version="5.5.4">
+			<entry>Package version corrected in config.php</entry>
+		 </version>
+		 <version release="3" version="5.5.4">
+			<entry>Release notes: http://developers.sugarcrm.com/docs/OS/5.5/n/-docs-Release_Notes-Sugar_CommunityEdition_ReleaseNotes_5.5.3-RN_Title_HTML.html</entry>
+		</version>
+		<version release="8" version="5.5.1">
+			<entry>Release notes: http://developers.sugarcrm.com/docs/OS/5.5/n/-docs-Release_Notes-Sugar_CommunityEdition_ReleaseNotes_5.5.1-RN_Title_HTML.html</entry>
+		</version>
+		<version release="8" version="5.2.0j">
+			<entry>User removal improvement</entry>
+			<entry>Release notes: http://developers.sugarcrm.com/docs/OS/5.2/-docs-Release_Notes-Sugar_CommunityEdition_ReleaseNotes_5.2.0j-Sugar_Release_Notes_5.2.0j.2.1.html#1209468</entry>
+		</version>
+		<version release="5" version="5.2.0a">
+			<entry>Memory limit requirement is added</entry>
+		</version>
+		<version release="3" version="5.2.0a">
+			<entry>Packaged as APS 1.0</entry>
+		</version>
+		<version release="2" version="5.2.0a">
+			<entry>Packaged as APS 1.1</entry>
+		</version>
+	</changelog>
+
+	<entry-points>
+		<entry>
+			<path>/index.php</path>
+			<label>SugarCRM Instance</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>80232448</installed-size>
+
+	<categories>
+		<category>Back office/Customer Relationship Management</category>
+	</categories>
+
+	<languages>
+		<language>en</language>
+	</languages>
+
+	<settings>
+		<group>
+			<name>Administrator's Account</name>
+			<setting default-value="admin" id="admin_name" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+				<name>Administrator's Login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Administrator's Password</name>
+			</setting>
+		</group>
+		<group>
+			<setting default-value="SugarCRM" id="title" type="string">
+				<name>System Name</name>
+				<description>This name will be displayed in the browser title bar when users visit the Sugar application.</description>
+			</setting>
+			<setting default-value="true" id="send_usage_statistics" installation-only="true" type="enum">
+				<name>Send Anonymous Usage Statistics</name>
+				<description>If selected 'Yes', Sugar will send anonymous statistics about your installation to SugarCRM Inc. every time your system checks for new versions.</description>
+				<choice id="true">
+					<name>Yes</name>
+				</choice>
+				<choice id="false">
+					<name>No</name>
+				</choice>
+			</setting>
+			<setting default-value="manual" id="check_for_updates" type="enum">
+				<name>Check For Updates</name>
+				<description>How the system will check for updated versions of the application.</description>
+				<choice id="automatic">
+					<name>Automatic</name>
+				</choice>
+				<choice id="manual">
+					<name>Manual</name>
+				</choice>
+			</setting>
+		</group>
+	</settings>
+
+	<requirements>
+		<php:version min="5.2.0" xmlns:php="http://apstandard.com/ns/1/php"/>
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+		<php:extension xmlns:php="http://apstandard.com/ns/1/php">mbstring</php:extension>
+		<php:memory-limit xmlns:php="http://apstandard.com/ns/1/php">41943040</php:memory-limit>
+
+		<db:db xmlns:db="http://apstandard.com/ns/1/db">
+			<db:id>main</db:id>
+			<db:default-name>sugarce</db:default-name>
+			<db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>5.0</db:server-min-version>
+		</db:db>
+	</requirements>
+
+	<mapping path="htdocs" url="/">
+		<php:handler xmlns:php="http://apstandard.com/ns/1/php">
+			<php:extension>php</php:extension>
+		</php:handler>
+
+		<mapping url="cache">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+		<mapping url="custom">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+		<mapping url="data">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+		<mapping url="modules">
+		<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+		<mapping url="upload">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+		<mapping url="tmp">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+		</mapping>
+	</mapping>
+</application>

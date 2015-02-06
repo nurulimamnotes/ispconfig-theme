@@ -1,0 +1,155 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>phpBB</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>3.0.11</version>
+  <release>2</release>
+  <homepage>http://www.phpbb.com/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>/phpbb3/</default-prefix>
+
+  <summary>phpBB is the most widely used open source bulletin board solution in the world.</summary>
+  <description>phpBB3 is the latest installment in a seven year long package lineup. Like its predecessors, phpBB3 is feature-rich, user-friendly, and fully supported by the phpBB Team. phpBB3 greatly improves on what made phpBB2 popular, and adds commonly requested features that were not present in previous versions. We hope it exceeds your expectations.
+  </description>
+
+  <icon path="images/icon.png"/>
+  <screenshot path="images/topic_page.png"><description>View topic.</description></screenshot>
+  <screenshot path="images/main_page.png"><description>Main page.</description></screenshot>
+  <screenshot path="images/reply_page.png"><description>Post reply.</description></screenshot>
+  <screenshot path="images/acp_page.png"><description>Administration control panel index.</description></screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/docs/COPYING</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="3.0.0" release="1"/>
+
+  <changelog>
+    <version release="2" version="3.0.11">
+    	<entry>Update bug fixed</entry>
+    </version><version release="1" version="3.0.11">
+    	<entry>Changelog: http://www.phpbb.com/support/documents.php?mode=changelog&amp;amp;version=3</entry>
+    </version><version version="3.0.10" release="1">
+		<entry>phpBB "Olympus" 3.0.10. Changelog: http://www.phpbb.com/support/documents.php?mode=changelog&amp;version=3#v309</entry>
+	</version>
+    <version version="3.0.8" release="2">
+		<entry>Changelog: http://www.phpbb.com/support/documents.php?mode=changelog&amp;version=3</entry>
+	</version>
+    <version version="3.0.7" release="6">
+		<entry>Changelog: http://www.phpbb.com/support/documents.php?mode=changelogaps&amp;version=3#v307</entry>
+	</version>
+    <version version="3.0.4" release="3">
+		<entry>Administrative interface entry point fixed to conform IIS rules</entry>
+	</version>
+    <version version="3.0.4" release="2">
+		<entry>Requirement for php setting allow-url-fopen is removed</entry>
+	</version>
+    <version version="3.0.4" release="1">
+      <entry>
+since 3.0.3: 
+# [Sec] Fixed an issue where deactivated accounts could be re-activated without the required privileges. (Reported by Jorick)
+# [Sec] Ask for forum password if post within passworded forum quoted in private message. (Reported by nickvergessen)
+since 3.0.2:
+# [Feature] Allow limited inheritance for template sets.
+# [Feature] Allow hard disabling of the template editor.
+# [Feature] Ability to define nullar/singular/plural language entries
+# [Feature] Added the possibility to force user posts put in queue if post count is lower than an admin defined value. Guest posting is not affected by this setting.
+# [Feature] Added 'max_recipients' setting for private messages. This setting allows admins to define the maximum number of recipients per private message with a board-wide setting and a group-specific setting.
+# [Feature] Added new permission setting for sending private messages to groups. Now there are two permissions to define sending private messages to multiple recipients and private messages to groups.
+# [Feature] Allow specific connection to different server for jabber functionality by providing a valid JID as username. This also allows the use of talk.google.com as jabber server with gmail.com JIDs. (Bug #14989)
+# [Sec Precaution] Stricter validation of the HTTP_HOST header (Thanks to Techie-Micheal et al for pointing out possible issues in derived code)
+since 3.0.1:
+# [Feature] Added optional referer validation of POST requests as additional CSRF protection.
+# [Feature] Added optional stricter upload validation to avoid mime sniffing in addition to the safeguards provided by file.php. (thanks to Nicolas Grekas for compiling the list).
+# [Feature] Streamlined banning via the MCP by adding a ban link to the user profile. Also pre-fills ban fields as far as possible.
+# [Feature] Added ACP logout to reset an admin session.
+# [Sec] Only allow urls gone through redirect() being used within login_box(). (thanks nookieman)
+	</entry>
+    </version>
+    <version version="3.0.0" release="9">
+      <entry>New upstream version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Forum</label>
+    </entry>
+    <entry>
+      <path>/installation/index.php?mode=convert</path>
+      <label>Conversion wizard</label>
+      <description>Conversion from phpBB 2.0.x to phpBB 3.0.x</description>
+    </entry>
+    <entry>
+      <path>docs/INSTALL.html#convert</path>
+      <label>phpBB 3.0.x README</label>
+      <description>phpBB 3.0.x Installation, updating and conversion informations</description>
+    </entry>
+  </entry-points>
+
+  <installed-size>8018828</installed-size>
+
+  <categories>
+	  <category>Web/Forum</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="3" max-length="20" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <description>Please enter a username between 3 and 20 characters in length.</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="6" max-length="30" >
+        <name>Password</name>
+        <description>Please enter a password between 6 and 30 characters in length.</description>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1" max-length="255">
+        <name>Site name</name>
+      </setting>
+      <setting id="site_desc" type="string" min-length="1" max-length="255">
+        <name>Site description</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="4.3.3"/>
+    
+    <php:register-globals>false</php:register-globals>
+    <php:extension>mbstring</php:extension>
+	
+        <php:extension>mysql</php:extension>
+        <db:db>
+          <db:id>main</db:id>
+          <db:default-name>phpbb</db:default-name>
+          <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+          <db:server-type>mysql</db:server-type>
+		  <db:server-min-version>3.23</db:server-min-version>
+        </db:db>
+
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler><php:extension>php</php:extension></php:handler>
+    
+    <mapping url="config.php"><php:permissions writable="true"/></mapping>    
+    <mapping url="cache"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>    
+    <mapping url="files"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>    
+    <mapping url="store"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>    
+    <mapping url="images"><php:permissions writable="true"/></mapping>
+    <mapping url="language"><php:permissions writable="true"/></mapping>
+  </mapping>
+</application>

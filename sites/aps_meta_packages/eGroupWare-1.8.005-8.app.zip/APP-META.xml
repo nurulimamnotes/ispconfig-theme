@@ -1,0 +1,244 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>eGroupWare</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.8.005</version>
+  <release>8</release>
+  <homepage>http://www.egroupware.org/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>egroupware</default-prefix>
+
+  <summary>Open source groupware software</summary>
+  <description>
+    eGroupWare is a free enterprise ready groupware software. It provides calendar, 
+    knowledgebase, content management system, address book, project management, and 
+    inventory tools. It is available in 25 languages.  
+  </description>
+
+  <icon path="images/logo.png"/>
+
+  <screenshot path="images/addressbook.jpg">
+    <description>Addressbook.</description>
+  </screenshot>
+  <screenshot path="images/adminpannel.jpg">
+    <description>Admin pannel.</description>
+  </screenshot>
+  <screenshot path="images/calendar1.jpg">
+    <description>Calendar: Day view.</description>
+  </screenshot>
+  <screenshot path="images/calendar3.jpg">
+    <description>Calendar: Planner view.</description>
+  </screenshot>
+  <screenshot path="images/infolog.jpg">
+    <description>Infolog: CRM + Todos + Notes.</description>
+  </screenshot>
+  <screenshot path="images/knowlegebase.jpg">
+    <description>Knowlegebase.</description>
+  </screenshot>
+  <screenshot path="images/manual.jpg">
+    <description>Manual / Helping system.</description>
+  </screenshot>
+  <screenshot path="images/projectmanager.jpg">
+    <description>Projectmanager.</description>
+  </screenshot>
+  <screenshot path="images/resources.jpg">
+    <description>Resources: RBS + Inventory.</description>
+  </screenshot>
+  <screenshot path="images/sitemgr.jpg">
+    <description>Sitemgr: CMS.</description>
+  </screenshot>
+  <screenshot path="images/wiki.jpg">
+    <description>Wiki.</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/doc/LICENSE</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="1.2.104"/>
+  
+  <changelog>
+  	<version release="8" version="1.8.005">
+	  <entry>
+			Security release: http://www.egroupware.org/changelog
+	  </entry>
+	</version>
+   <version release="8" version="1.8.004">
+	  <entry>
+		Made Administrator password setting editable (not 'installation-only')
+	  </entry>
+	</version>
+   <version release="6" version="1.8.004">
+	  <entry>
+		Default values for mailserver settings added.
+	  </entry>
+	</version>
+  <version release="4" version="1.8.004">
+	  <entry>
+		Cookiepath value changed, default values for setting removed.
+	  </entry>
+	</version>
+  <version release="3" version="1.8.004">
+	  <entry>
+		Automatic tests fixed.
+	  </entry>
+	</version>
+  <version release="2" version="1.8.004">
+	  <entry>
+		Sql encryption type changed.
+	  </entry>
+	</version>
+  <version release="1" version="1.8.004">
+	  <entry>
+		Upgrade package. Release notes: http://community.egroupware.org/wiki?wikipage=releasenotes1.8
+	  </entry>
+	</version>
+	<version release="10" version="1.8.002">
+	  <entry>
+		Release notes: http://community.egroupware.org/wiki?wikipage=releasenotes1.8
+	  </entry>
+	</version>
+	<version release="5" version="1.6.001">
+	  <entry>
+		Aplication removal improved.
+	  </entry>
+	</version>
+	<version release="4" version="1.6.001">
+	  <entry>
+		Backups and file manager are moved under application root.
+	  </entry>
+	</version>
+	<version release="3" version="1.6.001">
+	  <entry>
+		Upgrade procedure corrected.
+	  </entry>
+	</version>
+	<version release="2" version="1.6.001">
+	  <entry>
+		Default site url fix.
+	  </entry>
+	</version>
+    <version release="1" version="1.6.001">
+      <entry>
+# Complete new implementation of the filemanager DMS by means of Streamwrapper and WebDAV, ACL control on directories and files - the new architecture allows now uploading of big files.
+# Implementation of new functions like multiple mail accounts and many bugfixes in the email client.
+# Extensive new features for the tracker-application: for example escalation-matrix for tickets and automatic mail-convertion as a ticket.
+# Improved calendar functions especially with recurring-events.
+# Supplements and adaptations in the addressbook like appointment-view, custom fields, distribution lists shown in the contact directly and in the addressbook list, mulitiple categorization of contacts in the addressbook list.
+# Improvement of the template functionality of the project manager and some bugfixes.
+# Many useful extensions and adaptations as well as bug-fixes in all modules.
+	  </entry>
+    </version>
+    <version release="14" version="1.4.002">
+      <entry>Updated package</entry>
+    </version>
+    <version release="15" version="1.2.104">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>46892032</installed-size>
+
+  <categories>
+	  <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_login" installation-only="true" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_passwd" min-length="1" type="password">
+        <name>Admin Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Setup admin preferences</name>
+      <setting id="setupadmin_login" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+        <name>Setup admin login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="setupadmin_passwd" min-length="1" type="password">
+        <name>Setup Admin Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Header admin preferences</name>
+      <setting id="headeradmin_login" max-length="32" min-length="1" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" type="string">
+        <name>Header admin login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="headeradmin_passwd" min-length="1" type="password">
+        <name>Header Admin Password</name>
+      </setting>
+      <setting default-value="eGroupWare" id="title" installation-only="true" min-length="1" type="string">
+        <name>Site name</name>
+      </setting>
+    </group>
+    <group>
+      <name>Standart mailserver settings</name>
+      <setting default-value="localhost" id="mail_server" min-length="1" type="string">
+        <name>IMAP mail server hostname or IP address</name>
+      </setting>
+      <setting default-value="localhost" id="mail_suffix" min-length="1" type="string">
+        <name>Mail domain</name>
+      </setting>
+      <setting default-value="localhost" id="smtp_server" min-length="1" type="string">
+        <name>SMTP server hostname or IP address</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements>
+    <apache:htaccess xmlns:apache="http://apstandard.com/ns/1/apache"/>
+    <php:version min="5.2.3" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">gd</php:extension>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">pdo_mysql</php:extension>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mbstring</php:extension>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mcrypt</php:extension>
+    <php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+
+	<php:magic-quotes-gpc xmlns:php="http://apstandard.com/ns/1/php">false</php:magic-quotes-gpc>
+
+    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+      <db:id>main</db:id>
+      <db:default-name>egroupware</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping path="htdocs" url="/">
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="backups">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="files">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="temp">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="phpgwapi/images">
+      <php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+    <mapping url="sitemgr/sitemgr-site/images">
+    	<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+
+  </mapping>
+
+</application>

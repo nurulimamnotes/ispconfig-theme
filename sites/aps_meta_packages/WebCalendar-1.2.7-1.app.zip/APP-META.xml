@@ -1,0 +1,126 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>WebCalendar</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.2.7</version>
+  <release>1</release>
+  <homepage>http://www.k5n.us/webcalendar.php</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>webcalendar</default-prefix>
+
+  <summary>Open source Web-based calendaring and scheduling system</summary>
+  <description>
+    WebCalendar is a Web-based calendaring and scheduling system for managing personal, 
+    group and corporate events over the Internet. It is a full featured online application 
+    that allows to keep track of personal appointments, group projects, company meetings 
+    and resources reservations. It is a reliable, platform independent, real-time scheduling 
+    solution for small-to-medium sized organizations, providing a centralized source for all 
+    scheduling needs. WebCalendar supports a rich set of business class features, including 
+    proprietary features like corporate calendar and calendar dependency. It includes a 
+    calendar server, an email reminder system, a task manager, a diary system, a contact 
+    list manager and a notes manager.
+  </description>
+
+  <icon path="images/icon.png"/>
+  <screenshot path="images/wcss-month.png">
+  	<description>Webcalendar month view</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/GPL-license.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="1.0" release="1"/>
+
+  <changelog>
+   <version release="1" version="1.2.7">
+    	<entry>Updated package</entry>
+    </version>
+    <version release="7" version="1.2.6">
+    	<entry>Production release 1.2.6 fixes minor bugs in 1.2.5.</entry>
+    </version>
+    <version version="1.2.5" release="5">
+      <entry>Security update, bugfixing 1.2.5 release</entry>
+    </version>
+    <version version="1.2.0" release="4">
+      <entry>Updated package</entry>
+    </version>
+    <version version="1.0.5" release="14">
+      <entry>Updated package</entry>
+    </version>
+    <version version="1.0" release="24">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>3153920</installed-size>
+
+  <categories>
+    <category>Collaboration/Calendaring</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+      <setting id="title" type="string" min-length="1" default-value="WebCalendar">
+        <name>Site name</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+
+      </setting>
+    </group>
+    </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.1"/>
+    <php:extension>mysql</php:extension>
+	<php:safe-mode>false</php:safe-mode>
+	<php:register-globals>false</php:register-globals>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>webcalendar</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+  </mapping>
+
+</application>

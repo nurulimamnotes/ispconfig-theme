@@ -1,0 +1,122 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>Piwik</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>1.11.1</version>
+	<release>4</release>
+	<homepage>http://piwik.org/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+	<default-prefix>piwik</default-prefix>
+	<summary>Open source web analytics</summary>
+	<description>
+Piwik is a downloadable, open source (GPL licensed) web analytics software program. It provides you with detailed real time reports on your websit visitors: the search engines and keywords they used, the language they speak, your popular pages and so much more.
+	</description>
+
+	<icon path="images/piwik.png"/>
+
+	<screenshot path="images/piwik-e280ba-web-analytics-reports7.png">
+		<description>Piwik report and graphs</description>
+	</screenshot>
+	<license must-accept="true">
+		<text>
+			<name>GNU GENERAL PUBLIC LICENSE</name>
+			<file>htdocs/misc/license.txt</file>
+		</text>
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	<upgradable-from version="1.0" release="9"/>
+	<changelog>
+		<version release="4" version="1.11.1">
+			<entry>Changes in the test</entry>
+		</version><version release="2" version="1.11.1">
+			<entry>Changes in the script</entry>
+		</version><version release="1" version="1.11.1">
+			<entry>Piwik 1.11.1. Changelog: http://piwik.org/changelog/</entry>
+		</version><version release="4" version="1.10.1">
+			<entry>Minor changes</entry>
+		</version><version release="2" version="1.10.1">
+			<entry>Changes in app-meta.xml and upgrade script</entry>
+		</version><version release="1" version="1.10.1">
+			<entry>Piwik 1.1.1. Changelog: http://piwik.org/changelog/</entry>
+		</version><version version="1.1.1" release="1">
+			<entry>Piwik 1.1.1. Changelog: http://piwik.org/changelog/</entry>
+		</version>
+		<version version="1.0" release="11">
+			<entry>Preserve old config file on upgrade</entry>
+			<entry>Declare config directory writable</entry>
+		</version>
+		<version version="1.0" release="10">
+			<entry>Icon is added</entry>
+		</version>
+		<version version="1.0" release="9">
+			<entry>Release notes: http://piwik.org/blog/2010/08/piwik-1-0/</entry>
+		</version>
+		<version version="0.5.4" release="6">
+			<entry>Initial package version</entry>
+		</version>
+	</changelog>
+	<entry-points>
+		<entry>
+			<path>/index.php?form_url=</path>
+			<label>Piwik Dashboard</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>4136960</installed-size>
+	<categories>
+		<category>Web/Analytics</category>
+	</categories>
+	<languages>
+		<language>en</language>
+	</languages>
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+				<name>Administrator's login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Password</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Administrator's email</name>
+			</setting>
+		</group>
+		<group>
+			<name>Site parameters</name>
+			<setting id="site_name" type="string" default-value="PiwikSite" installation-only="true">
+					<name>Site name</name>
+			</setting>
+			<setting id="site_url" type="string" default-value="example.com" installation-only="true">
+					<name>Site url</name>
+			</setting>
+		</group>
+	</settings>
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="5.1.3"/>
+		<php:extension>gd</php:extension>
+		<php:extension>pdo_mysql</php:extension>
+		<php:memory-limit>134217728</php:memory-limit>
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>piwik</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>4.1.0</db:server-min-version>
+		</db:db>
+	</requirements>
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+		<mapping url="config">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="tmp">
+			<php:permissions writable="true"/>
+			<mapping url="assets"><php:permissions writable="true"/></mapping>
+			<mapping url="cache"><php:permissions writable="true"/></mapping>
+			<mapping url="templates_c"><php:permissions writable="true"/></mapping>
+		</mapping>
+	</mapping>
+</application>

@@ -1,0 +1,187 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>tikiwiki</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>10.2</version>
+  <release>2</release>
+  <homepage>http://info.tikiwiki.org/tiki-index.php</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>tikiwiki</default-prefix>
+
+  <summary>A full-featured, open source, multilingual, all-in-one Wiki+CMS+Groupware written in PHP.</summary>
+  <description>
+    TikiWiki enable administrators and users to create, display, and maintain online-accessible 
+    content of all kinds, including text, binary data, images, links, and much more. TikiWiki 
+    also enables administrators and users to communicate with each other (and the outside world) 
+    by means of numerous media, including internal messaging, voice telephony, data interchange, 
+    and many more. In addition, TikiWiki allows each user to choose from several different 
+    pre-defined visual styles/themes/skins.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      This is the administrator's home page. Here you can add new entries to the knowledgebase 
+      and manage blogs, forums, image galeries and other files. 
+    </description>
+  </screenshot>
+  <screenshot path="images/app_screenshot_2.png">
+    <description>Screenshot 2.</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 2.1</name>
+      <file>htdocs/license.txt</file>
+    </text>
+  </license>
+  
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="3.8" release="2"/>
+
+  <changelog>
+    <version release="1" version="10.2">
+    	<entry>The stable release (10.2) received more than 50 updates and fixes. These fixes will improve the overall Tiki experience</entry>
+    </version><version version="3.8" release="2">
+		<entry> 
+		</entry> 
+	</version>
+    <version version="3.2.0" release="5">
+		<entry> 
+1. Alert
+Send a message to users or a group about an action you are doing.
+
+2. Blogs: comments moderation
+Comments moderation has been added in Blogs.
+
+3. Button improvements
+Buttons are now more consistent. And some useless buttons like "list forums" when there is only one forum are not displayed nowadays.
+
+4. Calendar improvements
+......
+Full what's new list: http://doc.tikiwiki.org/Tiki3; 
+Full Changelog: http://tikiwiki.svn.sourceforge.net/viewvc/tikiwiki/branches/3.0/changelog.txt
+		</entry>
+	</version>
+    <version version="2.3.0" release="1">
+      <entry>
+    * HTML Purifier (Content is cleaned to XHTML 1.1 Strict on each save) 
+	* Action Log allows an admin or any user with the necessary permission granted to view reports of actions made by him/herself or by other users of the same site.
+	* Mootools Activating Mootools loads mootools.js in HTML head. Full implementation pending.
+	* Shibboleth Authentication has been added.
+	* Banners Now handle Flash
+	* Contacts can now be shared with other groups.
+	* City, Company, Country, Department, etc. - fields added
+	* Copyright management has been added on blogs, articles and faq
+	* Check-in, check-out, versioning for each file, which adds the wiki way to the File gallery!
+	* Forum redesign
+	* Fullscreen link mode on Admin Features page
+	* "Eye candy" image browsing with Shadowbox
+	* Can now handle more than one Phplayersmenu menu at a time
+	* New Suckerfish (external link) menus
+	* Highlighting in menu of current location
+	* Split level menu (level 1 can be horizontal on top and level 2 vertical on the left 
+	* TikiWiki more fully supports MP3 and .flv Flash files and provide an open source player.
+	* A new option to protect all emails in all wiki pages. 
+	* User can modify their messages in shoutbox. Shoutbox can use CAPTCHA to reduce spamming by scripts.
+	* Tell a Friend A link is displayed on each Tiki page that can be used to email the page (actually its link) to someone.
+	* Tests feature allows the user to record a web session and to replay it. On replay the pages will be compare to see if some changes occurred in between.
+	* Any user can translate any missing string on the fly through clicking to a sign next to that string.
+	* Translated wiki pages update and synchronization
+	* Forms and reports can now have any layout (codename: pretty trackers)
+	* new field types ( computed fields, google maps, user subscription, Auto-increment, multimedia, dynamic items list )
+	* new tracker plugins ( TRACKERSTAT, VOTE, MINIQUIZ )
+	* Autosafe draft. Wiki page content is saved periodically, using AJAX
+	* Wiki Page Staging and Approval (where edits can be approved before they go live)
+      </entry>
+    </version>
+	<version version="1.9.7" release="43">
+		<entry>Collaboration/Portals category removed</entry>
+	</version>
+    <version version="1.9.7" release="42">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="3" version="10.0">
+    	<entry>Changes in DB</entry>
+    </version>
+    <version release="3" version="10.0">
+    	<entry>Changes in Scripts and DB</entry>
+    </version>
+    <version release="8" version="10.0">
+    	<entry>Minor changes</entry>
+    </version>
+    <version release="2" version="10.2">
+    	<entry>Change in Upgrade.sql</entry>
+    </version>
+  </changelog>
+
+  <installed-size>41063000</installed-size>
+
+  <categories>
+	  <category>Collaboration/Portal</category>
+	  <category>Web/Content management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1"  >
+        <name>Password</name>
+      </setting>
+	<setting id="title" type="string" min-length="1">
+		<name>Site name</name>
+	</setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.3"/>
+    <php:extension>mysql</php:extension>
+    <php:memory-limit>20000000</php:memory-limit>
+    <php:safe-mode>false</php:safe-mode>
+    <php:register-globals>false</php:register-globals>
+    
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>tikiwiki</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>      
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <php:permissions writable="true"/>
+  </mapping>
+
+</application>

@@ -1,0 +1,204 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>AjaxChat</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>0.8.3</version>
+  <release>3</release>
+  <homepage>https://blueimp.net/</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>ajaxchat</default-prefix>
+  <summary>AJAX Chat is a PHP-based open source chat solution.</summary>
+  <summary xml:lang="en-US">AJAX Chat is a PHP-based open source chat solution.</summary>
+  <summary xml:lang="de-DE">PHP-basierte Open Source Chat-Software</summary>
+  <summary xml:lang="fr-FR">Solution de chat open source sur base php.</summary>
+  <summary xml:lang="pl-PL">Czat open source oparty na php.</summary>
+  <summary xml:lang="es-ES">Solución de chat de código abierto basado en PHP.</summary>
+  <description>AJAX Chat is a fully customisable Web chat implemented in JavaScript, PHP, and MySQL, which integrates nicely with common forum systems like phpBB, MyBB, PunBB, SMF, and vBulletin. A Flash and Ruby based socket connection can be used to boost performance.</description>
+  <description xml:lang="en-US">AJAX Chat is a fully customisable Web chat implemented in JavaScript, PHP, and MySQL, which integrates nicely with common forum systems like phpBB, MyBB, PunBB, SMF, and vBulletin. A Flash and Ruby based socket connection can be used to boost performance.</description>
+  <description xml:lang="de-DE">AJAX Chat ist eine voll anpassbare Web Chat Software, die in JavaScript, PHP und MySQL entwickelt wurde und sich hervorragend zum Einsatz mit verbreiteten Forensystemen wie phpBB, MyBB, PunBB, SMF und vBulletin eignet. Eine auf Flash und Ruby basierte Socket-Verbindung kann verwendet werden, um die Leistungsfähigkeit zu steigern.</description>
+  <description xml:lang="fr-FR">AJAX Chat est un chat Web totalement personnalisable implémenté dans JavaScript, PHP et MySQL qui s'intègre proprement dans des systèmes de forum communs comme phpBB, MyBB, PunBB, SMF et vBulletin. Une socket connexion fondée sur Flash et Ruby peut être utilisée pour doper les performances.</description>
+  <description xml:lang="pl-PL">AJAX Chat to w pełni konfigurowalny czat internetowy zaimplementowany w JavaScript, PHP i MySQL, który można łatwo zintegrować z popularnymi systemami forum, takimi jak phpBB, MyBB, PunBB, SMF i vBulletin. Do zwiększenia wydajności można wykorzystać połączenie oparte na Flash i Ruby.</description>
+  <description xml:lang="es-ES">AJAX Chat es un chat de web totalmente personalizable, implementado en JavaScript, PHP y MySQL, que se integra perfectamente en sistemas de foros comunes como phpBB, MyBB, PunBB, SMF y vBulletin. Se puede utilizar una conexión Flash y Rubi para aumentar su rendimiento.</description>
+  <icon path="images/logo.png"/>
+  <screenshot path="images/screen.png">
+    <description>Administration Screen.</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/license.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+  <version release="3" version="0.8.3">
+    	<entry>modify php extension  mysqli</entry>
+    </version><version version="0.8.3" release="2">
+      <entry>Translations included</entry>
+    </version>
+    <version version="0.8.3" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>1568768</installed-size>
+  <categories>
+    <category>Collaboration/Chat</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+   <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Moderator's preferences</name>
+      <setting id="moderator_name" type="string" default-value="moderator" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Moderator's login</name>
+        <description>This field must be different from the Administrator´s login. If Moderator´s login is the same as Administrator´s login, Moderator´s login will be started as "moderator" automatically.</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="moderator_password" min-length="1" type="password" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Language</name>
+      <setting id="lang" type="enum" default-value="en">
+        <name>Interface language</name>
+        <choice id="ar" >
+			<name>عربي</name>
+		</choice>
+		<choice id="bp" >
+			<name>Portugués (Brasil)</name>
+		</choice>
+		<choice id="ca" >
+			<name>Català</name>
+		</choice>
+		<choice id="cy" >
+			<name>Cymraeg</name>
+		</choice>
+		<choice id="cz" >
+			<name>Česky</name>
+		</choice>
+		<choice id="de" >
+			<name>Deutsch</name>
+		</choice>
+		<choice id="el" >
+			<name>Ελληνικα</name>
+		</choice>
+		<choice id="en" >
+			<name>English</name>
+		</choice>
+		<choice id="es" >
+			<name>Español</name>
+		</choice>
+		<choice id="et" >
+			<name>Eesti</name>
+		</choice>
+		<choice id="fi" >
+			<name>Suomi</name>
+		</choice>
+		<choice id="fr" >
+			<name>Français</name>
+		</choice>
+		<choice id="gl" >
+			<name>Galego</name>
+		</choice>
+		<choice id="he" >
+			<name>עברית</name>
+		</choice>
+		<choice id="hr" >
+			<name>Hrvatski</name>
+		</choice>
+		<choice id="hu" >
+			<name>Magyar</name>
+		</choice>
+		<choice id="in" >
+			<name>Bahasa Indonesia</name>
+		</choice>
+		<choice id="it" >
+			<name>Italiano</name>
+		</choice>
+		<choice id="ja" >
+			<name>日本語</name>
+		</choice>
+		<choice id="ka" >
+			<name>ქართული</name>
+		</choice>
+		<choice id="kr" >
+			<name>한글</name>
+		</choice>
+		<choice id="nl" >
+			<name>Nederlands</name>
+		</choice>
+		<choice id="no" >
+			<name>Norsk</name>
+		</choice>
+		<choice id="pl" >
+			<name>Polski</name>
+		</choice>
+		<choice id="ro" >
+			<name>România</name>
+		</choice>
+		<choice id="ru" >
+			<name>Русский</name>
+		</choice>
+		<choice id="sk" >
+			<name>Slovenčina</name>
+		</choice>
+		<choice id="sl" >
+			<name>Slovensko</name>
+		</choice>
+		<choice id="sr" >
+			<name>Srpski</name>
+		</choice>
+		<choice id="sv" >
+			<name>Svenska</name>
+		</choice>
+		<choice id="tr" >
+			<name>Türkçe</name>
+		</choice>
+		<choice id="uk" >
+			<name>Українська</name>
+		</choice>
+		<choice id="zh" >
+			<name>中文 (简体)</name>
+		</choice>
+		<choice id="zh-tw" >
+			<name>中文 (繁體)</name>
+		</choice>
+     </setting>
+    </group>
+  </settings>
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="4"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>mysqli</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>AjaxChat</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="lib/config.php">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="lib/data/users.php">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

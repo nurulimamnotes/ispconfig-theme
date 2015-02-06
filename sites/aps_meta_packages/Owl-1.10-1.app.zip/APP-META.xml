@@ -1,0 +1,101 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>Owl</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.10</version>
+  <release>1</release>
+  <homepage>http://owl.sourceforge.net/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>owl</default-prefix>
+
+  <summary>OWL is a multi-user document repository or knowledge based system.</summary>
+  <description>
+    Owl is a multi user document repository (knowledgebase) system written in PHP4 for
+    publishing files/documents onto the web for a corporation, small business, group of people,
+    or just for yourself.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/DOCS/COPYING</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="0.80"/>
+
+  <changelog>
+    <version release="1" version="1.10">
+    	<entry>New package version</entry>
+    </version><version version="0.80" release="37">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>6566912</installed-size>
+
+  <categories>
+	  <category>Front office/Help Desk</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.3.10"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>owl</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="Documents">
+      <php:permissions writable="true" />
+    </mapping>
+    <mapping url="RSSTorrent">
+    	<php:permissions writable="true"/>
+    </mapping>
+    <mapping url="ThumbNails">
+    	<php:permissions writable="true"/>
+    </mapping>
+    <mapping url="TrashCan">
+    	<php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+  
+
+</application>

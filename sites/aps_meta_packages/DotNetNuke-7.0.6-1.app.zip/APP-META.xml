@@ -1,0 +1,228 @@
+<!-- $Rev: 723564 $ -->
+<application xmlns="http://apstandard.com/ns/1" xmlns:aspnet="http://apstandard.com/ns/1/aspnet" xmlns:db="http://apstandard.com/ns/1/db">
+  <name>DotNetNuke</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>7.0.6</version>
+  <release>1</release>
+  <homepage>http://www.dotnetnuke.com</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>dotnetnuke</default-prefix>
+
+  <summary>DotNetNuke is a free, Open Source Framework ideal for creating Enterprise Web Applications</summary>
+  <description>DotNetNuke is a framework for creating, deploying and managing interactive web, intranet and extranet sites. It is designed to make it easy for users to manage all aspects of their projects.  Site wizards, help icons, and a well-researched user interface allow universal ease-of-operation.
+
+  WARNING: since version 5.2 DotNetNuke does not support MsSQL 2000!</description>
+
+  <icon path="images/icon.jpg"/>
+
+  <screenshot path="images/main_screenshot.jpg">
+    <description>
+      Main page.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+      <text>
+        <name>BSD</name>
+	<url>http://www.opensource.org/licenses/bsd-license.php</url>
+      </text>
+  </license>
+
+  <configuration-script-language>vbscript</configuration-script-language>
+  <upgradable-from version="4.8.2" release="1"/>
+
+  <changelog>
+
+	<version release="1" version="7.0.6">
+    	<entry>DNN version 7.0.6: release notes
+http://dotnetnuke.codeplex.com/releases/view/105676</entry>
+    </version><version release="15" version="7.0.5">
+    	<entry>RELEASE NOTES
+
+Major Highlights
+
+Fixed issue in the Client Resource Manager where data URL's were removed when running the composite files option
+Fixed issue when switching language from the control panel
+Fixed issue that stopped the Telerik RadMenu and RadTabstring from rendering correctly when an HTML module is added to the same page
+Fixed issue that stopped users from changing login settings
+Fixed issue that stopped users from changing the settings in the event viewer.
+Fixed post back issue when copying a page using the control panel
+Implemented module icon override when updating to a new version of the product
+Fixed image upload control rendering issue when using IE or Firefox
+Fixed issue that makes the dashboard fail when running SQL Azure
+Fixed export as XML in Dashboard feature when running on SQL Azure
+Fixed upgrade issue when hosting a site in SQL Azure
+Fixed password validation issue when adding a new user
+Added auto complete when searching for devices to the Device Preview Management module
+Fix issue when the user is upgrading DNN and recycles the app pool before calling the upgrade page
+Fixed support pop ups feature when creating a new module from a manifest file
+Fixed the To and From logic in the messaging module
+Security Fixes
+
+Fixed permissions issue when uploading files through Service Framework requests
+Fixed potential javascript injections on sites running multiple languages
+Fixed potential javascript injections on modules that implement pop ups for edits
+Implemented filters in the rich text editor to avoid the possibility of cross-site scripting issues
+Updated Modules/Providers
+
+Modules
+
+Log Viewer Module
+Pages Module
+Taxonomy Module
+Dashboard Module
+HTML Module
+Member Directory Module
+Messaging Module
+Site Groups Module
+
+Providers
+none</entry>
+    </version><version release="1" version="6.2.5">
+		<entry>DNN version 6.2.5: release notes http://dotnetnuke.codeplex.com/releases/view/97018</entry>
+	</version>
+	<version release="4" version="6.2.4">
+    	<entry>DNN version 6.2.4: release notes http://dotnetnuke.codeplex.com/releases/view/94994</entry>
+    </version><version version="6.1.5" release="1">
+		<entry>DNN version 6.1.5: release notes http://dotnetnuke.codeplex.com/releases/view/85433#DownloadId=364276</entry>
+	</version>
+	<version version="6.1.2" release="8">
+		<entry>APS: possibility to update admin user password</entry>
+		<entry>DNN version 6.1.2: release notes http://dotnetnuke.codeplex.com/releases/view/78212#DownloadId=313737</entry>
+	</version>
+	<version version="6.0.0" release="4">
+		<entry>
+Release notes http://dotnetnuke.codeplex.com/releases/view/70103
+		</entry>
+	</version>
+	<version version="5.5.0" release="5">
+		<entry>
+Release notes http://dotnetnuke.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=39104
+		</entry>
+	</version>
+	<version version="5.2.2" release="2">
+		<entry>
+Release notes http://dotnetnuke.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=39104
+		</entry>
+	</version>
+	<version version="5.2.1" release="2">
+		<entry>
+Release notes http://dotnetnuke.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=37670
+		</entry>
+	</version>
+	<version version="5.1.2" release="12">
+		<entry>
+Refer to Release notes at http://dotnetnuke.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=32337
+		</entry>
+	</version>
+  	<version version="5.0.1" release="12">
+  		<entry>Support for non-standard MS-SQL port is added</entry>
+  	</version>  	
+  	<version version="5.0.1" release="10">
+  		<entry>Upgrade procedure corrected</entry>
+  	</version>  	
+  	<version version="5.0.1" release="4">
+  		<entry>Process XML special characters in password, site name, other fields, before placing them into XML-based configs</entry>
+  	</version>  	
+  	<version version="5.0.1" release="3">
+  		<entry>Collaboration/Portals category removed</entry>
+  	</version>  	
+    <version version="5.0.1" release="2">
+		<entry>
+Automatic upgrade is set ON in web.config
+		</entry>
+    </version>
+    <version version="5.0.1" release="1">
+		<entry>
+DNN-7752  add host level option to enable whether a site supports persistent cookies
+DNN-7753  add host level option to enable doctype selection
+DNN-8537  Add jQuery Support
+DNN-7420  Skin Localization
+DNN-7279  Add Permission during Install
+DNN-7185  ModuleSettingsBase: Bug in Property Settings
+DNN-8213  Change Default module align to "not defined"
+		</entry>
+    </version>
+    <version version="4.9.1" release="1">
+		<entry>
+DNN-8999  New Extensible Host Dashboard Module
+DNN-8409  Add What's New feature
+DNN-8408  Add the ability to insert additional stylesheets into page header
+DNN-7930  Add dropdown list to Search SkinObject
+		</entry>
+    </version>
+    <version version="4.8.2" release="10">
+      <entry>DB connection scring is added in web.config</entry>
+    </version>
+    <version version="4.8.2" release="9">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>24340480</installed-size>
+
+  <categories>
+	<category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" installation-only="true">
+        <name>Administrator's login</name>
+	<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="7">
+        <name>Administrator's Password</name>
+		<description>Please enter password between 7 and 32 characters in length</description>
+      </setting>
+      <setting id="admin_email" type="email" installation-only="true">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Portal's preferences</name>
+      <setting id="portal_admin_name" type="string" default-value="portaladmin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*" installation-only="true">
+        <name>Portal administrator's login</name>
+	<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="portal_admin_password" type="password" min-length="7" installation-only="true">
+        <name>Password</name>
+		<description>Please enter password between 7 and 32 characters in length</description>
+      </setting>
+      <setting id="portal_admin_email" type="email" installation-only="true">
+        <name>Portal administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1" installation-only="true">
+        <name>Portal name</name>
+      </setting>
+    </group>
+    <group>
+      <name>SMTP settings</name>
+      <setting id="smtp_server" type="string" default-value="localhost" installation-only="true">
+        <name>SMTP Server</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements>
+    <aspnet:version>4.0</aspnet:version>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>DotNetNuke</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>microsoft:sqlserver</db:server-type>
+      <db:server-min-version>9.00.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs">
+    <aspnet:handler/>
+    <aspnet:permissions writable="true"/>
+  </mapping>
+
+</application>

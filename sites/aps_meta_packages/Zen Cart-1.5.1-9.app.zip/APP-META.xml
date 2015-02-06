@@ -1,0 +1,198 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Zen Cart</name>
+    <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+    <version>1.5.1</version>
+    <release>9</release>
+    <homepage>http://www.zen-cart.com/</homepage>
+    <package-homepage>http://www.glowtouch.com/</package-homepage>
+    <default-prefix>/zencart/</default-prefix>
+    <summary>Shopping cart software</summary>
+    <description>Zen Cart truly is the art of e-commerce. It is built for entrepreneurs by entrepreneurs. The program is built by programmers and designers who understand the online selling process from start to finish. Zen Cart has included all the necessary tools required to build a successful online store and we are constantly improving and upgrading the software based on our users requirements.</description>
+    <icon path="images/icon.png" />
+    <screenshot path="images/screenshot.jpg">
+    	<description>Newly installed Zen Cart</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/license.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <upgradable-from release="1" version="1.3.8"/>
+    <changelog>
+	
+    <version release="9" version="1.5.1">
+    	<entry>Copy custom languages from admin directory on upgrade;</entry>
+    	<entry>Language uploader fixed to place files in new zen_admin directory;</entry>
+    	<entry>French is moved back, for upgrade sake.</entry>
+    </version>
+    <version release="7" version="1.5.1">
+    	<entry>Changes in htdocs files</entry>
+    </version>
+    <version release="5" version="1.5.1">
+    	<entry>Spanish and Norwagian added, French outdated, removed</entry>
+    </version>
+    <version release="1" version="1.5.1">
+	<entry>http://www.zen-cart.com/showthread.php?200259-Zen-Cart-v1-5-1-Released!-**-Performance-Improvements-Bug-Fixes-etc</entry>
+    	</version>
+    	<version release="5" version="1.5.0">
+    		<entry>Modified the test scripts for Locale uploader</entry>
+    	</version>
+    	<version release="4" version="1.5.0">
+    	<entry>Modified to block the password reset.</entry>
+    </version><version release="3" version="1.5.0">
+    		<entry>Changes done in Test Scripts.</entry>
+    	</version>
+    	<version release="2" version="1.5.0">
+    		<entry>Added the POA Installation Document "Zen Cart Installation Manual_V1.0.doc" in the docs folder.</entry>
+    	</version>
+    	<version release="1" version="1.5.0">
+    		<entry>http://www.zen-cart.com/showthread.php?190424-v1-5-0-Release-Available</entry>
+    	</version>
+    	<version version="1.3.9h" release="3">
+		<entry>Release notes: http://www.zen-cart.com/forum/showthread.php?t=166875</entry>
+	</version>
+    <version version="1.3.9d" release="12">
+        <entry>German language correction</entry>
+        <entry>Database prefix fixed, setting for db prefix is added</entry>
+    </version>
+	<version version="1.3.9d" release="9">
+		<entry>Theme and Locale uploader: correct redirection after login</entry>
+	</version>
+	<version version="1.3.9d" release="8">
+		<entry>Menu for locale upload is added</entry>
+	</version>
+	<version version="1.3.9d" release="7">
+		<entry>Upgrade to version 1.3.9d</entry>
+	</version>
+    <version version="1.3.8" release="4">
+      <entry></entry>
+    </version>
+    <version version="1.3.8" release="3">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+    <version version="1.2.6" release="31">
+      <entry>Initial package version</entry>
+    </version>
+    </changelog>
+    <entry-points>
+    <entry>
+      <path>/zen_admin/index.php</path>
+      <label>Administrative interface</label>
+    </entry>
+    <entry>
+      <path>/</path>
+      <label>Online Catalog</label>
+    </entry>
+    <entry>
+      <path>/zen_admin/theme_uploader.php</path>
+      <label>Upload themes</label>
+    </entry>
+    <entry>
+      <path>/zen_admin/locale_uploader.php</path>
+      <label>Upload language</label>
+    </entry>
+    </entry-points>
+    <installed-size>19920440</installed-size>
+    <categories>
+    	<category>Web/E-commerce</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    </languages>
+    <settings>
+    	<group>
+    		<name>Administrator's preferences</name>
+    		<setting id="admin_name" type="string" default-value="admin">
+    			<name>Administrator's name</name>
+    		</setting>
+    		<setting id="admin_password" type="password">
+    			<name>Password</name>
+    		</setting>
+    		<setting id="admin_email" type="email">
+    			<name>Administrator's email</name>
+    		</setting>
+    	</group>
+    	<group>
+    		<name>Other preferences</name>
+    		<setting id="locale" type="enum">
+    			<choice id="en-US">
+    				<name>English</name>
+    			</choice>
+    			<choice id="fr-FR">
+    				<name>French</name>
+    			</choice>
+    			<choice id="de-DE">
+    				<name>German</name>
+    			</choice>
+    			<choice id="nl-NL">
+    				<name>Dutch</name>
+    			</choice>
+    		</setting>
+    	</group>
+    	 <group>
+      <name>Configuration</name>
+      <setting id="sql_cache_method" type="enum" default-value="database">
+        <name>Cache method</name>
+        <choice id="database">
+          <name>Database</name>
+        </choice>
+        <choice id="file">
+          <name>File</name>
+        </choice>
+      </setting>
+    </group>
+    </settings>
+    <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    	<db:db>
+    		<db:id>main</db:id>
+    		<db:default-name>zencart</db:default-name>
+    		<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+    		<db:server-type>mysql</db:server-type>
+    		<db:server-min-version>3.2</db:server-min-version>
+    	</db:db>
+    	<php:extension>mysql</php:extension>
+    	<php:version min="4.3.2"/>
+    </requirements>
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="images">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="zen_admin">
+      <mapping url="includes/languages">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="includes/classes">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="images/graphs">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="backups">
+        <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+    <mapping url="cache">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="includes/templates">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="includes/languages">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="media">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="pub">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="editors/htmlarea/lang">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

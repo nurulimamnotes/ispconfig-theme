@@ -1,0 +1,124 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>nucleus</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>3.64</version>
+  <release>2</release>
+  <homepage>http://nucleuscms.org/</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>nucleus</default-prefix>
+
+	<summary>Nucleus is a flexible content management system (CMS).</summary>
+	<summary xml:lang="en-US">Nucleus is a flexible content management system (CMS).</summary>
+    <summary xml:lang="de-DE">Nucleus ist ein flexibles Content Management System (CMS).</summary>
+    <summary xml:lang="fr-FR">Nucleus est un système de content management flexible (CMS)</summary>
+    <summary xml:lang="pl-PL">Nucleus to elastyczny system zarządzania treścią (CMS).</summary>
+    <summary xml:lang="es-ES">Nucleus es un sistema flexible de gestión de contenidos (CMS).</summary>
+    <description>Nucleus offers you the building blocks you need to create a Web presence. Whether you want to create a personal blog, a family page, or an online business site, the flexible content management system Nucleus CMS can help you achieve your goals. This powerful combination of PHP scripts offers you multiple possibilities to design your website.</description>
+    <description xml:lang="en-US">Nucleus offers you the building blocks you need to create a Web presence. Whether you want to create a personal blog, a family page, or an online business site, the flexible content management system Nucleus CMS can help you achieve your goals. This powerful combination of PHP scripts offers you multiple possibilities to design your website.</description>
+    <description xml:lang="de-DE">Nucleus bietet Ihnen die Bausteine, die Sie benötigen, um einen Webauftritt einzurichten. Ungeachtet dessen, ob Sie ein persönliches Blog, eine Familienseite oder eine geschäftliche Onlinepräsenz aufsetzen möchten, hilft Ihnen das flexible Content Management System Nucleus CMS dabei, Ihre Ziele zu erreichen. Diese leistungsstarke Sammlung von PHP-Skripten gibt Ihnen verschiedene Möglichkeiten zur Gestaltung Ihrer Homepage zur Hand.</description>
+    <description xml:lang="fr-FR">Nucleus vous fournit les blocs de construction dont vous avez besoin pour créer une présence Internet. Que vous souhaitiez créer un bloc personnel, une page familiale ou un site de business en ligne, Nucleus CMS vous aide à atteindre vos objectifs tout en étant un système de gestion des contenus (CMS - content management system) flexible : cette puissante combinaison de scripts vous offre de multiples possibilités pour la conception de votre site Web.</description>
+    <description xml:lang="pl-PL">Nucleus udostępnia Ci elementy, których potrzebujesz, aby utworzyć nową stronę internetową. Niezależnie od tego, czy chcesz założyć własny blog, stworzyć rodzinną stronę czy wizytówkę swojej firmy w Internecie, CMS Nucleus pomoże Ci zrealizować cele i jest elastycznym system zarządzania treścią (CMS): ta potężna kombinacja skryptów PHP daje Ci różne możliwości zaprojektowania strony internetowej.</description>
+    <description xml:lang="es-ES">Nucleus le ofrece los bloques modulares necesarios para construir una presencia web. Tanto si se trata de un blog personal, una página familiar o un sitio web profesional, Nucleus CMS le ayudará a lograr sus objetivos y es un sistema de gestión de contenidos flexible (CMS): esta potente combinación de scripts PHP pone a su disposición múltiples posibilidades para diseñar su sitio web.</description>
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/main_screenshot.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/license.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="3.32"/>
+
+  <changelog>
+   <version release="2" version="3.64">
+    	<entry>3.64 update</entry>
+    </version><version version="3.32" release="3">
+      <entry>Translations included</entry>
+    </version>
+    <version version="3.32" release="2">
+      <entry>Updated version</entry>
+    </version>
+    <version version="3.21" release="33">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+  	<entry>
+  		<path>/nucleus/</path>
+  		<label>Administrative interface</label>
+  	</entry>
+  	<entry>
+  		<path>/</path>
+  		<label>Site</label>
+  	</entry>
+  </entry-points>
+
+  <installed-size>1955840</installed-size>
+
+  <categories>
+	  <category>Web/Content management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string">
+        <name>Site name</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>nucleus</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>  
+    
+    <mapping url="media">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="skins">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+  
+
+</application>

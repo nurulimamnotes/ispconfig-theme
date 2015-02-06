@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie8"> <!--<![endif]-->
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Movable Type - Purchase</title>
+		<meta name="description" content="Movable Type has tier-based licenses, which allow you to choose the features and software that best fits your requirements and budget.">
+		<meta name="keywords" content="Movable Type, Movable Type Publishing Platform, MT, MT5, enterprise blogs, media blogs, online publishing, websites, weblogs, web blogs, small business websites, blog, blogs, blogging, blog platform, community solution, commercial license, free download">		
+		<meta name="viewport" content="width=1080">
+		<meta name="robots" content="noodp,noydir" />
+
+		<!-- Custom Fonts -->
+		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+
+		<!-- Favicon -->
+		<link rel="icon" href="/mt-static/candt/images/favicon.ico" />
+
+
+		
+		<script type="text/javascript" src="//use.typekit.net/obb1wqv.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+
+        
+		<link rel="stylesheet" href="/mt-static/candt/css/main.css">
+		<script src="/mt-static/candt/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="/mt-static/candt/js/vendor/video.js"></script>
+		<script>
+			_V_.options.flash.swf = "/mt-static/candt/video/video-js.swf";
+		</script>
+
+		<script>
+			var mtAwsBucket = 'https://s3.amazonaws.com/mtcom/';
+		</script>
+
+    </head>
+    
+    <body class="purchase">
+        <div id="viewport-wrapper">
+    <header class="header">
+            
+        <div class="wide-row">
+
+            
+            
+			<div class="main-logo">
+				
+					<a href="http://www.movabletype.com/">Movable Type</a>
+				
+            </div>
+
+            <nav class="main-nav-wrapper">
+
+				<ul class="main-nav">
+					
+						<li class="first-child active"><a href="https://www.movabletype.com/purchase.html">Purchase</a></li>
+						<li ><a href="http://www.movabletype.com/who.html">Who's Using Movable Type</a></li>
+						<li ><a href="http://www.movabletype.com/blog.html">Blog</a></li>
+						<li ><a href="http://www.movabletype.com/partners.html">Partners</a></li>
+					
+				</ul>
+
+				<section id="buy-now-tooltip"><h2>Buy Now</h2><div class="close_button" aria-hidden="true"></div></section>
+            </nav>
+            
+            
+
+        </div>
+
+    </header>
+
+
+<style>
+#eula {
+width: 550px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+height: 200px;
+padding: 10px;
+font-size: 11px;
+background-color: #ffffff;
+border: 1px solid #b4b4b4;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-ms-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 10px;
+overflow-y: scroll;
+text-align: left;
+}
+.purchase-pricing-wrapper {
+padding: 40px 0 60px 0;
+height: 840px;
+position: relative;
+}
+</style>
+
+<div id="side-nav" class="side-nav">
+	
+	<ul>
+		<li id="nav-contact" class="">
+			<div class="indicator" data-section="step1"><span class="circle icon"></span></div>
+			<div class="nav-section"><span class="arrow_left icon"></span>Contact Information</div>
+		</li>
+		<li id="nav-payment" class="">
+			<div class="indicator" data-section="step2"><span class="circle icon"></span></div>
+			<div class="nav-section"><span class="arrow_left icon"></span>Payment Method</div>
+		</li>
+		<li id="nav-billing" class="">
+			<div class="indicator" data-section="step3"><span class="circle icon"></span></div>
+			<div class="nav-section"><span class="arrow_left icon"></span>Billing Information</div>
+		</li>
+		<li id="nav-review" class="">
+			<div class="indicator" data-section="step4"><span class="circle icon"></span></div>
+			<div class="nav-section"><span class="arrow_left icon"></span>Review Your Order</div>
+		</li>
+		<li id="nav-complete" class="">
+			<div class="indicator" data-section="step5"><span class="circle icon"></span></div>
+			<div class="nav-section"><span class="arrow_left icon"></span>Complete</div>
+		</li>
+	</ul>
+
+</div>
+
+<div class="purchase">
+	
+	<section class="hero outer">
+		<div class="middle">
+			<div class="inner">
+
+				<h1>Movable Type Fits Your Needs</h1>
+				<p>Movable Type has tier-based licenses, hosted and self-hosted offerings, which allow you to choose the features and software that best fits your requirements, budget, and needs. Start by choosing your license type below.</p>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="main-wrapper purchase-features-wrapper">
+				
+		<div class="row purchase-features">
+
+			<div class="row">
+				
+				<span class="purchase1 icon"></span>
+
+			</div>
+			
+			<div class="row purchase-features-containers clearfix">
+				 
+				<div class="purchase-features-container features-pro" style="width: 840px;">
+
+					<div class="purchase-features-container-top">
+						
+						<h3>Movable Type 6.0.6 <span class="highlight-blue">Pro</span></h3>
+
+						<p><strong>A powerful CMS solution for almost any case:</strong><br>Small to Mid-sized business, Media/Entertainment, Publishers/Interest-Specific Blogs, Marketing and more</p>
+						
+						<ul style="margin-left: auto; margin-right: auto; width: 30%;">
+							<li>5 to Unlimited Authors</li>
+							<li>Server Availability</li>
+							<li>Unlimited Number of Blogs and Sites</li>
+							<li>Custom Fields</li>
+							<li>Social Networking Features</li>
+							<li>Support Availability from Partners</li>
+						</ul>
+
+						<span class="footnote">*License is for one server &#38; development environment</span>
+					
+					</div>
+					
+					<div class="purchase-features-container-bottom">
+					
+						<div class="features-5-users" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', '5_User_License']);" style="margin-left: 200px;">
+							5 User License*
+							<span class="highlight-blue">$595.00</span>
+						</div>
+						
+						<div onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', 'Unlimited_License']);" style="margin-left: 120px;">
+							Unlimited User License*
+							<span class="highlight-blue">$1,195.00</span>
+						</div>
+	
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+				
+				<div id="upgrade" class="btn" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_Upgrade']);" >
+					Already Have Movable Type? Upgrade
+				</div>
+				
+			</div>
+
+		</div>
+		
+	</section>
+
+
+	<section id="faq" class="main-wrapper purchase-faq-wrapper">
+		
+		<div class="row">
+
+			<div class="purchase-faq">
+				
+				<h2 class="light">Pricing and licensing faq</h2>
+				
+				<div class="row clearfix">
+					
+					<div class="question-wrapper" data-faq="1" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'What&#8217;s the difference between Movable Type Pro and Movable Type Enterprise?']);">
+						<div class="question">What's the difference between Movable Type Pro and Movable Type Enterprise?</div>
+						<div class="faq-shadow"></div>
+					</div>
+
+					<div class="question-wrapper" data-faq="2" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'Which MT license is right for me?']);">
+						<div class="question">Which MT license is right for me?</div>
+						<div class="faq-shadow"></div>
+					</div>
+
+					<div class="question-wrapper" data-faq="3" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'What is a &quot;user&quot;?']);">
+						<div class="question">What is a "user"?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					
+					<div class="answer-wrapper first" data-faq="1">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p><strong>Movable Type Pro</strong> is designed for bloggers, design and development firms, and small and medium-sized businesses, and has all of the features of <strong>Movable Type</strong> plus social networking features, custom fields for extending your content management system, and new Professional Templates that help you get up and running with a beautiful website quickly.</p>
+							<p><strong>Movable Type Enterprise</strong> is designed for large companies that require compatibility with the Oracle or SQL Server databases and LDAP-type directory service support. It contains all of the features of <strong>Movable Type</strong> plus these advanced grade features and priority support.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="2">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>
+<strong>Movable Type</strong> is available under several different licenses:</p>
+							<p>Pro business License 
+For use by a company, a corporation, a partnership or any other form of organization that is using the software for a commercial endeavor.</p>
+							
+							<p>Enterprise License
+ Use for commercial purposes with multiple servers. To learn more or to order, please <a href="http://www.movabletype.com/contact.html">contact us</a>.</p>
+							
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper last" data-faq="3">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>A "user" is anyone with a unique login to <strong>Movable Type</strong>, for example, anyone with permission to change content or modify settings. Licenses are based on active users who log into the system. Site visitors, readers and commenters are not considered users for the purposes of licensing.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					
+
+				</div>
+				<div class="row clearfix">
+					
+					<div class="question-wrapper" data-faq="4" onClick="_gaq.push(['_trackEvent', 'PurchasePage','FAQ_Section', 'Can I start with 5 users now and add users later?']);">
+						<div class="question">Can I start with 5 users now and add users later?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="question-wrapper" data-faq="5" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'Can you recommend a consultant we can work with on a new (or existing) Movable Type-based website?']);">
+						<div class="question">Can you recommend a consultant we can work with on a new (or existing) Movable Type-based website?</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="question-wrapper" data-faq="6" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'How is Movable Type Enterprise priced?']);">
+						<div class="question">How is Movable Type Enterprise priced?</div>
+						<div class="faq-shadow"></div>
+					</div>
+
+					<div class="answer-wrapper first" data-faq="4">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>No. Please purchase unlimited users if you foresee the user growth.  And because <strong>Movable Type</strong> is built to scale it will meet all of your business needs as you add users.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="5">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>Our Authorized Partners are available to assist organizations with their <strong>Movable Type</strong> development and design needs. During checkout, please check the box that you are interested in working with Support Partners and we will be in touch with additional information.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper last" data-faq="6">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p><strong>Movable Type Enterprise</strong> pricing includes a one-time license fee, with the option for maintenance at an additional cost.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+
+				</div>
+				<div class="row clearfix">
+					<div class="question-wrapper" data-faq="7" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I live outside the United States. Do you have international pricing?']);">
+						<div class="question">I live outside the United States. Do you have international pricing?</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="8" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I&#8217;m a Movable Type developer working with a client -- is that okay?']);">
+						<div class="question">I'm a Movable Type developer working with a client -- is that okay?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="9" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I have MT 3.x or MT 4.x. Why should I upgrade to Movable Type 5 now?']);">
+						<div class="question">I have MT 3.x or MT 4.x. Why should I upgrade to Movable Type 5 now?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="answer-wrapper first" data-faq="7">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>Individuals or businesses purchasing <strong>Movable Type</strong> from outside the U.S. may pay for it in dollars through the regular check out process. Japanese customers may pay in Yen on the Movable Type Japan <a href="http://www.movabletype.jp/">website.</a></p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="8">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>Better than okay - that's great! Just remember that each of your clients needs their own <strong>Movable Type</strong> license appropriate for its use. Get in touch with us as well, we're always looking to expand our Partnership network.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper last" data-faq="9">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>There's never been a better time to upgrade your <strong>Movable Type</strong> installation. <strong>Movable Type Pro</strong> offers you these benefits:</p>
+							<p>MT 5.2 New Features and Enhancements</p>
+							<ul>
+								<li>Website management provides for organized collections of blogs in a multi-blog environment. Brings the power of <strong>Movable Type</strong> templates and template language to blog-independent website pages. Enhanced template language to provide better support for combining data from multiple blogs.</li>
+								<li>Simpler and more robust theme system makes incorporating sophisticated HTML, CSS, and JavaScript designs easier.</li>
+								<li>User dashboard can be used to organize and centralize commonly used features and functions. This makes blog administrators', authors', and moderators' jobs easier.</li>
+								<li>Revision history on the most-used objects in the CMS, such as website and blog pages, website and blog templates, and blog entries.</li>
+								<li>List-management framework enhances <strong>Movable Type's</strong> ability to manage large amounts of data inside the CMS.</li>
+								<li>Provides greatly improved AJAX-based sorting and searching features that can be extended by <strong>Movable Type</strong> users and developers.</li>
+								<li>Support for nginx ("high-performance HTTP server and reverse proxy, as well as a IMAP/POP3 proxy server") and PSGI ("new, improved interface between Perl web applications and web servers") provides performance improvements for Movable Type production environments with greatest traffic.</li>
+								<li>New and improved Rich Text Editor based on TinyMCE. The new <strong>Movable Type Rich Text Editor</strong> is customizable, browser-friendly, lightweight, and AJAX-friendly. <a href="http://www.tinymce.com/" target="_blank">Check here</a> for the latest release notes and features.</li>
+							</ul>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+
+				</div>
+				<div class="row clearfix">
+					
+					<div class="question-wrapper" data-faq="10" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I&#8217;m using the Motion template in Movable Type 4.25 and I&#8217;d like to use it in MT5. Is it included in MT5?']);">
+						<div class="question">I'm using the Motion template in Movable Type 4.25 and I'd like to use it in MT5. Is it included in MT5?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="11" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'What about Action Streams? Are they available in MT5?']);">
+						<div class="question">What about Action Streams? Are they available in MT5?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="12" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I notice that MT5 doesn&#8217;t support SQLite or PostgreSQL as previous versions of MT have. Why is this?']);">
+						<div class="question">I notice that MT5 doesn't support SQLite or PostgreSQL as previous versions of MT have. Why is this?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="answer-wrapper first" data-faq="10">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>No, <strong>Movable Type Motion</strong> is not supported in MT5.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="11">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>Similar to <strong>Movable Type Motion</strong>, Action Streams are not included in MT5. Instead, it is available to download as a plugin.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper last" data-faq="12">
+						<div class="answer">
+							<div class="close-button"></div>
+						<p>MySQL is by far the most popular DB option used with MT. By discontinuing support for SQLite and PostgreSQL we will be able to enjoy faster development and testing for future versions of MT.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+
+				</div>
+				<div class="row clearfix">
+					
+					<div class="question-wrapper" data-faq="13" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'What is not in MT5 that was in MT4? And what is the difference between the two versions?']);">
+						<div class="question">What is not in MT5 that was in MT4? And what is the difference between the two versions?</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="14" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I have a Personal version of Movable Type 4.0 or 4.1. How can I get Movable Type 5 Pro?']);">
+						<div class="question">I have a Personal version of Movable Type 4.0 or 4.1. How can I get Movable Type 5 Pro?</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="15" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'I have a Personal version of Movable Type 4.0 or 4.1. How can I get Movable Type 5 Pro?']);">
+						<div class="question">I have MT 3.x or MT4.x. How can I get Movable Type 5 Pro?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="answer-wrapper first" data-faq="13">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p><strong>Movable Type 5</strong> no longer supports SQLite or PostgreSQL, and now supports the following databases: MySQL 5.0 or greater, Oracle Database 11g (only <strong>Movable Type Advanced</strong>), Microsoft SQL Server 2008 (only <strong>Movable Type Advanced</strong>)</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="14">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>If you are an individual using <strong>Movable Type</strong>, you can go to the <a href="http://www.movabletype.org/download.html" target="_blank" onclick="_gaq.push(function() { var pageTracker = _gat._getTrackerByName(); pageTracker._setAllowLinker(true); var linkerUrl = pageTracker._getLinkerUrl( 'http://www.movabletype.org/download.html' ); window.open(linkerUrl); }); return false;">Download page</a> on <a href="http://www.movabletype.org/" target="_blank" onclick="_gaq.push(function() { var pageTracker = _gat._getTrackerByName(); pageTracker._setAllowLinker(true); var linkerUrl = pageTracker._getLinkerUrl( 'http://www.movabletype.org/' ); window.open(linkerUrl); }); return false;">Movabletype.org</a> and update your software to the Blogger license.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper last" data-faq="15">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>If you previously purchased <strong>Movable Type 3</strong> or <strong>Movable Type 4</strong>, you can upgrade to <strong>Movable Type 5 Pro</strong> at a discounted price. When you select a version at the bottom of this page, select the version you want to "Upgrade."</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+
+				</div>
+				<div class="row clearfix">
+					
+					<div class="question-wrapper" data-faq="16" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'What kind of support do I get with a license?']);">
+						<div class="question">What kind of support do I get with a license?
+</div>
+						<div class="faq-shadow"></div>
+					</div>
+					<div class="question-wrapper" data-faq="17" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'FAQ_Section', 'Can I get help with upgrades, and professional services?']);">
+						<div class="question">Can I get help with upgrades, and professional services?</div>
+						<div class="faq-shadow"></div>
+					</div>
+					
+					<div class="answer-wrapper first" data-faq="16">
+						<div class="answer">
+							<div class="close-button"></div>
+							<p>Technical support is now provided by our partners who are the best and brightest working with <strong>Movable Type</strong>. You can also get in touch with us and we can connect you with a Support Partner that will best suit your needs.</p>
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+					<div class="answer-wrapper middle" data-faq="17">
+						<div class="answer">
+							<div class="close-button"></div>
+							
+							<p>For professional help installing and upgrading <strong>Movable Type Pro</strong>, please <a href="http://www.movabletype.com/contact.html">Contact Us</a> and we will find a Support Partner to best suit your needs.</p>
+							
+						</div>
+						<div class="faq-answer-shadow"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+	</section>
+
+	<section class="main-wrapper purchase-pricing-wrapper bg-white">
+		
+		<div class="row purchase-pricing">
+
+			<div>
+
+				<span class="purchase2 icon"></span>
+				
+				<h2 class="dark">Get Movable Type 6.0.6 Now</h2>
+
+            <p class="dek">Select the version of Movable Type below to get started today.<br/>You can pay with your credit card by PayPal.</p>
+
+          <div id="eula">
+            <p>This Movable Type License Agreement (hereinafter referred to as this "Agreement") is made and entered into by and between an individual, corporation, entity or organization (hereinafter referred to as the "Client") that uses Movable Type 6.x (hereinafter referred to as the "Software") and Six Apart, Ltd. (hereinafter referred to as "Six Apart"). The Client shall not download, install or use the Software unless it agrees to this Agreement. The Client shall be deemed to have agreed to this Agreement upon its download, installation or use of the Software.</p>
+
+            <p>Article 1. Definitions</p>
+
+            <p>In this Agreement, the following terms shall have the meanings specified below:</p>
+
+            <p>(1) User</p>
+
+            <p>"User" means an individual who has been assigned his/her own login name generated by the Software through the function of the Software to "add/edit blog authors." Any person using invalidated login name shall not be counted as a User. Further, it is prohibited to share a login name of any individual among more than one person.</p>
+
+            <p>(2) Commenter</p>
+
+            <p>"Commenter" means a User entitled only to post comments on the Software. The number of Commenters shall not be included in the number of Users.</p>
+
+            <p>(3) Server</p>
+
+            <p>"Server" means a computer installed with Movable Type, or a group of computers consisting of a computer installed with Movable Type and a computer or computers used for publishing web pages and a computer or computers used as database server.</p>
+
+            <p>(4) Update</p>
+
+            <p>"Update" of a product means a minor functional improvement over, or a bug fixing in, the current version. Release of an Update may be confirmed by a change of the figure after the decimal point of the version number. For example, a change from X.1 to X.2 represents an Update.</p>
+
+            <p>(5) Upgrade</p>
+
+            <p>"Upgrade" means a major-scale release of a product with introduction of a new function or improvement in the key functionality of the Software. Release of an Upgrade may be confirmed by a change of the figure before the decimal point of the version number. For example, a change from 5.X to 6.X represents an Upgrade.</p>
+
+            <p>Designation of either the "Update" or the "Upgrade" shall be made by Six Apart.</p>
+
+            <p>Article 2. Use of Software</p>
+
+            <p>Pursuant to the provisions of this Agreement, the Client shall be granted a license to use, on a non-exclusive, non-transferable and non-sublicensable basis, the Software for the purpose of the Client's own use (if the Client is a corporation, entity or organization, use of the Software by an individual belonging to the Client or any similar individuals designated by the Client from among individuals within the scope permitted by Six Apart in accordance with the License Policy, as the use of the Software by the Client pursuant to this Agreement), and, if the Client operates a community, for the purpose of use within the community by participants therein. Except as specified in this Agreement, the Client may not provide any third party the whole or part of functions of the Software, nor may the Client receive from any third party a consideration for the use of the Software, no matter what the purpose of use is. Six Apart shall be entitled to determine whether the use by the Client is pursuant to this Agreement or not. Six Apart shall retain all rights pertaining to the Software (including all intellectual property rights), as well as all rights pertaining to the Software which are not specifically licensed under this Agreement. The use of the Software shall be limited to the number of Users and the number of Servers set forth in this Agreement. The number of the Commenters shall not be limited.</p>
+
+            <p>Article 3. Production of Duplicates</p>
+
+            <p>The Client may duplicate the Software in any readable forms, in the minimum number necessary only for the backup purpose; provided, however, that, such duplication of the Software shall be made in the same form as the original and with an indication of the authorized person. For the avoidance of doubt, any rights to the Software not specifically licensed hereunder shall be reserved by Six Apart.</p>
+
+            <p>Article 4. Technical Support, Update and Upgrade</p>
+
+            <p>(1) Technical supports for the Software shall be provided by a partner company of Six Apart for value. The Client shall enter into a separate agreement with such partner company of Six Apart on an individual basis concerning the contents of technical supports.</p>
+
+            <p>(2) For two (2) years after the purchase of license for the Software and any period to be separately designated by Six Apart thereafter, the Client shall be entitled to receive an Update to the latest version for free.</p>
+
+            <p>(3) If the Software is provided as an Update or Upgrade, the Client may use either the previous version or the current version and shall not use both versions concurrently; provided, however, that, if the Client chooses to use the previous version despite the Upgrade of the Software, the Client shall acknowledge that the Update set forth in the preceding Paragraph concerning such previous version may be terminated at the discretion of Six Apart.</p>
+
+            <p>Article 5. Compliance</p>
+
+            <p>The Client shall understand and acknowledge that it may use the Software only in compliance with all applicable laws. In addition, the Client shall use the Software in accordance with laws and other regulations relating to privacy and intellectual property rights. The Client shall cause any User to adhere to the conditions of this Agreement and acknowledge that any violation of this Agreement by such User shall be deemed as a violation by the Client.</p>
+
+            <p>Article 6. Prohibited Matters</p>
+
+            <p>The Client shall be prohibited to commit the acts specified in each Item below:</p>
+
+            <p>(1) To distribute any software derived from the Software (provided, however, that, distribution of plug-ins and other add-ins written by using API and any other programming interfaces published by Six Apart shall be permitted);</p>
+
+            <p>(2) To duplicate the Software otherwise than set out in this Agreement;</p>
+
+            <p>(3) To perform reverse engineering, decompiling or disassembling concerning the Software, or otherwise try to restructure or clarify source code or algorithm for the Software;</p>
+
+            <p>(4) To make available the Software, whole or part, or any duplicate thereof, to any third party in the form of sale, assignment, grant of a license, disclosure, distribution to such third party or otherwise;</p>
+
+            <p>(5) To use the Software for the purpose of providing hosting services to any other party or providing services to any other individual, corporation, entity or organization which renders, as business, services relating to the Internet or systems, etc., with or without consideration;</p>
+
+            <p>(6) To delete or modify any display authority or trademark on the Software.</p>
+
+            <p>Article 7. Protection of Personal Information and Privacy</p>
+
+            <p>All personal information furnished by the Client to Six Apart shall be controlled in accordance with the Privacy Policy published on the website http://www.sixapart.com/privacy/. The Client shall be deemed to have understood and accepted the Privacy Policy by using the Software.</p>
+
+            <p>Article 8. Guarantee by Six Apart</p>
+
+            <p>Six Apart hereby guarantees that no order is included in the Software which has been designed intentionally to alter, lose, destroy, record or transmit any information in computer, computer system or computer network, without intent or permission of the manager of the relevant information. This guarantee shall not apply to open source codes included in the Software, if any. If, during the term of this Agreement, any object which violates the guarantee hereunder, other than the open source codes, is found to be included in the Software, Six Apart shall make any reasonable commercial efforts to alter or replace the Software, at the cost of Six Apart, so that the Software may comply with the guarantee set out herein, without prejudice to any primary function of the Software, as the only legally available relief. The Client may not pursue any other legal relief in connection with the violation of guarantee set out in this Article.</p>
+
+            <p>Article 9. Limitation on Guarantee relating to Function of Software</p>
+
+            <p>(1) The Software shall be furnished on as-is basis and shall not provide any security or guarantee whether express or implied. Six Apart shall not provide security or guarantee of any kind whatsoever, whether express or implied, including, but not limited to, an implied security or guarantee concerning the merchantability and suitability to any specific objectives.</p>
+
+            <p>(2) Any and all risks pertaining to the quality and performance of the Software, program errors in the installation and use, damage to devices, loss of data and software programs, nonperformance or suspension or otherwise shall be borne by the Client. The Client shall determine the suitability of use of the Software at its own responsibility, and bear any and all risks pertaining to such use.</p>
+
+            <p>Article 10. Termination</p>
+
+            <p>(1) If the Client violates any provision of this Agreement, Six Apart may terminate this Agreement without giving notice.</p>
+
+            <p>(2) Upon the termination of this Agreement, licenses and technical supports having been granted to the Client shall all be terminated and the Client shall immediately uninstall and suspend any use of the Software, and, if instructed by Six Apart, shall delete or destroy any duplicates of the Software. In such cases, considerations having been paid for the Software and technical supports shall not be refunded for any reason whatsoever. Provisions relating to "Limitation on Guarantee relating to Function of Software," "Indemnification," "Limitation on Liability" and "General Provisions" shall survive the termination of this Agreement.</p>
+
+            <p>Article 11. Indemnification</p>
+
+            <p>The Client hereby agrees to indemnify Six Apart, any of its officers, employees, agencies, subsidiaries, affiliates and other partners for liabilities for any direct, indirect, contingent, exceptional, consequential or punitive damage arising from the Client's use of, or otherwise in connection with, the Software.</p>
+
+            <p>Article 12. Limitation on Liability</p>
+
+            <p>(1) The Client specifically understands and acknowledges that, Six Apart shall not assume liabilities for any direct, indirect, contingent, exceptional, consequential or punitive damage, including, but not limited to, those resulting from loss of profits, loss of credibility, nonperformance, unavailability of data or other causes, as well as any other unrecognized damage, not only where Six Apart has notified the possibility of such damage in advance, but in all other cases.</p>
+
+            <p>(2) The amount of accumulated damages payable by Six Apart to the Client shall be up to the amount of fees paid by the Client to Six Apart during the latest twelve (12) months, not only where the court of competent jurisdiction rejected the limitation on liability for any contingent or indirect damage and the limitation referred to in Paragraph 1 does not apply to the Client, but in all other cases.</p>
+
+            <p>Article 13. General Provisions</p>
+
+            <p>(1) This Agreement shall be governed by and construed in accordance with the laws of Japan. This Agreement shall constitute an entire agreement between the Client and Six Apart, and the Client shall use the Software in accordance with the provisions of this Agreement. This Agreement shall supersede any and all agreements prior to the execution of this Agreement.</p>
+
+            <p>(2) All disputes arising from or in connection with this Agreement shall be submitted to the exclusive agreed jurisdiction of the Tokyo District Court, for the first instance.</p>
+
+            <p>(3) If any provision of this Agreement is determined by the competent court to conflict with any law, then such provision shall be modified or construed, to the maximum extent permitted by law, so that the expected objectives may be fulfilled, and any other provision of this Agreement shall remain full force and effect.</p>
+
+            <p>(4) The Software shall be the "commercial item" defined in the United States 48 C.F.R. 2.101, and is comprised of the "commercial computer software" and the "commercial computer software documentation" used in the United States 48 C.F.R. 12.212. Provisions of the United States 48 C.F.R. 12.212 and from C.F.R. 227.7202-1 through 27.7202-4 shall apply concurrently and any and all United States end users shall obtain the Software within the extent of the rights stipulated in the said provisions.</p>
+
+            <p>(5) Both parties acknowledge that the manufacturing and sale of the Software shall comply with the export control-related laws and regulations of Japan and the United States, and agree to comply with all such laws.</p>
+
+            <p>(6) The Client may not assign, transfer, pledge or otherwise dispose of its contractual status or rights or obligations under this Agreement without prior written consent of Six Apart, and any assignment, transfer, pledge or other disposition contradicting the above shall be invalid.</p>
+
+            <p>(7) Movable Type, logo of Movable Type, and other logos and names of Movable Type, Six Apart, logo of Six Apart and other logos and names of Six Apart shall be the trademarks of Six Apart. The Client hereby agrees that it shall not indicate or use such trademarks in any manner whatsoever without prior written consent of Six Apart.</p>
+
+            <p>(8) To the extent not significantly prejudice the benefit of the Client, the Client shall acknowledge that Six Apart may amend or modify this Agreement without consent of the Client.</p>
+
+            <p>(9) Titles and numbers of Articles, Paragraphs and Items of this Agreement shall be for convenience purposes only, and they shall not have any legal effects.</p>
+
+          </div>
+
+				<div id="pricing-users" class="pricing" style="margin-left: 165px;">
+              <form id="purchase-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input id="hosted_button_id" type="hidden" name="hosted_button_id" value="">
+              </form>
+					
+					<h3>Pro</h3>
+					<hr>
+					<p>5 - Users</p>
+
+					<div class="pricing-btn new-user" data-plan-type="5 - Users Version" data-price="595" data-type="pro_5user_new" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', '5_User_New_User']);  $('#hosted_button_id').val('54UUKDBSUPX8Y'); $('#purchase-form').submit();" >
+						<div class="pricing-type">New User</div>
+						<div class="pricing-price">
+							<div class="original"><span>595</span><hr class="line-through"></div>
+							<div class="discount"></div>
+						</div>
+						
+					</div>
+
+					<div class="pricing-btn upgrade" data-plan-type="5 - Users Upgrade Version" data-price="299" data-type="pro_5user_upgrade" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', '5_User_Upgrade']);  $('#hosted_button_id').val('LN89QPNDKCGTC'); $('#purchase-form').submit();" >
+						<div class="pricing-type">Upgrade</div>
+						<div class="pricing-price">
+							<div class="original"><span>299</span><hr class="line-through"></div>
+							<div class="discount"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div id="pricing-unlimited" class="pricing">
+					
+					<h3>Pro</h3>
+					<hr>
+					<p data-plan-type="Unlimited">Unlimited</p>
+					<div class="pricing-btn new-user" data-plan-type="Unlimited Users Version" data-price="1195" data-type="pro_unlimited_new" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', 'Unlimited_New_User']);  $('#hosted_button_id').val('J46PYRKR2VMWU'); $('#purchase-form').submit();" >
+						<div class="pricing-type">New User</div>
+						<div class="pricing-price">
+							<div class="original"><span>1195</span><hr class="line-through"></div>
+							<div class="discount"></div>
+						</div>
+					</div>
+
+					<div class="pricing-btn upgrade" data-plan-type="Unlimited Users Upgrade Version" data-price="599" data-type="pro_unlimited_upgrade" onClick="_gaq.push(['_trackEvent', 'PurchasePage', 'MT_PRO', 'Unlimited_Upgrade']);  $('#hosted_button_id').val('MVA2GJ9QHSDZJ'); $('#purchase-form').submit();" >
+						<div class="pricing-type">Upgrade</div>
+						<div class="pricing-price">
+							<div class="original"><span>599</span><hr class="line-through"></div>
+							<div class="discount"></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+
+		<span class="arrow_down icon divider"></span>
+		
+	</section>
+
+	<section class="main-wrapper pricing-users-wrapper bg-gray">
+
+		<div class="row">
+
+			<div class="pricing-users-content clearfix">
+				
+				<h2>Choose <span>Installation Method</span></h2>
+				
+				<div class="boxes-wrapper">
+
+					<div id="hosted-install" class="box-wrapper">
+						
+						<div class="box-content">
+							
+							<span class="server icon"></span>
+
+							<hr>
+
+							<div>
+								
+								<h3>Hosted install</h3>
+
+								<p>The easy way out. ArckCloud, our hosting partner, will install the Movable Type software on a server for you.</p>
+
+							</div>
+
+						</div>
+
+						<span id="hosted-install-btn" class="btn">Launch</span>
+
+					</div>
+
+					<div id="self-install" class="box-wrapper lastchild">
+						
+						<div class="box-content">
+							
+							<span class="wrench icon"></span>
+
+							<hr>
+
+							<div>
+								
+								<h3>self install</h3>
+
+								<p>Have your own private host? You can install Movable Type yourself with this method.</p>
+
+							</div>
+
+						</div>
+
+						<span id="self-install-btn" class="btn">Launch</span>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<span class="arrow_down icon divider"></span>
+
+		</div>
+		
+	</section>
+
+	<section id="hosted-cloud" class="main-wrapper cloud-install-wrapper">
+		
+		<div class="row">
+			
+			<h2 class="light">ArckCloud Will <br/>Take It From Here.</h2>
+
+			<div class="cloud-install">
+			
+				<p class="dek">Deploying Movable Type in the cloud is fast, simple and affordable with ArckCloud. It's built for single-click, problem-free installation and deployment, and includes the support, monitoring and management you need to keep your blog up and running without a hitch.</p>
+
+				<a href="https://arckcloud.com/movabletype/" class="btn" target="_blank">Try it now</a>
+
+			</div>
+
+		</div>
+		
+	</section>
+
+	<section class="main-wrapper enterpise-form-wrapper">
+
+		<div class="row">
+
+			<div class="enterpise-form-content">
+				
+				<h2>Movable Type <span>Enterprise</span></h2>
+
+				<h3>Let's Talk About it</h3>
+
+				<p>We would prefer to offer you a tailored, personal response, which is always better via a human interface. Fill in your information and we'll contact you, or go ahead and give us a call to discuss pricing<br> for Movable Type Enterprise platforms. </p>
+
+			</div>
+
+			<div class="contact-info clearfix">
+				
+				<div class="span-quarter phone-number">
+					<span class="phone icon"></span>
+					<p>USA +1 855 227 7743</p>
+				</div>
+				
+				<div class="span-quarter hours">
+					<span class="clock icon"></span>
+					
+					<p class="contact-days">Mon &#8212; Fri</p>
+					<p>9am to 5pm Eastern Time</p>
+					
+				</div>
+
+			</div>
+
+			<div class="form clearfix">
+				<form id="enterprise-lead" action="">
+					<input type="hidden" name="formID" value="enterprise-lead">
+					<ul>
+						
+						<li class="form-helper">Contact Information</li>
+
+						<li>
+							<input type="text" name="email" placeholder="Email Address *" tabindex="8">
+						</li>
+
+						<li>
+							<input type="text" name="firstName" placeholder="First Name *" tabindex="9">
+						</li>
+
+						<li>
+							<input type="text" name="lastName" placeholder="Last Name *" tabindex="10">
+						</li>
+
+						<li>
+							<input type="text" name="phoneNumber" placeholder="Phone Number *" tabindex="11">
+						</li>
+
+						<li class="form-helper">Additional Information</li>
+
+						<li>
+							<input type="text" name="companyName" placeholder="Company Name *" tabindex="12">
+						</li>
+
+						<li class="custom-select"> 
+							<select name="jobTitle" tabindex="13">
+								<option value=""></option>
+								<option value="CEO / Executive Management">CEO / Executive Management</option>
+								<option value="Marketing Leadership">Marketing Leadership</option>
+								<option value="IT Leadership">IT Leadership</option>
+								<option value="Digital Marketer">Digital Marketer</option>
+								<option value="Developer">Developer</option>
+								<option value="Other">Other</option>
+							</select>
+							<span>Job Title</span>
+						</li>
+
+						<li>
+							<input type="text" name="organization" placeholder="Organization or Company Type" tabindex="14">
+						</li>
+
+						<li class="radio-set clearfix" id="number-employees">
+							
+							<label>How large is the team that will use Movable Type?</label>
+							<div class="first-child">
+								<input name="numberEmployees" type="radio" value="1-5" tabindex="15">
+								<span>1-5</span>
+							</div>
+							<div class="middle-child">
+								<input name="numberEmployees" type="radio" value="6-10" tabindex="16">
+								<span>6-10</span>
+							</div>
+							<div class="last-child">
+								<input name="numberEmployees" type="radio" value="11+" tabindex="17">
+								<span>11+</span>
+							</div>
+							     
+						</li>
+
+						<li class="comments">
+							<label>Additional Comments or Questions *</label>
+							<textarea name="comments"tabindex="18"></textarea>
+						</li>
+
+						<li class="submit">
+							<label>* Indicates a Required Field</label>
+							<input id="submit" class="btn disabled" type="submit" value="submit" disabled="disabled" tabindex="19" onclick="TrackContactForm();TrackBingContactForm();">
+						</li>
+
+					</ul>
+
+				</form>
+
+			</div>
+
+			<div class="gray-arrow"></div>
+
+		</div>
+		
+	</section>
+
+	<section class="main-wrapper enterprise-thankyou-wrapper">
+		
+		<div class="row enterprise-thankyou">
+			<div class="outer">
+				<div class="middle">
+					<div class="inner">
+
+						<h2 class="dark"><span>Thank you</span> for submitting your request for a quote.</h2>
+						<p>We'll be in touch soon to talk about the best plan that will suit you and your company. You can also call us at <span class="phone-number">215 321 3260</span>.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="self-install-check-out">
+
+		<section id="step1">
+			
+			<section class="self-check-out-wrapper">
+				<div class="row">
+					
+					<span class="purchase1 icon"></span>
+						
+					<h2 class="dark">Movable type <span>pro checkout</span></h2>
+
+				</div>
+			</section>
+
+			<section class="self-contact-wrapper bg-gray" onLoad="_gaq.push(['_trackPageview', '/purchase/VP-checkout-contactinfo']);">
+				<div class="row">
+					<h3>Step 1 of 5 - contact information</h3>
+
+					<div class="form clearfix">
+						<form id="purchase1" action="POST">
+							<ul>
+								
+								<li class="contact-email">
+									<input type="text" name="email" placeholder="Please enter your email address to continue *" tabindex="20">
+								</li>
+
+								<li class="eula">
+									<div>
+
+										<p>This Movable Type License Agreement (hereinafter referred to as this "Agreement") is made and entered into by and between an individual, corporation, entity or organization (hereinafter referred to as the "Client") that uses Movable Type 6.x (hereinafter referred to as the "Software") and Six Apart, Ltd. (hereinafter referred to as "Six Apart"). The Client shall not download, install or use the Software unless it agrees to this Agreement. The Client shall be deemed to have agreed to this Agreement upon its download, installation or use of the Software.</p>
+
+										<p>Article 1. Definitions</p>
+
+										<p>In this Agreement, the following terms shall have the meanings specified below:</p>
+
+										<p>(1) User</p>
+										<p>"User" means an individual who has been assigned his/her own login name generated by the Software through the function of the Software to "add/edit blog authors." Any person using invalidated login name shall not be counted as a User. Further, it is prohibited to share a login name of any individual among more than one person.</p>
+
+										<p>(2) Commenter</p>
+										<p>"Commenter" means a User entitled only to post comments on the Software. The number of Commenters shall not be included in the number of Users.</p>
+
+										<p>(3) Server</p>
+										<p>"Server" means a computer installed with Movable Type, or a group of computers consisting of a computer installed with Movable Type and a computer or computers used for publishing web pages and a computer or computers used as database server.</p>
+
+										<p>(4) Update</p>
+										<p>"Update" of a product means a minor functional improvement over, or a bug fixing in, the current version. Release of an Update may be confirmed by a change of the figure after the decimal point of the version number. For example, a change from X.1 to X.2 represents an Update.</p>
+
+										<p>(5) Upgrade</p>
+										<p>"Upgrade" means a major-scale release of a product with introduction of a new function or improvement in the key functionality of the Software. Release of an Upgrade may be confirmed by a change of the figure before the decimal point of the version number. For example, a change from 5.X to 6.X represents an Upgrade.</p>
+
+										<p>Designation of either the "Update" or the "Upgrade" shall be made by Six Apart.</p>
+
+										<p>Article 2. Use of Software</p>
+
+										<p>Pursuant to the provisions of this Agreement, the Client shall be granted a license to use, on a non-exclusive, non-transferable and non-sublicensable basis, the Software for the purpose of the Client's own use (if the Client is a corporation, entity or organization, use of the Software by an individual belonging to the Client or any similar individuals designated by the Client from among individuals within the scope permitted by Six Apart in accordance with the License Policy, as the use of the Software by the Client pursuant to this Agreement), and, if the Client operates a community, for the purpose of use within the community by participants therein. Except as specified in this Agreement, the Client may not provide any third party the whole or part of functions of the Software, nor may the Client receive from any third party a consideration for the use of the Software, no matter what the purpose of use is. Six Apart shall be entitled to determine whether the use by the Client is pursuant to this Agreement or not. Six Apart shall retain all rights pertaining to the Software (including all intellectual property rights), as well as all rights pertaining to the Software which are not specifically licensed under this Agreement. The use of the Software shall be limited to the number of Users and the number of Servers set forth in this Agreement. The number of the Commenters shall not be limited.</p>
+
+										<p>Article 3. Production of Duplicates</p>
+
+										<p>The Client may duplicate the Software in any readable forms, in the minimum number necessary only for the backup purpose; provided, however, that, such duplication of the Software shall be made in the same form as the original and with an indication of the authorized person. For the avoidance of doubt, any rights to the Software not specifically licensed hereunder shall be reserved by Six Apart.</p>
+
+										<p>Article 4. Technical Support, Update and Upgrade</p>
+
+										<p>(1) Technical supports for the Software shall be provided by a partner company of Six Apart for value. The Client shall enter into a separate agreement with such partner company of Six Apart on an individual basis concerning the contents of technical supports.</p>
+
+										<p>(2) For two (2) years after the purchase of license for the Software and any period to be separately designated by Six Apart thereafter, the Client shall be entitled to receive an Update to the latest version for free.</p>
+
+										<p>(3) If the Software is provided as an Update or Upgrade, the Client may use either the previous version or the current version and shall not use both versions concurrently; provided, however, that, if the Client chooses to use the previous version despite the Upgrade of the Software, the Client shall acknowledge that the Update set forth in the preceding Paragraph concerning such previous version may be terminated at the discretion of Six Apart.</p>
+
+										<p>Article 5. Compliance</p>
+
+										<p>The Client shall understand and acknowledge that it may use the Software only in compliance with all applicable laws. In addition, the Client shall use the Software in accordance with laws and other regulations relating to privacy and intellectual property rights. The Client shall cause any User to adhere to the conditions of this Agreement and acknowledge that any violation of this Agreement by such User shall be deemed as a violation by the Client.</p>
+
+										<p>Article 6. Prohibited Matters</p>
+
+										<p>The Client shall be prohibited to commit the acts specified in each Item below:</p>
+
+										<p>(1) To distribute any software derived from the Software (provided, however, that, distribution of plug-ins and other add-ins written by using API and any other programming interfaces published by Six Apart shall be permitted);</p>
+
+										<p>(2) To duplicate the Software otherwise than set out in this Agreement;</p>
+
+										<p>(3) To perform reverse engineering, decompiling or disassembling concerning the Software, or otherwise try to restructure or clarify source code or algorithm for the Software;</p>
+
+										<p>(4) To make available the Software, whole or part, or any duplicate thereof, to any third party in the form of sale, assignment, grant of a license, disclosure, distribution to such third party or otherwise;</p>
+
+										<p>(5) To use the Software for the purpose of providing hosting services to any other party or providing services to any other individual, corporation, entity or organization which renders, as business, services relating to the Internet or systems, etc., with or without consideration;</p>
+
+										<p>(6) To delete or modify any display authority or trademark on the Software.</p>
+
+										<p>Article 7. Protection of Personal Information and Privacy</p>
+
+										<p>All personal information furnished by the Client to Six Apart shall be controlled in accordance with the Privacy Policy published on the website http://www.sixapart.com/privacy/. The Client shall be deemed to have understood and accepted the Privacy Policy by using the Software.</p>
+
+										<p>Article 8. Guarantee by Six Apart</p>
+
+										<p>Six Apart hereby guarantees that no order is included in the Software which has been designed intentionally to alter, lose, destroy, record or transmit any information in computer, computer system or computer network, without intent or permission of the manager of the relevant information. This guarantee shall not apply to open source codes included in the Software, if any. If, during the term of this Agreement, any object which violates the guarantee hereunder, other than the open source codes, is found to be included in the Software, Six Apart shall make any reasonable commercial efforts to alter or replace the Software, at the cost of Six Apart, so that the Software may comply with the guarantee set out herein, without prejudice to any primary function of the Software, as the only legally available relief. The Client may not pursue any other legal relief in connection with the violation of guarantee set out in this Article.</p>
+
+										<p>Article 9. Limitation on Guarantee relating to Function of Software</p>
+
+										<p>(1) The Software shall be furnished on as-is basis and shall not provide any security or guarantee whether express or implied. Six Apart shall not provide security or guarantee of any kind whatsoever, whether express or implied, including, but not limited to, an implied security or guarantee concerning the merchantability and suitability to any specific objectives.</p>
+
+										<p>(2) Any and all risks pertaining to the quality and performance of the Software, program errors in the installation and use, damage to devices, loss of data and software programs, nonperformance or suspension or otherwise shall be borne by the Client. The Client shall determine the suitability of use of the Software at its own responsibility, and bear any and all risks pertaining to such use.</p>
+
+										<p>Article 10. Termination</p>
+
+										<p>(1) If the Client violates any provision of this Agreement, Six Apart may terminate this Agreement without giving notice.</p>
+
+										<p>(2) Upon the termination of this Agreement, licenses and technical supports having been granted to the Client shall all be terminated and the Client shall immediately uninstall and suspend any use of the Software, and, if instructed by Six Apart, shall delete or destroy any duplicates of the Software. In such cases, considerations having been paid for the Software and technical supports shall not be refunded for any reason whatsoever. Provisions relating to "Limitation on Guarantee relating to Function of Software," "Indemnification," "Limitation on Liability" and "General Provisions" shall survive the termination of this Agreement.</p>
+
+										<p>Article 11. Indemnification</p>
+
+										<p>The Client hereby agrees to indemnify Six Apart, any of its officers, employees, agencies, subsidiaries, affiliates and other partners for liabilities for any direct, indirect, contingent, exceptional, consequential or punitive damage arising from the Client's use of, or otherwise in connection with, the Software.</p>
+
+										<p>Article 12. Limitation on Liability</p>
+
+										<p>(1) The Client specifically understands and acknowledges that, Six Apart shall not assume liabilities for any direct, indirect, contingent, exceptional, consequential or punitive damage, including, but not limited to, those resulting from loss of profits, loss of credibility, nonperformance, unavailability of data or other causes, as well as any other unrecognized damage, not only where Six Apart has notified the possibility of such damage in advance, but in all other cases.</p>
+
+										<p>(2) The amount of accumulated damages payable by Six Apart to the Client shall be up to the amount of fees paid by the Client to Six Apart during the latest twelve (12) months, not only where the court of competent jurisdiction rejected the limitation on liability for any contingent or indirect damage and the limitation referred to in Paragraph 1 does not apply to the Client, but in all other cases.</p>
+
+										<p>Article 13. General Provisions</p>
+
+										<p>(1) This Agreement shall be governed by and construed in accordance with the laws of Japan. This Agreement shall constitute an entire agreement between the Client and Six Apart, and the Client shall use the Software in accordance with the provisions of this Agreement. This Agreement shall supersede any and all agreements prior to the execution of this Agreement.</p>
+
+										<p>(2) All disputes arising from or in connection with this Agreement shall be submitted to the exclusive agreed jurisdiction of the Tokyo District Court, for the first instance.</p>
+
+										<p>(3) If any provision of this Agreement is determined by the competent court to conflict with any law, then such provision shall be modified or construed, to the maximum extent permitted by law, so that the expected objectives may be fulfilled, and any other provision of this Agreement shall remain full force and effect.</p>
+
+										<p>(4) The Software shall be the "commercial item" defined in the United States 48 C.F.R. 2.101, and is comprised of the "commercial computer software" and the "commercial computer software documentation" used in the United States 48 C.F.R. 12.212. Provisions of the United States 48 C.F.R. 12.212 and from C.F.R. 227.7202-1 through 27.7202-4 shall apply concurrently and any and all United States end users shall obtain the Software within the extent of the rights stipulated in the said provisions.</p>
+
+										<p>(5) Both parties acknowledge that the manufacturing and sale of the Software shall comply with the export control-related laws and regulations of Japan and the United States, and agree to comply with all such laws.</p>
+
+										<p>(6) The Client may not assign, transfer, pledge or otherwise dispose of its contractual status or rights or obligations under this Agreement without prior written consent of Six Apart, and any assignment, transfer, pledge or other disposition contradicting the above shall be invalid.</p>
+
+										<p>(7) Movable Type, logo of Movable Type, and other logos and names of Movable Type, Six Apart, logo of Six Apart and other logos and names of Six Apart shall be the trademarks of Six Apart. The Client hereby agrees that it shall not indicate or use such trademarks in any manner whatsoever without prior written consent of Six Apart.</p>
+
+										<p>(8) To the extent not significantly prejudice the benefit of the Client, the Client shall acknowledge that Six Apart may amend or modify this Agreement without consent of the Client.</p>
+
+										<p>(9) Titles and numbers of Articles, Paragraphs and Items of this Agreement shall be for convenience purposes only, and they shall not have any legal effects.</p>
+
+									</div>
+								</li>
+
+								<li class="form-helper agreement-checkbox">
+									<input type="checkbox" id="eula" name="eula" tabindex="21">
+									<label for="eula">I accept the license agreement.</label>
+								</li>
+
+								<li>
+									<button class="btn disabled" disabled="disabled" tabindex="22">Submit</button>
+								</li>
+
+							</ul>
+
+						</form>
+					</div>
+
+				</div>
+				<span class="arrow_down icon divider"></span>
+
+			</section>
+
+		</section>
+
+		<section id="step2" class="self-payment-wrapper bg-white" onLoad="_gaq.push(['_trackPageview', '/purchase/VP-checkout-paymentmethod']);">
+			<div class="row">
+				<h3>Step 2 of 5 - Payment Method</h3>
+
+				<p id="cc-error" class="cc-error">Credit card verification error. Please confirm that your credit card information is correct.</p>
+
+				<div class="form clearfix">
+					
+					<ul>
+						<li class="custom-select">
+							<select class="payment-method" name="paymentMethod" data-selected="" tabindex="23">
+								<option value=""></option>
+								<option value="Credit Card">Credit Card</option>
+								<option value="Purchase Order">Purchase Order</option>
+							</select>
+							<span>Select a Method</span>
+						</li>
+					</ul>
+					
+					<form id="purchase2a" action="POST">
+						
+						<ul>
+														
+							<li class="ccard card-number">
+								<input type="text" name="cardNumber" placeholder="Card Number" tabindex="24" data-stripe="number">
+							</li>
+
+							<li class="form-helper"></li>
+
+							<li class="ccard expiration clearfix">
+								<label>Expiration Date</label>
+								<input class="month" type="text" name="expirationMonth" placeholder="Month (mm)" tabindex="25" data-stripe="exp-month">
+								<span>/</span>
+								<input class="year" type="text" name="year" placeholder="Year (yyyy)" tabindex="26" data-stripe="exp-year">
+							</li>					
+							
+
+							<li class="ccard name-on-card">
+								<input type="text" name="nameOnCard" placeholder="Name on Card" tabindex="26" data-stripe="name">
+							</li>
+
+							<li class="ccard card-code">
+								<input type="text" name="cardCode" placeholder="Card Code" tabindex="28" data-stripe="cvc">
+							</li>
+
+						</ul>
+
+					</form>
+
+					<form id="purchase2b" action="POST">
+						<ul>
+							
+							<li class="purchase-order-number">
+								<input type="text" name="purchaseNumber" placeholder="Purchase Order Number" tabindex="29">
+							</li>
+
+						</ul>
+
+					</form>
+
+					<button class="btn disabled" disabled="disabled" tabindex="30">Continue</button>
+
+				</div>
+
+			</div>
+
+			<span class="arrow_down icon divider"></span>
+
+		</section>
+
+	<section id="step3" class="self-billing-wrapper bg-gray" onLoad="_gaq.push(['_trackPageview', '/purchase/VP-checkout-billinginformation']);">
+		<div class="row">
+				<h3>Step 3 of 5 - Billing Information</h3>
+
+				<div class="card-info">
+					
+					<p class="payment-type"></p>
+
+					<p class="payment-number"></p>
+
+				</div>
+				
+				<div class="form clearfix">
+					<form id="purchase3" action="POST">
+						<ul>
+
+							<li class="form-helper">Billing Information</li>
+
+							<li class="company-name">
+								<input type="text" name="companyName" placeholder="Company Name" tabindex="31">
+							</li>
+
+							<li class="custom-select"> 
+								<select name="jobTitle" tabindex="32">
+									<option value=""></option>
+									<option value="CEO / Executive Management">CEO / Executive Management</option>
+									<option value="Marketing Leadership">Marketing Leadership</option>
+									<option value="IT Leadership">IT Leadership</option>
+									<option value="Digital Marketer">Digital Marketer</option>
+									<option value="Developer">Developer</option>
+									<option value="Other">Other</option>
+								</select>
+								<span>Job Title</span>
+							</li>
+
+							<li class="first-name">
+								<input type="text" name="firstName" placeholder="First Name *" tabindex="33">
+							</li>
+
+							<li class="last-name">
+								<input type="text" name="lastName" placeholder="Last Name *" tabindex="34">
+							</li>
+
+							<li class="address1">
+								<input type="text" name="address1" placeholder="Address 1 *" tabindex="35">
+							</li>
+
+							<li class="address2">
+								<input type="text" name="address2" placeholder="Address 2" tabindex="36">
+							</li>
+
+							<li class="city">
+								<input type="text" name="city" placeholder="City *" tabindex="37">
+							</li>
+							
+							<li class="custom-select states"> 
+								<select name="states" tabindex="38">
+									<option value=""></option>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO">Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
+								</select>
+								<span>State *</span>
+							</li>
+							
+							
+							<li class="zip-code">
+								<input type="text" name="zipCode" placeholder="Zip Code *" tabindex="39">
+							</li>
+
+							<li class="submit">
+								<label>* Indicates a Required Field</label>
+								<button class="btn disabled" disabled="disabled" tabindex="40">Continue</button>
+							</li>
+
+						</ul>
+
+					</form>
+
+				</div>
+
+			</div>
+			<span class="arrow_down icon divider"></span>
+
+		</section>
+
+		<section id="step4" class="self-review-wrapper bg-white" onLoad="_gaq.push(['_trackPageview', '/purchase/VP-checkout-revieworder']);">
+			<div class="row self-review">
+				
+				<h3>Step 4 of 5 - Review your order</h3>
+
+				<div class="self-review-details">
+
+					<div class="self-review-info">
+						
+						<dl class="clearfix">
+							<dt id="payment-type-info">Card Information</dt>
+							<dd id="payment-number-info"></dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>Billing Information</dt>
+							<dd id="billing-info"></dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>Contact Information</dt>
+							<dd id="contact-info"></dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>Order Item</dt>
+							<dd id="order-info"></dd>
+						</dl>
+
+					</div>
+					
+					<div class="self-review-total">
+						
+						<p>Total Order</p>
+						
+						<div>
+							<span id="total-price" class="total-price">$595.</span>
+							<span class="superscript">00</span>
+						</div>
+						
+
+					</div>
+					
+				</div>
+
+				<p>Please verify the above information is correct before submitting your order.</p>
+				
+				<div class="hearing-more">
+
+					<form id="purchase4" action="POST" onSubmit="_gaq.push(['_trackEvent', 'Contact-Form', 'Submit']);">
+					        <input type="hidden" name="formID" value="purchase4">
+					        <input id="product-code" type="hidden" name="productCode" value="">
+					        <input id="discount-code" type="hidden" name="discountCode" value="">
+					        <input id="purchase-type" type="hidden" name="purchaseType" value="">
+					        <input id="stripe-token" type="hidden" name="stripeToken" value=""/>
+						<ul>
+							
+							<li class="learn-more-wrapper">
+								<input type="checkbox" id="learn-more" name="learnMore" tabindex="41" checked="checked">
+								<label for="learn-more">Select here if you're interested in hearing more about Movable Type's support partners and packages or need help developing your website. <span class="learn-more-trigger">Learn&nbsp;More</span></label>
+								<div class="learn-more"><span class="learn-more-arrow"></span> Movable Type's support partners provide you with all of the expert services you need to build and/or manage your Movable Type installation. From complete website development services to ongoing support and upgrades, our hand chosen Movable Type experts are here to solve your problems.</div>
+							</li>
+
+							<li class="submit">
+								<input id="submit" class="btn" type="submit" value="submit order" tabindex="42" onclick="TrackPurchase();TrackBingPurchase();">
+							</li>
+
+							<li id="submit-error" class="submit-error">
+								
+							</li>
+
+						</ul>
+
+					</form>
+					
+				</div>
+
+			</div>
+			<span class="arrow_down icon divider"></span>
+
+		</section>
+
+		<section id="step5" class="self-complete-wrapper">
+			<div class="row self-complete">
+
+				<h3 class="light">Step 5 of 5 - Order Complete</h3>
+				<h2 class="dark">Thank you for your order!</h2>
+				<p>We'll be in touch via email with your account details soon.</p>
+				
+				<p>Excited to start using Movable Type? <span class="tell-us-more">Tell us a bit about yourself.</span></p>
+
+			</div>
+			<div class="black-arrow"></div>
+		</section>
+
+		<section class="self-tell-us-wrapper">
+			<div class="row self-tell-us">
+
+				<h3>Tell Us About Yourself</h3>
+
+				<div class="form clearfix">
+					<form id="tell-us" action="POST">
+					        <input type="hidden" name="formID" value="tell-us">
+					        <input type="hidden" id="contactID" name="contactID" value="not-yet-set">
+						<ul>
+							
+							<li class="custom-select">
+								<label>Organization or Company Type</label>
+								<select name="organization" tabindex="43">
+									<option value=""></option>
+									<option value="Advertising">Advertising</option>
+									<option value="Construction">Construction</option>
+									<option value="Distribution/Wholesale">Distribution/Wholesale</option>
+									<option value="Education: Higher Ed">Education: Higher Ed</option>
+									<option value="Education: K-12">Education: K-12</option>
+									<option value="Engineering/Management services">Engineering/Management services</option>
+									<option value="Financial Services">Financial Services</option>
+									<option value="Government: Federal">Government: Federal</option>
+									<option value="Government: State/Local">Government: State/Local</option>
+									<option value="Healthcare">Healthcare</option>
+									<option value="Hospitality/Food Services">Hospitality/Food Services</option>
+									<option value="Insurance">Insurance</option>
+									<option value="Legal">Legal</option>
+									<option value="Manufacturing">Manufacturing</option>
+									<option value="Media/Entertainment">Media/Entertainment</option>
+									<option value="Non-Profit/Charity">Non-Profit/Charity</option>
+									<option value="Online Commerce">Online Commerce</option>
+									<option value="Professional Services (Agency/Business)">Professional Services (Agency/Business)</option>
+									<option value="Professional Services (Technical, Web, IT)">Professional Services (Technical, Web, IT)</option>
+									<option value="Real Estate">Real Estate</option>
+									<option value="Retail">Retail</option>
+									<option value="Technology/High Tech">Technology/High Tech</option>
+									<option value="Telecommunications">Telecommunications</option>
+									<option value="Transportation">Transportation</option>
+									<option value="Other">Other</option>
+								</select>
+								<span>Please Select</span>
+							</li>
+
+							<li class="radio-set clearfix" id="number-employees">
+								
+								<label>How large is the team that will use Movable Type?</label>
+								<div class="first-child">
+									<input name="numberEmployees" type="radio" value="1-5" tabindex="44">
+									<span>1-5</span>
+								</div>
+								<div class="middle-child">
+									<input name="numberEmployees" type="radio" value="6-10" tabindex="45">
+									<span>6-10</span>
+								</div>
+								<div class="last-child">
+									<input name="numberEmployees" type="radio" value="11+" tabindex="46">
+									<span>11+</span>
+								</div>
+								     
+							</li>
+
+							<li class="comments">
+								<label>Additional Comments or Questions *</label>
+								<textarea name="comments"tabindex="47"></textarea>
+							</li>
+
+							<li class="submit">
+								<label>* Indicates a Required Field</label>
+								<input id="submit" class="btn disabled" type="submit" value="submit" disabled="disabled" tabindex="48">
+							</li>
+
+						</ul>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</section>
+		
+	</section>
+
+</div>
+
+    <footer id="site-footer">
+    
+    	
+        
+        <section class="footer-nav-wrapper">
+
+            <div class="footer-nav row">
+                
+                <dl class="span-quarter">
+					<dt>External Developer Community</dt>
+					<dd><a href="http://www.movabletype.org/" target="_blank" onclick="_gaq.push(function() { var pageTracker = _gat._getTrackerByName(); pageTracker._setAllowLinker(true); var linkerUrl = pageTracker._getLinkerUrl( 'http://www.movabletype.org/' ); window.open(linkerUrl); }); return false;">Movabletype.org</a></dd>
+					<dd><a href="http://plugins.movabletype.org/" target="_blank" onclick="_gaq.push(function() { var pageTracker = _gat._getTrackerByName(); pageTracker._setAllowLinker(true); var linkerUrl = pageTracker._getLinkerUrl( 'http://plugins.movabletype.org/' ); window.open(linkerUrl); }); return false;">Plugins</a></dd>
+					
+					
+                </dl>
+
+                <dl class="span-quarter">
+                    <dt>License Info</dt>
+					
+						<dd><a href="http://www.movabletype.com/license-advanced.html">Movable Type Advanced</a></dd>
+						<dd><a href="http://www.movabletype.com/license.html">License Info</a></dd>
+					
+				</dl>
+
+				<ul class="span-half">
+					
+						<li><a href="https://www.movabletype.com/purchase.html#faq">Pricing &#38; Licensing FAQ</a></li>
+					
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="footer-corporate-wrapper">
+
+            <div class="row">
+            
+                <ul class="footer-corporate span-half">
+                    <li class="first-child">A <span>Sixapart</span> Product</li>
+                    <li><a href="https://mtuser.sixapart.jp/en/Form/Login.aspx"><span class="icon lock"></span> Log in to SixApart Account</a></li>
+                </ul>
+
+                <div class="copyright-wrapper span-half">
+                    
+                    <p class="copyright">Copyright &#169; 2013, Six Apart Ltd. All rights reserved.</p>
+
+					
+						<p class="policy"><a href="http://www.movabletype.com/privacy.html">Privacy Policy</a></p>
+					
+                </div>
+
+            </div>
+
+        </section>
+        
+        
+
+    </footer>
+    </div>
+	
+    <!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/mt-static/candt/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+		<!-- Stripe -->
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	
+		<!-- Purchase analytics -->
+		<script type="text/javascript">
+			function TrackPurchase() {
+				var image = new Image(1,1);
+				image.src = "//www.googleadservices.com/pagead/conversion/983504773/?value=0&amp;label=YkTnCMvPuwcQha_81AM&amp;guid=ON&amp;script=0";
+			}
+		</script>
+		<script type="text/javascript">
+			function TrackBingPurchase() {
+				var image = new Image(1,1);
+				image.src = "//flex.msn.com/mstag/tag/66163f90-c466-4d72-8b58-170ee5bd32a1/analytics.html?dedup=1&domainId=2549235&type=1&revenue=&actionid=155826";
+			}
+		</script>
+		
+		<!-- Contact Form analytics (for Enterprise Contact Form) -->
+		<script type="text/javascript">
+			function TrackContactForm() {
+			var image = new Image(1,1);
+			image.src = "//www.googleadservices.com/pagead/conversion/983504773/?value=0&amp;label=T4l1CMPQuwcQha_81AM&amp;guid=ON&amp;script=0";
+		}
+		</script>
+		<script type="text/javascript">
+			function TrackBingContactForm() {
+			var image = new Image(1,1);
+			image.src = "//flex.msn.com/mstag/tag/66163f90-c466-4d72-8b58-170ee5bd32a1/analytics.html?dedup=1&domainId=2549235&type=1&actionid=155829";
+		}
+		</script>
+	
+	
+	
+
+	
+
+	
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+
+	<!-- Calls to Google Minify -->
+	<script src="/min/?f=/mt-static/candt/js/vendor/jquery.validate.min.js,/mt-static/candt/js/vendor/additional-methods.min.js,/mt-static/candt/js/vendor/jquery.hoverIntent.minified.js,/mt-static/candt/js/vendor/jquery.placeholder.min.js,/mt-static/candt/js/main.js,/mt-static/candt/js/sidebarnav.js,/mt-static/candt/js/purchase.js,/mt-static/candt/js/contact.js,/mt-static/candt/js/blog.js,/mt-static/candt/js/discount.js,/mt-static/candt/js/blog_detail.js,/mt-static/candt/js/homepage-features.js"></script>
+	
+	
+	<!-- End Calls to Google Minify -->
+	
+	<script type="text/javascript">
+		window.MT = window.MT || {};
+		MT.staticFilesURL = "/mt-static/candt/";
+	</script>
+
+
+	
+	<!-- Include analytics calls if on production server -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29594562-1']);
+		_gaq.push(['_setDomainName', 'movabletype.com']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/7206.js?"+Math.floor(new Date().getTime()/3600000); 
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+
+	
+
+    </body>
+</html>

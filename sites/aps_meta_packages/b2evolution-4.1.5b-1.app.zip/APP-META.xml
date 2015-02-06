@@ -1,0 +1,498 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>b2evolution</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>4.1.5b</version>
+	<release>1</release>
+	<homepage>http://b2evolution.net/</homepage>
+	<package-homepage>http://www.glowtouch.com/</package-homepage>
+	<default-prefix>b2evolution</default-prefix>
+	<summary>Multilingual multiuser multi-blog engine.</summary>
+	<description>b2evolution is an advanced weblog tool, i-e software allowing you to run your own blogs, newsfeeds or even photo strea. It's free as free can be! (GNU General Public License). All the features you can expect are included: advanced browsing (paged, calendar, categories, search...);  extended and multipaged posts  image/file upload and management; multiple and sub-categorie; draft and quick publishing; rss and atom feeds  automatic pinging of blog directories; skins / themes; plugins. As you will find out, b2evolution goes beyond most other blog tools. b2evolution is the tool for bloggers who want more!</description>
+	<icon path="images/icon.png"/>
+	<screenshot path="images/screenshot.jpg">
+    <description>Typical view</description>
+  </screenshot>
+	<license must-accept="true">
+		<text>
+			<name>GNU GENERAL PUBLIC LICENSE</name>
+			<file>htdocs/license.txt</file>
+		</text>
+	</license>
+	<configuration-script-language>php</configuration-script-language>
+	<patchable-from release="1" version="4.1.5b"/>
+	<upgradable-from version="3.3.3" release="1"/>
+	<changelog>
+		<version release="1" version="4.1.5b">
+			<entry>This is a maintenance upgrade recommended for all users in order to get best stability for their web site.</entry>
+		</version><version version="3.3.3" release="1">
+			<entry>* Allow users to act on uploaded files (@francoisplanque/@tblue)
+			</entry>
+			<entry>* Made avatars optional.
+			</entry>
+			<entry>* Integrated 2 new skins.
+			</entry>
+			<entry>* Updated SEO presets from Rand Fishkin.
+			</entry>
+		</version>
+		<version version="3.3.1" release="5">
+			<entry>* Improved Archive plugin ( @tblue )
+* Improved Auto Links plugin ( @francoisplanque )
+* Improved Auto-P plugin ( @blueyed )
+* Fixed display of new plugin widgets ( @tblue )
+* Fixed canonical URLs for multipage posts ( @tblue )
+* Fixed multiblogs.php &amp; a_noskin.php ( @francoisplanque )
+* Updated master language file (POT)
+* Cleaned up skins/CSS
+* Additional bug fixes
+
+More detailes: http://b2evolution.net/news/2009/08/09/b2evo-3-3-1-stable-released
+			</entry>
+		</version>
+		<version version="2.4.1" release="3">
+			<entry>Bug with doubled slash in base URL fixed</entry>
+		</version>
+		<version version="2.4.1" release="2">
+			<entry>Repackaged to conform new standard</entry>
+		</version>
+		<version version="0.9.0.12" release="23">
+			<entry>Initial package version</entry>
+		</version>
+	</changelog>
+	<entry-points>
+		<entry>
+			<path>/admin.php</path>
+			<label>Administrative interface</label>
+		</entry>
+	</entry-points>
+	<installed-size>7516504</installed-size>
+	<categories>
+		<category>Web/Blog</category>
+	</categories>
+	<languages>
+		<language>en</language>
+	</languages>
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_firstname" type="string">
+				<name>First name</name>
+			</setting>
+			<setting id="admin_lastname" type="string">
+				<name>Last name</name>
+			</setting>
+			<setting id="admin_nick" type="string" default-value="admin">
+				<name>Nickname</name>
+			</setting>
+			<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+				<name>Login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Password</name>
+			</setting>
+			<setting id="admin_email" type="email">
+				<name>Email</name>
+			</setting>
+			<setting id="admin_domain" type="string" default-value="localhost">
+				<name>Domain</name>
+			</setting>
+			<setting id="admin_locale" type="enum" default-value="en-US">
+				<name>Language</name>
+				<choice id="en-US">
+					<name>English</name>
+				</choice>
+				<choice id="fr-FR">
+					<name>French</name>
+				</choice>
+				<choice id="de-DE">
+					<name>German</name>
+				</choice>
+			</setting>
+			<setting id="default_ctrl" type="enum" default-value="dashboard">
+				<name>Default controler</name>
+				<description>This determines the default page when you access the admin.</description>
+				<choice id="antispam">
+					<name>Antispam</name>
+				</choice>
+				<choice id="set_antispam">
+					<name>Antispam settings</name>
+				</choice>
+				<choice id="chapters">
+					<name>Chapters</name>
+				</choice>
+				<choice id="collections">
+					<name>Collections</name>
+				</choice>
+				<choice id="coll_settings">
+					<name>Collections settings</name>
+				</choice>
+				<choice id="comments">
+					<name>Comments</name>
+				</choice>
+				<choice id="crontab">
+					<name>Crontab</name>
+				</choice>
+				<choice id="dashboard">
+					<name>Dashboard</name>
+				</choice>
+				<choice id="features">
+					<name>Features</name>
+				</choice>
+				<choice id="files">
+					<name>Files</name>
+				</choice>
+				<choice id="fileset">
+					<name>File settings</name>
+				</choice>
+				<choice id="filetypes">
+					<name>File types</name>
+				</choice>
+				<choice id="items">
+					<name>Items</name>
+				</choice>
+				<choice id="itemstatuses">
+					<name>Item statuses</name>
+				</choice>
+				<choice id="itemtypes">
+					<name>Item types</name>
+				</choice>
+				<choice id="locales">
+					<name>Locales</name>
+				</choice>
+				<choice id="mtimport">
+					<name>Movable Type importer</name>
+				</choice>
+				<choice id="plugins">
+					<name>Plugins</name>
+				</choice>
+				<choice id="Settings">
+					<name>Settings</name>
+				</choice>
+				<choice id="skins">
+					<name>Skins</name>
+				</choice>
+				<choice id="stats">
+					<name>Stats</name>
+				</choice>
+				<choice id="system">
+					<name>System</name>
+				</choice>
+				<choice id="tools">
+					<name>Tools</name>
+				</choice>
+				<choice id="users">
+					<name>Users</name>
+				</choice>
+				<choice id="upload">
+					<name>Upload</name>
+				</choice>
+				<choice id="widgets">
+					<name>Widgets</name>
+				</choice>
+				<choice id="wpimport">
+					<name>WordPress 2.3 importer</name>
+				</choice>
+			</setting>
+			<setting id="allow_cross_posting" type="enum" default-value="1">
+				<name>Cross posting</name>
+				<description>Possible values: "None" if you don't want to use categories at all; "Single category" if you want users to post to a single category only; "Multiple categories" if you want to be able to cross-post among multiple categories; "Multiple blogs and categories" if you want to be able to cross-post among multiple blogs/categories; "Main category" if you want to be able to change main category among blogs (which will move the posts from one blog to another; use with caution)</description>
+				<choice id="-1">
+					<name>None</name>
+				</choice>
+				<choice id="0">
+					<name>Single category</name>
+				</choice>
+				<choice id="1">
+					<name>Multiple categories</name>
+				</choice>
+				<choice id="2">
+					<name>Multiple blogs and categories</name>
+				</choice>
+				<choice id="3">
+					<name>Main category</name>
+				</choice>
+			</setting>
+			<setting id="default_post_status" type="enum" default-value="published">
+				<name>Default status for new posts</name>
+				<choice id="published">
+					<name>Published</name>
+				</choice>
+				<choice id="deprecated">
+					<name>Deprecated</name>
+				</choice>
+				<choice id="protected">
+					<name>Protected</name>
+				</choice>
+				<choice id="private">
+					<name>Private</name>
+				</choice>
+				<choice id="draft">
+					<name>Draft</name>
+				</choice>
+				<choice id="redirected">
+					<name>Redirected</name>
+				</choice>
+			</setting>
+			<setting id="use_preview" type="enum" default-value="1">
+				<name>Use preview</name>
+				<description>Set this to YES if you want to use the "preview" function.</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="use_post_url" type="enum" default-value="1">
+				<name>Use post URL</name>
+				<description>Do you want to be able to link each post to an URL?</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="report_abuse" type="enum" default-value="1">
+				<name>Report abuse</name>
+				<description>When banning, do you want to be able to report abuse to the centralized ban list at b2evolution.net?</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+		</group>
+		<group>
+			<name>Application settings</name>
+			<setting id="app_name" type="string" default-value="b2evolution">
+				<name>Name</name>
+			</setting>
+			<setting id="app_shortname" type="string" default-value="b2evo">
+				<name>Short name</name>
+			</setting>
+		</group>
+		<group>
+			<name>Formatting</name>
+			<setting id="use_balanceTags" type="enum" default-value="1">
+				<name>Balance tags</name>
+				<description>Automatically balance unmatched tags in posts and comments.</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="use_xhtmlvalidation_for_comments" type="enum" default-value="true">
+				<name>Use XHTML validation for comments</name>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="use_strict" type="enum" default-value="false">
+				<name>Use XHTML strict</name>
+				<description>Enabling XHTML checking for posts is now a Group permission in b2evo's user management.</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="comments_use_autobr" type="enum" default-value="opt-out">
+				<name>Comments use auto BR</name>
+				<description>Automatically change line breaks to HTML [BR] tags</description>
+				<choice id="never">
+					<name>Never</name>
+				</choice>
+				<choice id="opt-in">
+					<name>Only if user explicitely asks for it</name>
+				</choice>
+				<choice id="opt-out">
+					<name>Used by default, but user can refuse</name>
+				</choice>
+				<choice id="always">
+					<name>Always</name>
+				</choice>
+			</setting>
+			<setting id="comments_allow_css_tweaks" type="enum" default-value="false">
+				<name>Comments allow CSS tweaks</name>
+				<description>Set this to YES to allow "id" and "style" as core attributes for comments. WARNING : This would allow spammers to post hidden content in comments. Enable it at your own risk !</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+		</group>
+		<group>
+			<name>Advanced settings</name>
+			<setting id="debug" type="enum" default-value="0">
+				<name>Display debugging information</name>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="2">
+					<name>YES and potentially die()</name>
+				</choice>
+			</setting>
+			<setting id="log_app_errors" type="enum" default-value="1">
+				<name>Log application errors</name>
+				<description>Log application errors through PHP's logging facilities. This means that they will get logged according to PHP's error_log configuration directive. Experimental! This may be changed to use regular files instead/optionally.</description>
+				<choice id="0">
+					<name>OFF</name>
+				</choice>
+				<choice id="1">
+					<name>Log errors</name>
+				</choice>
+				<choice id="2">
+					<name>Include function backtraces</name>
+				</choice>
+			</setting>
+			<setting id="demo_mode" type="enum" default-value="false">
+				<name>Demo mode</name>
+				<description>Do not allow update of files in the file manager. Do not allow changes to the 'demouser' and 'admin' account/group. Blog media directories can only be configured to be inside of "media" directory.</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="require_name_email" type="enum" default-value="1">
+				<name>Require name and email</name>
+				<description>Comments: Set this to YES to require e-mail and name, or NO to allow comments without e-mail/name.</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="minimum_comment_interval" type="integer" default-value="30">
+				<name>Minimum comment interval</name>
+				<description>Minimum interval (in seconds) between consecutive comments from same IP.</description>
+			</setting>
+			<setting id="antispam_on_message_form" type="enum" default-value="1">
+				<name>Antispam on message form</name>
+				<description>Check antispam blacklist for private messages. Do you want to check the antispam blocklist when a message form is submitted?</description>
+				<choice id="1">
+					<name>YES</name>
+				</choice>
+				<choice id="0">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="timeout_online_user" type="integer" default-value="300">
+				<name>Timeout online user</name>
+				<description>Set the length of the online session time out (in seconds). This is for the Who's Online block.</description>
+			</setting>
+			<setting id="public_access_to_media" type="enum" default-value="true">
+				<name>Public access to media</name>
+				<description>Do you want to allow public access to the media dir? WARNING: If you set this to false, evocore will use /htsrv/getfile.php as a stub to access files and getfile.php will check the User permisssion to view files. HOWEVER this will not prevent users from hitting directly into the media folder with their web browser. You still need to restrict access to the media folder from your webserver.</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="show_errors" type="enum" default-value="true">
+				<name>Show MySQL errors</name>
+				<description>This is recommended on production environments.</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="halt_on_error" type="enum" default-value="true">
+				<name>Halt on MySQL errors</name>
+				<description>Setting this to NO is not recommended.</description>
+				<choice id="true">
+					<name>YES</name>
+				</choice>
+				<choice id="false">
+					<name>NO</name>
+				</choice>
+			</setting>
+			<setting id="cookie_expires" type="integer" default-value="31536000">
+				<name>Cookie expires</name>
+				<description>Expiration for cookies. Value in seconds, set this to 0 if you wish to use non permanent cookies (erased when browser is closed).</description>
+			</setting>
+			<setting id="cookie_expired" type="integer" default-value="86400">
+				<name>Cookie expired</name>
+				<description>Expired-time used to erase cookies.</description>
+			</setting>
+			<setting id="upload_maxmaxkb" type="integer" default-value="10000">
+				<name>Upload max max kb</name>
+				<description>Admin can configure max file upload size, but he won't be able to set it higher than this "max max" value.</description>
+			</setting>
+		</group>
+		<group>
+			<name>Other preferences</name>
+			<setting id="locale" type="enum" default-value="en-US">
+				<name>Default language</name>
+				<choice id="en-US">
+					<name>English</name>
+				</choice>
+				<choice id="fr-FR">
+					<name>French</name>
+				</choice>
+				<choice id="de-DE">
+					<name>German</name>
+				</choice>
+			</setting>
+			<setting id="maintenance_mode" type="enum" default-value="0">
+				<name>Maintenance mode</name>
+				<description>Set this to YES in order to temporarily disable access to the application.</description>
+				<choice id="0">
+					<name>YES</name>
+				</choice>
+				<choice id="1">
+					<name>NO</name>
+				</choice>
+			</setting>
+		</group>
+	</settings>
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="5.0"/>
+		<php:extension>mysql</php:extension>
+		<php:memory-limit>33943040</php:memory-limit>			
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>b2evolution</db:default-name>
+			<db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>5.0</db:server-min-version>
+		</db:db>
+	</requirements>
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+		<mapping url="media">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="plugins">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="locales">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="skins">
+			<php:permissions writable="true"/>
+		</mapping>
+	</mapping>
+
+</application>

@@ -1,0 +1,114 @@
+<application xmlns="http://apstandard.com/ns/1" xmlns:aspnet="http://apstandard.com/ns/1/aspnet" xmlns:db="http://apstandard.com/ns/1/db">
+  <name>BlogEngine.NET</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>2.8</version>
+  <release>2</release>
+  <homepage>http://www.dotnetblogengine.net</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>blogenginenet</default-prefix>
+
+  <summary>BlogEngine.NET is an a blog platform with less complexity, easy customization, and one that takes advantage of the latest .NET features.</summary>
+  <description>BlogEngine.NET is an open source .NET blogging project that was born out of desire for a better blog platform. It was designed using the current .NET framework and focused on simplicity, ease of extendibility, and innovative features. With BlogEngine.NET, we hope to create the natural blog of choice for all .NET developers world wide.</description>
+
+  <icon path="images/icon.png"/>
+  <screenshot path="images/Screenshot.png">
+  	<description> Screenshot 1.</description>
+  </screenshot>
+
+
+
+  <license must-accept="true">
+      <text>
+        <name>Microsoft Reciprocal License (Ms-RL)</name>
+		<url>http://www.codeplex.com/blogengine/license</url>
+      </text>
+  </license>
+
+  <configuration-script-language>vbscript</configuration-script-language>
+
+  <upgradable-from version="1.1" release="14"/>
+  
+  <changelog>
+	<version release="2" version="2.8">
+    	<entry>Added Screen shot.</entry>
+    </version><version release="1" version="2.8">
+    	<entry>http://www.dotnetblogengine.net/post/BlogEngineNET-28-Released.aspx</entry>
+    </version><version version="2.5" release="8">
+	  <entry>
+added .cshtml handlers in web.config, to workaround 404 error on Plesk hosting
+	  </entry>
+	</version>
+	<version version="2.5" release="7">
+	  <entry>
+BlogEngine.NET 2.5 Update. 
+	  </entry>
+	</version>
+	<version version="1.6.1" release="9">
+	  <entry>
+Release notes: http://www.dotnetblogengine.net/page/BlogEngineNET-16-Release-Notes.aspx
+	  </entry>
+	</version>
+	<version version="1.4.5" release="3">
+	  <entry>
+Admin role for administrative account is set
+	  </entry>
+	</version>
+    <version version="1.4.5" release="2">
+      <entry>
+BlogEngine.NET 1.4.5 packed. Refer to release notes:
+http://www.dotnetblogengine.net/post/BlogEngineNET-145-released-today.aspx
+      </entry>
+    </version>
+    <version version="1.1" release="17">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Blog</label>
+    </entry>
+    <entry>
+      <path>/Account/login.aspx</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>2800000</installed-size>
+
+  <categories>
+	  <category>Web/Blog</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" regex="^[a-zA-Z]{1}[0-9a-zA-Z_\-]{0,32}">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements>
+    <aspnet:version>4.0</aspnet:version>
+  </requirements>
+
+  <mapping url="/" path="htdocs">
+    <aspnet:permissions writable="true"/>
+    <aspnet:handler/>
+    <mapping url="App_Data">
+      <aspnet:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

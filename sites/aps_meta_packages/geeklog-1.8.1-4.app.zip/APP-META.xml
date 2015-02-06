@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<application xmlns="http://apstandard.com/ns/1">
+  <name>geeklog</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.8.1</version>
+  <release>4</release>
+  <homepage>http://www.geeklog.net/</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>geeklog</default-prefix>
+  
+  <summary>Geeklog is a weblog powered by PHP and MySQL.</summary>
+  <summary xml:lang="de-DE">Geeklog ist ein Blog-System, dass PHP und MySQL nutzt...</summary>
+  <summary xml:lang="fr-FR">Geeklog est un blog utilisant PHP et MySQL...</summary>
+  <summary xml:lang="es-ES">Geeklog es un weblog con tecnología PHP y MySQL…</summary>
+  <summary xml:lang="pl-PL">Geeklog umozliwia Ci skonfigurowanie w pelni funkcjonalnej, dynamicznej strony internetowej...</summary>
+  <summary xml:lang="en-US">Geeklog is a weblog powered by PHP and MySQL.</summary>
+  
+  <description>It allows you within minutes to set up a fully functioning dynamic website, and has many features to get you started: user-system, allowing members of the public to register for your site and submit stories; comment system, allowing users to comment on posts made to your site; block system, allowing you to put information anywhere on your site; plugin system that allows you to extend geeklog, without having to code any new php; theme system that allows users to select what layout they want to view; excellent security model that allows you to give users control over certain aspects of the site with no need to worry; site statistics that show you the most popular areas of your site; link system that allows users to add links to the site; calendar system that lets you and your user add up-and-coming events; allow users to email stories to their friends.</description>
+  <description xml:lang="en-US">It allows you within minutes to set up a fully functioning dynamic website, and has many features to get you started: user-system, allowing members of the public to register for your site and submit stories; comment system, allowing users to comment on posts made to your site; block system, allowing you to put information anywhere on your site; plugin system that allows you to extend geeklog, without having to code any new php; theme system that allows users to select what layout they want to view; excellent security model that allows you to give users control over certain aspects of the site with no need to worry; site statistics that show you the most popular areas of your site; link system that allows users to add links to the site; calendar system that lets you and your user add up-and-coming events; allow users to email stories to their friends.</description>
+  <description xml:lang="de-DE">Sie können innerhalb weniger Minuten eine voll funktionsfähige dynamische Internetseite erstellen, die über eine Vielzahl von Funktionen verfügt: 
+Benutzersystem; Nutzerregistrierung, um Beiträge zu veröffentlichen; Kommentarsystem, das Nutzern ermöglicht Beiträge zu kommentieren; Sperrfunktion; Plugin-System, das die Erweiterung von Geeklog ermöglicht; 
+Themes; ein exzellentes Sicherheitssystem, mit dem Sie Nutzern Zugriff auf bestimmte Teile der Internetpräsenz geben können; Statistikfunktion, die die beliebtesten Seiten anzeigt; Verlinkungssystem, 
+das Nutzern ermöglicht Links hinzuzufügen; Kalenderfunktion; E-Mail-Funktion.
+</description>
+  <description xml:lang="fr-FR">L'application vous permet de créer en quelques minutes un site Web dynamique pleinement opérationnel. Geeklog fournit une multitude de fonctionnalités pour démarrer : 
+système utilisateurs, possibilité de s'inscrire sur votre site et de publier des postings ; système de commentaires ; possibilité de commenter des postings publiés sur votre site ; système de blocage ; 
+possibilité d'insérer des informations partout sur votre site ; système de plug-in pour ajouter des fonctionnalités ; thèmes ; système de sécurité excellent; statistiques du système pour connaître vos pages 
+les plus populaires ; système de liens ; calendrier ; possibilité de permettre à vos utilisateurs d'envoyer des emails.
+</description>
+  <description xml:lang="es-ES">Te permite crear en minutos un sitio web dinámico plenamente operativo y tiene muchas características para empezar: sistema de usuarios que permite que el público se registre y publique entradas; 
+sistema de comentarios que permite a los usuarios comentar las entradas del sitio; sistema de bloque para poner la información en cualquier lugar del sitio; sistema de complementos para ampliar Geeklog 
+sin tener que escribir nuevo php; sistema de temas para seleccionar el diseño que prefiere el usuario; excelente modelo de seguridad que permite dar a los usuarios el control sobre ciertos aspectos del sitio 
+sin preocupaciones; estadísticas del sitio que muestran cuáles son las áreas más populares; sistema de enlaces que permite añadir enlaces a la página; sistema de calendario para que tú y los usuarios añadan 
+los próximos eventos; permite a los usuarios enviar las entradas por correo electrónico a sus amigos.
+</description>
+  <description xml:lang="pl-PL">Geeklog umozliwia Ci skonfigurowanie w pelni funkcjonalnej, dynamicznej strony internetowej w ciagu kilku minut, posiada wiele funkcji ulatwiajacych rozpoczecie pracy: 
+system uzytkowników, umozliwiajacy ogólnodostepna rejestracje na Twojej stronie i dodawanie historii; system komentarzy, umozliwiajacy uzytkownikom komentowanie postów na Twojej stronie; 
+system bloków, umozliwiajacy zamieszczanie informacji w dowolnym miejscu na stronie; system wtyczek, umozliwiajacy rozwijanie strony opartej na Geeklog'u bez koniecznosci pisania kodu w PHP; 
+system motywów, umozliwiajacy uzytkownikom wybór ukladu strony; doskonaly model bezpieczenstwa, umozliwiajacy przydzielanie uzytkownikom kontroli nad okreslonymi aspektami strony bez zadnych zmartwien; 
+statystyki strony, pokazujace najbardziej popularne czesci Twojej strony; system linków, umozliwiajacy uzytkownikom dodawanie linków do strony; 
+system kalendarza, umozliwiajacy Tobie i Twoim uzytkownikom dodawanie informacji o nadchodzacych interesujacych wydarzeniach; umozliwia uzytkownikom wysylanie znajomym historii e-mailem. </description>  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot.jpg">
+    <description>Typical view</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/public_html/docs/license</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="4" version="1.4.1"/>
+  <changelog>
+    <version release="4" version="1.8.1">
+    	<entry>Geeklog Core upgrade bugs solved</entry>
+    </version><version release="2" version="1.8.1">
+    	<entry>Site slogan upgrade fix.
+Table speedlimit truncate on reconfigure.</entry>
+    </version><version release="1" version="1.8.1">
+    	<entry>1.8.1 update</entry>
+    </version><version release="5" version="1.4.1">
+    	<entry>  include translations into multiple languages</entry>
+    </version><version version="1.4.1" release="4">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+    <version version="1.3.11" release="43">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+    <entry>
+      <path>/public_html/admin/moderation.php</path>
+      <label>Administrative interface</label>
+    </entry>
+    <entry>
+    	<path>/public_html/index.php</path>
+    	<label>Site</label>
+    </entry>
+  </entry-points>
+  <installed-size>14738915</installed-size>
+  <categories>
+	  <category>Web/Blog</category>
+  </categories>
+	  <languages>
+		<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+	  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_fullname" type="string" default-value="Geeklog SuperUser">
+        <name>Administrator's full name</name>
+      </setting>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="16" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Site preferences</name>
+      <setting id="site_name" type="string" default-value="Geeklog Site">
+        <name>Name</name>
+      </setting>
+      <setting id="site_slogan" type="string" default-value="Another Nifty Geeklog Site">
+        <name>Slogan</name>
+      </setting>
+    </group>
+    <group>
+      <name>Language preferences</name>
+      <setting id="locale" type="enum" default-value="en-GB">
+        <name>Interface language</name>
+        <choice id="af-CF">
+          <name>Afrikaans</name>
+        </choice>
+        <choice id="bs-BA">
+          <name>Bosnian</name>
+        </choice>
+        <choice id="bg-BG">
+          <name>Bulgarian</name>
+        </choice>
+        <choice id="ca-ES">
+          <name>Catalan</name>
+        </choice>
+        <choice id="zh-TW">
+          <name>Chinese tranditional</name>
+        </choice>
+        <choice id="zh-CN">
+          <name>Chinese simplified</name>
+        </choice>
+        <choice id="hr-HR">
+          <name>Croatian</name>
+        </choice>
+        <choice id="cz-CZ">
+          <name>Czech</name>
+        </choice>
+        <choice id="da-DK">
+          <name>Danish</name>
+        </choice>
+        <choice id="nl-NL">
+          <name>Dutch</name>
+        </choice>
+        <choice id="en-GB">
+          <name>English</name>
+        </choice>
+        <choice id="et-EE">
+          <name>Estonian</name>
+        </choice>
+        <choice id="fi-FI">
+          <name>Finish</name>
+        </choice>
+        <choice id="fr-FR">
+          <name>French (France)</name>
+        </choice>
+        <choice id="fr-CA">
+          <name>French (Canada)</name>
+        </choice>
+        <choice id="gl-ES">
+          <name>Galician</name>
+        </choice>
+        <choice id="ka-GE">
+          <name>Georgian</name>
+        </choice>
+        <choice id="de-DE">
+          <name>German</name>
+        </choice>
+        <choice id="de-SI">
+          <name>German (formal)</name>
+        </choice>
+        <choice id="he-IL">
+          <name>Hebrew</name>
+        </choice>
+        <choice id="el-GR">
+          <name>Hellenic</name>
+        </choice>
+        <choice id="id-ID">
+          <name>Indonesian</name>
+        </choice>
+        <choice id="it-IT">
+          <name>Italian</name>
+        </choice>
+        <choice id="ja-JP">
+          <name>Japanese</name>
+        </choice>
+        <choice id="nb-NO">
+          <name>Norwegian</name>
+        </choice>
+        <choice id="fa-IR">
+          <name>Persian (Farsi)</name>
+        </choice>
+        <choice id="pl-PL">
+          <name>Polish</name>
+        </choice>
+        <choice id="pt-PT">
+          <name>Portuguese</name>
+        </choice>
+        <choice id="pt-BR">
+          <name>Portuguese (Brazilian)</name>
+        </choice>
+        <choice id="ro-RO">
+          <name>Romanian</name>
+        </choice>
+        <choice id="ru-RU">
+          <name>Russian</name>
+        </choice>
+        <choice id="sk-SK">
+          <name>Slovak</name>
+        </choice>
+        <choice id="sl-SI">
+          <name>Slovenian</name>
+        </choice>
+        <choice id="es-ES">
+          <name>Spanish (Spain)</name>
+        </choice>
+        <choice id="es-AR">
+          <name>Spanish (Argentina)</name>
+        </choice>
+        <choice id="sv-SE">
+          <name>Swedish</name>
+        </choice>
+        <choice id="tr-TR">
+          <name>Turkish</name>
+        </choice>
+        <choice id="uk-UA">
+          <name>Ukrainian</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.2.0"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>curl</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>geeklog</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.0.18</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+  <mapping xmlns:php="http://apstandard.com/ns/1/php" url="/" path="htdocs">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    
+    <mapping url="backups">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="logs">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="data">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="public_html">
+      <mapping url="backend">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url="images">
+        <mapping url="articles">
+          <php:permissions writable="true"/>
+        </mapping>
+        <mapping url="userphotos">
+          <php:permissions writable="true"/>
+        </mapping>
+        <mapping url="topics">
+          <php:permissions writable="true"/>
+        </mapping>
+      </mapping>
+    </mapping>
+  </mapping>
+  
+</application>

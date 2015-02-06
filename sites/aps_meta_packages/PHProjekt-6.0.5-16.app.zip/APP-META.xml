@@ -1,0 +1,121 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>PHProjekt</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>6.0.5</version>
+  <release>16</release>
+  <homepage>http://www.phprojekt.com/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>phprojekt</default-prefix>
+
+  <summary>Open source groupware suite</summary>
+  <description>
+    PHProjekt is a modular application for the coordination of group activities and sharing
+    information and documents through the Web. PHProjekt provides the following features:
+    group calendar; project management tools; file management; contact manager; e-mail client;
+    built-in HTML editor; Wiki; forum; export of documents to CSV, XLS, Doc, PDF, XML, RTF;
+    synchronisation with Microsoft Outlook and PDAs; support for 38 languages; support for
+    protocols like LDAP, XML/SOAP, WebDAV; support for 9 types of databases.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      This screen shows the Project management area. Here you can manage projects and view
+      their status (Gantt charts are available).
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="5.2" release="1"/>
+
+  <changelog>
+    <version version="6.0.5" release="16">
+      <entry>PHProjekt 6.0.5</entry>
+    </version>
+    <version version="5.2" release="13">
+      <entry>Collaboration/Portals category removed</entry>
+    </version>
+    <version version="5.2" release="12">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>7841782</installed-size>
+
+  <categories>
+	  <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.2.4"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>iconv</php:extension>
+    <php:extension>ctype</php:extension>
+    <php:extension>gd</php:extension>
+    <php:extension>pcre</php:extension>
+    <php:extension>PDO</php:extension>
+    <php:extension>Reflection</php:extension>
+    <php:extension>session</php:extension>
+    <php:extension>SPL</php:extension>
+    <php:extension>zlib</php:extension>
+	<php:register-globals>false</php:register-globals>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>phprojekt</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="private">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+</application>

@@ -1,0 +1,272 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>gallery</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>3.0.8</version>
+  <release>2</release>
+  <homepage>http://gallery.menalto.com/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>gallery</default-prefix>
+
+  <summary>Gallery is a powerful photo gallery.</summary>
+  <summary xml:lang="de-DE">gallery ist eine leistungsstarke Bildergalerie...</summary>
+  <summary xml:lang="en-CA">Gallery is a powerful photo gallery.</summary>
+  <summary xml:lang="en-GB">Gallery is a powerful photo gallery.</summary>
+  <summary xml:lang="en-US">Gallery is a powerful photo gallery.</summary>
+  <summary xml:lang="es-ES">gallery es una potente galería fotográfica...</summary>
+  <summary xml:lang="fr-FR">gallery est une galerie d'images puissante...</summary>
+  <summary xml:lang="pl-PL">Aktualna wersja Gallery usuwa poważne problemy związane z bezpieczeństwem...</summary>
+  <summary xml:lang="it-IT">gallery è una galleria fotografica dalle ottime prestazioni...</summary>
+  <summary xml:lang="es-MX">gallery es un eficiente oganizador de imágenes...</summary>
+  <description>gallery is a web-based software which helps you manage the images on your homepage. Gallery makes it easy to create and manage your photo albums using an intuitive user interface. Image management includes the following features: automatic creation of thumbnail images; size adjustment; alignment, sorting, labelling of and searching through images and much more. For albums and images it is also possible to assign access, editing and deleting rights for each authorized user. The ideal way to create group projects - create accounts for your friends and family so they can upload and manage their own images on their website.</description>
+  <description xml:lang="de-DE">gallery ist eine webbasierte Software, mit der Sie Ihre Bilder auf Ihrer Homepage verwalten können. Gallery ermöglicht es, auf einfache Art und Weise Fotoalben über eine intuitive Benutzeroberfläche zu erstellen und zu verwalten. Die Bildverwaltung umfasst folgende Features: automatisches Erstellen von Miniaturbildern; Anpassen der Größe; Ausrichten, Sortieren, Beschriften, Suchen von Bildern und vieles mehr. Für Alben und Bilder können Zugriffs-, Bearbeitungs- und Löschrechte für jeden authentifizierten Nutzer vergeben werden. Ideal für Gemeinschaftsprojekte - erstellen Sie Konten für Familie und Freunde, damit diese ihre eigenen Bilder auf Ihre Homepage hochladen und verwalten können.</description>
+  <description xml:lang="en-CA">gallery is a web-based software which helps you manage the images on your homepage. Gallery makes it easy to create and manage your photo albums using an intuitive user interface. Image management includes the following features: automatic creation of thumbnail images; size adjustment; alignment, sorting, labelling of and searching through images and much more. For albums and images it is also possible to assign access, editing and deleting rights for each authorized user. The ideal way to create group projects - create accounts for your friends and family so they can upload and manage their own images on their website.</description>
+  <description xml:lang="en-GB">gallery is a web-based software which helps you manage the images on your homepage. Gallery makes it easy to create and manage your photo albums using an intuitive user interface. Image management includes the following features: automatic creation of thumbnail images; size adjustment; alignment, sorting, labelling of and searching through images and much more. For albums and images it is also possible to assign access, editing and deleting rights for each authorized user. The ideal way to create group projects - create accounts for your friends and family so they can upload and manage their own images on their website.</description>
+  <description xml:lang="en-US">gallery is a web-based software which helps you manage the images on your homepage. Gallery makes it easy to create and manage your photo albums using an intuitive user interface. Image management includes the following features: automatic creation of thumbnail images; size adjustment; alignment, sorting, labeling of and searching through images and much more. For albums and images it is also possible to assign access, editing and deleting rights for each authorized user. The ideal way to create group projects - create accounts for your friends and family so they can upload and manage their own images on their website.</description>
+  <description xml:lang="es-ES">gallery es un producto de software basado en web que te permite administrar las fotografías en tu sitio web. Con gallery podrás crear y mantener fácilmente álbumes de fotos desde una interfaz intuitiva. La gestión de fotografías incluye creación automática de miniaturas, cambio de tamaño, rotación, ordenación, inclusión de pies de foto, búsqueda y mucho más. Los álbumes y fotos pueden tener permisos de visualización, edición, eliminación y otros para usuarios autenticados para lograr un nivel adicional de intimidad. Ideal para comunidades: facilita cuentas a amigos y familiares y deje que carguen y gestionen sus propias fotos en tu sitio web</description>
+  <description xml:lang="pl-PL">Gallery jest oprogramowaniem bazującym na Internecie, przy pomocy którego użytkownicy mogą zarządzać swoimi zdjęciami na prywatnej stronie internetowej. Gallery pozwala na łatwe zakładanie i zarządzanie albumami fotograficznymi dzięki użyciu intuicyjnego interfejsu użytkownika. Zarządzanie zdjęciami obejmuje następujące funkcje: automatyczne tworzenie miniaturek zdjęć; dopasowywanie rozmiarów; pozycjonowanie, sortowanie, opisywanie, wyszukiwanie zdjęć i wiele innych. W przypadku albumów i zdjęć można przydzielać każdemu uwierzytelnionemu użytkownikowi odpowiednie uprawnienia dostępu, edytowania i kasowania. Idealne rozwiązanie w przypadku wspólnych projektów — możliwość zakładania kont dla rodziny i przyjaciół, dzięki czemu będą oni mogli przesyłać swoje zdjęcia na stronę internetową użytkownika i nimi zarządzać. </description>
+  <description xml:lang="fr-FR">gallery est une application Web qui vous permet de gérer vos photos sur votre propre site Web. gallery vous permet de créer et gérer des galeries de photos depuis une interface intuitive. La gestion de photos comprend la création automatique d'images miniatures, le redimensionnement, la rotation, le classement, la capture, la recherche d'images et plus. Pour plus de confidentialité, vous pouvez configurer pour vos albums et photos des permissions d'affichage, de modifiaction, de suppression et d'autres pour chaque utilisateur authentifié. L'application est excellente pour les communautés - configurez des comptes pour vos amis et votre famille et permettez-leur de gérer leurs propres photos sur votre site Web !</description>
+  <description xml:lang="es-MX">gallery es un software basado en la web con el que puedes administrar tus fotos en tu página web. Gallery permite crear y administrar álbumes de fotos de manera sencilla a través de una interfaz de uso intuitivo. La administración de fotos incluye las siguientes funciones: creación automática de imágenes en miniatura, ajuste de tamaño, alineación, clasificación, etiquetado, búsqueda de imágenes y mucho más. A los álbumes y las imágenes pueden asignárseles derechos de acceso, edición y eliminación para cada usuario autorizado. Ideal para proyectos en grupo: crea cuentas para tus familiares y amigos con el fin de que puedan subir y administrar sus propias fotos en tu página web.</description>
+  <description xml:lang="it-IT">gallery è un software basato su web che consente la gestione delle tue foto sul tuo sito web. Grazie alla sua interfaccia intuitiva, gallery permette di creare e gestire gli album fotografici in modo semplice. La gestione delle immagini comprende le seguenti funzionalità: creazione automatica di anteprime, modifica delle dimensioni, allineamento, ordinamento, etichettatura, ricerca di immagini e tanto altro ancora. È possibile assegnare dei diritti di accesso, modifica e cancellazione per ogni utente autenticato. Ideale per progetti comuni: crea degli account per la famiglia e per gli amici, che in questo modo possono caricare e gestire le proprie foto sul tuo sito web.</description>
+  <description>gallery is a web-based software which helps you manage the images on your homepage. Gallery makes it easy to create and manage your photo albums using an intuitive user interface. Image management includes the following features: automatic creation of thumbnail images; size adjustment; alignment, sorting, labelling of and searching through images and much more. For albums and images it is also possible to assign access, editing and deleting rights for each authorized user. The ideal way to create group projects - create accounts for your friends and family so they can upload and manage their own images on their website.</description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png"><description>The main page of Gallery.</description></screenshot>
+  <screenshot path="images/app_screenshot_2.png"><description>Administrator page.</description></screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="3.0.1" release="1"/>
+
+
+  <changelog>
+  <version release="2" version="3.0.8">
+    	<entry>New Version</entry>
+    </version><version release="2" version="3.0.7">
+    	<entry>translation corrections</entry>
+    </version><version release="1" version="3.0.7">
+    	<entry>Gallery 3.0.7 Security Release http://galleryproject.org/gallery_3_0_7</entry>
+    </version>
+  	<version release="2" version="3.0.6">
+    	<entry>Parse error fixed</entry>
+    </version>
+  	<version release="1" version="3.0.6">
+    	<entry>Gallery 3.0.6 Security Release http://galleryproject.org/gallery_3_0_6</entry>
+    </version>
+	<version release="2" version="3.0.5">
+    	<entry>PHP requirements set to 5.3</entry>
+    </version><version release="1" version="3.0.5">
+    	<entry>Gallery 3.0.5 Security Release http://galleryproject.org/gallery_3_0_5</entry>
+    </version><version version="3.0.4" release="2">
+		<entry>Gallery 3.0.4 Security Release http://gallery.menalto.com/gallery_3_0_4</entry>
+	</version>
+	<version version="3.0.2" release="8">
+		<entry>Required memory limit decreased</entry>
+	</version>
+	<version version="3.0.2" release="7">
+		<entry>Entry point defined</entry>
+	</version>
+	<version version="3.0.2" release="6">
+		<entry>Release notes: http://gallery.menalto.com/gallery_3.0.2_released</entry>
+	</version>
+	<version version="3.0.1" release="21">
+		<entry>Ignoring gallery2 cache removal errors on upgrade</entry>
+		<entry>Recreate .htaccess on reconfiguration to update RewriteBase</entry>
+	</version>
+	<version version="3.0.1" release="20">
+		<entry>3.0 version package. Migration from Gallery 2.3.1 is included</entry>
+	</version>
+	<version version="2.3.1" release="4">
+		<entry>Improve compatibility with PHP 5.3</entry>
+	</version>
+    <version version="2.3" release="1">
+    <entry>New version of the slideshow module now uses PicLens  to provide a rich, full screen slideshow.
+	</entry><entry> Comment module now offers moderation and Akismet support to help weed out spam comments.
+	</entry><entry> New email notification module allowing users to configure events they wish to get notified for. You can watch albums for changes, items for new comments, etc.
+	</entry><entry> New Jpegtran module to support rotation and cropping of jpeg images with no loss in image quality.
+	</entry><entry> New SnapGalaxy module for prints from snapgalaxy.com.
+	</entry><entry> Registration module can now send a welcome email to new users upon account activation.
+	</entry><entry> EXIF block now uses AJAX to switch between summary and detail display.
+	</entry><entry> External image block now has a "rawImage" mode to return a single binary image instead of HTML output.
+	</entry><entry> Support in RSS module for Media RSS format and random RSS streams.
+	</entry><entry> Remote module now bundles the Gallery Remote client and makes it available via Java Web Start. Users with a Java enabled browser can then launch Gallery Remote with a single click instead of manually downloading and installing.
+	</entry><entry> Hybrid theme now uses automatic navigation between pages in its image viewer and slideshow. This means the slideshow will show all images in the album, moving between album pages as needed. Requesting the next/previous image in the image viewer will also load a new album page as needed.
+	</entry><entry> Webcam module now accepts file:// URLs to retrieve image from local filesystem.
+	</entry><entry> Dcraw module now supports Adobe Digital Negative (dng) files, when used with dcraw v7.0 or newer.
+	</entry><entry> Added support for Windows Vista in PublishXP module.
+	</entry><entry> New database backup feature. Backup at start of upgrade, or anytime from Site Admin / Maintenance. Restore a backup from lib/support interface.
+	</entry><entry> Can now put Gallery into maintenance mode from Site Admin / Maintenance. Setting in config.php file is still available too.
+	</entry><entry> New event logging system records Gallery errors, viewable in the Site Admin interface.
+	</entry><entry> Themes can now override module template files, allowing a themed look to more aspects of the application.
+	</entry><entry> New Language Manager that allows the addition or removal of translations.
+	</entry><entry> User interface changes.
+    </entry><entry> Use AJAX to speed up deleting comments(spam) on items/albums.
+    </entry><entry> Use quick DHTML confirm dialog for deleting single items. Dialog offers link to bulk delete several items from an album.
+    </entry><entry> Use YUI ItemTree instead of plain select box to select target album when moving items, creating replicas or link items. 
+	</entry><entry> Performance and stability improvements.
+    </entry><entry> Smarty templates now permanently cached by default. Turn this off in Site Admin / Performance when working on tpl files, so changes take effect immediately during development.
+    </entry><entry> Avoid reading EXIF data multiple times in Carbon theme.
+    </entry><entry> Some added caching in GalleryUrlGenerator.
+    </entry><entry> Use progress bar when adding items to avoid server or browser timeouts. Particularly helpful when adding many items from local server.
+    </entry><entry> Restructuring to greatly reduce the number of directories for language files.
+    </entry><entry> Refactor of translator hints to avoid some processing when translations are not used (en_US).
+    </entry><entry> Faster plugin and language package downloads.
+    </entry><entry> Refactor of event system working towards a performance improvement in the next release. 
+	  </entry>
+    </version>
+
+    <version version="2.2.5" release="7">
+      <entry>Automatically detect graphics plugin on installation</entry>
+    </version>
+
+    <version version="2.2.5" release="5">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>66309314</installed-size>
+
+  <categories>
+      <category>Web/Gallery</category>
+  </categories>
+
+  <languages>
+		<language>en</language>
+		<language>de</language>
+		<language>es</language>
+		<language>fr</language>
+		<language>pl</language>
+		<language>it</language>
+		<language>mx</language>    
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+
+	<setting id="admin_name" type="string" default-value="admin" min-length="1" regex="^[a-zA-Z]{1}[0-9a-zA-Z_\-]{0,32}">
+	<name>Administrator's login</name>
+	</setting>
+	<setting id="admin_password" type="password">
+	<name>Password</name>
+	</setting>
+	<setting id="admin_email" type="email">
+	<name>Administrator's email</name>
+	</setting>
+      
+    </group>
+    <group>
+      <name>Gallery's preferences</name>
+      <setting id="title" type="string" min-length="1">
+        <name>Gallery name</name>
+        <name xml:lang="de-DE">Galeriename</name>
+        <name xml:lang="en-CA">Gallery name</name>
+        <name xml:lang="en-GB">Gallery name</name>
+        <name xml:lang="en-US">Gallery name</name>
+        <name xml:lang="es-ES">Nombre de la galería</name>
+        <name xml:lang="fr-FR">Nom de la galerie</name>
+        <name xml:lang="pl-PL">Nazwa galerii</name>
+        <name xml:lang="it-IT">Nome della galleria</name>
+        <name xml:lang="es-MX">Nombre de la galería</name>
+      </setting>
+    </group>
+    
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="5.3"/>
+    <php:extension>mysqli</php:extension>
+    <php:extension>mysql</php:extension>
+    <php:extension>iconv</php:extension>
+    <php:extension>filter</php:extension>
+    <php:extension>json</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:safe-mode>false</php:safe-mode>
+    <php:file-uploads>true</php:file-uploads>
+    <php:short-open-tag>true</php:short-open-tag>
+	<php:memory-limit>67108864</php:memory-limit>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>gallery</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+	<mapping url="g2data">
+		<php:permissions writable="true"/>
+	</mapping>
+	<mapping url="var">
+		<php:permissions writable="true"/>
+		<mapping url="modules">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="themes">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="thumbs">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="logs">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="albums">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="resizes">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="uploads">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="locale">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="locks">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="cache">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="plugins_data">
+			<php:permissions writable="true"/>
+			<mapping url="modules">
+				<php:permissions writable="true"/>
+			</mapping>
+			<mapping url="themes">
+				<php:permissions writable="true"/>
+			</mapping>
+		</mapping>
+		<mapping url="smarty">
+			<php:permissions writable="true"/>
+			<mapping url="templates_c">
+				<php:permissions writable="true"/>
+			</mapping>
+		</mapping>
+		<mapping url="tmp">
+			<php:permissions writable="true"/>
+		</mapping>
+    </mapping>
+    
+  </mapping>
+
+</application>

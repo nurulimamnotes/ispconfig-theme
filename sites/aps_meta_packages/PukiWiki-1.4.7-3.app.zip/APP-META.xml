@@ -1,0 +1,98 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>PukiWiki</name>
+	<packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+	<version>1.4.7</version>
+	<release>3</release>
+	<homepage>http://pukiwiki.sourceforge.jp/</homepage>
+	<package-homepage>http://parallels.com/</package-homepage>
+	<default-prefix>pukiwiki</default-prefix>
+
+	<summary>PHP scripts for Web pages which can be edited by anyone, at any time, from anywhere.</summary>
+	<description>
+		PukiWiki consists of a series of PHP Scripts designed to build a collection of web pages which can be edited by anyone without any restriction.
+		Pukiwiki is more flexible than moderate bulletinboards.
+		Since it ,basically, enables everyone change the design and content of any page, while you can only leave messages in bulletinboards.
+		PukiWiki is a unique Wiki-Engine which is based on the YukiWiki specification created by Mr. Hiroshi Yuki.
+		Mr. yu-ji continued its development until the release of PukiWiki 1.3, and PukiWiki Developers Team inherited the development from him after 1.3.1b.
+		PukiWiki is written in PHP, so it's relatively easy to install on a web server which supports PHP.
+		PukiWiki is distributed under GPL. Thus it is, so to speak, a	Free Software!
+	</description>
+
+	<icon path="images/icon.png"/>
+
+	<screenshot path="images/screenshot.png"><description>Main page in japanese.</description></screenshot>
+
+	<license must-accept="true">
+		<text>
+			<name>GNU GENERAL PUBLIC LICENSE Version 2</name>
+			<file>htdocs/COPYING.txt</file>
+		</text>
+	</license>
+
+	<configuration-script-language>php</configuration-script-language>
+
+	<changelog>
+		<version version="1.4.7" release="3">
+			<entry>Initial package version</entry>
+		</version>
+	</changelog>
+
+	<entry-points>
+		<entry>
+			<path>/</path>
+			<label>Application entry</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>981804</installed-size>
+
+	<categories>
+		<category>Collaboration/Portal</category>
+	</categories>
+
+	<languages>
+		<language>ja</language>
+	</languages>
+
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+				<name>Administrator's login</name>
+				<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+			<setting id="admin_password" type="password" min-length="1" >
+				<name>Password</name>
+			</setting>
+		</group>
+
+		<group>
+			<name>Language preferences</name>
+			<setting id="locale" type="enum" default-value="en-US">
+				<name>Interface language</name>
+				<choice id="en-US" ><name>English</name></choice>
+				<choice id="ja-JP" ><name>Japanese</name></choice>
+			</setting>
+		</group>
+	</settings>
+
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:apache="http://apstandard.com/ns/1/apache">
+		<php:version min="4.1"/>
+	</requirements>
+
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler><php:extension>php</php:extension></php:handler>
+		
+		<mapping url="attach"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="backup"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="cache"><php:permissions writable="true"/></mapping>
+		<mapping url="counter"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="diff"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="face"><php:permissions writable="true"/></mapping>
+		<mapping url="image"><php:permissions writable="true"/></mapping>
+		<mapping url="lib"><php:handler><php:disabled/></php:handler></mapping>		
+		<mapping url="plugin"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="trackback"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+		<mapping url="wiki"><php:handler><php:disabled/></php:handler><php:permissions writable="true"/></mapping>
+	</mapping>
+</application>

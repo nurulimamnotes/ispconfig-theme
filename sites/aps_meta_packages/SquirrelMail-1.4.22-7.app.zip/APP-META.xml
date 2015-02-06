@@ -1,0 +1,113 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>SquirrelMail</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.4.22</version>
+  <release>7</release>
+  <homepage>http://www.squirrelmail.org/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>/squirrelmail/</default-prefix>
+  <summary>Webmail package</summary>
+  <description>SquirrelMail has all the functionality you would want from an email client, including strong MIME support, address books, and folder manipulation.</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/login.jpg">
+    <description>Login Screen</description>
+  </screenshot>
+  <screenshot path="images/messagelist.jpg">
+    <description>Message List</description>
+  </screenshot>
+  <screenshot path="images/read_mail.jpg">
+    <description>Reading a Message</description>
+  </screenshot>
+  <screenshot path="images/folders.jpg">
+    <description>Folder Management</description>
+  </screenshot>
+  <screenshot path="images/options.jpg">
+    <description>Options</description>
+  </screenshot>
+  <screenshot path="images/opt_display.jpg">
+    <description>Display Options</description>
+  </screenshot>
+  <screenshot path="images/compose.jpg">
+    <description>Compose</description>
+  </screenshot>
+  <screenshot path="images/address.jpg">
+    <description>Address Book</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/COPYING</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <patchable-from release="3" version="1.4.13"/>
+  <upgradable-from release="2" version="1.4.21"/>
+  <changelog>
+  	<version release="7" version="1.4.22">
+    	<entry>Fixed minor bugs.</entry>
+    </version><version release="6" version="1.4.22">
+    	<entry>Fixed minor bugs.</entry>
+    </version><version release="5" version="1.4.22">
+    	<entry>docs folder included</entry>
+    </version><version release="4" version="1.4.22">
+    	<entry>Test scripts modified.</entry>
+    </version><version release="3" version="1.4.22">
+    	<entry>Test scripts modified</entry>
+    </version><version release="2" version="1.4.22">
+    	<entry>Test scripts included.</entry>
+    </version><version release="1" version="1.4.22">
+    	<entry>This release contains a large number of performance enhancements, stability fixes and a few bug/security fixes.</entry>
+    </version>
+    <version release="1" version="1.4.21">
+    	<entry>Repackaged for newversion</entry>
+    </version>
+     <version version="1.4.13" release="3">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+    <version version="1.4.5" release="27">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>2833364</installed-size>
+  <categories>
+	  <category>Collaboration/Email</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>E-mail preferences</name>
+      <setting id="imap_server" type="string" default-value="localhost">
+        <name>IMAP server address</name>
+      </setting>
+      <setting id="imap_port" type="string" default-value="143">
+        <name>IMAP port number</name>
+      </setting>
+      <setting id="smtp_server" type="string" default-value="localhost">
+        <name>SMTP server address</name>
+      </setting>
+      <setting id="smtp_port" type="string" default-value="25">
+        <name>SMTP port number</name>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" >
+    <php:version min="4.1"/>
+    <php:register-globals>false</php:register-globals>
+    <php:magic-quotes-gpc>false</php:magic-quotes-gpc>
+    <php:file-uploads>true</php:file-uploads>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="attach">
+    	<php:permissions writable="true" />
+    </mapping><mapping url="data">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+  
+</application>

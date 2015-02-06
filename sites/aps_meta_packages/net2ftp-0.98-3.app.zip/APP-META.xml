@@ -1,0 +1,548 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>net2ftp</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>0.98</version>
+  <release>3</release>
+  <homepage>http://www.net2ftp.com/</homepage>
+  <package-homepage>http://www.parallels.com/</package-homepage>
+  <default-prefix>/net2ftp/</default-prefix>
+  <summary>Web based FTP client</summary>
+  <description>User features: navigate the ftp server; upload/download files; zip/unzip files; install software; copy, move and delete; copy or move to a 2nd ftp server; rename and chmod; view code with syntax highlighting; plain text/html/code editor; search for words or phrases; calculate size. Administrator features: safe mode; authorizations; logging; daily limit; large file limit; templates; integration in other php applications.</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/browse.jpg">
+    <description>Browse the FTP server</description>
+  </screenshot>
+  <screenshot path="images/view.jpg">
+    <description>View a code with syntax highlighting</description>
+  </screenshot>
+  <screenshot path="images/edit.jpg">
+    <description>Edit text</description>
+  </screenshot>
+  <screenshot path="images/htmlarea.jpg">
+    <description>Edit HTML in a WYSIWYG form</description>
+  </screenshot>
+  <screenshot path="images/copy.jpg">
+    <description>Copy files</description>
+  </screenshot>
+  <screenshot path="images/download.jpg">
+    <description>Download files and directories</description>
+  </screenshot>
+  <screenshot path="images/zip.jpg">
+    <description>Zip files and save or email them</description>
+  </screenshot>
+  <screenshot path="images/bookmark.jpg">
+    <description>Bookmark any page</description>
+  </screenshot>
+  <screenshot path="images/help.jpg">
+    <description>Help guide</description>
+  </screenshot>
+  <screenshot path="images/search.jpg">
+    <description>Search for a word or a phrase</description>
+  </screenshot>
+  <screenshot path="images/size.jpg">
+    <description>Calculate the size taken by files and directories</description>
+  </screenshot>
+  <screenshot path="images/skin.jpg">
+    <description>net2ftp comes with different skins</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>NET2FTP LICENSE</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="0.96" release="1"/>
+  <changelog>
+    <version version="0.98" release="3">
+      <entry>Changelog: http://www.net2ftp.com/download/_CHANGES_v0.98.txt</entry>
+    </version>
+    <version version="0.96" release="3">
+      <entry>Package moved to Web/Tools category</entry>
+    </version>
+    <version version="0.96" release="2">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+    <entry-points>
+	<entry>
+	  <path>/</path>
+	  <label>FTP Client</label>
+	</entry>
+    <entry>
+      <path>index.php?state=login_small&amp;state2=admin&amp;go_to_state=admin</path>
+      <label>Administrative interface</label>
+    </entry>
+	<entry>
+	  <path>/help.html</path>
+	  <label>Documentation</label>
+	</entry>
+  </entry-points>
+  <installed-size>10723581</installed-size>
+  <categories>
+	  <category>Web/Tools</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Basic preferences</name>
+      <setting id="default_skin" type="enum" default-value="blue">
+        <name>Skin</name>
+        <choice id="blue">
+          <name>blue</name>
+        </choice>
+        <choice id="drupal">
+          <name>drupal</name>
+        </choice>
+        <choice id="india">
+          <name>india</name>
+        </choice>
+        <choice id="iphone">
+          <name>iphone</name>
+        </choice>
+        <choice id="mambo">
+          <name>mambo</name>
+        </choice>
+        <choice id="mobile">
+          <name>mobile</name>
+        </choice>
+        <choice id="xoops">
+          <name>xoops</name>
+        </choice>
+      </setting>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="ar-EG" >
+          <name>Arabic</name>
+        </choice>
+        <choice id="ar-AR" >
+          <name>Arabic (UTF)</name>
+        </choice>
+        <choice id="zh-TW" >
+          <name>Chinese Traditional</name>
+        </choice>
+        <choice id="zh-CN" >
+          <name>Chinese Simplified</name>
+        </choice>
+        <choice id="cs-CZ" >
+          <name>Czech</name>
+        </choice>
+        <choice id="nl-NL" >
+          <name>Dutch</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="en-UK" >
+          <name>English (UTF)</name>
+        </choice>
+        <choice id="fi-FI" >
+          <name>Finnish</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="da-DK" >
+          <name>Danish</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="he-IL" >
+          <name>Hebrew</name>
+        </choice>
+        <choice id="it-IT" >
+          <name>Italian</name>
+        </choice>
+        <choice id="ja-JP" >
+          <name>Japanese</name>
+        </choice>
+        <choice id="pl-PL" >
+          <name>Polish</name>
+        </choice>
+        <choice id="pt-PT" >
+          <name>Portuguese</name>
+        </choice>
+        <choice id="ru-RU" >
+          <name>Russian</name>
+        </choice>
+        <choice id="es-ES" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="sv-SE" >
+          <name>Swedish</name>
+        </choice>
+        <choice id="th-TH" >
+          <name>Thai</name>
+        </choice>
+        <choice id="tr-TR" >
+          <name>Turkish</name>
+        </choice>
+        <choice id="vi-VN" >
+          <name>Vietnamese</name>
+        </choice>
+      </setting>
+      <setting id="check_authorization" type="enum" default-value="yes">
+        <name>Check authorization</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="error_reporting" type="enum" default-value="standard">
+        <name>PHP error reporting</name>
+        <choice id="NONE">
+          <name>NONE</name>
+        </choice>
+        <choice id="standard">
+          <name>STANDARD</name>
+        </choice>
+        <choice id="ALL">
+          <name>ALL</name>
+        </choice>
+      </setting>
+      <setting id="fix_png" type="enum" default-value="yes">
+        <name>Fix PNG images</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="max_filesize" type="integer" default-value="50000000">
+        <name>Max filesize [bytes]</name>
+        <description>Files bigger than this limit will be excluded from: upload, download, copy, move, search, view, edit. If you want to allow large file uploads, you may have to adjust the following parameters: in the file php.ini: upload_max_filesize, post_max_size, max_execution_time, memory_limit; in the file php.conf: LimitRequestBody</description>
+      </setting>
+    </group>
+    <group>
+      <name>Logging</name>
+      <setting id="log_access" type="enum" default-value="yes">
+        <name>Log access</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="log_error" type="enum" default-value="yes">
+        <name>Log errors</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="log_length_days" type="integer" default-value="7">
+        <name>Log length [days]</name>
+        <description>Delete logs which are older than X days automatically.</description>
+      </setting>
+    </group>
+    <group>
+      <name>Server resource consumption settings</name>
+      <setting id="check_consumption" type="enum" default-value="no">
+        <name>Check consumption</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="max_consumption_ipaddress_datatransfer" type="integer" default-value="50000000">
+        <name>IP data transfer</name>
+        <description>Maximum data transfer volume per day (in Bytes) per IP address.</description>
+      </setting>
+      <setting id="max_consumption_ftpserver_datatransfer" type="integer" default-value="50000000">
+        <name>Server data transfer</name>
+        <description>Maximum data transfer volume per day (in Bytes) per FTP server.</description>
+      </setting>
+      <setting id="max_consumption_ipaddress_executiontime" type="integer" default-value="1500">
+        <name>IP execution time</name>
+        <description>Maximum script execution time per day (in seconds) per IP address.</description>
+      </setting>
+      <setting id="max_consumption_ftpserver_executiontime" type="integer" default-value="1500">
+        <name>Server execution time</name>
+        <description>Maximum script execution time per day (in seconds) per FTP server.</description>
+      </setting>
+      <setting id="max_consumption_ipaddress_nr_of_ftpservers" type="integer" default-value="50">
+        <name>FTP servers access limit</name>
+        <description>Maximum number of FTP servers that can be accessed per day</description>
+      </setting>
+      <setting id="check_homedirectory" type="enum" default-value="yes">
+        <name>Check home directory</name>
+        <choice id="yes">
+          <name>YES</name>
+        </choice>
+        <choice id="no">
+          <name>NO</name>
+        </choice>
+      </setting>
+    </group>
+    <group>
+      <name>Functions on the Browse screen - TOP LEFT</name>
+      <setting id="functionuse_newdir" type="enum" default-value="yes">
+        <name>Create new directory</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_newfile" type="enum" default-value="yes">
+        <name>Create new file</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_upload" type="enum" default-value="yes">
+        <name>Upload</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_jupload" type="enum" default-value="yes">
+        <name>Java upload</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_swfupload" type="enum" default-value="yes">
+        <name>Flash upload</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_easyWebsite" type="enum" default-value="no">
+        <name>Easy website</name>
+        <description>Create a website from pre-made HTML templates.</description>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_bookmark" type="enum" default-value="yes">
+        <name>Bookmark a page</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_install" type="enum" default-value="yes">
+        <name>Install functions</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_advanced" type="enum" default-value="yes">
+        <name>Advanced functions</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+    </group>
+    <group>
+      <name>Functions on the Browse screen - TOP RIGHT</name>
+      <setting id="functionuse_copy" type="enum" default-value="yes">
+        <name>Copy directories and files</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_move" type="enum" default-value="yes">
+        <name>Move directories and files</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_delete" type="enum" default-value="yes">
+        <name>Delete directories and files</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_rename" type="enum" default-value="yes">
+        <name>Rename</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_chmod" type="enum" default-value="yes">
+        <name>Chmod</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_downloadzip" type="enum" default-value="yes">
+        <name>Zip-and-download</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_unzip" type="enum" default-value="yes">
+        <name>Unzip</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_zip" type="enum" default-value="yes">
+        <name>Zip-and-save, zip-and-email</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_calculatesize" type="enum" default-value="yes">
+        <name>Calculate size</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_findstring" type="enum" default-value="yes">
+        <name>Find string</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+    </group>
+    <group>
+      <name>Functions on the Browse screen - ROW LEVEL</name>
+      <setting id="functionuse_downloadfile" type="enum" default-value="yes">
+        <name>Download file</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_view" type="enum" default-value="yes">
+        <name>View file</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_edit" type="enum" default-value="yes">
+        <name>Edit file</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_update" type="enum" default-value="no">
+        <name>Update file (beta function)</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+      <setting id="functionuse_open" type="enum" default-value="yes">
+        <name>Open file</name>
+        <choice id="yes">
+          <name>Enabled</name>
+        </choice>
+        <choice id="no">
+          <name>Disabled</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.0"/>
+    <php:extension>mysql</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>net2ftp</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>1</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="temp">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+  
+</application>

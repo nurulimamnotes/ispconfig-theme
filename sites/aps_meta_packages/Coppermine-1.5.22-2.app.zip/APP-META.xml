@@ -1,0 +1,289 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Coppermine</name>
+    <version>1.5.22</version>
+    <release>2</release>
+    <homepage>http://coppermine-gallery.net/</homepage>
+    <package-homepage>http://www.glowtouch.com</package-homepage>
+    <default-prefix>coppermine</default-prefix>
+    <summary>Coppermine is a multi-purpose fully-featured and integrated web picture gallery script</summary>
+    <description>Coppermine Photo Gallery is a picture gallery script. Users can upload pictures with a Web browser (thumbnails are created on the fly), rate pictures, add comments, and send e-cards. The admins can manage the galleries and batch-add pictures that have been uploaded to the server by FTP. Support for multimedia files has been added recently. Images are stored in albums, and albums can be grouped by categories. The script supports multiple users and allows each user to have his own set of albums. The script also supports multiple languages and has a theme system.</description>
+    <icon path="images/images.jpg" />
+    <screenshot path="images/screenshot.jpg">
+    	<description>Typical view</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="en-US">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text>
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="en-GB">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="es-ES">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="fr-FR">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="de-DE">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    	<text xml:lang="pl-PL">
+    		<name>GNU GENERAL PUBLIC LICENSE</name>
+    		<file>htdocs/COPYING.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <upgradable-from version="1.5.20" release="3"/>
+
+    <changelog>
+    	<version release="2" version="1.5.22">
+    		<entry>small changes</entry>
+    	</version><version release="1" version="1.5.22">
+    		<entry>http://forum.coppermine-gallery.net/index.php/topic,75858.0.html</entry>
+    	</version><version release="3" version="1.5.20">
+    		<entry>More information:
+http://documentation.coppermine-gallery.net/en/</entry>
+    	</version>
+    	<version release="2" version="1.5.18">
+    		<entry>Change upload from version.</entry>
+    	</version>
+    	<version release="1" version="1.5.18">
+    		<entry>Package Upgrade</entry>
+    	</version>
+    	<version release="2" version="1.5.12">
+    		<entry>Language bugs fixed</entry>
+    	</version><version release="1" version="1.5.12">
+    		<entry>Initial package version</entry>
+    	</version>
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>/</path>
+    		<label>Photo Gallery</label>
+    	</entry>
+    </entry-points>
+    <installed-size>14208673</installed-size>
+    <categories>
+    	<category>Web/Gallery</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    	<language>fr</language>
+    	<language>es</language>
+    	<language>de</language><language>pl</language>
+    </languages>
+    <settings>
+    	<group>
+    		<name>Administrator's preferences</name>
+    		<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="24" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+    			<name>Administrator's login</name>
+    			<description>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</description>
+    		</setting>
+    		<setting id="admin_password" type="password" min-length="1" default-value="admin">
+    			<name>Password</name>
+    		</setting>
+    		<setting id="admin_email" type="email" default-value="admin@glowtouch.com">
+    			<name>Administrator's email</name>
+    		</setting>
+    	</group>
+    	<group>
+    		<name>Gallery's preferences</name>
+    		<setting id="title" type="string" default-value="Gallery name">
+    			<name>Gallery name</name>
+    		</setting>
+    		<setting id="gallery_desc" type="string" default-value="Gallery description">
+    			<name>Gallery description</name>
+    		</setting>
+    	</group>
+    	<group>
+    		<name>Other preferences</name>
+    		<setting id="theme" type="enum" default-value="curve">
+					<name xml:lang="en-US">Theme</name>
+					<name xml:lang="en-GB">Theme</name>
+					<name xml:lang="es-ES">Theme</name>
+					<name xml:lang="fr-FR">Theme</name>
+					<name xml:lang="de-DE">Theme</name>
+					<name xml:lang="pl-PL">Theme</name>
+					<name>Theme</name>
+					<choice id="curve">
+						<name xml:lang="en-US">curve</name>
+						<name xml:lang="en-GB">curve</name>
+						<name xml:lang="es-ES">curve</name>
+						<name xml:lang="fr-FR">curve</name>
+						<name xml:lang="de-DE">curve</name>
+						<name xml:lang="pl-PL">curve</name>
+						<name>curve</name>
+					</choice>
+					<choice id="eyeball">
+						<name xml:lang="en-US">eyeball</name>
+						<name xml:lang="en-GB">eyeball</name>
+						<name xml:lang="es-ES">eyeball</name>
+						<name xml:lang="fr-FR">eyeball</name>
+						<name xml:lang="de-DE">eyeball</name>
+						<name xml:lang="pl-PL">eyeball</name>
+						<name>eyeball</name>
+					</choice>
+					<choice id="hardwired">
+						<name xml:lang="en-US">hardwired</name>
+						<name xml:lang="en-GB">hardwired</name>
+						<name xml:lang="es-ES">hardwired</name>
+						<name xml:lang="fr-FR">hardwired</name>
+						<name xml:lang="de-DE">hardwired</name>
+						<name xml:lang="pl-PL">hardwired</name>
+						<name>hardwired</name>
+					</choice>
+					<choice id="rainy_day">
+						<name xml:lang="en-US">rainy_day</name>
+						<name xml:lang="en-GB">rainy_day</name>
+						<name xml:lang="es-ES">rainy_day</name>
+						<name xml:lang="fr-FR">rainy_day</name>
+						<name xml:lang="de-DE">rainy_day</name>
+						<name xml:lang="pl-PL">rainy_day</name>
+						<name>rainy_day</name>
+					</choice>
+					<choice id="sample">
+						<name xml:lang="en-US">sample</name>
+						<name xml:lang="en-GB">sample</name>
+						<name xml:lang="es-ES">sample</name>
+						<name xml:lang="fr-FR">sample</name>
+						<name xml:lang="de-DE">sample</name>
+						<name xml:lang="pl-PL">sample</name>
+						<name>sample</name>
+					</choice>
+					<choice id="water_drop">
+						<name xml:lang="en-US">water_drop</name>
+						<name xml:lang="en-GB">water_drop</name>
+						<name xml:lang="es-ES">water_drop</name>
+						<name xml:lang="fr-FR">water_drop</name>
+						<name xml:lang="de-DE">water_drop</name>
+						<name xml:lang="pl-PL">water_drop</name>
+						<name>water_drop</name>
+					</choice>
+				</setting>
+				<setting id="locale" type="enum"
+					default-value="en-US">
+					<name>Interface language</name>
+					<name xml:lang="en-US">Interface language</name>
+					<name xml:lang="en-GB">Interface language</name>
+					<name xml:lang="fr-FR">Interface language</name>
+					<name xml:lang="es-ES">Interface language</name>
+					<name xml:lang="de-DE">Interface language</name>
+					<name xml:lang="pl-PL">Interface language</name>
+					<choice id="ar-EG">
+						<name>Arabic</name>
+					</choice>
+					<choice id="bg-BG">
+						<name>Bulgarian</name>
+					</choice>
+					<choice id="zh-CN">
+						<name>Chinese_Simplified</name>
+					</choice>
+					<choice id="cz-CZ">
+						<name>Czech</name>
+					</choice>
+					<choice id="da-DK">
+						<name>Danish</name>
+					</choice>
+					<choice id="nl-NL">
+						<name>Dutch</name>
+					</choice>
+					<choice id="en-US">
+						<name>English (USA)</name>
+					</choice>
+					<choice id="en-UK">
+						<name>English (UK)</name>
+					</choice>
+					<choice id="et-EE">
+						<name>Estonian</name>
+					</choice>
+					<choice id="fi-FI">
+						<name>Finish</name>
+					</choice>
+					<choice id="fr-FR">
+						<name>French</name>
+					</choice>
+					<choice id="fr-LU">
+						<name>French (Luxembourg)</name>
+					</choice>
+					<choice id="de-DE">
+						<name>German</name>
+					</choice>
+					<choice id="de-SI">
+						<name>German (formal)</name>
+					</choice>
+					<choice id="el-GR">
+						<name>Greek</name>
+					</choice>
+					<choice id="hu-HU">
+						<name>Hungarian</name>
+					</choice>
+					<choice id="ja-JP">
+						<name>Japanese</name>
+					</choice>
+					<choice id="pl-PL">
+						<name>Polish</name>
+					</choice>
+					<choice id="pt-BR">
+						<name>Portuguese (Brazilian)</name>
+					</choice>
+					<choice id="ru-RU">
+						<name>Russian</name>
+					</choice>
+					<choice id="sk-SK">
+						<name>Slovak</name>
+					</choice>
+					<choice id="sl-SI">
+						<name>Slovenian</name>
+					</choice>
+					<choice id="es-ES">
+						<name>Spanish</name>
+					</choice>
+					<choice id="es-MX">
+						<name>Spanish (Mexico)</name>
+					</choice>
+					<choice id="tr-TR">
+						<name>Turkish</name>
+					</choice>
+					<choice id="uk-UA">
+						<name>Ukrainian</name>
+					</choice>
+				</setting>
+    	</group>
+    </settings>
+    <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:register-globals>false</php:register-globals>
+    	<php:extension>mysql</php:extension>
+    	<php:extension>gd</php:extension>
+    	<php:version min="4.2.0"/>
+    	<db:db>
+    		<db:id>main</db:id>
+    		<db:default-name>coppermine</db:default-name>
+    		<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+    		<db:server-type>mysql</db:server-type>
+    		<db:server-min-version>3.23.23</db:server-min-version>
+    	</db:db>
+    </requirements>
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:handler>
+    		<php:extension>php</php:extension>
+    	</php:handler>
+    	<mapping url="albums">
+    		<php:permissions writable="true"/>
+    	</mapping>
+    </mapping>
+
+
+</application>

@@ -1,0 +1,130 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>OpenCart</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+    <version>1.5.6.1</version>
+    <release>1</release>
+    <homepage>http://www.opencart.com/</homepage>
+    <package-homepage>http://www.sofcloudit.com</package-homepage>
+    <default-prefix>opencart</default-prefix>
+     
+  <summary>OpenCart is an out-of-the-box shopping cart solution</summary>
+  
+  <description>OpenCart is a turnkey, out-of-the-box shopping cart solution. You simply install, select your template, add products and you are ready to start accepting orders. The solution features a built-in order management and multiple payment gateways.</description>
+  <icon path="images/logo.png"/>
+    <screenshot path="images/screenshot_1.png">
+    <description>Public Screenshot</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<file>htdocs/license.txt</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <upgradable-from release="1" version="1.5.1"/>
+    <changelog>
+     <version release="1" version="1.5.6.1">
+         	<entry>New 1.5.6.1 version. MySQLi support + Minor patches.</entry>
+    </version>
+     <version release="1" version="1.5.6">
+    		<entry>New 1.5.6 version</entry>
+    	</version>
+    <version release="2" version="1.5.5.1">
+    		<entry>remove.sql correction</entry>
+    	</version>
+   		<version release="1" version="1.5.5.1">
+    		<entry>New 1.5.5.1 version</entry>
+    	</version>
+    	<version release="1" version="1.5.3">
+    		<entry>New version of the application with bug fixed and new features.</entry>
+    	</version>
+    	<version release="4" version="1.5.1">
+    		<entry>Non-UTF8 symbols removed from license file</entry>
+    	</version> 
+    	<version release="3" version="1.5.1">
+    		<entry>Existing caché file deleted</entry>
+    	</version> 
+       	<version release="2" version="1.5.1">
+    		<entry>.htaccess file deleted</entry>
+    	</version>   
+    	<version release="1" version="1.5.1">
+    		<entry>New version of the application with bug fixed and new features.</entry>
+    	</version>
+    </changelog>
+  	<entry-points>
+  		<entry>
+  			<path>/admin/</path>
+  			<label>Administrative interface</label>
+  		</entry>
+  		<entry>
+  			<path>/</path>
+  			<label>Site</label>
+  		</entry>
+  	</entry-points>
+    <installed-size>6279168</installed-size>
+    <categories>
+    	<category>Web/E-commerce</category>
+    </categories>
+	  <languages>
+		<language>en</language>
+	  </languages>
+    <settings>
+ <group>
+      <name>Administrator's preferences</name>
+    	<setting default-value="admin" id="admin_name" type="string">
+    		<name>User</name>
+			<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+   		</setting>
+    		<setting id="admin_password" type="password">
+        	<name>Password</name>
+        </setting>
+    	<setting id="admin_email" type="email">
+    	<name>Email</name>
+    	</setting>
+    </group>
+    </settings>
+    
+    <requirements>
+    	<php:register-globals xmlns:php="http://apstandard.com/ns/1/php">false</php:register-globals>
+    	<php:magic-quotes-gpc xmlns:php="http://apstandard.com/ns/1/php">false</php:magic-quotes-gpc>
+    	<php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+    	<php:extension xmlns:php="http://apstandard.com/ns/1/php">zlib</php:extension>
+    	<php:extension xmlns:php="http://apstandard.com/ns/1/php">gd</php:extension>
+    	<php:extension xmlns:php="http://apstandard.com/ns/1/php">mcrypt</php:extension>
+    	<php:file-uploads xmlns:php="http://apstandard.com/ns/1/php">true</php:file-uploads>
+    	<php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+    	<apache:htaccess xmlns:apache="http://apstandard.com/ns/1/apache"/>
+    	<db:db xmlns:db="http://apstandard.com/ns/1/db">
+    		<db:id>main</db:id>
+    		<db:default-name>opencart</db:default-name>
+    		<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+    		<db:server-type>mysql</db:server-type>
+    		<db:server-min-version>4.1</db:server-min-version>
+    	</db:db>
+    	<php:version min="5.2" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </requirements>
+    <mapping path="htdocs" url="/">
+		<php:handler xmlns:php="http://apstandard.com/ns/1/php">
+			<php:extension>php</php:extension>
+     	</php:handler>
+     	<mapping url="download">
+     		<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+     	</mapping>
+     	<mapping url="image">
+			<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			<mapping url="cache">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+			<mapping url="data">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+	 	</mapping>
+	 	<mapping url="system">
+			<mapping url="cache">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+			<mapping url="logs">
+				<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+			</mapping>
+    	</mapping>
+    </mapping>
+</application>

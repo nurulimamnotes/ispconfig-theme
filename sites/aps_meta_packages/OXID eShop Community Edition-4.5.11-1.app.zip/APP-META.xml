@@ -1,0 +1,1290 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>OXID eShop Community Edition</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>4.5.11</version>
+  <release>1</release>
+  <homepage>http://www.oxid-esales.com/</homepage>
+  <package-homepage>http://www.oxid-esales.com/</package-homepage>
+  <default-prefix>oxid</default-prefix>
+
+  <summary>Your ultimate Open Source Shop software. E-Commerce solution for growth and profitability.</summary>
+
+
+
+  <description xml:lang="en-US">
+    OXID eShop Community Edition is a proven and flexible open source software. Thousands of
+    online businesses worldwide use its extensive functionality to create optimum eCommerce
+    solutions. With its modular, state-of-the-art and standards-based architecture, customization
+    is easy.
+  </description>
+
+  <description xml:lang="de-DE">
+    OXID eShop Community Edition ist eine bewährte und flexible Open Source Software mit umfangreicher
+    Funktionalität. Tausende von Kunden aus aller Welt betreiben bereits erfolgreich Online-Shops basierend
+    auf unserer Technologie. Durch seine modulare, moderne und auf aktuellen Standards basierende Architektur
+    kann er einfachst angepasst, erweitert und auf individuelle Anforderungen zugeschnitten werden.
+  </description>
+
+
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot.png">
+    <description xml:lang="en-US">Screenshot</description>
+    <description xml:lang="de-DE">Screenshot</description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text xml:lang="en-US">
+      <name>GPL</name>
+      <file>scripts/license_en.txt</file>
+    </text>
+    <text xml:lang="de-DE">
+      <name>GPL</name>
+      <file>scripts/license_de.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="4.5.11" release="1">
+      <entry>Fixed Bugs
+ No fixes in this revision.
+You may find the complete list of bugfixes in our bugtracking system: https://bugs.oxid-esales.com/changelog_page.php.
+
+New Features
+ No new features in this revision.
+
+Important information for developers
+ No special notes for this revision.</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label xml:lang="en-US">OXID eShop</label>
+      <label xml:lang="de-DE">OXID eShop</label>
+    </entry>
+    <entry>
+      <path>/admin</path>
+      <label xml:lang="en-US">OXID eShop Admin</label>
+      <label xml:lang="de-DE">OXID eShop Admin</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>72506053</installed-size>
+
+  <categories>
+      <category>Web/E-commerce</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+    <language>de</language>
+  </languages>
+
+  <settings>
+    <group>
+
+      <name xml:lang="en-US">Installation preferences</name>
+      <name xml:lang="de-DE">Installationseinstellungen</name>
+
+      <setting id="admin_user_name" type="email" installation-only="true">
+        <name xml:lang="en-US">Administrator e-mail (used as login name)</name>
+        <name xml:lang="de-DE">Administrator E-Mail (wird als Benutzername verwendet)</name>
+        <error-message xml:lang="en-US">Please enter admin user name.</error-message>
+        <error-message xml:lang="de-DE">Bitte geben Sie den Admin Benutzernamen ein.</error-message>
+      </setting>
+
+      <setting id="admin_user_password" type="password" min-length="6" max-length="128" installation-only="true">
+        <name xml:lang="en-US">Administrator password (min. 6 chars)</name>
+        <name xml:lang="de-DE">Administrator Passwort (mindestens 6 Zeichen)</name>
+        <error-message xml:lang="en-US">Please enter administrator password.</error-message>
+        <error-message xml:lang="de-DE">Bitte geben Sie den Administrator Benutzerpasswort ein.</error-message>
+      </setting>
+
+      <setting id="location_lang" type="enum" installation-only="true">
+        <name xml:lang="en-US">Please choose your country</name>
+        <name xml:lang="de-DE">Ihr Standort</name>
+        <choice id="en">
+            <name xml:lang="en-US">International</name>
+            <name xml:lang="de-DE">International</name>
+        </choice>
+        <choice id="de">
+          <name xml:lang="en-US">Germany, Austria, Switzerland</name>
+          <name xml:lang="de-DE">Deutschland, Österreich, Schweiz</name>
+        </choice>
+      </setting>
+
+      <setting id="country_lang" type="enum" installation-only="true">
+        <name xml:lang="en-US">Main delivery country</name>
+        <name xml:lang="de-DE">Haupt Lieferland</name>
+        <choice id="a7c40f6320aeb2ec2.72885259">
+          <name xml:lang="en-US">Austria</name>
+          <name xml:lang="de-DE">Österreich</name>
+        </choice>
+        <choice id="a7c40f63272a57296.32117580">
+          <name xml:lang="en-US">France</name>
+          <name xml:lang="de-DE">Frankreich</name>
+        </choice>
+        <choice id="a7c40f631fc920687.20179984">
+          <name xml:lang="en-US">Germany</name>
+          <name xml:lang="de-DE">Deutschland</name>
+        </choice>
+        <choice id="a7c40f632a0804ab5.18804076">
+          <name xml:lang="en-US">United Kingdom</name>
+          <name xml:lang="de-DE">Vereinigtes Königreich</name>
+        </choice>
+        <choice id="8f241f11096877ac0.98748826">
+          <name xml:lang="en-US">United States</name>
+          <name xml:lang="de-DE">Vereinigte Staaten von Amerika</name>
+        </choice>
+        <choice id="a7c40f6321c6f6109.43859248">
+          <name xml:lang="en-US">Switzerland</name>
+          <name xml:lang="de-DE">Schweiz</name>
+        </choice>
+        <choice id="8f241f11095306451.36998225">
+          <name xml:lang="en-US">Afghanistan</name>
+          <name xml:lang="de-DE">Afghanistan</name>
+        </choice>
+        <choice id="8f241f110953265a5.25286134">
+          <name xml:lang="en-US">Albania</name>
+          <name xml:lang="de-DE">Albanien</name>
+        </choice>
+        <choice id="8f241f1109533b943.50287900">
+          <name xml:lang="en-US">Algeria</name>
+          <name xml:lang="de-DE">Algerien</name>
+        </choice>
+        <choice id="8f241f1109534f8c7.80349931">
+          <name xml:lang="en-US">American Samoa</name>
+          <name xml:lang="de-DE">Amerikanisch Samoa</name>
+        </choice>
+        <choice id="8f241f11095363464.89657222">
+          <name xml:lang="en-US">Andorra</name>
+          <name xml:lang="de-DE">Andorra</name>
+        </choice>
+        <choice id="8f241f11095377d33.28678901">
+          <name xml:lang="en-US">Angola</name>
+          <name xml:lang="de-DE">Angola</name>
+        </choice>
+        <choice id="8f241f11095392e41.74397491">
+          <name xml:lang="en-US">Anguilla</name>
+          <name xml:lang="de-DE">Anguilla</name>
+        </choice>
+        <choice id="8f241f110953a8d10.29474848">
+          <name xml:lang="en-US">Antarctica</name>
+          <name xml:lang="de-DE">Antarktis</name>
+        </choice>
+        <choice id="8f241f110953be8f2.56248134">
+          <name xml:lang="en-US">Antigua and Barbuda</name>
+          <name xml:lang="de-DE">Antigua und Barbuda</name>
+        </choice>
+        <choice id="8f241f110953d2fb0.54260547">
+          <name xml:lang="en-US">Argentina</name>
+          <name xml:lang="de-DE">Argentinien</name>
+        </choice>
+        <choice id="8f241f110953e7993.88180360">
+          <name xml:lang="en-US">Armenia</name>
+          <name xml:lang="de-DE">Armenien</name>
+        </choice>
+        <choice id="8f241f110953facc6.31621036">
+          <name xml:lang="en-US">Aruba</name>
+          <name xml:lang="de-DE">Aruba</name>
+        </choice>
+        <choice id="8f241f11095410f38.37165361">
+          <name xml:lang="en-US">Australia</name>
+          <name xml:lang="de-DE">Australien</name>
+        </choice>
+        <choice id="8f241f1109543cf47.17877015">
+          <name xml:lang="en-US">Azerbaijan</name>
+          <name xml:lang="de-DE">Aserbaidschan</name>
+        </choice>
+        <choice id="8f241f11095451379.72078871">
+          <name xml:lang="en-US">Bahamas</name>
+          <name xml:lang="de-DE">Bahamas</name>
+        </choice>
+        <choice id="8f241f110954662e3.27051654">
+          <name xml:lang="en-US">Bahrain</name>
+          <name xml:lang="de-DE">Bahrain</name>
+        </choice>
+        <choice id="8f241f1109547ae49.60154431">
+          <name xml:lang="en-US">Bangladesh</name>
+          <name xml:lang="de-DE">Bangladesch</name>
+        </choice>
+        <choice id="8f241f11095497083.21181725">
+          <name xml:lang="en-US">Barbados</name>
+          <name xml:lang="de-DE">Barbados</name>
+        </choice>
+        <choice id="8f241f110954ac5b9.63105203">
+          <name xml:lang="en-US">Belarus</name>
+          <name xml:lang="de-DE">Weißrussland</name>
+        </choice>
+        <choice id="a7c40f632e04633c9.47194042">
+          <name xml:lang="en-US">Belgium</name>
+          <name xml:lang="de-DE">Belgien</name>
+        </choice>
+        <choice id="8f241f110954d3621.45362515">
+          <name xml:lang="en-US">Belize</name>
+          <name xml:lang="de-DE">Belize</name>
+        </choice>
+        <choice id="8f241f110954ea065.41455848">
+          <name xml:lang="en-US">Benin</name>
+          <name xml:lang="de-DE">Benin</name>
+        </choice>
+        <choice id="8f241f110954fee13.50011948">
+          <name xml:lang="en-US">Bermuda</name>
+          <name xml:lang="de-DE">Bermuda</name>
+        </choice>
+        <choice id="8f241f11095513ca0.75349731">
+          <name xml:lang="en-US">Bhutan</name>
+          <name xml:lang="de-DE">Bhutan</name>
+        </choice>
+        <choice id="8f241f1109552aee2.91004965">
+          <name xml:lang="en-US">Bolivia</name>
+          <name xml:lang="de-DE">Bolivien</name>
+        </choice>
+        <choice id="8f241f1109553f902.06960438">
+          <name xml:lang="en-US">Bosnia and Herzegovina</name>
+          <name xml:lang="de-DE">Bosnien und Herzegowina</name>
+        </choice>
+        <choice id="8f241f11095554834.54199483">
+          <name xml:lang="en-US">Botswana</name>
+          <name xml:lang="de-DE">Botsuana</name>
+        </choice>
+        <choice id="8f241f1109556dd57.84292282">
+          <name xml:lang="en-US">Bouvet Island</name>
+          <name xml:lang="de-DE">Bouvetinsel</name>
+        </choice>
+        <choice id="8f241f11095592407.89986143">
+          <name xml:lang="en-US">Brazil</name>
+          <name xml:lang="de-DE">Brasilien</name>
+        </choice>
+        <choice id="8f241f110955a7644.68859180">
+          <name xml:lang="en-US">British Indian Ocean Territory</name>
+          <name xml:lang="de-DE">Britisches Territorium im Indischen Ozean</name>
+        </choice>
+        <choice id="8f241f110955bde61.63256042">
+          <name xml:lang="en-US">Brunei Darussalam</name>
+          <name xml:lang="de-DE">Brunei Darussalam</name>
+        </choice>
+        <choice id="8f241f110955d3260.55487539">
+          <name xml:lang="en-US">Bulgaria</name>
+          <name xml:lang="de-DE">Bulgarien</name>
+        </choice>
+        <choice id="8f241f110955ea7c8.36762654">
+          <name xml:lang="en-US">Burkina Faso</name>
+          <name xml:lang="de-DE">Burkina Faso</name>
+        </choice>
+        <choice id="8f241f110956004d5.11534182">
+          <name xml:lang="en-US">Burundi</name>
+          <name xml:lang="de-DE">Burundi</name>
+        </choice>
+        <choice id="8f241f110956175f9.81682035">
+          <name xml:lang="en-US">Cambodia</name>
+          <name xml:lang="de-DE">Kambodscha</name>
+        </choice>
+        <choice id="8f241f11095632828.20263574">
+          <name xml:lang="en-US">Cameroon</name>
+          <name xml:lang="de-DE">Kamerun</name>
+        </choice>
+        <choice id="8f241f11095649d18.02676059">
+          <name xml:lang="en-US">Canada</name>
+          <name xml:lang="de-DE">Kanada</name>
+        </choice>
+        <choice id="8f241f1109565e671.48876354">
+          <name xml:lang="en-US">Cape Verde</name>
+          <name xml:lang="de-DE">Kap Verde</name>
+        </choice>
+        <choice id="8f241f11095673248.50405852">
+          <name xml:lang="en-US">Cayman Islands</name>
+          <name xml:lang="de-DE">Kaimaninseln</name>
+        </choice>
+        <choice id="8f241f1109568a509.03566030">
+          <name xml:lang="en-US">Central African Republic</name>
+          <name xml:lang="de-DE">Zentralafrikanische Republik</name>
+        </choice>
+        <choice id="8f241f1109569d4c2.42800039">
+          <name xml:lang="en-US">Chad</name>
+          <name xml:lang="de-DE">Tschad</name>
+        </choice>
+        <choice id="8f241f110956b3ea7.11168270">
+          <name xml:lang="en-US">Chile</name>
+          <name xml:lang="de-DE">Chile</name>
+        </choice>
+        <choice id="8f241f110956c8860.37981845">
+          <name xml:lang="en-US">China</name>
+          <name xml:lang="de-DE">China</name>
+        </choice>
+        <choice id="8f241f110956df6b2.52283428">
+          <name xml:lang="en-US">Christmas Island</name>
+          <name xml:lang="de-DE">Weihnachtsinsel</name>
+        </choice>
+        <choice id="8f241f110956f54b4.26327849">
+          <name xml:lang="en-US">Cocos (Keeling) Islands</name>
+          <name xml:lang="de-DE">Kokosinseln (Keelinginseln)</name>
+        </choice>
+        <choice id="8f241f1109570a1e3.69772638">
+          <name xml:lang="en-US">Colombia</name>
+          <name xml:lang="de-DE">Kolumbien</name>
+        </choice>
+        <choice id="8f241f1109571f018.46251535">
+          <name xml:lang="en-US">Comoros</name>
+          <name xml:lang="de-DE">Komoren</name>
+        </choice>
+        <choice id="8f241f11095732184.72771986">
+          <name xml:lang="en-US">Congo</name>
+          <name xml:lang="de-DE">Kongo</name>
+        </choice>
+        <choice id="8f241f1109575d708.20084199">
+          <name xml:lang="en-US">Congo, The Democratic Republic Of The</name>
+          <name xml:lang="de-DE">Kongo, Dem. Rep.</name>
+        </choice>
+        <choice id="8f241f11095746a92.94878441">
+          <name xml:lang="en-US">Cook Islands</name>
+          <name xml:lang="de-DE">Cookinseln</name>
+        </choice>
+        <choice id="8f241f1109575d708.20084150">
+          <name xml:lang="en-US">Costa Rica</name>
+          <name xml:lang="de-DE">Costa Rica</name>
+        </choice>
+        <choice id="8f241f11095771f76.87904122">
+          <name xml:lang="en-US">Cote d'Ivoire</name>
+          <name xml:lang="de-DE">Cote d´Ivoire</name>
+        </choice>
+        <choice id="8f241f11095789a04.65154246">
+          <name xml:lang="en-US">Croatia</name>
+          <name xml:lang="de-DE">Kroatien</name>
+        </choice>
+        <choice id="8f241f1109579ef49.91803242">
+          <name xml:lang="en-US">Cuba</name>
+          <name xml:lang="de-DE">Kuba</name>
+        </choice>
+        <choice id="8f241f110957b6896.52725150">
+          <name xml:lang="en-US">Cyprus</name>
+          <name xml:lang="de-DE">Zypern</name>
+        </choice>
+        <choice id="8f241f110957cb457.97820918">
+          <name xml:lang="en-US">Czech Republic</name>
+          <name xml:lang="de-DE">Tschechische Republik</name>
+        </choice>
+        <choice id="8f241f110957e6ef8.56458418">
+          <name xml:lang="en-US">Denmark</name>
+          <name xml:lang="de-DE">Dänemark</name>
+        </choice>
+        <choice id="8f241f110957fd356.02918645">
+          <name xml:lang="en-US">Djibouti</name>
+          <name xml:lang="de-DE">Dschibuti</name>
+        </choice>
+        <choice id="8f241f11095811ea5.84717844">
+          <name xml:lang="en-US">Dominica</name>
+          <name xml:lang="de-DE">Dominica</name>
+        </choice>
+        <choice id="8f241f11095825bf2.61063355">
+          <name xml:lang="en-US">Dominican Republic</name>
+          <name xml:lang="de-DE">Dominikanische Republik</name>
+        </choice>
+        <choice id="8f241f1109584d512.06663789">
+          <name xml:lang="en-US">Ecuador</name>
+          <name xml:lang="de-DE">Ecuador</name>
+        </choice>
+        <choice id="8f241f11095861fb7.55278256">
+          <name xml:lang="en-US">Egypt</name>
+          <name xml:lang="de-DE">Ägypten</name>
+        </choice>
+        <choice id="8f241f110958736a9.06061237">
+          <name xml:lang="en-US">El Salvador</name>
+          <name xml:lang="de-DE">El Salvador</name>
+        </choice>
+        <choice id="8f241f1109588d077.74284490">
+          <name xml:lang="en-US">Equatorial Guinea</name>
+          <name xml:lang="de-DE">Äquatorialguinea</name>
+        </choice>
+        <choice id="8f241f110958a2216.38324531">
+          <name xml:lang="en-US">Eritrea</name>
+          <name xml:lang="de-DE">Eritrea</name>
+        </choice>
+        <choice id="8f241f110958b69e4.93886171">
+          <name xml:lang="en-US">Estonia</name>
+          <name xml:lang="de-DE">Estland</name>
+        </choice>
+        <choice id="8f241f110958caf67.08982313">
+          <name xml:lang="en-US">Ethiopia</name>
+          <name xml:lang="de-DE">Äthiopien</name>
+        </choice>
+        <choice id="8f241f110958e2cc3.90770249">
+          <name xml:lang="en-US">Falkland Islands (Malvinas)</name>
+          <name xml:lang="de-DE">Falklandinseln (Malwinen)</name>
+        </choice>
+        <choice id="8f241f110958f7ba4.96908065">
+          <name xml:lang="en-US">Faroe Islands</name>
+          <name xml:lang="de-DE">Färöer</name>
+        </choice>
+        <choice id="8f241f1109590d226.07938729">
+          <name xml:lang="en-US">Fiji</name>
+          <name xml:lang="de-DE">Fidschi</name>
+        </choice>
+        <choice id="a7c40f63293c19d65.37472814">
+          <name xml:lang="en-US">Finland</name>
+          <name xml:lang="de-DE">Finnland</name>
+        </choice>
+        <choice id="8f241f1109594fcb1.79441780">
+          <name xml:lang="en-US">French Guiana</name>
+          <name xml:lang="de-DE">Französisch Guiana</name>
+        </choice>
+        <choice id="8f241f110959636f5.71476354">
+          <name xml:lang="en-US">French Polynesia</name>
+          <name xml:lang="de-DE">Französisch-Polynesien</name>
+        </choice>
+        <choice id="8f241f110959784a3.34264829">
+          <name xml:lang="en-US">French Southern Territories</name>
+          <name xml:lang="de-DE">Französische Südgebiete</name>
+        </choice>
+        <choice id="8f241f11095994cb6.59353392">
+          <name xml:lang="en-US">Gabon</name>
+          <name xml:lang="de-DE">Gabun</name>
+        </choice>
+        <choice id="8f241f110959ace77.17379319">
+          <name xml:lang="en-US">Gambia</name>
+          <name xml:lang="de-DE">Gambia</name>
+        </choice>
+        <choice id="8f241f110959c2341.01830199">
+          <name xml:lang="en-US">Georgia</name>
+          <name xml:lang="de-DE">Georgien</name>
+        </choice>
+        <choice id="8f241f110959e96b3.05752152">
+          <name xml:lang="en-US">Ghana</name>
+          <name xml:lang="de-DE">Ghana</name>
+        </choice>
+        <choice id="8f241f110959fdde0.68919405">
+          <name xml:lang="en-US">Gibraltar</name>
+          <name xml:lang="de-DE">Gibraltar</name>
+        </choice>
+        <choice id="a7c40f633114e8fc6.25257477">
+          <name xml:lang="en-US">Greece</name>
+          <name xml:lang="de-DE">Griechenland</name>
+        </choice>
+        <choice id="8f241f11095a29f47.04102343">
+          <name xml:lang="en-US">Greenland</name>
+          <name xml:lang="de-DE">Grönland</name>
+        </choice>
+        <choice id="8f241f11095a3f195.88886789">
+          <name xml:lang="en-US">Grenada</name>
+          <name xml:lang="de-DE">Grenada</name>
+        </choice>
+        <choice id="8f241f11095a52578.45413493">
+          <name xml:lang="en-US">Guadeloupe</name>
+          <name xml:lang="de-DE">Guadeloupe</name>
+        </choice>
+        <choice id="8f241f11095a717b3.68126681">
+          <name xml:lang="en-US">Guam</name>
+          <name xml:lang="de-DE">Guam</name>
+        </choice>
+        <choice id="8f241f11095a870a5.42235635">
+          <name xml:lang="en-US">Guatemala</name>
+          <name xml:lang="de-DE">Guatemala</name>
+        </choice>
+        <choice id="56d308a822c18e106.3ba59099">
+          <name xml:lang="en-US">Guernsey</name>
+          <name xml:lang="de-DE">Guernsey</name>
+        </choice>
+        <choice id="8f241f11095a9bf82.19989557">
+          <name xml:lang="en-US">Guinea</name>
+          <name xml:lang="de-DE">Guinea</name>
+        </choice>
+        <choice id="8f241f11095ab2b56.83049280">
+          <name xml:lang="en-US">Guinea-Bissau</name>
+          <name xml:lang="de-DE">Guinea-Bissau</name>
+        </choice>
+        <choice id="8f241f11095ac9d30.56640429">
+          <name xml:lang="en-US">Guyana</name>
+          <name xml:lang="de-DE">Guyana</name>
+        </choice>
+        <choice id="8f241f11095aebb06.34405179">
+          <name xml:lang="en-US">Haiti</name>
+          <name xml:lang="de-DE">Haiti</name>
+        </choice>
+        <choice id="8f241f11095aff2c3.98054755">
+          <name xml:lang="en-US">Heard Island And Mcdonald Islands</name>
+          <name xml:lang="de-DE">Heard Insel und McDonald Inseln</name>
+        </choice>
+        <choice id="8f241f110968ebc30.63792746">
+          <name xml:lang="en-US">Holy See (Vatican City State)</name>
+          <name xml:lang="de-DE">Heiliger Stuhl (Vatikanstadt)</name>
+        </choice>
+        <choice id="8f241f11095b13f57.56022305">
+          <name xml:lang="en-US">Honduras</name>
+          <name xml:lang="de-DE">Honduras</name>
+        </choice>
+        <choice id="8f241f11095b29021.49657118">
+          <name xml:lang="en-US">Hong Kong</name>
+          <name xml:lang="de-DE">Hong Kong</name>
+        </choice>
+        <choice id="8f241f11095b3e016.98213173">
+          <name xml:lang="en-US">Hungary</name>
+          <name xml:lang="de-DE">Ungarn</name>
+        </choice>
+        <choice id="8f241f11095b55846.26192602">
+          <name xml:lang="en-US">Iceland</name>
+          <name xml:lang="de-DE">Island</name>
+        </choice>
+        <choice id="8f241f11095b6bb86.01364904">
+          <name xml:lang="en-US">India</name>
+          <name xml:lang="de-DE">Indien</name>
+        </choice>
+        <choice id="8f241f11095b80526.59927631">
+          <name xml:lang="en-US">Indonesia</name>
+          <name xml:lang="de-DE">Indonesien</name>
+        </choice>
+        <choice id="8f241f11095b94476.05195832">
+          <name xml:lang="en-US">Iran</name>
+          <name xml:lang="de-DE">Iran</name>
+        </choice>
+        <choice id="8f241f11095bad5b2.42645724">
+          <name xml:lang="en-US">Iraq</name>
+          <name xml:lang="de-DE">Irak</name>
+        </choice>
+        <choice id="a7c40f632be4237c2.48517912">
+          <name xml:lang="en-US">Ireland</name>
+          <name xml:lang="de-DE">Irland</name>
+        </choice>
+        <choice id="8f241f11096982354.73448999">
+          <name xml:lang="en-US">Isle Of Man</name>
+          <name xml:lang="de-DE">Isle of Man</name>
+        </choice>
+        <choice id="8f241f11095bd65e1.59459683">
+          <name xml:lang="en-US">Israel</name>
+          <name xml:lang="de-DE">Israel</name>
+        </choice>
+        <choice id="a7c40f6323c4bfb36.59919433">
+          <name xml:lang="en-US">Italy</name>
+          <name xml:lang="de-DE">Italien</name>
+        </choice>
+        <choice id="8f241f11095bfe834.63390185">
+          <name xml:lang="en-US">Jamaica</name>
+          <name xml:lang="de-DE">Jamaika</name>
+        </choice>
+        <choice id="8f241f11095c11d43.73419747">
+          <name xml:lang="en-US">Japan</name>
+          <name xml:lang="de-DE">Japan</name>
+        </choice>
+        <choice id="8f241f11096944468.61956599">
+          <name xml:lang="en-US">Jersey</name>
+          <name xml:lang="de-DE">Jersey</name>
+        </choice>
+        <choice id="8f241f11095c2b304.75906962">
+          <name xml:lang="en-US">Jordan</name>
+          <name xml:lang="de-DE">Jordanien</name>
+        </choice>
+        <choice id="8f241f11095c3e2d1.36714463">
+          <name xml:lang="en-US">Kazakhstan</name>
+          <name xml:lang="de-DE">Kasachstan</name>
+        </choice>
+        <choice id="8f241f11095c5b8e8.66333679">
+          <name xml:lang="en-US">Kenya</name>
+          <name xml:lang="de-DE">Kenia</name>
+        </choice>
+        <choice id="8f241f11095c6e184.21450618">
+          <name xml:lang="en-US">Kiribati</name>
+          <name xml:lang="de-DE">Kiribati</name>
+        </choice>
+        <choice id="8f241f11095cb1546.46652174">
+          <name xml:lang="en-US">Kuwait</name>
+          <name xml:lang="de-DE">Kuwait</name>
+        </choice>
+        <choice id="8f241f11095cc7ef5.28043767">
+          <name xml:lang="en-US">Kyrgyzstan</name>
+          <name xml:lang="de-DE">Kirgisistan</name>
+        </choice>
+        <choice id="8f241f11095cdccd5.96388808">
+          <name xml:lang="en-US">Laos</name>
+          <name xml:lang="de-DE">Laos</name>
+        </choice>
+        <choice id="8f241f11095cf2ea6.73925511">
+          <name xml:lang="en-US">Latvia</name>
+          <name xml:lang="de-DE">Lettland</name>
+        </choice>
+        <choice id="8f241f11095d07d87.58986129">
+          <name xml:lang="en-US">Lebanon</name>
+          <name xml:lang="de-DE">Libanon</name>
+        </choice>
+        <choice id="8f241f11095d1c9b2.21548132">
+          <name xml:lang="en-US">Lesotho</name>
+          <name xml:lang="de-DE">Lesotho</name>
+        </choice>
+        <choice id="8f241f11095d2fd28.91858908">
+          <name xml:lang="en-US">Liberia</name>
+          <name xml:lang="de-DE">Liberia</name>
+        </choice>
+        <choice id="8f241f11095d46188.64679605">
+          <name xml:lang="en-US">Libya</name>
+          <name xml:lang="de-DE">Libyen</name>
+        </choice>
+        <choice id="a7c40f6322d842ae3.83331920">
+          <name xml:lang="en-US">Liechtenstein</name>
+          <name xml:lang="de-DE">Liechtenstein</name>
+        </choice>
+        <choice id="8f241f11095d6ffa8.86593236">
+          <name xml:lang="en-US">Lithuania</name>
+          <name xml:lang="de-DE">Litauen</name>
+        </choice>
+        <choice id="a7c40f63264309e05.58576680">
+          <name xml:lang="en-US">Luxembourg</name>
+          <name xml:lang="de-DE">Luxemburg</name>
+        </choice>
+        <choice id="8f241f11095d9c1b2.13577033">
+          <name xml:lang="en-US">Macao</name>
+          <name xml:lang="de-DE">Macao</name>
+        </choice>
+        <choice id="8f241f11095db2291.58912887">
+          <name xml:lang="en-US">Macedonia</name>
+          <name xml:lang="de-DE">Mazedonien</name>
+        </choice>
+        <choice id="8f241f11095dccf17.06266806">
+          <name xml:lang="en-US">Madagascar</name>
+          <name xml:lang="de-DE">Madagaskar</name>
+        </choice>
+        <choice id="8f241f11095de2119.60795833">
+          <name xml:lang="en-US">Malawi</name>
+          <name xml:lang="de-DE">Malawi</name>
+        </choice>
+        <choice id="8f241f11095df78a8.44559506">
+          <name xml:lang="en-US">Malaysia</name>
+          <name xml:lang="de-DE">Malaysia</name>
+        </choice>
+        <choice id="8f241f11095e0c6c9.43746477">
+          <name xml:lang="en-US">Maldives</name>
+          <name xml:lang="de-DE">Malediven</name>
+        </choice>
+        <choice id="8f241f11095e24006.17141715">
+          <name xml:lang="en-US">Mali</name>
+          <name xml:lang="de-DE">Mali</name>
+        </choice>
+        <choice id="8f241f11095e36eb3.69050509">
+          <name xml:lang="en-US">Malta</name>
+          <name xml:lang="de-DE">Malta</name>
+        </choice>
+        <choice id="8f241f11095e4e338.26817244">
+          <name xml:lang="en-US">Marshall Islands</name>
+          <name xml:lang="de-DE">Marshallinseln</name>
+        </choice>
+        <choice id="8f241f11095e631e1.29476484">
+          <name xml:lang="en-US">Martinique</name>
+          <name xml:lang="de-DE">Martinique</name>
+        </choice>
+        <choice id="8f241f11095e7bff9.09518271">
+          <name xml:lang="en-US">Mauritania</name>
+          <name xml:lang="de-DE">Mauretanien</name>
+        </choice>
+        <choice id="8f241f11095e90a81.01156393">
+          <name xml:lang="en-US">Mauritius</name>
+          <name xml:lang="de-DE">Mauritius</name>
+        </choice>
+        <choice id="8f241f11095ea6249.81474246">
+          <name xml:lang="en-US">Mayotte</name>
+          <name xml:lang="de-DE">Mayotte</name>
+        </choice>
+        <choice id="8f241f11095ebf3a6.86388577">
+          <name xml:lang="en-US">Mexico</name>
+          <name xml:lang="de-DE">Mexiko</name>
+        </choice>
+        <choice id="8f241f11095ed4902.49276197">
+          <name xml:lang="en-US">Micronesia, Federated States Of</name>
+          <name xml:lang="de-DE">Mikronesien, Föderierte Staaten von</name>
+        </choice>
+        <choice id="8f241f11095ee9923.85175653">
+          <name xml:lang="en-US">Moldova</name>
+          <name xml:lang="de-DE">Moldau</name>
+        </choice>
+        <choice id="8f241f11095f00d65.30318330">
+          <name xml:lang="en-US">Monaco</name>
+          <name xml:lang="de-DE">Monaco</name>
+        </choice>
+        <choice id="8f241f11095f160c9.41059441">
+          <name xml:lang="en-US">Mongolia</name>
+          <name xml:lang="de-DE">Mongolei</name>
+        </choice>
+        <choice id="56d308a822c18e106.3ba59048">
+          <name xml:lang="en-US">Montenegro</name>
+          <name xml:lang="de-DE">Montenegro</name>
+        </choice>
+        <choice id="8f241f11095f314f5.05830324">
+          <name xml:lang="en-US">Montserrat</name>
+          <name xml:lang="de-DE">Montserrat</name>
+        </choice>
+        <choice id="8f241f11096006828.49285591">
+          <name xml:lang="en-US">Morocco</name>
+          <name xml:lang="de-DE">Marokko</name>
+        </choice>
+        <choice id="8f241f1109601b419.55269691">
+          <name xml:lang="en-US">Mozambique</name>
+          <name xml:lang="de-DE">Mosambik</name>
+        </choice>
+        <choice id="8f241f11096030af5.65449043">
+          <name xml:lang="en-US">Myanmar</name>
+          <name xml:lang="de-DE">Myanmar</name>
+        </choice>
+        <choice id="8f241f11096046575.31382060">
+          <name xml:lang="en-US">Namibia</name>
+          <name xml:lang="de-DE">Namibia</name>
+        </choice>
+        <choice id="8f241f1109605b1f4.20574895">
+          <name xml:lang="en-US">Nauru</name>
+          <name xml:lang="de-DE">Nauru</name>
+        </choice>
+        <choice id="8f241f1109607a9e7.03486450">
+          <name xml:lang="en-US">Nepal</name>
+          <name xml:lang="de-DE">Nepal</name>
+        </choice>
+        <choice id="a7c40f632cdd63c52.64272623">
+          <name xml:lang="en-US">Netherlands</name>
+          <name xml:lang="de-DE">Niederlande</name>
+        </choice>
+        <choice id="8f241f110960aeb64.09757010">
+          <name xml:lang="en-US">Netherlands Antilles</name>
+          <name xml:lang="de-DE">Niederländische Antillen</name>
+        </choice>
+        <choice id="8f241f110960c3e97.21901471">
+          <name xml:lang="en-US">New Caledonia</name>
+          <name xml:lang="de-DE">Neukaledonien</name>
+        </choice>
+        <choice id="8f241f110960d8e58.96466103">
+          <name xml:lang="en-US">New Zealand</name>
+          <name xml:lang="de-DE">Neuseeland</name>
+        </choice>
+        <choice id="8f241f110960ec345.71805056">
+          <name xml:lang="en-US">Nicaragua</name>
+          <name xml:lang="de-DE">Nicaragua</name>
+        </choice>
+        <choice id="8f241f11096101a79.70513227">
+          <name xml:lang="en-US">Niger</name>
+          <name xml:lang="de-DE">Niger</name>
+        </choice>
+        <choice id="8f241f11096116744.92008092">
+          <name xml:lang="en-US">Nigeria</name>
+          <name xml:lang="de-DE">Nigeria</name>
+        </choice>
+        <choice id="8f241f1109612dc68.63806992">
+          <name xml:lang="en-US">Niue</name>
+          <name xml:lang="de-DE">Niue</name>
+        </choice>
+        <choice id="8f241f110961442c2.82573898">
+          <name xml:lang="en-US">Norfolk Island</name>
+          <name xml:lang="de-DE">Norfolkinsel</name>
+        </choice>
+        <choice id="8f241f11095c87284.37982544">
+          <name xml:lang="en-US">North Korea</name>
+          <name xml:lang="de-DE">Nordkorea</name>
+        </choice>
+        <choice id="8f241f11096162678.71164081">
+          <name xml:lang="en-US">Northern Mariana Islands</name>
+          <name xml:lang="de-DE">Nördliche Marianen</name>
+        </choice>
+        <choice id="8f241f11096176795.61257067">
+          <name xml:lang="en-US">Norway</name>
+          <name xml:lang="de-DE">Norwegen</name>
+        </choice>
+        <choice id="8f241f1109618d825.87661926">
+          <name xml:lang="en-US">Oman</name>
+          <name xml:lang="de-DE">Oman</name>
+        </choice>
+        <choice id="2db455824e4a19cc7.14731328">
+          <name xml:lang="en-US">Other country</name>
+          <name xml:lang="de-DE">Anderes Land</name>
+        </choice>
+        <choice id="8f241f110961a2401.59039740">
+          <name xml:lang="en-US">Pakistan</name>
+          <name xml:lang="de-DE">Pakistan</name>
+        </choice>
+        <choice id="8f241f110961b7729.14290490">
+          <name xml:lang="en-US">Palau</name>
+          <name xml:lang="de-DE">Palau</name>
+        </choice>
+        <choice id="8f241f110968ebc30.63792799">
+          <name xml:lang="en-US">Palestinian Territory, Occupied</name>
+          <name xml:lang="de-DE">Palästinische Gebiete</name>
+        </choice>
+        <choice id="8f241f110961cc384.18166560">
+          <name xml:lang="en-US">Panama</name>
+          <name xml:lang="de-DE">Panama</name>
+        </choice>
+        <choice id="8f241f110961e3538.78435307">
+          <name xml:lang="en-US">Papua New Guinea</name>
+          <name xml:lang="de-DE">Papua-Neuguinea</name>
+        </choice>
+        <choice id="8f241f110961f9d61.52794273">
+          <name xml:lang="en-US">Paraguay</name>
+          <name xml:lang="de-DE">Paraguay</name>
+        </choice>
+        <choice id="8f241f1109620b245.16261506">
+          <name xml:lang="en-US">Peru</name>
+          <name xml:lang="de-DE">Peru</name>
+        </choice>
+        <choice id="8f241f1109621faf8.40135556">
+          <name xml:lang="en-US">Philippines</name>
+          <name xml:lang="de-DE">Philippinen</name>
+        </choice>
+        <choice id="8f241f11096234d62.44125992">
+          <name xml:lang="en-US">Pitcairn</name>
+          <name xml:lang="de-DE">Pitcairn</name>
+        </choice>
+        <choice id="8f241f1109624d3f8.50953605">
+          <name xml:lang="en-US">Poland</name>
+          <name xml:lang="de-DE">Polen</name>
+        </choice>
+        <choice id="a7c40f632f65bd8e2.84963272">
+          <name xml:lang="en-US">Portugal</name>
+          <name xml:lang="de-DE">Portugal</name>
+        </choice>
+        <choice id="8f241f11096279a22.50582479">
+          <name xml:lang="en-US">Puerto Rico</name>
+          <name xml:lang="de-DE">Puerto Rico</name>
+        </choice>
+        <choice id="8f241f1109628f903.51478291">
+          <name xml:lang="en-US">Qatar</name>
+          <name xml:lang="de-DE">Katar</name>
+        </choice>
+        <choice id="8f241f110962a3ec5.65857240">
+          <name xml:lang="en-US">Réunion</name>
+          <name xml:lang="de-DE">Réunion</name>
+        </choice>
+        <choice id="8f241f110962c3007.60363573">
+          <name xml:lang="en-US">Romania</name>
+          <name xml:lang="de-DE">Rumänien</name>
+        </choice>
+        <choice id="8f241f110962e40e6.75062153">
+          <name xml:lang="en-US">Russian Federation</name>
+          <name xml:lang="de-DE">Russische Föderation</name>
+        </choice>
+        <choice id="8f241f110962f8615.93666560">
+          <name xml:lang="en-US">Rwanda</name>
+          <name xml:lang="de-DE">Ruanda</name>
+        </choice>
+        <choice id="8f241f110968a7cc9.56710199">
+          <name xml:lang="en-US">Saint Barthélemy</name>
+          <name xml:lang="de-DE">Saint-Barthélemy</name>
+        </choice>
+        <choice id="8f241f1109654dca4.99466434">
+          <name xml:lang="en-US">Saint Helena</name>
+          <name xml:lang="de-DE">Saint Helena</name>
+        </choice>
+        <choice id="8f241f110963177a7.49289900">
+          <name xml:lang="en-US">Saint Kitts and Nevis</name>
+          <name xml:lang="de-DE">St. Kitts und Nevis</name>
+        </choice>
+        <choice id="8f241f1109632fab4.68646740">
+          <name xml:lang="en-US">Saint Lucia</name>
+          <name xml:lang="de-DE">St. Lucia</name>
+        </choice>
+        <choice id="a7c40f632f65bd8e2.84963299">
+          <name xml:lang="en-US">Saint Martin</name>
+          <name xml:lang="de-DE">Saint-Martin</name>
+        </choice>
+        <choice id="8f241f1109656cde9.10816078">
+          <name xml:lang="en-US">Saint Pierre and Miquelon</name>
+          <name xml:lang="de-DE">Saint Pierre und Miquelon</name>
+        </choice>
+        <choice id="8f241f110963443c3.29598809">
+          <name xml:lang="en-US">Saint Vincent and The Grenadines</name>
+          <name xml:lang="de-DE">St. Vincent und die Grenadinen</name>
+        </choice>
+        <choice id="8f241f11096359986.06476221">
+          <name xml:lang="en-US">Samoa</name>
+          <name xml:lang="de-DE">Samoa</name>
+        </choice>
+        <choice id="8f241f11096375757.44126946">
+          <name xml:lang="en-US">San Marino</name>
+          <name xml:lang="de-DE">San Marino</name>
+        </choice>
+        <choice id="8f241f1109639b8c4.57484984">
+          <name xml:lang="en-US">Sao Tome and Principe</name>
+          <name xml:lang="de-DE">Sao Tome und Principe</name>
+        </choice>
+        <choice id="8f241f110963b9b20.41500709">
+          <name xml:lang="en-US">Saudi Arabia</name>
+          <name xml:lang="de-DE">Saudi-Arabien</name>
+        </choice>
+
+        <choice id="8f241f110963d9962.36307144">
+          <name xml:lang="en-US">Senegal</name>
+          <name xml:lang="de-DE">Senegal</name>
+        </choice>
+        <choice id="8f241f110963f98d8.68428379">
+          <name xml:lang="en-US">Serbia</name>
+          <name xml:lang="de-DE">Serbien</name>
+        </choice>
+        <choice id="8f241f11096418496.77253079">
+          <name xml:lang="en-US">Seychelles</name>
+          <name xml:lang="de-DE">Seychellen</name>
+        </choice>
+        <choice id="8f241f11096436968.69551351">
+          <name xml:lang="en-US">Sierra Leone</name>
+          <name xml:lang="de-DE">Sierra Leone</name>
+        </choice>
+        <choice id="8f241f11096456a48.79608805">
+          <name xml:lang="en-US">Singapore</name>
+          <name xml:lang="de-DE">Singapur</name>
+        </choice>
+        <choice id="8f241f1109647a265.29938154">
+          <name xml:lang="en-US">Slovakia</name>
+          <name xml:lang="de-DE">Slowakei</name>
+        </choice>
+        <choice id="8f241f11096497149.85116254">
+          <name xml:lang="en-US">Slovenia</name>
+          <name xml:lang="de-DE">Slowenien</name>
+        </choice>
+        <choice id="8f241f110964b7bf9.49501835">
+          <name xml:lang="en-US">Solomon Islands</name>
+          <name xml:lang="de-DE">Salomonen</name>
+        </choice>
+        <choice id="8f241f110964d5f29.11398308">
+          <name xml:lang="en-US">Somalia</name>
+          <name xml:lang="de-DE">Somalia</name>
+        </choice>
+        <choice id="8f241f110964f2623.74976876">
+          <name xml:lang="en-US">South Africa</name>
+          <name xml:lang="de-DE">Südafrika</name>
+        </choice>
+        <choice id="8f241f1109533b943.50287999">
+          <name xml:lang="en-US">South Georgia and The South Sandwich Islands</name>
+          <name xml:lang="de-DE">Südgeorgien und die Südlichen Sandwichinseln</name>
+        </choice>
+        <choice id="8f241f11095c9de64.01275726">
+          <name xml:lang="en-US">South Korea</name>
+          <name xml:lang="de-DE">Südkorea</name>
+        </choice>
+        <choice id="a7c40f633038cd578.22975442">
+          <name xml:lang="en-US">Spain</name>
+          <name xml:lang="de-DE">Spanien</name>
+        </choice>
+        <choice id="8f241f11096531330.03198083">
+          <name xml:lang="en-US">Sri Lanka</name>
+          <name xml:lang="de-DE">Sri Lanka</name>
+        </choice>
+        <choice id="8f241f1109658cbe5.08293991">
+          <name xml:lang="en-US">Sudan</name>
+          <name xml:lang="de-DE">Sudan</name>
+        </choice>
+        <choice id="8f241f110965c7347.75108681">
+          <name xml:lang="en-US">Suriname</name>
+          <name xml:lang="de-DE">Suriname</name>
+        </choice>
+        <choice id="8f241f110965eb7b7.26149742">
+          <name xml:lang="en-US">Svalbard and Jan Mayen</name>
+          <name xml:lang="de-DE">Svalbard und Jan Mayen</name>
+        </choice>
+        <choice id="8f241f1109660c113.62780718">
+          <name xml:lang="en-US">Swaziland</name>
+          <name xml:lang="de-DE">Swasiland</name>
+        </choice>
+        <choice id="a7c40f632848c5217.53322339">
+          <name xml:lang="en-US">Sweden</name>
+          <name xml:lang="de-DE">Schweden</name>
+        </choice>
+        <choice id="8f241f1109666b7f3.81435898">
+          <name xml:lang="en-US">Syria</name>
+          <name xml:lang="de-DE">Syrien</name>
+        </choice>
+        <choice id="8f241f11096687ec7.58824735">
+          <name xml:lang="en-US">Taiwan, Province of China</name>
+          <name xml:lang="de-DE">Republik China (Taiwan)</name>
+        </choice>
+        <choice id="8f241f110966a54d1.43798997">
+          <name xml:lang="en-US">Tajikistan</name>
+          <name xml:lang="de-DE">Tadschikistan</name>
+        </choice>
+        <choice id="8f241f110966c3a75.68297960">
+          <name xml:lang="en-US">Tanzania</name>
+          <name xml:lang="de-DE">Tansania</name>
+        </choice>
+        <choice id="8f241f11096707e08.60512709">
+          <name xml:lang="en-US">Thailand</name>
+          <name xml:lang="de-DE">Thailand</name>
+        </choice>
+        <choice id="8f241f11095839323.86755169">
+          <name xml:lang="en-US">Timor-Leste</name>
+          <name xml:lang="de-DE">Timor-Leste</name>
+        </choice>
+        <choice id="8f241f110967241e1.34925220">
+          <name xml:lang="en-US">Togo</name>
+          <name xml:lang="de-DE">Togo</name>
+        </choice>
+        <choice id="8f241f11096742565.72138875">
+          <name xml:lang="en-US">Tokelau</name>
+          <name xml:lang="de-DE">Tokelau</name>
+        </choice>
+        <choice id="8f241f11096762b31.03069244">
+          <name xml:lang="en-US">Tonga</name>
+          <name xml:lang="de-DE">Tonga</name>
+        </choice>
+        <choice id="8f241f1109677ed23.84886671">
+          <name xml:lang="en-US">Trinidad and Tobago</name>
+          <name xml:lang="de-DE">Trinidad und Tobago</name>
+        </choice>
+        <choice id="8f241f1109679d988.46004322">
+          <name xml:lang="en-US">Tunisia</name>
+          <name xml:lang="de-DE">Tunesien</name>
+        </choice>
+        <choice id="8f241f110967bba40.88233204">
+          <name xml:lang="en-US">Turkey</name>
+          <name xml:lang="de-DE">Türkei</name>
+        </choice>
+        <choice id="8f241f110967d8f65.52699796">
+          <name xml:lang="en-US">Turkmenistan</name>
+          <name xml:lang="de-DE">Turkmenistan</name>
+        </choice>
+        <choice id="8f241f110967f73f8.13141492">
+          <name xml:lang="en-US">Turks and Caicos Islands</name>
+          <name xml:lang="de-DE">Turks- und Caicosinseln</name>
+        </choice>
+        <choice id="8f241f1109680ec30.97426963">
+          <name xml:lang="en-US">Tuvalu</name>
+          <name xml:lang="de-DE">Tuvalu</name>
+        </choice>
+        <choice id="8f241f11096823019.47846368">
+          <name xml:lang="en-US">Uganda</name>
+          <name xml:lang="de-DE">Uganda</name>
+        </choice>
+        <choice id="8f241f110968391d2.37199812">
+          <name xml:lang="en-US">Ukraine</name>
+          <name xml:lang="de-DE">Ukraine</name>
+        </choice>
+        <choice id="8f241f1109684bf15.63071279">
+          <name xml:lang="en-US">United Arab Emirates</name>
+          <name xml:lang="de-DE">Vereinigte Arabische Emirate</name>
+        </choice>
+        <choice id="8f241f11096894977.41239553">
+          <name xml:lang="en-US">United States Minor Outlying Islands</name>
+          <name xml:lang="de-DE">United States Minor Outlying Islands</name>
+        </choice>
+        <choice id="8f241f110968a7cc9.56710143">
+          <name xml:lang="en-US">Uruguay</name>
+          <name xml:lang="de-DE">Uruguay</name>
+        </choice>
+        <choice id="8f241f110968bec45.44161857">
+          <name xml:lang="en-US">Uzbekistan</name>
+          <name xml:lang="de-DE">Usbekistan</name>
+        </choice>
+        <choice id="8f241f110968d3f03.13630334">
+          <name xml:lang="en-US">Vanuatu</name>
+          <name xml:lang="de-DE">Vanuatu</name>
+        </choice>
+        <choice id="8f241f11096902d92.14742486">
+          <name xml:lang="en-US">Venezuela</name>
+          <name xml:lang="de-DE">Venezuela</name>
+        </choice>
+        <choice id="8f241f11096919d00.92534927">
+          <name xml:lang="en-US">Viet Nam</name>
+          <name xml:lang="de-DE">Vietnam</name>
+        </choice>
+        <choice id="8f241f1109692fc04.15216034">
+          <name xml:lang="en-US">Virgin Islands, British</name>
+          <name xml:lang="de-DE">Britische Jungferninseln</name>
+        </choice>
+        <choice id="8f241f11096944468.61956573">
+          <name xml:lang="en-US">Virgin Islands, U.S.</name>
+          <name xml:lang="de-DE">Amerikanische Jungferninseln</name>
+        </choice>
+        <choice id="8f241f110969598c8.76966113">
+          <name xml:lang="en-US">Wallis and Futuna</name>
+          <name xml:lang="de-DE">Wallis und Futuna</name>
+        </choice>
+        <choice id="8f241f1109696e4e9.33006292">
+          <name xml:lang="en-US">Western Sahara</name>
+          <name xml:lang="de-DE">Westsahara</name>
+        </choice>
+        <choice id="8f241f11096982354.73448958">
+          <name xml:lang="en-US">Yemen</name>
+          <name xml:lang="de-DE">Jemen</name>
+        </choice>
+        <choice id="8f241f110969c34a2.42564730">
+          <name xml:lang="en-US">Zambia</name>
+          <name xml:lang="de-DE">Sambia</name>
+        </choice>
+        <choice id="8f241f110969da699.04185888">
+          <name xml:lang="en-US">Zimbabwe</name>
+          <name xml:lang="de-DE">Simbabwe</name>
+        </choice>
+        <choice id="a7c40f632a0804ab5.18804099">
+          <name xml:lang="en-US">Åland Islands</name>
+          <name xml:lang="de-DE">Åland Inseln</name>
+        </choice>
+      </setting>
+
+      <setting id="check_for_updates" type="enum">
+        <name xml:lang="en-US">Check for available updates regularly</name>
+        <name xml:lang="de-DE">Regelmaßig überprüfen, ob Updates vorhanden sind</name>
+        <choice id="0">
+          <name xml:lang="en-US">No</name>
+          <name xml:lang="de-DE">Nein</name>
+        </choice>
+        <choice id="1">
+          <name xml:lang="en-US">Yes</name>
+          <name xml:lang="de-DE">Ja</name>
+        </choice>
+      </setting>
+
+      <setting id="install_demodata" type="enum" installation-only="true" >
+        <name xml:lang="den-US">Install demodata</name>
+        <name xml:lang="de-DE">Demodaten installieren</name>
+        <choice id="1">
+          <name xml:lang="en-US">Yes</name>
+          <name xml:lang="de-DE">Ja</name>
+        </choice>
+        <choice id="0">
+          <name xml:lang="en-US">No</name>
+          <name xml:lang="de-DE">Nein</name>
+        </choice>
+      </setting>
+
+      <setting id="utf8_mode" type="enum" installation-only="true" >
+        <name xml:lang="en-US">Use UTF-8 character encoding</name>
+        <name xml:lang="de-DE">UTF-8 Zeichenkodierung benutzen</name>
+        <choice id="0">
+          <name xml:lang="en-US">No</name>
+          <name xml:lang="de-DE">Nein</name>
+        </choice>
+        <choice id="1">
+          <name xml:lang="en-US">Yes</name>
+          <name xml:lang="de-DE">Ja</name>
+        </choice>
+      </setting>
+
+      <setting id="use_dynamic_pages" type="enum">
+        <name xml:lang="en-US">To increase your business success get additional information from OXID's server. Recommended for shops located in Germany, Austria, Switzerland.</name>
+        <name xml:lang="de-DE">Um Ihren Geschäftserfolg zu vergrößern, laden Sie weitere Informationen vom OXID Server nach. Wird empfohlen für die Shops in Deutschland, Österreich und Schweiz.</name>
+        <choice id="0">
+          <name xml:lang="en-US">No</name>
+          <name xml:lang="de-DE">Nein</name>
+        </choice>
+        <choice id="1">
+          <name xml:lang="en-US">Yes</name>
+          <name xml:lang="de-DE">Ja</name>
+        </choice>
+      </setting>
+
+      </group>
+
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="5.2.0"/>
+    <php:register-globals>false</php:register-globals>
+    <php:memory-limit>14680064</php:memory-limit>
+
+
+
+    <php:extension>libxml</php:extension>
+    <php:extension>dom</php:extension>
+    <php:extension>gd</php:extension>
+    <php:extension>iconv</php:extension>
+    <php:extension>json</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>mysql</php:extension>
+    <php:extension>tokenizer</php:extension>
+
+    <php:extension>bcmath</php:extension>
+
+
+    <apache:required-module>mod_rewrite</apache:required-module>
+    <apache:htaccess/>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>oxid</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.33</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+
+    <mapping url="config.inc.php">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="log">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="out">
+      <mapping url="pictures">
+        <php:permissions writable="true"/>
+        <mapping url="promo"><php:permissions writable="true"/></mapping>
+        <mapping url="media"><php:permissions writable="true"/></mapping>
+        <mapping url="master">
+            <php:permissions writable="true"/>
+            <mapping url="product">
+                <php:permissions writable="true"/>
+                <mapping url="1"><php:permissions writable="true"/></mapping>
+                <mapping url="2"><php:permissions writable="true"/></mapping>
+                <mapping url="3"><php:permissions writable="true"/></mapping>
+                <mapping url="4"><php:permissions writable="true"/></mapping>
+                <mapping url="5"><php:permissions writable="true"/></mapping>
+                <mapping url="6"><php:permissions writable="true"/></mapping>
+                <mapping url="7"><php:permissions writable="true"/></mapping>
+                <mapping url="8"><php:permissions writable="true"/></mapping>
+                <mapping url="9"><php:permissions writable="true"/></mapping>
+                <mapping url="10"><php:permissions writable="true"/></mapping>
+                <mapping url="11"><php:permissions writable="true"/></mapping>
+                <mapping url="12"><php:permissions writable="true"/></mapping>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+                <mapping url="thumb"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="category">
+                <php:permissions writable="true"/>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+                <mapping url="promo_icon"><php:permissions writable="true"/></mapping>
+                <mapping url="thumb"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="manufacturer">
+                <php:permissions writable="true"/>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="vendor">
+                <php:permissions writable="true"/>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="wrapping">
+                <php:permissions writable="true"/>
+            </mapping>
+        </mapping>
+        <mapping url="generated">
+            <php:permissions writable="true"/>
+            <mapping url="product">
+                <php:permissions writable="true"/>
+                <mapping url="1"><php:permissions writable="true"/></mapping>
+                <mapping url="2"><php:permissions writable="true"/></mapping>
+                <mapping url="3"><php:permissions writable="true"/></mapping>
+                <mapping url="4"><php:permissions writable="true"/></mapping>
+                <mapping url="5"><php:permissions writable="true"/></mapping>
+                <mapping url="6"><php:permissions writable="true"/></mapping>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+                <mapping url="thumb"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="category">
+                <php:permissions writable="true"/>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+                <mapping url="promo_icon"><php:permissions writable="true"/></mapping>
+                <mapping url="thumb"><php:permissions writable="true"/></mapping>
+            </mapping>
+            <mapping url="manufacturer">
+                <php:permissions writable="true"/>
+                <mapping url="icon"><php:permissions writable="true"/></mapping>
+            </mapping>
+        </mapping>
+      </mapping>
+    </mapping>
+  </mapping>
+
+</application>

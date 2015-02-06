@@ -1,0 +1,270 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>AutoIndex</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>2.2.4</version>
+  <release>3</release>
+  <homepage>http://autoindex.sourceforge.net/</homepage>
+  <package-homepage>http://www.parallels.com/</package-homepage>
+  <default-prefix>autoindex</default-prefix>
+  <summary>Directory auto indexer</summary>
+  <description>AutoIndex is a PHP script that makes a table that lists the     files in a directory, and lets users access the files and subdirectories.     It includes searching, icons for each file type, an admin panel, uploads,     access logging, file descriptions, and more.</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot.jpg">
+    <description>Typical view</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU General Public License</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+    <version version="2.2.4" release="1">
+      <entry>Repackaged to conform new standard</entry>
+    </version>
+    <version version="1.5.3" release="26">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>633445</installed-size>
+  <categories>
+    <category>Web/Catalog</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" regex="^[a-zA-Z]{1}[0-9a-zA-Z_\-]{0,32}">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default user preferences</name>
+      <setting id="user_name" type="string" default-value="user" min-length="1">
+        <name>User's login</name>
+      </setting>
+      <setting id="user_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Configuration</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="sq-AL" >
+          <name>Albanian</name>
+        </choice>
+        <choice id="ar-EG" >
+          <name>Arabic</name>
+        </choice>
+        <choice id="bg-BG" >
+          <name>Bulgarian</name>
+        </choice>
+        <choice id="ca-ES" >
+          <name>Catalan</name>
+        </choice>
+        <choice id="cz-CZ" >
+          <name>Czech</name>
+        </choice>
+        <choice id="da-DK" >
+          <name>Danish</name>
+        </choice>
+        <choice id="nl-NL" >
+          <name>Dutch</name>
+        </choice>
+        <choice id="en-US" >
+          <name>English (USA)</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+        <choice id="el-GR" >
+          <name>Greek</name>
+        </choice>
+        <choice id="hu-HU" >
+          <name>Hungarian</name>
+        </choice>
+        <choice id="it-IT" >
+          <name>Italian</name>
+        </choice>
+        <choice id="ja-JP" >
+          <name>Japanese</name>
+        </choice>
+        <choice id="ko-KP" >
+          <name>Korean</name>
+        </choice>
+        <choice id="ms-MS" >
+          <name>Malay</name>
+        </choice>
+        <choice id="nb-NO" >
+          <name>Norwegian</name>
+        </choice>
+        <choice id="pl-PL" >
+          <name>Polish</name>
+        </choice>
+        <choice id="pt-BR" >
+          <name>Portuguese (Brazilian)</name>
+        </choice>
+        <choice id="ru-RU" >
+          <name>Russian</name>
+        </choice>
+        <choice id="sk-SK" >
+          <name>Slovak</name>
+        </choice>
+        <choice id="es-ES" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="sv-SE" >
+          <name>Swedish</name>
+        </choice>
+        <choice id="th-TH" >
+          <name>Thai</name>
+        </choice>
+        <choice id="tr-TR" >
+          <name>Turkish</name>
+        </choice>
+      </setting>
+      <setting id="base_dir" type="string" default-value="./">
+        <name>Base dir</name>
+        <description>This is the folder that will be the root of the directory listing. This will be the starting point for the script. Nothing above this directory can be viewed, but its subfolders can. Make sure to use a path relative to the index.php file if you can.</description>
+      </setting>
+      <setting id="icon_path" type="enum" default-value="winxp">
+        <name>Icon set</name>
+        <choice id="apache" >
+          <name>Apache</name>
+        </choice>
+        <choice id="kde" >
+          <name>KDE</name>
+        </choice>
+        <choice id="osx" >
+          <name>OSX</name>
+        </choice>
+        <choice id="winvista" >
+          <name>Windows Vista</name>
+        </choice>
+        <choice id="winxp" >
+          <name>Windows XP</name>
+        </choice>
+        <choice id="none" >
+          <name>None</name>
+        </choice>
+      </setting>
+      <setting id="template" type="enum" default-value="default">
+        <name>Template</name>
+        <choice id="default">
+          <name>Default</name>
+        </choice>
+        <choice id="simple_image_gallery">
+          <name>Simple image gallery</name>
+        </choice>
+      </setting>
+      <setting id="show_dir_size" type="enum" default-value="true">
+        <name>Show directory size</name>
+        <description>If it is set to YES, the total size of directories will be shown under size (all the folder's contents will be added up). Otherwise, it will display "[dir]" under size. NOTE: If you are trying to index many files (meaning a few thousand), you will notice a speed improvement with this turned off.</description>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="search_enabled" type="enum" default-value="true">
+        <name>Enable searching</name>
+        <description>If this box is checked, people will be able to search for a file or folder by its filename. It will search the folder you are currently in, and all subfolders. Searching is not case sensitive.</description>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="use_login_system" type="enum" default-value="false">
+        <name>Use login system</name>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="must_login_to_download" type="enum" default-value="false">
+        <name>Users must login to view/download</name>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="days_new" type="integer" default-value="0">
+        <name>Age for "New" icon</name>
+        <description>This contains the number of days old a file can be and still have [New] written next to it. If it is set to 0, this feature will be disabled.</description>
+      </setting>
+      <setting id="thumbnail_height" type="integer" default-value="0">
+        <name>Image thumbnail height [pixels]</name>
+        <description>This is a feature that will show thumbnails next to images. (NOTE: GDlib 2.0.1 or higher is required). Setting it to 0 will disable this feature, and setting it to any other number will set the size of the thumbnail (100 is a good setting to start with.)</description>
+      </setting>
+      <setting id="bandwidth_limit" type="integer" default-value="0">
+        <name>Bandwidth limit [KB/s]</name>
+        <description>This contains the max download speed for files. The above checkbox needs to be checked for this to work. If it is set to 0, the script will not limit download speed.</description>
+      </setting>
+      <setting id="anti_leech" type="enum" default-value="false">
+        <name>Anti-Leech</name>
+        <description>When downloading a file, this will check to make sure the referrer the browser sends matches the website's URL. Since some people turn off referrer sending in their browser, this option is not recommended.</description>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="archive" type="enum" default-value="false">
+        <name>Allow folder archive downloading</name>
+        <description>If this box is checked, users will be able to download the folder's contents as a tar archive file.</description>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="parse_htaccess" type="enum" default-value="false">
+        <name>Parse .htaccess files</name>
+        <description>If this box is checked, .htaccess files will be parsed and used by AutoIndex.</description>
+        <choice id="true">
+          <name>YES</name>
+        </choice>
+        <choice id="false">
+          <name>NO</name>
+        </choice>
+      </setting>
+      <setting id="md5_show" type="integer" default-value="0">
+        <name>MD5 calculation max size</name>
+        <description>Setting this to 0 will disable this feature, and setting it to any other number will set the maximum size of a file to allow users to find the md5sum of (in megabytes). 10 is a good setting to start with.</description>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" >
+    <php:version min="5"/>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    <mapping url=".htpasswd.autoindex">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+  
+</application>

@@ -1,0 +1,1221 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>XandMailWeb2cs</name>
+	<packager-uri>uuid:c436b526-1440-41f7-8deb-94b9e08be632</packager-uri>
+	<version>4.1.20</version>
+	<release>2</release>
+	<homepage>http://www.xandmail.com</homepage>
+	<package-homepage>http://www.xandmail.com</package-homepage>
+	<default-prefix>web2cs</default-prefix>
+
+	<summary>This version brings multiple domains management in a single installation to the Web 2.0 Communication Suite offering Webmail, Address Book, Calendar, and more (Ajax and Mobile interfaces). Free Webmail and Address Book licenses can be obtained for this package. See http://forums.xandmail.com for documentation and questions.</summary>
+	<description>
+		The Web2 Communication Suite is a rich solution full of nice features and a large set of interfaces (Ajax-Web2.0, HTML and Mobile). The free version provides Webmail and Address Book for 5 users. Additional user licenses and extension modules are available, for calendaring, online file storage, contact and event synchronization... It runs only on Linux platforms. An installation log file called installation.log (or upgrade.log in case of upgrade) is created during installation in the root directory of the installed application. Please consult it after installation, as it contains instructions on how to make your installation secure. If you wish to migrate the address book content of your Horde accounts, please consult the Horde_Migration.txt file in the migration directory of the installed site. If you wish to migrate the address book content of your SquirrelMail accounts, please consult the SquirrelMail_Migration.txt file in the migration directory of the installed site.
+	</description>
+
+	<icon path="images/icon.png"/>
+
+	<screenshot path="images/web2cs_classic.jpg">
+		<description>Classic theme where all features are separated in an accordion menu</description>
+	</screenshot>
+
+	<license must-accept="true">
+		<text><name>XandMail License Agreement</name><url>http://xamlive.com/doc/web2cs_plesk_license_en.pdf</url></text>
+	</license>
+
+	<configuration-script-language>php</configuration-script-language>
+
+	<changelog>
+		<version version="4.1.20" release="2">
+			<entry>Version 4 Release 1 Build 20 - Removed default values in installation parameters.</entry>
+		</version>
+		<version version="4.1.20" release="1">
+			<entry>Version 4 Release 1 Build 20 - This build adds support for auto-reply / forward configuration from inside the Web2cs user interface. See http://forums.xandmail.com</entry>
+		</version>
+		<version version="4.1.17" release="2">
+			<entry>Version 4 Release 1 Build 17 - This build fixes several problems. See http://xamlive.com/doc/web2cs_latest_release_notes.pdf</entry>
+		</version>
+		<version version="4.1.10" release="1">
+			<entry>Version 4 Release 1 Build 10 - This build includes all the bug fixes and enhancements added in the products between versions 3 and 4. It is also packaged using APS 1.2. The most important new feature is the sharing management. See http://xamlive.com/doc/web2cs_latest_release_notes.pdf</entry>
+		</version>
+		<version version="3.2.25" release="1">
+			<entry>Version 3 Release 2 Build 25 - This build includes all the bug fixes and enhancements added in the products between builds 23 and 25. See http://xamlive.com/doc/web2cs_latest_release_notes.pdf</entry>
+		</version>
+		<version version="3.2.23" release="25">
+			<entry>Patches Version 3 Release 2 Build 23 to Version 3 Release 2 Build 25 - This build includes all the bug fixes and enhancements added in the products between builds 23 and 25. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.22" release="25">
+			<entry>Patches Version 3 Release 2 Build 22 to Version 3 Release 2 Build 25 - This build includes all the bug fixes and enhancements added in the products between builds 22 and 25. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.10" release="25">
+			<entry>Patches Version 3 Release 2 Build 10 to Version 3 Release 2 Build 25 - This build includes all the bug fixes and enhancements added in the products between builds 10 and 25. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.6" release="25">
+			<entry>Patches Version 3 Release 2 Build 6 to Version 3 Release 2 Build 25 - This build includes all the bug fixes and enhancements added in the products between builds 6 and 25. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.23" release="1">
+			<entry>Version 3 Release 2 Build 23 - This build includes all the bug fixes and enhancements added in the products between builds 22 and 23. See http://xamlive.com/doc/web2cs_latest_release_notes.pdf</entry>
+		</version>
+		<version version="3.2.22" release="23">
+			<entry>Patches Version 3 Release 2 Build 22 to Version 3 Release 2 Build 23 - This build includes all the bug fixes and enhancements added in the products between builds 22 and 23. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.10" release="23">
+			<entry>Patches Version 3 Release 2 Build 10 to Version 3 Release 2 Build 23 - This build includes all the bug fixes and enhancements added in the products between builds 10 and 23. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.6" release="23">
+			<entry>Patches Version 3 Release 2 Build 6 to Version 3 Release 2 Build 23 - This build includes all the bug fixes and enhancements added in the products between builds 6 and 23. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.22" release="1">
+			<entry>Version 3 Release 2 Build 22 - This build includes all the bug fixes and enhancements added in the products between builds 10 and 22, as well as the possibility for the administrator to replace the XandMail logo with his own. See http://xamlive.com/doc/web2cs_latest_release_notes.pdf</entry>
+		</version>
+		<version version="3.2.10" release="22">
+			<entry>Patches Version 3 Release 2 Build 10 to Version 3 Release 2 Build 22 - This build includes all the bug fixes and enhancements added in the products between builds 10 and 22, as well as the possibility for the administrator to replace the XandMail logo with his own. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.6" release="22">
+			<entry>Patches Version 3 Release 2 Build 6 to Version 3 Release 2 Build 22 - This build includes all the bug fixes and enhancements added in the products between builds 6 and 22, as well as the possibility for the administrator to replace the XandMail logo with his own. Do not forget to empty your browser cache to access the updated version.</entry>
+		</version>
+		<version version="3.2.10" release="1">
+			<entry>Version 3 Release 2 Build 10 - This build contains bug fixes and small enhancements.</entry>
+		</version>
+		<version version="3.2.9" release="3">
+			<entry>Version 3 Release 2 Build 9 Patch Level 3 - This build, in addition to bug fixes and small enhancements, includes the russian language (translation exists for most but not yet all pages).</entry>
+		</version>
+		<version version="3.2.6" release="2">
+			<entry>Version 3 Release 2 Build 6 - Second package. Changed imap_login_long format to enum to be compatible with old Plesk servers. Added IMAP4 and SMTP servers host/port test.</entry>
+		</version>
+		<version version="3.2.6" release="1">
+			<entry>Version 3 Release 2 Build 6 - First package</entry>
+		</version>
+	</changelog>
+
+	<entry-points>
+		<entry>
+			<path>/index.php</path>
+			<label>Login page</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>354476032</installed-size>
+
+	<categories>
+		<category>Collaboration/Email</category>
+		<category>Collaboration/Calendaring</category>
+		<category>Web/Content management</category>
+	</categories>
+
+	<languages>
+		<language>en</language>
+	</languages>
+
+	<settings>
+		<group>
+			<name>Auto-reply/forward management for the domain</name>
+			<setting id="admin_name" type="string">
+				<name>Domain administrator login:</name>
+				<description>Please indicate the login name of the domain administrator for this domain. It will be used to set up the auto-reply / forward options of this domain's email users.</description>
+			</setting>
+			<setting id="admin_password" type="password">
+				<name>Domain administrator password:</name>
+				<description>Please indicate the password of the domain administrator for the new domain that you have created.</description>
+			</setting>
+		</group>
+		<group>
+			<name>General preferences</name>
+			<setting id="language" type="enum" default-value="en" installation-only="true">
+				<name>Default language</name>
+				<description>Each user can choose the language to use on the login page. We are defining here the default language used by the automatic features of the application.</description>
+				<choice id="en">
+					<name>English</name>
+				</choice>
+				<choice id="pt-br">
+					<name>Brasileiro</name>
+				</choice>
+				<choice id="cz">
+					<name>Česky</name>
+				</choice>
+				<choice id="de">
+					<name>Deutsch</name>
+				</choice>
+				<choice id="es">
+					<name>Español</name>
+				</choice>
+				<choice id="bo">
+					<name>Español (Bolivia)</name>
+				</choice>
+				<choice id="mx">
+					<name>Español (México)</name>
+				</choice>
+				<choice id="fr">
+					<name>Français</name>
+				</choice>
+				<choice id="it">
+					<name>Italiano</name>
+				</choice>
+				<choice id="hu">
+					<name>Magyar</name>
+				</choice>
+				<choice id="pl">
+					<name>Polski</name>
+				</choice>
+				<choice id="ru">
+					<name>Русский</name>
+				</choice>
+			</setting>
+			<setting id="timezone" type="enum" default-value="GB" installation-only="true">
+				<name>Default timezone</name>
+				<description>Each user can choose the timezone he is currently in in his preferences option page. We are defining here the default timezone used by the application.</description>
+				<choice id="AF">
+					<name>Afghanistan</name>
+				</choice>
+				<choice id="AX">
+					<name>Aland Islands</name>
+				</choice>
+				<choice id="AL">
+					<name>Albania</name>
+				</choice>
+				<choice id="DZ">
+					<name>Algeria</name>
+				</choice>
+				<choice id="AS">
+					<name>American Samoa</name>
+				</choice>
+				<choice id="AD">
+					<name>Andorra</name>
+				</choice>
+				<choice id="AO">
+					<name>Angola</name>
+				</choice>
+				<choice id="AI">
+					<name>Anguilla</name>
+				</choice>
+				<choice id="AQ">
+					<name>Antarctica</name>
+				</choice>
+				<choice id="AG">
+					<name>Antigua and Barbuda</name>
+				</choice>
+				<choice id="AR">
+					<name>Argentina</name>
+				</choice>
+				<choice id="AM">
+					<name>Armenia</name>
+				</choice>
+				<choice id="AW">
+					<name>Aruba</name>
+				</choice>
+				<choice id="AU_1">
+					<name>Australia (Australian Capital Territory)</name>
+				</choice>
+				<choice id="AU_2">
+					<name>Australia (Eucla)</name>
+				</choice>
+				<choice id="AU_3">
+					<name>Australia (New South Wales)</name>
+				</choice>
+				<choice id="AU_4">
+					<name>Australia (Northern Territory)</name>
+				</choice>
+				<choice id="AU_5">
+					<name>Australia (Queensland)</name>
+				</choice>
+				<choice id="AU_6">
+					<name>Australia (South Australia)</name>
+				</choice>
+				<choice id="AU_7">
+					<name>Australia (Tasmania)</name>
+				</choice>
+				<choice id="AU_8">
+					<name>Australia (Victoria)</name>
+				</choice>
+				<choice id="AU_9">
+					<name>Australia (Western Australia)</name>
+				</choice>
+				<choice id="AT">
+					<name>Austria</name>
+				</choice>
+				<choice id="AZ">
+					<name>Azerbaijan</name>
+				</choice>
+				<choice id="BS">
+					<name>Bahamas</name>
+				</choice>
+				<choice id="BH">
+					<name>Bahrain</name>
+				</choice>
+				<choice id="BD">
+					<name>Bangladesh</name>
+				</choice>
+				<choice id="BB">
+					<name>Barbados</name>
+				</choice>
+				<choice id="BY">
+					<name>Belarus</name>
+				</choice>
+				<choice id="BE">
+					<name>Belgium</name>
+				</choice>
+				<choice id="BZ">
+					<name>Belize</name>
+				</choice>
+				<choice id="BJ">
+					<name>Benin</name>
+				</choice>
+				<choice id="BM">
+					<name>Bermuda</name>
+				</choice>
+				<choice id="BT">
+					<name>Bhutan</name>
+				</choice>
+				<choice id="BO">
+					<name>Bolivia, Plurinational State of</name>
+				</choice>
+				<choice id="BQ">
+					<name>Bonaire, Sint Eustatius and Saba</name>
+				</choice>
+				<choice id="BA">
+					<name>Bosnia and Herzegovina</name>
+				</choice>
+				<choice id="BW">
+					<name>Botswana</name>
+				</choice>
+				<choice id="BV">
+					<name>Bouvet Island</name>
+				</choice>
+				<choice id="BR_1">
+					<name>Brazil (Amazon)</name>
+				</choice>
+				<choice id="BR_2">
+					<name>Brazil (Brasília)</name>
+				</choice>
+				<choice id="BR_3">
+					<name>Brazil (Distrito Federal)</name>
+				</choice>
+				<choice id="BR_4">
+					<name>Brazil (Espírito Santo)</name>
+				</choice>
+				<choice id="BR_5">
+					<name>Brazil (Fernando de Noronha)</name>
+				</choice>
+				<choice id="BR_6">
+					<name>Brazil (Goiás)</name>
+				</choice>
+				<choice id="BR_7">
+					<name>Brazil (Mato Grosso)</name>
+				</choice>
+				<choice id="BR_8">
+					<name>Brazil (Mato Grosso do Sul)</name>
+				</choice>
+				<choice id="BR_9">
+					<name>Brazil (Minas Gerais)</name>
+				</choice>
+				<choice id="BR_10">
+					<name>Brazil (Paraná)</name>
+				</choice>
+				<choice id="BR_11">
+					<name>Brazil (Rio de Janeiro)</name>
+				</choice>
+				<choice id="BR_12">
+					<name>Brazil (Rio Grande do Sul)</name>
+				</choice>
+				<choice id="BR_13">
+					<name>Brazil (Santa Catarina)</name>
+				</choice>
+				<choice id="BR_14">
+					<name>Brazil (São Paulo)</name>
+				</choice>
+				<choice id="IO">
+					<name>British Indian Ocean Territory</name>
+				</choice>
+				<choice id="BN">
+					<name>Brunei Darussalam</name>
+				</choice>
+				<choice id="BG">
+					<name>Bulgaria</name>
+				</choice>
+				<choice id="BF">
+					<name>Burkina Faso</name>
+				</choice>
+				<choice id="BI">
+					<name>Burundi</name>
+				</choice>
+				<choice id="KH">
+					<name>Cambodia</name>
+				</choice>
+				<choice id="CM">
+					<name>Cameroon</name>
+				</choice>
+				<choice id="CA_1">
+					<name>Canada (Alberta)</name>
+				</choice>
+				<choice id="CA_2">
+					<name>Canada (British Columbia)</name>
+				</choice>
+				<choice id="CA_3">
+					<name>Canada (Central Nunavut)</name>
+				</choice>
+				<choice id="CA_4">
+					<name>Canada (Eastern Nunavut)</name>
+				</choice>
+				<choice id="CA_5">
+					<name>Canada (Eastern Ontario)</name>
+				</choice>
+				<choice id="CA_6">
+					<name>Canada (Eastern Québec)</name>
+				</choice>
+				<choice id="CA_7">
+					<name>Canada (Lloydminster)</name>
+				</choice>
+				<choice id="CA_8">
+					<name>Canada (Manitoba)</name>
+				</choice>
+				<choice id="CA_9">
+					<name>Canada (Mountain Nunavut)</name>
+				</choice>
+				<choice id="CA_10">
+					<name>Canada (New Brunswick)</name>
+				</choice>
+				<choice id="CA_11">
+					<name>Canada (Newfoundland)</name>
+				</choice>
+				<choice id="CA_12">
+					<name>Canada (Northwest Territories)</name>
+				</choice>
+				<choice id="CA_13">
+					<name>Canada (Nova Scotia)</name>
+				</choice>
+				<choice id="CA_14">
+					<name>Canada (Prince Edward Island)</name>
+				</choice>
+				<choice id="CA_15">
+					<name>Canada (Saskatchewan)</name>
+				</choice>
+				<choice id="CA_16">
+					<name>Canada (Western Ontario)</name>
+				</choice>
+				<choice id="CA_17">
+					<name>Canada (Western Québec)</name>
+				</choice>
+				<choice id="CA_18">
+					<name>Canada (Yukon)</name>
+				</choice>
+				<choice id="CV">
+					<name>Cape Verde</name>
+				</choice>
+				<choice id="KY">
+					<name>Cayman Islands</name>
+				</choice>
+				<choice id="CF">
+					<name>Central African Republic</name>
+				</choice>
+				<choice id="TD">
+					<name>Chad</name>
+				</choice>
+				<choice id="CL">
+					<name>Chile</name>
+				</choice>
+				<choice id="CN">
+					<name>China</name>
+				</choice>
+				<choice id="CX">
+					<name>Christmas Island</name>
+				</choice>
+				<choice id="CC">
+					<name>Cocos (Keeling) Islands</name>
+				</choice>
+				<choice id="CO">
+					<name>Colombia</name>
+				</choice>
+				<choice id="KM">
+					<name>Comoros</name>
+				</choice>
+				<choice id="CG">
+					<name>Congo</name>
+				</choice>
+				<choice id="CD">
+					<name>Congo, the Democratic Republic of the</name>
+				</choice>
+				<choice id="CK">
+					<name>Cook Islands</name>
+				</choice>
+				<choice id="CR">
+					<name>Costa Rica</name>
+				</choice>
+				<choice id="CI">
+					<name>Cote D'Ivoire</name>
+				</choice>
+				<choice id="HR">
+					<name>Croatia</name>
+				</choice>
+				<choice id="CU">
+					<name>Cuba</name>
+				</choice>
+				<choice id="CW">
+					<name>Curaçao</name>
+				</choice>
+				<choice id="CY">
+					<name>Cyprus</name>
+				</choice>
+				<choice id="CZ">
+					<name>Czech Republic</name>
+				</choice>
+				<choice id="DK">
+					<name>Denmark</name>
+				</choice>
+				<choice id="DJ">
+					<name>Djibouti</name>
+				</choice>
+				<choice id="DM">
+					<name>Dominica</name>
+				</choice>
+				<choice id="DO">
+					<name>Dominican Republic</name>
+				</choice>
+				<choice id="EC">
+					<name>Ecuador</name>
+				</choice>
+				<choice id="EG">
+					<name>Egypt</name>
+				</choice>
+				<choice id="SV">
+					<name>El Salvador</name>
+				</choice>
+				<choice id="GQ">
+					<name>Equatorial Guinea</name>
+				</choice>
+				<choice id="ER">
+					<name>Eritrea</name>
+				</choice>
+				<choice id="EE">
+					<name>Estonia</name>
+				</choice>
+				<choice id="ET">
+					<name>Ethiopia</name>
+				</choice>
+				<choice id="FK">
+					<name>Falkland Islands (Malvinas)</name>
+				</choice>
+				<choice id="FO">
+					<name>Faroe Islands</name>
+				</choice>
+				<choice id="FJ">
+					<name>Fiji</name>
+				</choice>
+				<choice id="FI">
+					<name>Finland</name>
+				</choice>
+				<choice id="FR">
+					<name>France</name>
+				</choice>
+				<choice id="GF">
+					<name>French Guiana</name>
+				</choice>
+				<choice id="PF_1">
+					<name>French Polynesia (Society islands)</name>
+				</choice>
+				<choice id="PF_2">
+					<name>French Polynesia (Marquesas islands)</name>
+				</choice>
+				<choice id="PF_3">
+					<name>French Polynesia (Gambier islands)</name>
+				</choice>
+				<choice id="TF">
+					<name>French Southern Territories</name>
+				</choice>
+				<choice id="GA">
+					<name>Gabon</name>
+				</choice>
+				<choice id="GM">
+					<name>Gambia</name>
+				</choice>
+				<choice id="GE">
+					<name>Georgia</name>
+				</choice>
+				<choice id="DE">
+					<name>Germany</name>
+				</choice>
+				<choice id="GH">
+					<name>Ghana</name>
+				</choice>
+				<choice id="GI">
+					<name>Gibraltar</name>
+				</choice>
+				<choice id="GMT">
+					<name>GMT</name>
+				</choice>
+				<choice id="GR">
+					<name>Greece</name>
+				</choice>
+				<choice id="GL_1">
+					<name>Greenland (Central)</name>
+				</choice>
+				<choice id="GL_2">
+					<name>Greenland (Danmarkshavn)</name>
+				</choice>
+				<choice id="GL_3">
+					<name>Greenland (Ittoqqortoormiit - Scoresbysund)</name>
+				</choice>
+				<choice id="GL_4">
+					<name>Greenland (Pituffik air base - Dundas air base)</name>
+				</choice>
+				<choice id="GL_5">
+					<name>Greenland (Qaanaaq - Thule)</name>
+				</choice>
+				<choice id="GD">
+					<name>Grenada</name>
+				</choice>
+				<choice id="GP">
+					<name>Guadeloupe</name>
+				</choice>
+				<choice id="GU">
+					<name>Guam</name>
+				</choice>
+				<choice id="GT">
+					<name>Guatemala</name>
+				</choice>
+				<choice id="GG">
+					<name>Guernsey</name>
+				</choice>
+				<choice id="GN">
+					<name>Guinea</name>
+				</choice>
+				<choice id="GW">
+					<name>Guinea-Bissau</name>
+				</choice>
+				<choice id="GY">
+					<name>Guyana</name>
+				</choice>
+				<choice id="HT">
+					<name>Haiti</name>
+				</choice>
+				<choice id="HM">
+					<name>Heard Island and Mcdonald Islands</name>
+				</choice>
+				<choice id="VA">
+					<name>Holy See (Vatican City State)</name>
+				</choice>
+				<choice id="HN">
+					<name>Honduras</name>
+				</choice>
+				<choice id="HK">
+					<name>Hong Kong</name>
+				</choice>
+				<choice id="HU">
+					<name>Hungary</name>
+				</choice>
+				<choice id="IS">
+					<name>Iceland</name>
+				</choice>
+				<choice id="IN">
+					<name>India</name>
+				</choice>
+				<choice id="ID_1">
+					<name>Indonesia (West)</name>
+				</choice>
+				<choice id="ID_2">
+					<name>Indonesia (Center)</name>
+				</choice>
+				<choice id="ID_3">
+					<name>Indonesia (East)</name>
+				</choice>
+				<choice id="IR">
+					<name>Iran, Islamic Republic of</name>
+				</choice>
+				<choice id="IQ">
+					<name>Iraq</name>
+				</choice>
+				<choice id="IE">
+					<name>Ireland</name>
+				</choice>
+				<choice id="IM">
+					<name>Isle of Man</name>
+				</choice>
+				<choice id="IL">
+					<name>Israel</name>
+				</choice>
+				<choice id="IT">
+					<name>Italy</name>
+				</choice>
+				<choice id="JM">
+					<name>Jamaica</name>
+				</choice>
+				<choice id="JP">
+					<name>Japan</name>
+				</choice>
+				<choice id="JE">
+					<name>Jersey</name>
+				</choice>
+				<choice id="JO">
+					<name>Jordan</name>
+				</choice>
+				<choice id="KZ">
+					<name>Kazakhstan</name>
+				</choice>
+				<choice id="KE">
+					<name>Kenya</name>
+				</choice>
+				<choice id="KI_1">
+					<name>Kiribati (Gilbert Islands)</name>
+				</choice>
+				<choice id="KI_2">
+					<name>Kiribati (Rawaki Islands)</name>
+				</choice>
+				<choice id="KI_3">
+					<name>Kiribati (Line Islands)</name>
+				</choice>
+				<choice id="KP">
+					<name>Korea, Democratic People's Republic of</name>
+				</choice>
+				<choice id="KR">
+					<name>Korea, Republic of</name>
+				</choice>
+				<choice id="KW">
+					<name>Kuwait</name>
+				</choice>
+				<choice id="KG">
+					<name>Kyrgyzstan</name>
+				</choice>
+				<choice id="LA">
+					<name>Lao People's Democratic Republic</name>
+				</choice>
+				<choice id="LV">
+					<name>Latvia</name>
+				</choice>
+				<choice id="LB">
+					<name>Lebanon</name>
+				</choice>
+				<choice id="LS">
+					<name>Lesotho</name>
+				</choice>
+				<choice id="LR">
+					<name>Liberia</name>
+				</choice>
+				<choice id="LY">
+					<name>Libyan Arab Jamahiriya</name>
+				</choice>
+				<choice id="LI">
+					<name>Liechtenstein</name>
+				</choice>
+				<choice id="LT">
+					<name>Lithuania</name>
+				</choice>
+				<choice id="LU">
+					<name>Luxembourg</name>
+				</choice>
+				<choice id="MO">
+					<name>Macao</name>
+				</choice>
+				<choice id="MK">
+					<name>Macedonia, the Former Yugoslav Republic of</name>
+				</choice>
+				<choice id="MG">
+					<name>Madagascar</name>
+				</choice>
+				<choice id="MW">
+					<name>Malawi</name>
+				</choice>
+				<choice id="MY">
+					<name>Malaysia</name>
+				</choice>
+				<choice id="MV">
+					<name>Maldives</name>
+				</choice>
+				<choice id="ML">
+					<name>Mali</name>
+				</choice>
+				<choice id="MT">
+					<name>Malta</name>
+				</choice>
+				<choice id="MH">
+					<name>Marshall Islands</name>
+				</choice>
+				<choice id="MQ">
+					<name>Martinique</name>
+				</choice>
+				<choice id="MR">
+					<name>Mauritania</name>
+				</choice>
+				<choice id="MU">
+					<name>Mauritius</name>
+				</choice>
+				<choice id="YT">
+					<name>Mayotte</name>
+				</choice>
+				<choice id="MX_1">
+					<name>México (México centro)</name>
+				</choice>
+				<choice id="MX_2">
+					<name>México (Baja California Sur)</name>
+				</choice>
+				<choice id="MX_5">
+					<name>México (Chihuahua)</name>
+				</choice>
+				<choice id="MX_6">
+					<name>México (Nayarit)</name>
+				</choice>
+				<choice id="MX_7">
+					<name>México (Sinaloa)</name>
+				</choice>
+				<choice id="MX_4">
+					<name>México (Sonora)</name>
+				</choice>
+				<choice id="MX_3">
+					<name>México (Baja California)</name>
+				</choice>
+				<choice id="FM_1">
+					<name>Micronesia, Federated States of (Chuuk and Yap)</name>
+				</choice>
+				<choice id="FM_2">
+					<name>Micronesia, Federated States of (Pohnpei and Kosrae)</name>
+				</choice>
+				<choice id="MD">
+					<name>Moldova, Republic of</name>
+				</choice>
+				<choice id="MC">
+					<name>Monaco</name>
+				</choice>
+				<choice id="MN">
+					<name>Mongolia</name>
+				</choice>
+				<choice id="ME">
+					<name>Montenegro</name>
+				</choice>
+				<choice id="MS">
+					<name>Montserrat</name>
+				</choice>
+				<choice id="MA">
+					<name>Morocco</name>
+				</choice>
+				<choice id="MZ">
+					<name>Mozambique</name>
+				</choice>
+				<choice id="MM">
+					<name>Myanmar</name>
+				</choice>
+				<choice id="NA">
+					<name>Namibia</name>
+				</choice>
+				<choice id="NR">
+					<name>Nauru</name>
+				</choice>
+				<choice id="NP">
+					<name>Nepal</name>
+				</choice>
+				<choice id="NL">
+					<name>Netherlands</name>
+				</choice>
+				<choice id="NC">
+					<name>New Caledonia</name>
+				</choice>
+				<choice id="NZ">
+					<name>New Zealand</name>
+				</choice>
+				<choice id="NI">
+					<name>Nicaragua</name>
+				</choice>
+				<choice id="NE">
+					<name>Niger</name>
+				</choice>
+				<choice id="NG">
+					<name>Nigeria</name>
+				</choice>
+				<choice id="NU">
+					<name>Niue</name>
+				</choice>
+				<choice id="NF">
+					<name>Norfolk Island</name>
+				</choice>
+				<choice id="MP">
+					<name>Northern Mariana Islands</name>
+				</choice>
+				<choice id="NO">
+					<name>Norway</name>
+				</choice>
+				<choice id="OM">
+					<name>Oman</name>
+				</choice>
+				<choice id="PK">
+					<name>Pakistan</name>
+				</choice>
+				<choice id="PW">
+					<name>Palau</name>
+				</choice>
+				<choice id="PS">
+					<name>Palestinian Territory, Occupied</name>
+				</choice>
+				<choice id="PA">
+					<name>Panama</name>
+				</choice>
+				<choice id="PG">
+					<name>Papua New Guinea</name>
+				</choice>
+				<choice id="PY">
+					<name>Paraguay</name>
+				</choice>
+				<choice id="PE">
+					<name>Peru</name>
+				</choice>
+				<choice id="PH">
+					<name>Philippines</name>
+				</choice>
+				<choice id="PN">
+					<name>Pitcairn</name>
+				</choice>
+				<choice id="PL">
+					<name>Poland</name>
+				</choice>
+				<choice id="PT">
+					<name>Portugal</name>
+				</choice>
+				<choice id="PR">
+					<name>Puerto Rico</name>
+				</choice>
+				<choice id="QA">
+					<name>Qatar</name>
+				</choice>
+				<choice id="RE">
+					<name>Reunion</name>
+				</choice>
+				<choice id="RO">
+					<name>Romania</name>
+				</choice>
+				<choice id="RU">
+					<name>Russian Federation</name>
+				</choice>
+				<choice id="RW">
+					<name>Rwanda</name>
+				</choice>
+				<choice id="BL">
+					<name>Saint Barthelemy</name>
+				</choice>
+				<choice id="SH">
+					<name>Saint Helena, Ascension and Tristan Da Cunha</name>
+				</choice>
+				<choice id="KN">
+					<name>Saint Kitts and Nevis</name>
+				</choice>
+				<choice id="LC">
+					<name>Saint Lucia</name>
+				</choice>
+				<choice id="MF">
+					<name>Saint Martin (French part)</name>
+				</choice>
+				<choice id="PM">
+					<name>Saint Pierre and Miquelon</name>
+				</choice>
+				<choice id="VC">
+					<name>Saint Vincent and the Grenadines</name>
+				</choice>
+				<choice id="WS">
+					<name>Samoa</name>
+				</choice>
+				<choice id="SM">
+					<name>San Marino</name>
+				</choice>
+				<choice id="ST">
+					<name>Sao Tome and Principe</name>
+				</choice>
+				<choice id="SA">
+					<name>Saudi Arabia</name>
+				</choice>
+				<choice id="SN">
+					<name>Senegal</name>
+				</choice>
+				<choice id="RS">
+					<name>Serbia</name>
+				</choice>
+				<choice id="SC">
+					<name>Seychelles</name>
+				</choice>
+				<choice id="SL">
+					<name>Sierra Leone</name>
+				</choice>
+				<choice id="SG">
+					<name>Singapore</name>
+				</choice>
+				<choice id="SX">
+					<name>Sint Maarten (Dutch part)</name>
+				</choice>
+				<choice id="SK">
+					<name>Slovakia</name>
+				</choice>
+				<choice id="SI">
+					<name>Slovenia</name>
+				</choice>
+				<choice id="SB">
+					<name>Solomon Islands</name>
+				</choice>
+				<choice id="SO">
+					<name>Somalia</name>
+				</choice>
+				<choice id="ZA">
+					<name>South Africa</name>
+				</choice>
+				<choice id="GS">
+					<name>South Georgia and the South Sandwich Islands</name>
+				</choice>
+				<choice id="ES">
+					<name>Spain</name>
+				</choice>
+				<choice id="LK">
+					<name>Sri Lanka</name>
+				</choice>
+				<choice id="SD">
+					<name>Sudan</name>
+				</choice>
+				<choice id="SR">
+					<name>Suriname</name>
+				</choice>
+				<choice id="SJ">
+					<name>Svalbard and Jan Mayen</name>
+				</choice>
+				<choice id="SZ">
+					<name>Swaziland</name>
+				</choice>
+				<choice id="SE">
+					<name>Sweden</name>
+				</choice>
+				<choice id="CH">
+					<name>Switzerland</name>
+				</choice>
+				<choice id="SY">
+					<name>Syrian Arab Republic</name>
+				</choice>
+				<choice id="TW">
+					<name>Taiwan, Province of China</name>
+				</choice>
+				<choice id="TJ">
+					<name>Tajikistan</name>
+				</choice>
+				<choice id="TZ">
+					<name>Tanzania, United Republic of</name>
+				</choice>
+				<choice id="TH">
+					<name>Thailand</name>
+				</choice>
+				<choice id="TL">
+					<name>Timor-Leste</name>
+				</choice>
+				<choice id="TG">
+					<name>Togo</name>
+				</choice>
+				<choice id="TK">
+					<name>Tokelau</name>
+				</choice>
+				<choice id="TO">
+					<name>Tonga</name>
+				</choice>
+				<choice id="TT">
+					<name>Trinidad and Tobago</name>
+				</choice>
+				<choice id="TN">
+					<name>Tunisia</name>
+				</choice>
+				<choice id="TR">
+					<name>Turkey</name>
+				</choice>
+				<choice id="TM">
+					<name>Turkmenistan</name>
+				</choice>
+				<choice id="TC">
+					<name>Turks and Caicos Islands</name>
+				</choice>
+				<choice id="TV">
+					<name>Tuvalu</name>
+				</choice>
+				<choice id="UG">
+					<name>Uganda</name>
+				</choice>
+				<choice id="UA">
+					<name>Ukraine</name>
+				</choice>
+				<choice id="AE">
+					<name>United Arab Emirates</name>
+				</choice>
+				<choice id="GB">
+					<name>United Kingdom</name>
+				</choice>
+				<choice id="US_1">
+					<name>United States of America (Eastern)</name>
+				</choice>
+				<choice id="US_2">
+					<name>United States of America (Central)</name>
+				</choice>
+				<choice id="US_3">
+					<name>United States of America (Mountain)</name>
+				</choice>
+				<choice id="US_4">
+					<name>United States of America (Arizona)</name>
+				</choice>
+				<choice id="US_5">
+					<name>United States of America (Pacific)</name>
+				</choice>
+				<choice id="US_6">
+					<name>United States of America (Alaska)</name>
+				</choice>
+				<choice id="US_7">
+					<name>United States of America (Hawaii)</name>
+				</choice>
+				<choice id="UM_1">
+					<name>United States Minor Outlying Islands (Johnston)</name>
+				</choice>
+				<choice id="UM_2">
+					<name>United States Minor Outlying Islands (Midway)</name>
+				</choice>
+				<choice id="UM_3">
+					<name>United States Minor Outlying Islands (Wake)</name>
+				</choice>
+				<choice id="UY">
+					<name>Uruguay</name>
+				</choice>
+				<choice id="UZ">
+					<name>Uzbekistan</name>
+				</choice>
+				<choice id="VU">
+					<name>Vanuatu</name>
+				</choice>
+				<choice id="VE">
+					<name>Venezuela, Bolivarian Republic of</name>
+				</choice>
+				<choice id="VN">
+					<name>Viet Nam</name>
+				</choice>
+				<choice id="VG">
+					<name>Virgin Islands, British</name>
+				</choice>
+				<choice id="VI">
+					<name>Virgin Islands, U.S.</name>
+				</choice>
+				<choice id="WF">
+					<name>Wallis and Futuna</name>
+				</choice>
+				<choice id="EH">
+					<name>Western Sahara</name>
+				</choice>
+				<choice id="YE">
+					<name>Yemen</name>
+				</choice>
+				<choice id="ZM">
+					<name>Zambia</name>
+				</choice>
+				<choice id="ZW">
+					<name>Zimbabwe</name>
+				</choice>
+			</setting>
+			<setting id="postmaster_name" type="string" default-value="postmaster" installation-only="true">
+				<name>Administrator account name</name>
+				<description>Please provide the administrator account's name (the left part of his email address without the @ and the domain). Only this user will have access to the administration pages.</description>
+			</setting>
+		</group>
+		<group>
+			<name>Mail preferences</name>
+			<setting id="imap_folder_name_draft" type="string" default-value="draft" installation-only="true">
+				<name>Draft IMAP folder name</name>
+				<description>Please provide the IMAP folder name for the draft messages.</description>
+			</setting>
+			<setting id="imap_folder_name_outbox" type="string" default-value="outbox" installation-only="true">
+				<name>Sent IMAP folder name</name>
+				<description>Please provide the IMAP folder name for the sent messages.</description>
+			</setting>
+			<setting id="imap_folder_name_trash" type="string" default-value="trash" installation-only="true">
+				<name>Trash IMAP folder name</name>
+				<description>Please provide the IMAP folder name for the deleted messages.</description>
+			</setting>
+			<setting id="imap_folder_name_spam" type="string" default-value="Spam" installation-only="true">
+				<name>Spam IMAP folder name</name>
+				<description>Please provide the IMAP folder name for the spam messages.</description>
+			</setting>
+			<setting id="imap_host" type="string" default-value="localhost" installation-only="true">
+				<name>IMAP Host</name>
+				<description>Please provide the name or IP address of the IMAP host.</description>
+			</setting>
+			<setting id="imap_host_port" type="string" default-value="143" installation-only="true">
+				<name>IMAP Port</name>
+				<description>Please provide the port number to access the IMAP host.</description>
+			</setting>
+<!--
+			<setting id="imap_host_port_ssl" type="string" default-value="993" installation-only="true">
+				<name>IMAP SSL Port</name>
+				<description>Please provide the port number to access the IMAP host in SSL mode.</description>
+			</setting>
+-->
+			<setting id="imap_login_long" type="enum" default-value="yes" installation-only="true">
+				<name>Names for POP3/IMAP mail accounts</name>
+				<description>This application has been configured to run together with the Courier IMAP4 server, using full POP3/IMAP4 mail account names. If this default configuration was changed in the Server-wide mail preferences to allow both short and full names, change this value to 'short and full'. If it was not changed or you do not know, leave this value set to 'Full'.</description>
+				<choice id="yes">
+					<name>full</name>
+				</choice>
+				<choice id="no">
+					<name>short and full</name>
+				</choice>
+			</setting>
+			<setting id="smtp_host" type="string" default-value="localhost" installation-only="true">
+				<name>SMTP Host</name>
+				<description>Please provide the name or IP address of the SMTP host.</description>
+			</setting>
+			<setting id="smtp_host_port" type="string" default-value="25" installation-only="true">
+				<name>SMTP Port</name>
+				<description>Please provide the port number to access the SMTP host.</description>
+			</setting>
+		</group>
+	</settings>
+	<requirements
+		xmlns:php="http://apstandard.com/ns/1/php"
+		xmlns:apache="http://apstandard.com/ns/1/apache"
+		xmlns:mail="http://apstandard.com/ns/1/mail">
+		<php:version min="4.3.9"/>
+		<php:safe-mode>false</php:safe-mode>
+		<apache:required-module>mod_cgi</apache:required-module>
+	</requirements>
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers">
+		<mapping url="cgi-bin" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers">
+			<cgi:handler>
+				<cgi:all-files/>
+			</cgi:handler>
+		</mapping>
+		<mapping url="admin">
+			<php:handler>
+				<php:extension>php</php:extension>
+			</php:handler>
+		</mapping>
+		<mapping url="bin">
+			<mapping url="rss_ticker">
+				<php:permissions writable="true"/>
+			</mapping>
+		</mapping>
+		<mapping url="data">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="ext_cloud">
+			<mapping url="classic">
+				<mapping url="themes">
+					<mapping url="blue">
+						<mapping url="css">
+							<php:permissions writable="true"/>
+						</mapping>
+					</mapping>
+				</mapping>
+			</mapping>
+		</mapping>
+		<mapping url="include">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="upload">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="web_imgs">
+			<mapping url="xandmail">
+				<php:permissions writable="true"/>
+			</mapping>
+		</mapping>
+		<mapping url="xam_log">
+			<mapping url="default">
+				<php:permissions writable="true"/>
+			</mapping>
+		</mapping>
+		<mapping url="xam_tmp">
+			<php:permissions writable="true"/>
+		</mapping>
+		<mapping url="domains">
+			<php:permissions writable="true"/>
+		</mapping>
+	</mapping>
+</application>

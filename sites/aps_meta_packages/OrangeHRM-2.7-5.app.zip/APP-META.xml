@@ -1,0 +1,165 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>OrangeHRM</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+    <version>2.7</version>
+    <release>5</release>
+    <homepage>http://www.orangehrm.com/</homepage>
+    <package-homepage>http://www.sofcloudit.com</package-homepage>
+    <default-prefix>OrangeHRM</default-prefix>
+    
+  
+  <summary>Open Source Human Resource Management Software</summary>
+  <summary xml:lang="de-DE">Open Source für HRM-Software (Personalabteilungs-Verwaltungssoftware)</summary>
+  <summary xml:lang="en-CA">Open Source Human Resource Management Software</summary>
+  <summary xml:lang="en-GB">Open Source Human Resource Management Software</summary>
+  <summary xml:lang="en-US">Open Source Human Resource Management Software</summary>
+  <summary xml:lang="es-ES">Programa de gestión de recursos humanos de código abierto</summary>
+  <summary xml:lang="fr-FR">Logiciel de gestion des ressources humaines open source</summary>
+  <summary xml:lang="pl-PL">Oprogramowanie do zarządzania zasobami ludzkimi, oparte na otwartym dostępie do kodu źródłowego</summary>
+
+  <description>OrangeHRM aims to be the world's leading open source HRM solution for small and medium-sized enterprises (SMEs) by providing a flexible and easy HRM system affordable for any company worldwide. The project was started in the fall of 2005, and the first beta release was made in January 2006. Today, OrangeHRM has users worldwide enjoying a free, stable, and highly usable HRM solution. The system is backed by professional support and services as well as a fast-growing, receptive, and knowledgeable worldwide open source community. By building and leveraging this community of users, developers, and partners, the usability, scope, and international adoption of OrangeHRM is continuously being improved.</description>
+  <description xml:lang="de-DE">OrangeHRM strebt danach, zur weltweit führenden auf Open Source basierender HRM-Software (Personalabteilungs-Verwaltungssoftware) für KMUs zu avancieren. Hierfür bietet OrangeHRM ein einfaches und leichtes HRM-System, das für alle Unternehmen weltweit erschwinglich ist. Das Projekt begann im Herbst 2005 und die erste Veröffentlichung der Betaversion fand im Januar 2006 statt. Mittlerweile erfreuen sich Benutzer auf der ganzen Welt an der kostenlosen, stabilen und vielseitig einsetzbaren HRM-Lösung OrangeHRM. Das System wird durch professionellen Support und Services sowie durch die schnell wachsende, aufgeschlossene und kompetente weltweite Open Source-Gemeinschaft unterstützt. Durch das Erstellen und Nutzen dieser Benutzergemeinschaft erfolgt eine stetige Verbesserung der Entwickler, Partner, der Benutzbarkeit, des Umfangs und der internationalen Rezeption von OrangeHRM.</description>
+  <description xml:lang="en-CA">OrangeHRM aims to be the world's leading open source HRM solution for small and medium-sized enterprises (SMEs) by providing a flexible and easy HRM system affordable for any company worldwide. The project was started in the fall of 2005, and the first beta release was made in January 2006. Today, OrangeHRM has users worldwide enjoying a free, stable, and highly usable HRM solution. The system is backed by professional support and services as well as a fast-growing, receptive, and knowledgeable worldwide open source community. By building and leveraging this community of users, developers, and partners, the usability, scope, and international adoption of OrangeHRM is continuously being improved.</description>
+  <description xml:lang="en-GB">OrangeHRM aims to be the world's leading open source HRM solution for small and medium-sized enterprises (SMEs) by providing a flexible and easy HRM system affordable for any company worldwide. The project was started in the autumn of 2005, and the first beta release was made in January 2006. Today, OrangeHRM has users worldwide enjoying a free, stable, and highly usable HRM solution. The system is backed by professional support and services as well as a fast-growing, receptive, and knowledgeable worldwide open source community. By building and leveraging this community of users, developers, and partners, the usability, scope, and international adoption of OrangeHRM is continuously being improved.</description>
+  <description xml:lang="en-US">OrangeHRM aims to be the world's leading open source HRM solution for small and medium-sized enterprises (SMEs) by providing a flexible and easy HRM system affordable for any company worldwide. The project was started in the fall of 2005, and the first beta release was made in January 2006. Today, OrangeHRM has users worldwide enjoying a free, stable, and highly usable HRM solution. The system is backed by professional support and services as well as a fast-growing, receptive, and knowledgeable worldwide open source community. By building and leveraging this community of users, developers, and partners, the usability, scope, and international adoption of OrangeHRM is continuously being improved.</description>
+  <description xml:lang="es-ES">OrangeHRM pretende ser la solución de gestión de recursos humanos de código abierto líder en el mundo para pequeñas y medianas empresas (PYMES) proporcionándoles un sistema de recursos humanos flexible y fácil de usar a un precio asequible para cualquier empresa de todo el mundo. El proyecto se puso en marcha en otoño de 2005 y el primer lanzamiento beta se llevó a cabo en enero de 2006. En la actualidad, OrangeHRM tiene usuarios en todo el mundo que se benefician de una solución de gestión de recursos humanos gratuita, estable y muy versátil. El sistema cuenta con un servicio técnico profesional, además de una amplia comunidad mundial en continuo crecimiento, abierta y altamente cualificada. Con la creación y el impulso de la comunidad de usuarios, desarrolladores y asociados, la usabilidad, el alcance y la expansión internacional de OrangeHRM aumentan de forma incansable.</description>
+  <description xml:lang="fr-FR">OrangeHRM a pour objectif d'être la solution open source de gestion des ressources humaines destinée aux petites et moyennes entreprises (PME) la plus utilisée dans le monde, en offrant un système de gestion RH flexible et simple d'emploi, à un prix abordable pour n'importe quelle société, partout dans le monde. Le projet a été démarré à l'automne 2005 et la première version bêta a été terminée en janvier 2006. Aujourd'hui, OrangeHRM compte des utilisateurs dans le monde entier qui bénéficient d'une solution de gestion des ressources humaines gratuite, fiable et très fonctionnelle. Le système offre également une assistance et des services professionnels ainsi qu'une communauté open source en croissance rapide, réceptive, et compétente dans le monde entier. Grâce à la construction et à l'exploitation de cette communauté d'utilisateurs, de développeurs et de partenaires, la fonctionnalité, la portée et l'adoption internationale d'OrangeHRM sont en amélioration constante.</description>
+  <description xml:lang="pl-PL">OrangeHRM ma zostać najpopularniejszym na świecie rozwiązaniem HRM opartym na otwartym dostępie do kodu źródłowego, przeznaczonym dla małych i średnich przedsiębiorstw. Cel ten ma być osiągnięty poprzez udostępnianie wszechstronnego i prostego w obsłudze systemu HRM, na który może sobie pozwolić każda firma na całym świecie. Projekt rozpoczął się jesienią 2005 roku, a pierwsza wersja beta systemu powstała w styczniu 2006 roku. Obecnie z systemu OrangeHRM korzystają użytkownicy na całym świecie, chwaląc stabilność i wyjątkową użyteczność tego bezpłatnego rozwiązania HRM. System ma wsparcie w postaci profesjonalnej pomocy technicznej i usług, jak również dynamicznie rozwijającej się, globalnej społeczności kompetentnych użytkowników oprogramowania opartego na otwartym dostępie do kodu źródłowego. Utworzenie tej społeczności użytkowników, programistów i partnerów oraz wykorzystanie jej dorobku pozwala konsekwentnie udoskonalać system OrangeHRM, rozszerzać jego zakres i popularyzować go na całym świecie.</description>
+
+  <icon path="images/icon.png" /> 
+    <screenshot path="images/main_page.png">
+    	<description>main page</description>
+    </screenshot>
+    <license must-accept="true">
+    	<text>
+    		<file>htdocs/license/LICENSE.TXT</file>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <upgradable-from release="1" version="2.6.2"/>
+    <changelog>
+    	<version release="5" version="2.7">
+    		<entry>2.6.2 update added
+correct cookie path
+long files removed from htdocs 
+.hidden file empty directories</entry>
+    	</version>
+    	<version release="1" version="2.7">
+    		<entry>New Version</entry>
+    	</version>
+    	<version release="5" version="2.6.3">
+    		<entry>Translations added.</entry>
+    	</version><version release="4" version="2.6.3">
+    		<entry>Cache files deleted</entry>
+    	</version>
+    	<version release="3" version="2.6.3">
+    		<entry>new release</entry>
+    	</version>
+    	<version release="2" version="2.6.3">
+    		<entry>  include translations into multiple languages</entry>
+    	</version>
+    	<version release="1" version="2.6.3">
+    		<entry>New version of the application</entry>
+    	</version>
+    	<version release="2" version="2.6.2">
+    		<entry>No table prefix allow</entry>
+    	</version>
+    	<version release="1" version="2.6.2">
+    		<entry>Initial package</entry>
+    	</version>
+
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>index.php</path>
+    		<label>Initial page</label>
+    	</entry>
+    </entry-points>
+    <installed-size>29007403</installed-size>
+    <categories>
+    	<category>Back office/Human Resource Management</category>
+    </categories>
+	  <languages>
+		<language>en</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>es</language>
+		<language>pl</language>
+	  </languages>
+    <settings> 
+    <group>
+      <name>Administrator's preferences</name>
+      
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>   
+        <name xml:lang="de-DE">Administratoranmeldung</name>
+        <name xml:lang="en-CA">Administrator's login</name>
+        <name xml:lang="en-GB">Administrator's login</name>
+        <name xml:lang="en-US">Administrator's login</name>
+        <name xml:lang="es-ES">Inicio de sesión del administrador</name>
+        <name xml:lang="fr-FR">Mot de passe administrateur</name>
+        <name xml:lang="pl-PL">Logowanie administratora</name>   
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="de-DE">Der von Ihnen eingegebene Text muss mit einem Buchstaben beginnen, gefolgt von Zahlen, Buchstaben, Unterstreichungen oder Bindestrichen.</error-message>
+        <error-message xml:lang="en-CA">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-GB">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+        <error-message xml:lang="es-ES">Asegúrese de que el texto que ha introducido comienza con una letra y continúa con números, letras, guiones bajos o guiones.</error-message>
+        <error-message xml:lang="fr-FR">Vérifiez que le texte saisi commence par une lettre et contient uniquement des chiffres, lettres, caractères de soulignement ou traits-d'union.</error-message>
+        <error-message xml:lang="pl-PL">Upewnij się, że wprowadzony tekst rozpoczyna się od litery, po której następują cyfry, litery, znaki podkreślenia lub myślniki.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+        <name xml:lang="de-DE">Kennwort</name>
+        <name xml:lang="en-CA">Password</name>
+        <name xml:lang="en-GB">Password</name>
+        <name xml:lang="en-US">Password</name>
+        <name xml:lang="es-ES">Contraseña</name>
+        <name xml:lang="fr-FR">Mot de passe</name>
+        <name xml:lang="pl-PL">Hasło</name>
+      </setting>
+    </group>  
+  </settings>
+
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.2.10"/>
+    <php:safe-mode>false</php:safe-mode>
+    <php:extension>mysql</php:extension>
+    <php:extension>pdo_mysql</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>orangehrm</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.77</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    <mapping url="lib">
+    	<mapping url="confs">
+      		<php:permissions writable="true"/>
+    	</mapping>
+        <mapping url="logs">
+      		<php:permissions writable="true"/>
+    	</mapping>    
+    </mapping>
+     <mapping url="symfony">
+    	<mapping url="config">
+      		<php:permissions writable="true"/>
+    	</mapping>
+    	<mapping url="cache">
+      		<php:permissions writable="true"/>
+    	</mapping>
+        <mapping url="log">
+      		<php:permissions writable="true"/>
+    	</mapping>
+    	<mapping url="apps">
+			<php:permissions writable="true"/>
+    	</mapping>    	    
+    </mapping>
+  </mapping>
+</application>

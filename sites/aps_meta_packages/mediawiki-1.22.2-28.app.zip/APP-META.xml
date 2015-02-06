@@ -1,0 +1,224 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>mediawiki</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.22.2</version>
+   <release>28</release>
+  <homepage>http://www.mediawiki.org/wiki/MediaWiki</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>mediawiki</default-prefix>
+
+  <summary>Open source knowledgebase and content management system</summary>
+  <description>
+    MediaWiki is a Web-based wiki software application deployed by companies as an internal 
+    knowledge management solution, and as a content management system. MediaWiki is written 
+    in PHP, and can use either the MySQL or PostgreSQL relational database management system. 
+    MediaWiki supports more than 70 languages; it is scalable and customizable.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/main_screenshot.jpg">
+    <description>
+      This screen shows a typical view of an article from the knowledgebase.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <url>http://www.gnu.org/copyleft/gpl.html</url>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="1" version="1.8.2"/>
+
+  <changelog>
+  <version release="28" version="1.22.2">
+    	<entry>New 1.22.2 version</entry>
+    </version>
+<version release="1" version="1.22.1">
+    	<entry>This is a security and maintenance release of the MediaWiki 1.22 branch.</entry>
+    </version>
+  <version release="22" version="1.22.0">
+    	<entry>Bug changing Url path fixed</entry>
+    </version>
+  <version release="2" version="1.22.0">
+    	<entry>Url path to default logo modified</entry>
+    </version>
+  <version release="1" version="1.22.0">
+    	<entry>Mediawiki 1.22.0. Release notes: http://www.mediawiki.org/wiki/MediaWiki_1.22</entry>
+    </version>
+   <version release="2" version="1.21.3">
+    	<entry>Solve cache problem after upgrade in root folder installations</entry>
+    </version>
+   <version release="1" version="1.21.3">
+    	<entry>MediaWiki 1.21.3</entry>
+    </version>
+    <version release="3" version="1.21.2">
+    	<entry>tmp folder added</entry>
+    </version>
+    
+  <version release="2" version="1.21.2">
+    	<entry>Cache issue solved</entry>
+    </version>
+  <version release="1" version="1.21.2">
+    	<entry>MediaWiki 1.21.2</entry>
+    </version>
+  <version release="1" version="1.21.1">
+    	<entry>MediaWiki 1.21.1</entry>
+    </version>
+  <version release="1" version="1.21.0">
+    	<entry>MediaWiki 1.21.0</entry>
+    </version>
+  <version release="2" version="1.20.4">
+    	<entry>MediaWiki 1.20.4</entry>
+    </version>
+	<version release="4" version="1.20.3">
+    	<entry>MediaWiki 1.20.3
+
+This is a security and maintenance release of the MediaWiki 1.20 branch.
+
+Changes since 1.20.2
+
+New preference type - 'api'. Preferences of this type are not shown on Special:Preferences, but are still available via the action=options API. (Unbreaks MLEB.)
+(bug 44010) Context is passed to UserGetLanguageObject.
+The recursion guard on RequestContext::getLanguage() was weakened.
+(bug 40585) Don't drop 'step="any"' in HTML input fields.
+(bug 44024) Fixed problems in ObjectCache when using XCache.
+(bug 44010) FauxRequest leaked cookie data from primary request.
+(bug 44135/bug 42441) Pass '2' instead of 'true' to CURLOPT_SSL_VERIFYHOST
+(bug 43518) API action=unblock should return the user name, not the full user object
+(Bug 45355) Prevent read of arbitrary files through mwdoc-filter.php</entry>
+    </version>
+    <version release="4" version="1.20.2">
+		<entry>wgServer bug solved</entry>
+	</version>
+	<version release="1" version="1.20.2">
+		<entry>MediaWiki 1.20.2</entry>
+	</version>
+	<version release="1" version="1.20.0">
+    	<entry>MediaWiki 1.20.0</entry>
+    </version>
+    <version release="5" version="1.19.2">
+		<entry>Upgrade path fixed;</entry>
+		<entry>Default values for logo url and wiki name are added;</entry>
+		<entry>EDIT_TOKEN_SUFFIX in includes User.php module is changed, due to page edit error on Windows;</entry>
+	</version>
+	<version release="4" version="1.19.2">
+		<entry>MediaWiki 1.19. Security patch 1.19.2</entry>
+	</version>
+	<version release="3" version="1.19.2">
+    	<entry>MediaWiki 1.19.2
+
+This is a security release of the MediaWiki 1.19 branch
+[edit]Changes since 1.19.1
+(bug 39700) File: link to non-existing file can inject html
+(bug 39823) Hidden block text leaking to admins
+(bug 39184) LDAP password leakage
+(bug 39180) Disallow framing of api results
+(bug 37587) Enforce language codes to be html safe
+(bug 39824) Check global blocks on account creation</entry>
+    </version>
+    <version release="6" version="1.15.2">
+		<entry>PHP memory limit increased</entry>
+	</version>
+	<version release="5" version="1.15.2">
+		<entry>Entry point defined</entry>
+	</version>
+	<version release="4" version="1.15.2">
+		<entry>Release notes http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-March/000088.html</entry>
+	</version>
+    <version release="3" version="1.12.0">
+      <entry>Collaboration/Portals category removed</entry>
+    </version>
+    <version release="2" version="1.12.0">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+ <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Wiki</label>
+    </entry>
+ </entry-points>
+  
+  <installed-size>77201408</installed-size>
+  
+  <categories>
+    <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting default-value="Admin" id="admin_name" regex="^[A-Za-z]{1}[0-9a-zA-Z_\-]{0,32}" type="string">
+        <name>Administrator's login</name>
+    <error-message>Incorrect Administrator's login. First letter should be a letter following by letters and numbers.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password">
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting default-value="MyWiki" id="title" min-length="1" type="string">
+        <name>Site name</name>
+      </setting>
+      <setting default-value="default-logo" id="logo_url" type="string">
+        <name>Logo URL</name>
+      </setting>
+    </group>
+
+    <group>
+      <name>Language preferences</name>
+      <setting default-value="en-US" id="locale" type="enum">
+        <name>Interface language</name>
+        <choice id="en-US">
+<name>English</name>
+</choice>
+        <choice id="fr-FR">
+<name>French</name>
+</choice>
+        <choice id="de-DE">
+<name>German</name>
+</choice>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements>
+    <php:version min="5.3.2" xmlns:php="http://apstandard.com/ns/1/php"/>
+    <php:extension xmlns:php="http://apstandard.com/ns/1/php">mysql</php:extension>
+    <php:memory-limit xmlns:php="http://apstandard.com/ns/1/php">52428800</php:memory-limit>
+    <php:safe-mode xmlns:php="http://apstandard.com/ns/1/php">false</php:safe-mode>
+
+    <db:db xmlns:db="http://apstandard.com/ns/1/db">
+      <db:id>main</db:id>
+      <db:default-name>mediawiki</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0.2</db:server-min-version>
+     
+    </db:db>
+  </requirements>
+
+  <mapping path="htdocs" url="/">
+    <php:handler xmlns:php="http://apstandard.com/ns/1/php">
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="tmp">
+    	<php:permissions writable="true" xmlns:php="http://apstandard.com/ns/1/php"/>
+    </mapping>
+
+
+  </mapping>
+
+
+
+</application>

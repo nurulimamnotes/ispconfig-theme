@@ -1,0 +1,166 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>phpnuke</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>8.2.4</version>
+  <release>1</release>
+  <homepage>http://phpnuke.org/</homepage>
+  <package-homepage>http://www.sofcloudit.com</package-homepage>
+  <default-prefix>phpnuke</default-prefix>
+
+  <summary>PHP-Nuke is free portal system, released under GNU GPL Licence version 2.0</summary>
+  <description>
+    PHP-Nuke is the result of many years administrating a news site called^
+    Linux Preview (http://linuxpreview.org). First, around August 1998, I^
+    wrote my own code in Perl called NUKE and used it for about 1 year,^
+    then my site goes big, so I needed a more powerfull system and decided^
+    to use Slash, the same used in Slashdot site. It's good but you realy^
+    need to know Perl to modify it, need too many modules, need to load^
+    a damn daemon that sucks all your CPU power. My Pentium III just appears^
+    to be a 386 each minute the daemon make its work. Well, then I discovered^
+    Thatware, a good project to have a news site under PHP. I learned PHP^
+    in less than a week and initiate to modify it. There are too many mods^
+    to mention, it was practicaly a rewrite. I added some cool stuff, deleted^
+    some others and after more than 380 hours of hard work in 3 weeks! PHP-Nuke^
+    was born.  
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/main_screenshot.png">
+    <description>
+      Main page.
+    </description>
+  </screenshot>
+
+  <screenshot path="images/admin_screenshot.png">
+    <description>
+      Admin page.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/Copying.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from release="7" version="8.0"/>
+
+  <changelog>
+    <version version="8.0" release="7">
+      <entry>Initial package version</entry>
+    </version>
+    <version release="1" version="8.2.4">
+    	<entry>PHP-Nuke is back with its new version 8.2 absolutely free.
+PHP-Nuke 8.2 includes security improvements, built-in BB2Nuke forums 2.0.238, significant changes in the system structure, and the source code has been deeply cleaned. Main body replaced by a clean and clear structure for designers and developers.
+Improvements and new features in Version 8.2:
+Significant changes in the system structure.
+-Built-in BB2Nuke forums 2.0.238.
+-Integrated security.
+The code has been modified in the most used blocks files:
+block-Who_is_Online.php
+block-SiteStats.php
+block-NukeC_Random
+block-Login
+block-Survey
+block-Categories
+block-Login
+block-Languages
+block-Modules
+Modified modules:
+News
+Submit_News
+Surveys
+Members_List
+Statistics
+Downloads
+Design:
+Both left and right lateral blocks can be customized.
+It has an Image folder which includes all the visual elements of the theme, and another CSS folder that includes the style sheet.
+-Main body replaced by a good clean and clear structure for designers and developers
+</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin.php</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>19660800</installed-size>
+
+  <categories>
+	  <category>Web/Content management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1">
+        <name>Site name</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.2.0"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>phpnuke</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+  </mapping>
+
+        
+
+</application>

@@ -1,0 +1,113 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>xrms</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.19</version>
+  <release>31</release>
+  <homepage>http://xrms.sourceforge.net/pagebuilder.php?s1=18</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>xrms</default-prefix>
+
+  <summary>XRMS is a web-based application for managing business entities such as employees, customers, contacts, activities with those contacts, etc.</summary>
+  <description>
+    XRMS is a web-based application for managing business entities such as
+    employees, customers, contacts, activities with those contacts, etc.
+
+    XRMS generally falls into the category of application known as Customer
+    Relationship Management (CRM), Sales Force Automation (SFA), with aspects
+    of Business Intelligence (BI).  Basically, if your company needs to manage
+    relationships with your customers and business partners, XRMS should be able
+    to fulfill your needs.
+
+    We believe that XRMS is the most advanced open source CRM application
+    written in PHP.  We hope that you will find it useful.  
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+      Screenshot 1.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>Open Software License v. 2.0</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="1.19" release="21">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>10070016</installed-size>
+
+  <categories>
+    <category>Back office/Customer Relationship Management</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin">
+        <name>Administrator's login</name>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1">
+        <name>Site name</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:extension>mysql</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>xrms</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.0.0</db:server-min-version>
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    <mapping url="export">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="storage">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="include/plugin-cfg.php">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+  
+
+</application>

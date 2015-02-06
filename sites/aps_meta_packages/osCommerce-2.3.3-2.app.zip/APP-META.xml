@@ -1,0 +1,145 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>osCommerce</name>
+  <packager-uri>uuid: 0b687dfb-ed23-49ec-99d3-d0a011fb1029</packager-uri>
+  <version>2.3.3</version>
+  <release>2</release>
+  <homepage>http://www.oscommerce.com/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>oscommerce</default-prefix>
+
+  <summary>osCommerce is an online shop e-commerce solution.</summary>
+  <description>osCommerce is an online shop solution that offers a wide range of out-of-the-box features that allows online stores to be setup fairly quickly with ease, and is available for free as an open source based solution released under the GNU General Public License.  
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/screenshot.png">
+    <description> Screenshot
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPL</name>
+	  <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+						    
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="2.2rc2a" release="6"/>
+
+  <changelog>
+    <version release="2" version="2.3.3">
+    	<entry>Upgradable from 2.2rc2a</entry>
+    </version><version release="1" version="2.3.3">
+    	<entry>New version.</entry>
+    </version><version release="7" version="2.3.2">
+    	<entry>Updated automation scripts</entry>
+    </version><version release="4" version="2.3.2">
+    	<entry>Changes in the scripts in testing</entry>
+    </version><version release="3" version="2.3.2">
+    	<entry>Changes in the test scripts</entry>
+    </version><version release="2" version="2.3.2">
+    	<entry>Updated automated test scripts</entry>
+    </version><version release="1" version="2.3.2">
+    	<entry>    Changed customer password forgotten feature to e-mail a personal link to the customer where they can change their password up to 24 hours, instead of directly changing the password to a random string and e-mailing it to the customer.
+
+    Added new password_reset.php page to manage personal password reset links.
+
+    Added new ar_password_reset.php Action Recorder module to log and limit the request of personal password reset links to once every 5 minutes.
+    Improve logic of tep_create_random_value() by using Phpass' random number generator.
+
+    If function parameter $type is not 'mixed', 'chars', or 'digits', return a 'mixed' string instead of false.
+    Add openssl_random_pseudo_bytes() and mcrypt_create_iv() to Phpass' get_random_bytes() class method. These are used if /dev/urandom is not available.
+    Only seed the random number generator if PHP &lt; 4.2 is used.</entry>
+    </version><version version="2.3.1" release="3">
+      <entry>Upgrade package version</entry>
+    </version>
+    <version version="2.2rc2a" release="6">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/admin/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>4147200</installed-size>
+
+  <categories>
+	  <category>Web/E-commerce</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+  	<setting id="title" type="string" min-length="1" default-value="Site Title">
+        <name>Site name</name>
+    </setting>
+    <setting id="name" type="string" min-length="1" default-value="Admin">
+        <name>Site owner name</name>
+    </setting>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="4.0.0"/>
+    <php:safe-mode>false</php:safe-mode>
+    <php:extension>mysql</php:extension>
+    <php:register-globals>false</php:register-globals>
+   <db:db>
+      <db:id>main</db:id>
+      <db:default-name>oscommerce</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>3.2.3</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="strfolder">
+      <php:permissions writable="true"/>
+    </mapping>
+     <mapping url="includes/work">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="pub">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="images">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="admin">
+      <mapping url="backups">
+        <php:permissions writable="true"/>
+      </mapping>
+       <mapping url="images/graphs">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url=".htaccess">
+        <php:permissions writable="true"/>
+      </mapping>
+      <mapping url=".htpasswd_oscommerce">
+        <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+  </mapping>
+</application>

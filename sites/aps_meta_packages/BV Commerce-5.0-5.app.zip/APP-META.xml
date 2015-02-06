@@ -1,0 +1,115 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>BV Commerce</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>5.0</version>
+  <release>5</release>
+  <homepage>http://www.bvsoftware.com/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>/bvc/</default-prefix>
+
+  <summary>Shopping cart software for ASP.NET 2.0</summary>
+  <description>Host your store on your own servers or with any web hosting company giving you the freedom and flexibility every business needs. BV Commerce has everything you need to create a store and process orders.
+    Key Features:    
+    Search Engine Optimization,
+    Built-in Templates and Unlimited Plug-ins,
+    Create Rich Products without Programming,
+    Image Swap When Choices Change (i.e size/color),
+    Built for APS.NET 2.0 (not just recompiled),
+    Full Source Code Included,
+    Automatic URL Rewriting,
+    Custom URL Rewriting,
+	Ship directly through UPS and Print Labels.
+  </description>
+
+  <icon path="images/icon.png"/>
+  <screenshot path="images/A1.png"><description>Unlimited Categories. Categorize your products any way you like whether you have 10 products, 10 thousand or 100 thousand.</description></screenshot>
+  <screenshot path="images/B1.png"><description>2 Built-in Product Templates + Unlimited Plug-ins.</description></screenshot>
+  <screenshot path="images/C1.png"><description>Product Rotators. Show a different product each time a customer visits your homepage.</description></screenshot>
+  <screenshot path="images/E1.png"><description>Quick Keyword Search. Keep a search box on every page of your store so customers can quickly find items by keyword.</description></screenshot>
+  <screenshot path="images/F1.png"><description>Remember Billing and Shipping Addresses.</description></screenshot>
+  <screenshot path="images/G1.png"><description>Share great product bargains with other customers via e-mail.</description></screenshot>
+  <screenshot path="images/I1.png"><description>Unlimited Customizable Content Sections. Easily add and remove sections of HTML and forms from our admin interface.</description></screenshot>
+  <screenshot path="images/L1.png"><description>Receive credit card payments from more than 25 common credit card gateways.</description></screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>BV Commerce 5 License Agreement</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="5.0" release="5">
+		<entry>Support for non-standard MS-SQL port is added</entry>
+    </version>
+    <version version="5.0" release="4">
+      <entry>Initial version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Store Main page</label>
+    </entry>
+    <entry>
+      <path>/BVAdmin/</path>
+      <label>Administrative interface</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>17624785</installed-size>
+
+  <categories>
+	  <category>Web/E-commerce</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="3" max-length="20" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <description>Please enter a username between 3 and 20 characters in length.</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="8" max-length="30" >
+        <name>Password</name>
+        <description>Please enter a password between 8 and 30 characters in length.</description>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1" max-length="255" default-value="My BV Commerce 5 store">
+        <name>Site name</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:aspnet="http://apstandard.com/ns/1/aspnet">
+    <aspnet:version>2.0</aspnet:version>
+    <db:db>
+       <db:id>main</db:id>
+       <db:default-name>bvc</db:default-name>
+       <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+       <db:server-type>microsoft:sqlserver</db:server-type>
+       <db:server-min-version>9.0</db:server-min-version>
+       
+       
+       
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:aspnet="http://apstandard.com/ns/1/aspnet">
+    <aspnet:handler/>
+    
+    <mapping url="web.config"><aspnet:permissions writable="true"/></mapping>    
+    <mapping url="Files" path="htdocs/Files"><aspnet:permissions writable="true"/></mapping>    
+    <mapping url="Images" path="htdocs/Images"><aspnet:permissions writable="true"/></mapping>
+  </mapping>
+</application>

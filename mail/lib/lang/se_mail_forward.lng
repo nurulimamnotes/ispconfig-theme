@@ -1,0 +1,9 @@
+<?php
+$wb['email_txt'] = 'Epost';
+$wb['destination_txt'] = 'Mottagande epost';
+$wb['active_txt'] = 'Aktiv';
+$wb['limit_mailforward_txt'] = 'Det maximala antalet vidarebefordringar för ditt konto är uppnått.';
+$wb['duplicate_mailbox_txt'] = 'Det finns redan ett epostkonto med denna adress';
+$wb['domain_txt'] = 'Domän';
+$wb['source_txt'] = 'Källadress';
+?>

@@ -1,0 +1,172 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>2x ReadyScript Shop - Full</name>
+    <packager-uri>uuid:823a0b47-9227-7ch9-987e-89a7d0c99215</packager-uri>
+    <version>2.0.0.43</version>
+    <release>1</release>
+    <homepage>http://www.readyscript.ru/</homepage>
+    <package-homepage>http://ReadyScript</package-homepage>
+    <default-prefix>/</default-prefix>
+    
+    <summary>Platform for fast creation of modern online stores, ergonomic design of elements managing e-shops, convenient object-oriented API, multisiting, internationalization, modularity.</summary>
+    <summary xml:lang="ru-RU">Платформа для создания полномасштабных интернет-магазинов. Интеграция с 1С. Партнерский модуль.</summary>
+
+    <description>
+        ReadyScript is a platform for fast creation of modern online stores
+        
+        Features:
+        * Responsive design
+        * Compatible with gs960
+        * Widget monitoring
+        * Ratings &amp; Reviews
+        * Discount coupons
+        * Product comparison
+        * Integration with social networks
+        * Electronic payments
+        * Import/export CSV, CommerceML
+        * Update in «one click»
+        * Editing directly on the site
+        * Multi-currency
+        * Exchange with account software "1C"
+        * Partner module
+        * Automatic taxes computation
+        * SMS notifications
+        * And much more
+    </description>
+    <description xml:lang="ru-RU">
+        ReadyScript это профессиональная платформа для создания полномасштабных интернет-магазинов.
+        
+        Возможности:
+        * Обмен данными с 1С
+        * Партнерский модуль        
+        * Отзывчивый(адаптивный) дизайн в комплекте
+        * Совместим с CSS фреймворком gs960
+        * Мониторинг ситуации с помощью виджетов
+        * Отзывы, рейтинги товаров
+        * Поддержка скидочных купонов
+        * Сравнение товаров
+        * Интеграция с социальными сетями
+        * Поддержка электронных платежей
+        * Импорт/экспорт CSV, CommerceML
+        * Обновление в «один клик»
+        * Редактирование информации прямо на сайте
+        * Мультивалютность
+        * Автоматический расчет налогов
+        * SMS, Email уведомления
+        * И многое другое
+        
+        Система является модульной, мультисайтовой, мультивалютной, и поддерживает инструменты интернационализации.
+    </description>    
+    
+    <icon path="images/icon.png"/>
+    
+    <screenshot path="images/screenshot_desktop.jpg">
+        <description>Desktop.</description>
+    </screenshot>
+    
+    <screenshot path="images/screenshot_table.jpg">
+        <description>List of products.</description>
+    </screenshot>
+    
+    <license must-accept="true">
+        <text>
+            <name>ReadyScript EULA</name>
+            <file>scripts/license.txt</file>
+        </text>
+    </license>    
+    <configuration-script-language>php</configuration-script-language>
+    <patches version="2.0.0.36" release="1"/>
+    <upgrades version="2.0.0.36" release="1"/>
+    <changelog>
+        <version version="2.0.0.36" release="1">
+            <entry>Initial package version</entry>
+        </version>
+        <version version="2.0.0.43" release="1">
+            <entry>Fixed bug in exchange module</entry>
+            <entry>Added support of 1C export schema version 2.05</entry>
+            <entry>Fixed bug in side filter block</entry>
+            <entry>Fixed bug in sitemap generation</entry>
+            <entry>Fixed bug in default theme on devices with touch screen</entry>
+            <entry>Fixed bug in transliteration</entry>
+            <entry>Fixed bug in demo content</entry>
+            <entry>Fixed bug in merging images with watermark</entry>
+            <entry>Added alert on order change</entry>
+            <entry xml:lang="ru-RU">Исправлена ошибка: неверный идентификатор сессии во время обмена данными с 1С</entry>
+            <entry xml:lang="ru-RU">Добавлена поддержка схемы выгрузки из 1С версии 2.05</entry>                        
+            <entry xml:lang="ru-RU">Исправлена ошибка в блоке фильтрации товаров по характеристикам</entry>
+            <entry xml:lang="ru-RU">Исправлена ошибка при формировании sitemap</entry>
+            <entry xml:lang="ru-RU">Исправлены ошибки, возникающие в теме оформления на устройствах с сенсорным экраном</entry>
+            <entry xml:lang="ru-RU">Исправлена ошибка, возникающая при транслитерации спец. символов</entry>
+            <entry xml:lang="ru-RU">Исправлена ошибка в демонстрационных данных</entry>
+            <entry xml:lang="ru-RU">Исправлена ошибка при накладывании водяного знака</entry>
+            <entry xml:lang="ru-RU">Добавлено уведомление об изменении заказа</entry>
+        </version>        
+    </changelog>
+    
+    <entry-points>
+        <entry>
+            <path>/</path>
+            <label>Site</label>
+            <label xml:lang="ru-RU">Сайт</label>
+        </entry>
+        <entry>
+            <path>/admin/</path>
+            <label>Administrative panel</label>
+            <label xml:lang="ru-RU">Административная панель</label>
+        </entry>
+    </entry-points>        
+    
+    <installed-size>38820726</installed-size>
+    <categories>
+        <category>Web/Content management</category>
+    </categories>    
+    <languages>
+        <language>ru</language>
+    </languages>    
+  <settings>
+    <group>
+        <name>Authentication of administrator</name>
+        <name xml:lang="ru-RU">Сведения об администраторе</name>
+        <setting id="admin_email" type="string" default-value="admin@example.com">
+            <name>Administrator's email</name>
+            <name xml:lang="ru-RU">E-mail администратора</name>
+        </setting>
+        <setting id="admin_password" type="password" default-value="admin">
+            <name>Password</name>
+            <name xml:lang="ru-RU">Пароль</name>
+        </setting>
+    </group>
+    <group>
+        <name>Demo content</name>
+        <name xml:lang="ru-RU">Демонстрационные данные</name>
+        <setting id="skip_demo_data" type="boolean">
+            <name>Don't install demo content</name>
+            <name xml:lang="ru-RU">Не устанавливать демо данные</name>
+        </setting>
+    </group>
+  </settings>
+    
+    <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+        <db:db>
+            <db:id>mysql</db:id>
+            <db:default-name>readyscript</db:default-name>
+            <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+            <db:server-type>mysql</db:server-type>
+            <db:server-min-version>5.0.0</db:server-min-version>
+        </db:db>
+            
+        <apache:htaccess/>
+        <php:version min="5.3.2"/>
+        <php:function>mysql_connect</php:function>        
+        <php:extension>mbstring</php:extension>
+        <php:extension>pcre</php:extension>
+        <php:safe-mode>false</php:safe-mode>
+        <php:file-uploads>true</php:file-uploads>
+        <php:memory-limit>33554432</php:memory-limit>
+        <php:short-open-tag>true</php:short-open-tag>
+    </requirements>
+
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+        <php:handler><php:extension>php</php:extension></php:handler>
+        <php:permissions writable="true"/>
+    </mapping>    
+</application>

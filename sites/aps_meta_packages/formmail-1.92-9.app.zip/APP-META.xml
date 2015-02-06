@@ -1,0 +1,91 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>formmail</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>1.92</version>
+  <release>9</release>
+  <homepage>http://www.scriptarchive.com/formmail.html</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>formmail</default-prefix>
+
+  <summary>Web-based CGI mail sender</summary>
+  <description>
+    FormMail is a generic HTML form to e-mail gateway that parses the results of any form and sends
+    them to the specified users. This script has many formatting and operational options, most of
+    which can be specified within each form, meaning you don't need programming knowledge or multiple
+    scripts for multiple forms. This also makes FormMail the perfect system-wide solution for allowing
+    users form-based user feedback capabilities without the risks of allowing freedom of CGI access.
+    There are several downloading options available below and more information on this script can be
+    found in the Readme file. FormMail is quite possibily the most used CGI program on the internet,
+    having been downloaded over 2,000,000 times since 1997.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  
+
+  <license must-accept="true">
+    <text>
+      <name>Copyright notice</name>
+      <file>cgi-bin/LICENSE</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <upgradable-from version="1.92" release="1"/>
+  
+  <changelog>
+    <version version="1.92" release="9">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/cgi-bin/FormMail.pl</path>
+      <label>FormMail script</label>
+    </entry>
+    <entry>
+      <path>/cgi-bin/README</path>
+      <label>Readme file</label>
+    </entry>
+  </entry-points>
+
+  <installed-size>81920</installed-size>
+
+  <categories>
+	  <category>Collaboration/Email</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Email preferences</name>
+      <setting id="mailprog" type="string" default-value="/usr/lib/sendmail -i -t">
+        <name>mailprog</name>
+	<description>This variable must define the location to your server's sendmail program.</description>
+      </setting>
+    </group>    
+    
+  </settings>
+
+  <requirements>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers">
+    
+    <mapping url="cgi-bin" path="cgi-bin" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers">
+      <cgi:handler>
+        <cgi:extension h:handler-type="perl">pl</cgi:extension>
+      </cgi:handler>
+      
+    </mapping>
+  </mapping>
+
+
+  
+
+</application>

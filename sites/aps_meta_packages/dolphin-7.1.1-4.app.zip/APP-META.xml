@@ -1,0 +1,305 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>dolphin</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>7.1.1</version>
+  <release>4</release>
+  <homepage>http://www.boonex.com/dolphin/</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>mycommunity</default-prefix>
+
+  <summary>Smart Community Builder</summary>
+  <description>
+	Dolphin - Smart Community Builder. It is the universal web community script written in PHP and MySQL. Dolphin has a lot of features: Innovative Builders for site customization, Groups, Classifieds and Events , Tags, Rss feeds, Flash Promo and much more
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/app_screenshot_1.png">
+    <description>
+	Base administrative interface.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>Boonex Ltd.</name>
+      <file>htdocs/license.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+    <version version="7.1.1" release="4">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/</path>
+      <label>Portal</label>
+    </entry>
+    <entry>
+      <path>administration</path>
+      <label>Administration</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>16548949</installed-size>
+
+  <categories>
+	  <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+    </group>
+
+    <group>
+      <name>Configuration</name>
+
+      <setting id="site_title" type="string" default-value="The Best Community " min-length="0">
+        <name>Site title</name>
+        <description>The name of your site</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="site_email" type="string" default-value="" min-length="0">
+        <name>Site e-mail</name>
+        <description>Your site e-mail</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="notify_email" type="string" default-value="" min-length="0">
+        <name>Notify e-mail</name>
+        <description>Envelope "From:" address for notification messages.</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="bugreport_email" type="string" default-value="" min-length="0">
+        <name>Bug report e-mail</name>
+        <description>Your e-mail for receiving bug reports</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+    </group>
+
+
+    <group>
+      <name>General script paths</name>
+
+      <setting id="php_path" type="string" default-value="/usr/bin/php" min-length="0">
+        <name>Path to php binary</name>
+        <description>You should specify full path to your PHP interpreter here.</description>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="mogrify_path" type="string" default-value="/usr/bin/mogrify" min-length="0">
+        <name>Path to mogrify</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="convert_path" type="string" default-value="/usr/bin/convert" min-length="0">
+        <name>Path to convert</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+      <setting id="composite_path" type="string" default-value="/usr/bin/composite" min-length="0">
+        <name>Path to composite </name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db"  xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="5.2.0"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <php:extension>mysqli</php:extension>
+    <php:extension>gd</php:extension>
+    <php:extension>curl</php:extension>
+    <php:magic-quotes-gpc>false</php:magic-quotes-gpc>
+    <php:register-globals>false</php:register-globals>
+    <php:safe-mode>false</php:safe-mode>
+    <php:short-open-tag>true</php:short-open-tag>
+    <php:allow-url-fopen>true</php:allow-url-fopen>
+    <php:memory-limit>67108864</php:memory-limit>
+    <apache:required-module>mod_rewrite</apache:required-module>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>boonex_ray</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.1.2</db:server-min-version>
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+      <mapping url="inc">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="backup">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="cache">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="cache_public">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="langs">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="media">
+      	<mapping url="app">
+         <php:permissions writable="true"/>
+        </mapping>
+        <mapping url="images">
+         <php:permissions writable="true"/>
+        </mapping>
+      </mapping>
+
+      <mapping url="tmp">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="plugins/htmlpurifier/standalone/HTMLPurifier/DefinitionCache/Serializer">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/board/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/chat/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/photo/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/im/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/mp3/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/video/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/video_comments/files">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="sitemap.xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/global/data/integration.dat">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/board/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/chat/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/desktop/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/global/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/im/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/mp3/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/photo/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/video/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/video_comments/xml">
+         <php:permissions writable="true"/>
+      </mapping>
+
+      <mapping url="flash/modules/global/app/ffmpeg.exe">
+         <php:permissions writable="true"/>
+      </mapping>
+
+    <mapping url="modules/boonex/avatar/data/images">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="modules/boonex/avatar/data/tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/files/data/files">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/forum">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/photos/data/files">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/profile_customize/data/images">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/profiler/log">
+      <php:permissions writable="true"/>
+    </mapping>
+
+    <mapping url="modules/boonex/smtpmailer/data/logs">
+      <php:permissions writable="true"/>
+    </mapping>
+
+  </mapping>
+
+</application>

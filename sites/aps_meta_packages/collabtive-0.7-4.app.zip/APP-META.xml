@@ -1,0 +1,131 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>collabtive</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>0.7</version>
+  <release>4</release>
+  <homepage>http://collabtive.o-dyn.de</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>collabtive</default-prefix>
+  <summary>Collabtive is Web-based project management software.</summary>
+  <summary xml:lang="en-US">Collabtive is Web-based project management software.</summary>
+  <summary xml:lang="de-DE">Collabtive ist eine webbasierte Projektverwaltungssoftware.</summary>
+  <summary xml:lang="fr-FR">Collabtive est un logiciel de gestion de projets sur base Internet.</summary>
+  <summary xml:lang="pl-PL">Collabtive internetowe oprogramowanie służące do zarządzania projektami.</summary>
+  <summary xml:lang="es-ES">Collabtive es un software de gestión de proyectos basado en web.</summary>
+  <description>Collabtive is Web-based project management software. The project was started in November 2007. It is open source software and provides an alternative to proprietary tools like Basecamp. Collabtive is written in PHP and JavaScript. Collabtive is intended for small to medium-sized businesses and freelancers.</description>
+  <description xml:lang="en-US">Collabtive is Web-based project management software. The project was started in November 2007. It is open source software and provides an alternative to proprietary tools like Basecamp. Collabtive is written in PHP and JavaScript. Collabtive is intended for small to medium-sized businesses and freelancers.</description>
+  <description xml:lang="de-DE">Collabtive ist eine webbasierte Projektverwaltungssoftware. Das Projekt wurde im November 2007 gestartet. Es handelt sich um Open Source Software, die als Alternative zu proprietären Lösungen wie Basecamp eingesetzt werden kann. Collabtive ist in PHP und JavaScript geschrieben. Collabtive eignet sich für kleine und mittelgroße Unternehmen sowie für Freiberufler.</description>
+  <description xml:lang="fr-FR">Collabtive est un logiciel de gestion de projets sur base Internet. Le projet à démarré en novembre 2007. Il s'agit d'un logiciel Open Source qui fournit une alternative à des outils propriétaires comme Basecamp. Collabtive est écrit en PHP et JavaScript. Collabtive est destiné aux PME et aux indépendants.</description>
+  <description xml:lang="pl-PL">Collabtive to internetowe oprogramowanie służące do zarządzania projektami. Projekt został rozpoczęty w listopadzie 2007. Jest to oprogramowanie typu Open Source i stanowi alternatywę dla narzędzi chronionych patentami, takich jak Basecamp. Collabtive jest napisany w PHP i JavaScript. Collabtive jest przeznaczony dla średnich i małych przedsiębiorstw oraz dla freelancerów.</description>
+  <description xml:lang="es-ES">Collabtive es un software de gestión de proyectos basado en web. El proyecto se inició en noviembre de 2007. Es un software de código abierto que proporciona una alternativa a herrameintas propietarias como Basecamp. Collabtive está escrito en PHP y JavaScript. Collabtive está destinado a pequeñas y medianas empresas, así como a autónomos.</description>
+  <icon path="images/logo.png"/>
+  <screenshot path="images/screen.png">
+    <description>This screen shows a list of all reported and assigned bugs and their status.</description>
+  </screenshot>
+  <license must-accept="true">
+    <text>
+      <name>GNU GENERAL PUBLIC LICENSE</name>
+      <file>htdocs/license.txt</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+  	<version version="0.7" release="4">
+      <entry>mbstring requirement corrected</entry>
+    </version>
+  	<version version="0.7" release="3">
+      <entry>Database prefix deleted from sql files</entry>
+    </version>
+  	<version version="0.7" release="2">
+      <entry>Translations included</entry>
+    </version>
+    <version version="0.7" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>15122432</installed-size>
+  <categories>
+    <category>Web/Tools</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" min-length="1" type="password" >
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Language</name>
+      <setting id="lang" type="enum" default-value="en">
+        <name>Interface language</name>
+        <choice id="da" >
+          <name>Danish</name>
+        </choice>
+         <choice id="de" >
+          <name>German</name>
+        </choice>
+        <choice id="en" >
+          <name>English</name>
+        </choice>
+        <choice id="es" >
+          <name>Spanish</name>
+        </choice>
+        <choice id="fi" >
+          <name>Finnish</name>
+        </choice>
+         <choice id="fr" >
+          <name>French</name>
+        </choice>
+        <choice id="it" >
+          <name>Italian</name>
+        </choice>
+        <choice id="nl" >
+          <name>Dutch</name>
+        </choice>        
+        <choice id="pl" >
+          <name>Polish</name>
+        </choice>
+        <choice id="se" >
+          <name>Swedish</name>
+        </choice>
+        <choice id="sr" >
+          <name>Serbian</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.1"/>
+    <php:extension>mysql</php:extension>
+    <php:extension>mbstring</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>Collabtive</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4</db:server-min-version>
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+	<mapping url="files">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="templates_c">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="config/standard">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

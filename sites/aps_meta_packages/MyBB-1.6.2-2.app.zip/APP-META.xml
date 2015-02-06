@@ -1,0 +1,243 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>MyBB</name>
+  <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+  <version>1.6.2</version>
+  <release>2</release>
+  <homepage>http://www.mybb.com</homepage>
+  <package-homepage>http://www.softec-internet.com/</package-homepage>
+  <default-prefix>MyBB</default-prefix>
+
+  <summary>The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="de-DE">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="en-US">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="en-GB">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="fr-FR">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="es-ES">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="pl-PL">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+  <summary xml:lang="en-CA">The free and open source, intuitive, extensible, and incredibly powerful forum software you've been looking for.</summary>
+
+  <description>
+		MyBB is a discussion board that has been around for a while; it has evolved from other bulletin boards into the forum package it is today. Therefore, it is a professional and efficient discussion board, developed by an active team of developers. 
+  </description>
+  <description xml:lang="de-DE">
+		MyBB ist eine etablierte Forensoftware, die von anderen Bulletin Boards ausgehend zu dem Foren-Paket von heute entwickelt wurde. Eine professionelle und effiziente Forensoftware, erstellt von einem aktiven Entwicklerteam. 
+  </description>
+  <description xml:lang="en-US">
+		MyBB is a discussion board that has been around for a while; it has evolved from other bulletin boards into the forum package it is today. Therefore, it is a professional and efficient discussion board, developed by an active team of developers. 
+  </description>
+  <description xml:lang="en-GB">
+		MyBB is a discussion board that has been around for a while; it has evolved from other bulletin boards into the forum package it is today. Therefore, it is a professional and efficient discussion board, developed by an active team of developers. 
+  </description>
+  <description xml:lang="fr-FR">
+		MyBB est un logiciel de forum établi qui a été développé à partir de Bulletin Boards sur le pack forum d'aujourd'hui. Un logiciel de forum professionnel et efficace, créé par une équipe de développeurs très active. 
+  </description>
+  <description xml:lang="es-ES">
+		MyBB es un panel de discusión que ya lleva cierto tiempo en la red; ahora ha evolucionado hasta convertirse en el paquete de foro actual. Así que se trata de un panel de discusión eficiente y profesional a cargo de un activo equipo de desarrolladores. 
+  </description>
+  <description xml:lang="pl-PL">
+		MyBB to forum dyskusyjne dostępne już od jakiegoś czasu; ewoluowało z innych forów informacyjnych do pakietu forum, którym jest obecnie. Z tego powodu jest to profesjonalne i wydajne forum dyskusyjne, zaprojektowane przez aktywny zespół deweloperów. 
+  </description>
+  <description xml:lang="en-CA">
+		MyBB is a discussion board that has been around for a while; it has evolved from other bulletin boards into the forum package it is today. Therefore, it is a professional and efficient discussion board, developed by an active team of developers. 
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/screenshot.png">
+    <description>Screenshot of MyBB</description>
+    <description xml:lang="de-DE">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="en-US">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="en-GB">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="fr-FR">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="es-ES">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="pl-PL">
+		Screenshot of MyBB
+	</description>
+    <description xml:lang="en-CA">
+		Screenshot of MyBB
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="de-DE">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="en-US">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="en-GB">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="fr-FR">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="es-ES">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="pl-PL">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+    <text xml:lang="en-CA">
+      <name>GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007</name>
+      <file>htdocs/LICENSE.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+  <changelog>
+  	<version version="1.6.2" release="2">
+      	<entry>Include the license in file</entry>
+	</version>
+  	<version version="1.6.2" release="1">
+      	<entry>Initial package version</entry>
+    	<entry xml:lang="de-DE">Initial package version</entry>
+    	<entry xml:lang="en-US">Initial package version</entry>
+    	<entry xml:lang="en-GB">Initial package version</entry>
+    	<entry xml:lang="fr-FR">Initial package version</entry>
+    	<entry xml:lang="es-ES">Initial package version</entry>
+    	<entry xml:lang="pl-PL">Initial package version</entry>
+    	<entry xml:lang="en-CA">Initial package version</entry>
+    </version>
+  </changelog>
+
+	<entry-points>
+    	<entry>
+    		<path>/admin</path>
+    		<label>Administration</label>
+    		<description>Index of administration</description>
+    	</entry>
+    </entry-points>
+    
+  <installed-size>11157504 </installed-size>
+
+  <categories>
+    <category>Web/Forum</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+    <language>de</language>
+    <language>fr</language>
+    <language>es</language>
+    <language>pl</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Preferences</name>
+      <name xml:lang="de-DE">Preferences</name>
+      <name xml:lang="en-US">Preferences</name>
+      <name xml:lang="en-GB">Preferences</name>
+      <name xml:lang="fr-FR">Preferences</name>
+      <name xml:lang="es-ES">Preferences</name>
+      <name xml:lang="pl-PL">Preferences</name>
+      <name xml:lang="en-CA">Preferences</name>
+      <setting id="admin" type="string" default-value="Admin" regex="^[A-Za-z]{1}[0-9a-zA-Z_\-]{0,32}">
+        <name>Admin Username</name>
+        <name xml:lang="de-DE">Admin Username</name>
+      	<name xml:lang="en-US">Admin Username</name>
+      	<name xml:lang="en-GB">Admin Username</name>
+      	<name xml:lang="fr-FR">Admin Username</name>
+      	<name xml:lang="es-ES">Admin Username</name>
+      	<name xml:lang="pl-PL">Admin Username</name>
+      	<name xml:lang="en-CA">Admin Username</name>
+        <error-message>Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="de-DE">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="en-US">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="en-GB">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="fr-FR">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="es-ES">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="pl-PL">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+		<error-message xml:lang="en-CA">Incorrect Username. First letter should be a letter following by letters and numbers.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      	<name xml:lang="de-DE">Password</name>
+      	<name xml:lang="en-US">Password</name>
+      	<name xml:lang="en-GB">Password</name>
+      	<name xml:lang="fr-FR">Password</name>
+      	<name xml:lang="es-ES">Password</name>
+      	<name xml:lang="pl-PL">Password</name>
+      	<name xml:lang="en-CA">Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Admin's email</name>
+		<name xml:lang="de-DE">Admin's email</name>
+		<name xml:lang="en-US">Admin's email</name>
+		<name xml:lang="en-GB">Admin's email</name>
+		<name xml:lang="fr-FR">Admin's email</name>
+		<name xml:lang="es-ES">Admin's email</name>
+		<name xml:lang="pl-PL">Admin's email</name>
+		<name xml:lang="en-CA">Admin's email</name>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.1"/>
+    <php:extension>mysql</php:extension>
+    <php:memory-limit>20000000</php:memory-limit>
+    <php:safe-mode>false</php:safe-mode>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>mybb</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.0</db:server-min-version>
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="inc" >
+		<mapping url="settings.php" >
+	      <php:permissions writable="true"/>
+	    </mapping>
+		<mapping url="config.php" >
+	      <php:permissions writable="true"/>
+	    </mapping>
+		<mapping url="languages" >
+	      <php:permissions writable="true"/>
+	    </mapping>
+	</mapping>
+	<mapping url="cache" >
+      <php:permissions writable="true"/>
+	  <mapping url="themes" >
+      	<php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+	<mapping url="uploads" >
+      <php:permissions writable="true"/>
+  	  <mapping url="avatars" >
+         <php:permissions writable="true"/>
+      </mapping>
+    </mapping>
+	<mapping url="admin/backups" >
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

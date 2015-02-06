@@ -1,0 +1,67 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>Easy Gallery</name>
+    <packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+    <version>2.1.1</version>
+    <release>2</release>
+    <homepage>http://www.freitagmorgen.de/</homepage>
+    <package-homepage>http://www.softec-internet.com/</package-homepage>
+    <default-prefix>/easygallery/</default-prefix>
+    <summary>EasyGallery scans a folder on your webspace for images and displays them in a web-gallery</summary>
+    <description>
+
+EasyGallery scans a folder on your webspace for images and displays them in a web-gallery. Thumbnails are created automatically, so you just have to upload your files.</description>
+    <icon path="images/icon64.jpg" />
+    <screenshot path="images/screenshot640.png">
+    	<description>Gallery Page</description>
+    </screenshot>
+    <license must-accept="false">
+    	<text>
+    		<name>General Public License</name>
+    		<url>http://www.gnu.org/licenses/gpl.html</url>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+    <changelog>
+    	<version release="1" version="2.1.1">
+    		<entry>Initial package	</entry>
+    	</version>
+    	<version release="2" version="2.1.1">
+    		<entry>minor bugs fixed
+</entry>
+    	</version>
+    </changelog>
+    <entry-points>
+    	<entry>
+    		<path>/</path>
+    		<label>Gallery page</label>
+    		<description></description>
+    	</entry>
+    </entry-points>
+    <installed-size>228860</installed-size>
+    <categories>
+    	<category>Web/Gallery</category>
+    </categories>
+    <languages>
+    	<language>en</language>
+    </languages>
+    <settings>
+
+    </settings>
+
+    <requirements xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:extension>gd</php:extension>
+    	<php:version min="4"/>
+    </requirements>
+
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    	<php:handler>
+		<php:extension>php</php:extension>
+		</php:handler>
+    	<mapping url="gallery">
+    		<php:permissions writable="true"/>
+    	</mapping>
+
+    
+    
+    </mapping>
+</application>

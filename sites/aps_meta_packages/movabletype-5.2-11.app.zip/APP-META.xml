@@ -1,0 +1,131 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>movabletype</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>5.2</version>
+  <release>11</release>
+  <homepage>http://www.movabletype.org</homepage>
+  <package-homepage>http://parallels.com/</package-homepage>
+  <default-prefix>movabletype</default-prefix>
+
+  <summary>Powerful publishing platform.</summary>
+  <description>
+    Movable Type 4
+    The world's most powerful and easy to use blog publishing platform.
+    It's easier than ever to publish and share information with Movable Type. With more than 50 
+    new features, MT4 makes it simple to start a blog, manage entire websites and build an engaged community of readers and customers.
+  
+    Installation instructions. 
+    IIS Users: please read http://www.sixapart.com/movabletype/kb/known/cgi_error_on_ii.html for configuring the application.
+    Hint: You may create the IIS virtual directory "@@application-root@@/cgi-bin" aliased to physical directory "@@application root@@/cgi-bin" with cgi execution permissions.
+    Following perl modules are required:
+    DBI (verion >= 1.21),
+    DBD::mysql,
+    CGI::Cookie,
+    File::Spec (version >=0.8),
+    Image::Size,
+    CGI.
+    The full list of optional modules see at the Movable Type System Check page (@@application-root@@/cgi-bin/mt-check.cgi)
+  </description>
+
+  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot_0.jpg"><description>Dashboard</description></screenshot>
+  <screenshot path="images/screenshot_1.jpg"><description>Compose Screen</description></screenshot>
+  <screenshot path="images/screenshot_2.jpg"><description>Image Management</description></screenshot>
+  <screenshot path="images/screenshot_3.jpg"><description>Template Editing</description></screenshot>
+  <screenshot path="images/screenshot_4.jpg"><description>Reply to Comment</description></screenshot>
+  <screenshot path="images/admin_screenshot.jpg"><description>Admin page screenshot</description></screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>Movable Type License Agreement</name>
+    <url>http://www.movabletype.com/download/license-agreement.html</url>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+
+	<upgradable-from version="4.2" release="1"/>
+
+  <changelog>
+    <version version="5.2" release="11">
+      <entry>Release notes http://www.movabletype.org/documentation/appendices/release-notes/movable-type-502.html</entry>
+    </version>
+    <version version="4.2" release="3">
+      <entry>Personal/Blog category removed</entry>
+    </version>
+    <version version="4.2" release="2">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <installed-size>16332800</installed-size>
+
+  <categories>
+    <category>Web/Blog</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" >
+        <name>Password</name>
+      </setting>    
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+    </group>
+    <group>
+      <name>Blog's preferences</name>
+      <setting id="blog_name" type="string" min-length="1">
+        <name>Blog name</name>
+      </setting>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Default user language</name>
+        <choice id="en-US" ><name>English (US)</name></choice>
+        <choice id="fr-FR" ><name>French</name></choice>
+        <choice id="de-DE" ><name>German</name></choice>
+        <choice id="nl"><name>Dutch</name></choice>
+        <choice id="ja"><name>Japanese</name></choice>
+        <choice id="es"><name>Spanish</name></choice>
+      </setting>
+    </group>
+  </settings>
+
+  <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="4.0"/>
+    
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>movabletype</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0</db:server-min-version>
+      
+      
+    </db:db>
+  </requirements>
+
+  <mapping url="/" path="htdocs">
+    
+    <mapping url="cgi-bin" path="cgi-bin" xmlns:cgi="http://apstandard.com/ns/1/cgi" xmlns:h="http://apstandard.com/ns/1/cgi/handlers">
+      <cgi:handler>
+        <cgi:extension h:handler-type="perl">cgi</cgi:extension>
+      </cgi:handler>
+    </mapping>
+    <mapping url="public" xmlns:php="http://apstandard.com/ns/1/php">
+        <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="mt-static" xmlns:php="http://apstandard.com/ns/1/php">
+        <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+</application>

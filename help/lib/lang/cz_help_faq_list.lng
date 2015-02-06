@@ -1,0 +1,4 @@
+<?php
+$wb['edit_txt'] = 'Upravit';
+?>
+

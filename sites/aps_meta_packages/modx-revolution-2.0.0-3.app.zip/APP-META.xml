@@ -1,0 +1,156 @@
+<application xmlns="http://apstandard.com/ns/1">
+    <name>modx-revolution</name>
+    <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+    <version>2.0.0</version>
+    <release>3</release>
+    <homepage>http://modxcms.com</homepage>
+    <package-homepage>http://komtet.ru</package-homepage>
+    <default-prefix>modx</default-prefix>
+    <summary xml:lang='ru-RU'>Система управления контентом MODx.</summary>
+    <summary xml:lang='en-US'>MODx - content managment system.</summary>
+    <summary>MODx is an Open Source PHP web application framework with a capable built-in 
+Content Management System (CMS).</summary>
+
+    <description>
+                MODx Revolution is a powerful PHP Content Management Framework that plays nicely with.
+                custom code and helps you build sites faster and maintain them with ease. With Revolution
+                you'll leverage the best things to come around since MVC and Active Record.
+    </description>
+
+    <description xml:lang='en-US'>
+                MODx Revolution is a powerful PHP Content Management Framework that plays nicely with 
+                custom code and helps you build sites faster and maintain them with ease. With Revolution
+                you'll leverage the best things to come around since MVC and Active Record.
+    </description>
+    <description xml:lang='ru-RU'>
+    		MODx — это профессиональный инструмент разработки сайтов, позволяющий управлять контентом.
+    		В отличие от большинства бесплатных CMS — на MODx вы можете построить сайт любой сложности,
+    		практически с любым набором функций, при этом система не будет никоим образом влиять на
+    		ваш html-код.
+    </description>
+
+    <icon path="images/icon.jpg" />
+    <screenshot path="images/modx1.jpg">
+    	<description xml:lang="ru-RU">Административная часть.</description>
+        <description xml:lang='en-US'>Admin panel.</description>
+    </screenshot>
+    <license must-accept="true">
+        <text xml:lang="en-US">
+                <name>GPLv2</name>
+                <url>http://modxcms.com/about/license.html</url>
+        </text>
+    	<text xml:lang="ru-RU">
+    		<name>GPLv2</name>
+    		<url>http://modxcms.com/about/license.html</url>
+    	</text>
+    </license>
+    <configuration-script-language>php</configuration-script-language>
+
+    <changelog>
+    	<version release="3" version="2.0.0">
+                <entry xml:lang="ru-RU">Изначальная версия пакета.</entry>
+                <entry xml:lang='en-US'>Initial package version.</entry>
+    	</version>
+    </changelog>
+
+    <entry-points>
+        <entry>
+            <path>/</path>
+            <label>Blog</label>
+        </entry>
+        <entry>
+            <path>/manager/</path>
+            <label>Administrative interface</label>
+        </entry>
+    </entry-points>
+
+    <installed-size>28094333</installed-size>
+    <categories>
+    	<category>Web/Content management</category>
+    </categories>
+    <languages>
+    	<language>ru</language>
+    	<language>en</language>
+    </languages>
+    <settings>
+    	<group>
+    		<name xml:lang="ru-RU">Настройки</name>
+                <name xml:lang='en-US'>Settings</name>
+    		<setting id="admin_name" type="string" default-value="admin"
+    			min-length="1" max-length="32"
+    			regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+		        <name xml:lang='ru-RU'>Имя администратора</name>
+                        <name xml:lang='en-US'>Admin name</name>
+    		</setting>
+    		<setting id="admin_password" type="password">
+    			<name xml:lang='ru-RU'>Пароль</name>
+                        <name xml:lang='en-US'>Password</name>
+    		</setting>
+    		<setting id="admin_email" type="email">
+    			<name xml:lang='ru-RU'>Email администратора</name>
+                        <name xml:lang='en-US'>Admin email</name>
+    		</setting>
+    		<setting id="title" type="string" default-value="Modx"
+    			min-length="1">
+    			<name xml:lang='ru-RU'>Имя сайта</name>
+                        <name xml:lang='en-US'>Site Name</name>
+    		</setting>
+                <setting id="demodata" type="enum" default-value="true" installation-only="true">
+                        <name xml:lang='ru-RU'>Установить демо-данные</name>
+                        <name xml:lang='en-US'>Install demo data</name>
+                        <choice id="true" >
+                                <name xml:lang='ru-RU'>Да</name>
+                                <name xml:lang='en-US'>Yes</name>
+                        </choice>
+                        <choice id="false" >
+                                <name xml:lang='ru-RU'>Нет</name>
+                                <name xml:lang='en-US'>No</name>
+                        </choice>
+                </setting>
+                <setting id="locale" type="enum" default-value="ru-RU">
+                        <name xml:lang='ru-RU'>Язык интерфейса</name>
+			<name xml:lang='en-US'>Interface language</name>
+			<choice id="en-US" >
+                                <name xml:lang='ru-RU'>Английский</name>
+			        <name xml:lang='en-US'>English</name>
+		        </choice>
+		        <choice id="ru-RU" >
+                                <name xml:lang='ru-RU'>Русский</name>
+				<name xml:lang='en-US'>Russian</name>
+			</choice>
+		</setting>
+    	</group>
+    </settings>
+    <requirements xmlns:db="http://apstandard.com/ns/1/db" xmlns:php="http://apstandard.com/ns/1/php">
+	<php:safe-mode>false</php:safe-mode>
+	<php:extension>mysql</php:extension>
+	<php:extension>gd</php:extension>
+	<php:extension>zlib</php:extension>
+	<php:extension>json</php:extension>
+	<php:extension>pdo_mysql</php:extension>
+	<php:memory-limit>25165824</php:memory-limit>
+	<php:version min="5.1.1"/>
+	<db:db>
+		<db:id>main</db:id>
+		<db:default-name>modx</db:default-name>
+		<db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+		<db:server-type>mysql</db:server-type>
+		<db:server-min-version>4.1.20</db:server-min-version>
+	</db:db>
+    </requirements>
+
+    <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+
+        <php:handler>
+            <php:extension>php</php:extension>
+        </php:handler>
+
+        <mapping url="core">
+            <mapping url="cache"><php:permissions writable="true"/></mapping>
+            <mapping url="components"><php:permissions writable="true"/></mapping>
+            <mapping url="packages"><php:permissions writable="true"/></mapping>
+        </mapping>
+    
+    </mapping>
+
+</application>

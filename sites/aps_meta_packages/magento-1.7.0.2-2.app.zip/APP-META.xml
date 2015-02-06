@@ -1,0 +1,578 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>magento</name>
+  <packager-uri>uuid:53cdba8f-75f9-4f7f-8b9e-095ce94bbb31</packager-uri>
+  <version>1.7.0.2</version>
+  <release>2</release>
+  <homepage>http://www.magentocommerce.com/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>
+  <default-prefix>magento</default-prefix>
+
+  <summary>Professional open-source eCommerce solution.</summary>
+  <description> Magento is a feature-rich, professional open-source eCommerce solution that offers merchants 
+ complete flexibility and control over the look, content, and functionality of their online store. 
+ Magento’s powerful marketing, search engine optimization and catalog-management tools give 
+ merchants the power to create ecommerce sites that are tailored to their unique business needs.
+  </description>
+
+  <icon path="images/icon.png"/>
+
+  <screenshot path="images/home_magento.jpg">
+    <description>
+      Main screenshot.
+    </description>
+  </screenshot>
+
+  <screenshot path="images/dasboard_magento.jpg">
+    <description>
+      Admin screenshot.
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>Open Software License v3.0</name>
+      <file>scripts/LICENSE.txt</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <upgradable-from version="1.2.1" release="1"/>
+
+  <changelog>
+    <version release="2" version="1.7.0.2">
+    	<entry>http://www.magentocommerce.com/download/release_notes#Release Notes - Magento 1.7.0.2 (Jul 5, 2012)</entry>
+    </version><version version="1.7.0.0" release="1">
+        <entry>Version 1.7.0 Release notes: http://www.magentocommerce.com/download/release_notes#Release%20Notes%20-%20Magento%201.7.0.0%20%28Apr%2024,%202012%29</entry>
+    </version>
+    <version version="1.6.2.0" release="4">
+        <entry>Version 1.6.2.0 Release notes: http://www.magentocommerce.com/download/release_notes#Release%20Notes%20-%20Magento%201.6.2.0%20%28Jan%2011,%202012%29</entry>
+    </version>
+    <version version="1.6.1.0" release="3">
+        <entry>Version 1.6.1.0 Release notes: http://www.magentocommerce.com/download/release_notes#Release%20Notes%20-%20Magento%201.6.1.0%20%28Oct%2019,%202011%29</entry>
+    </version>
+    <version version="1.5.1" release="4">
+        <entry>Release notes: http://www.magentocommerce.com/download/release_notes#Release%20Notes%20-%20Magento%201.5.1.0%20%28April%2026,%202011%29</entry>
+    </version>
+	<version version="1.4.1.1" release="5">
+		<entry>unsecure base url reconfiguration corrected</entry>
+	</version>
+	<version version="1.4.1.1" release="4">
+		<entry>Release notes: http://www.magentocommerce.com/download/release_notes#Release%20Notes%20-%20Magento%201.4.1.1%20stable%20(July%2026,%202010)</entry>
+	</version>
+	<version version="1.4.0.1" release="4">
+		<entry>warning in 'Magento Connect' if Compilation is enabled</entry>
+	</version>
+	<version version="1.4.0.1" release="3">
+		<entry>writable permissions are set on application root directory, which is required by downloader</entry>
+		<entry>max_execution_time is set to 18000, memory-limit - 64M. On Windows hosting it is necessary to adjust these values in global php.ini</entry>
+	</version>
+	<version version="1.4.0.1" release="2">
+		<entry>'includes' directory becomes writable for application to support Compilation feature</entry>
+	</version>
+	<version version="1.4.0.1" release="1">
+    <entry>XSS vulnerabilities review</entry>
+    <entry>Added Phoenix_Moneybookers payment method module (from now bundled in Magento out of the box)</entry>
+	<entry>Implemented 3D Secure credit card validation (Visa and Mastercard)</entry>
+	<entry>Full reimplementation of PayPal modules, includes lot of new functionality and numerous bugfixes</entry>
+	<entry>Full list of changes: http://www.magentocommerce.com/download/release_notes</entry>
+	</version>
+	<version version="1.3.2.4" release="6">
+	  <entry>TMP directory is moved under application root</entry>
+	  <entry>Setting 'Use Web Server (Apache) Rewrites' type changed from 'boolean' to 'enum' to conform Plesk requirement</entry>
+	</version>
+    <version version="1.3.2.4" release="3">
+	  <entry>
+Fixed possible XSS issue on customer registration page
+# Fixed #13291: PayPal Standard :: order, captured by merchant does not transfered to Magento
+# Fixed #15143: Onepage checkout hack with Zero Subtotal Checkout payment method
+# Fixed #15217: Paypal IPN
+# Fixed #15211: PayPal IPN and Downloadable Products not responding
+....
+
+  For detailed info refer to http://www.magentocommerce.com/download/release_notes
+	  </entry>
+	</version>
+    <version version="1.3.0" release="1">
+      <entry>
+    * Added support for customer file upload and date/time/datetime custom options;
+    * Described all methods in WSDL for SOAP web-services to improve compatibility with .NET, Java and other languages;
+    * Frontend Flat Catalog and improved performance;
+    * Added support for UPS negotiated rates;
+    * Added configuration option to create invoices automatically for Zero Subtotal checkout;
+      </entry>
+    </version>
+    <version version="1.2.1" release="2">
+      <entry>Application removal improved; Write permissions for config file added</entry>
+    </version>
+    <version version="1.2.1" release="1">
+      <entry>
+    * Changed logic of enabling purchased links (now it depends on order item status, not entire order status)
+    * Implemented selling downloadable products through bundles, configurable and grouped products
+    * Added checking for InnoDB support during installation
+    * Added target country selection in Google Base attribute mappings
+    * Replaced raw id with hashed value for downloadable product links
+    * Set http_only flag on cookies, set secure flag on backend cookies
+    * Added downloading saved links files in admin
+    * Added indexes in sales tables to increase performance
+    * Optimized translations cache (cache only translated strings)
+    * Moved resource model unique fields declaration from _construct method to _initUniqueFields which is called just before saving data (that helps to fix store/website error messages and optimizes initialize process)
+    * Added grouped rendereres and changed existing to display renderer of the actual product (sold as part of grouped)
+    * Changed category deletion process - run one query for delete children instead load all children objects and call delete method
+    * Improved checking stock status of complex product types
+    * Blank theme HTML/CSS improvements
+    * Modern theme HTML/CSS improvements and bug fixes for IE
+    * Moved CMS page load call to frontend area
+    * Set 503 HTTP response code on error reports
+    * Removed foreign key duplicates
+    * Added grouped renderer to PDF to provide possibility to display renderer of products that are part of grouped product
+    * Added digital delivery to Google Checkout XML API (fixed #10306: so that virtual products will not have option to be shipped through Google)
+    * Added downlodable product type
+    * Implemented fulltext search
+    * Added layered navigation to search results
+    * Added option to disable Google checkout for selected products
+    * Added fixed amount product taxes
+    * Upgraded ZF library to version 1.7.2
+    * Google Website Optimizer integration
+    * Google Base integration
+    * Scheduled DB logs cleaning option
+	  </entry>
+    </version>
+    <version version="1.1.3" release="2">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  <entry-points>
+    <entry>
+      <path>/index.php/admin/dashboard/</path>
+      <label>Administrative interface</label>
+    </entry>
+    <entry>
+      <path>/</path>
+      <label>Store</label>
+    </entry>
+  </entry-points>
+
+
+  <installed-size>39290880</installed-size>
+
+  <categories>
+    <category>Web/E-commerce</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_firstname" type="string" min-length="1">
+        <name>First Name</name>
+      </setting>
+      <setting id="admin_lastname" type="string" min-length="1">
+        <name>Last Name</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Email</name>
+      </setting>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+        <name>Login</name>
+        <error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      </setting>
+    </group>
+		<group>
+			<name>Localization</name>
+			<setting id="locale" type="enum" default-value="en-US">
+			<name>Locale</name>
+				<choice id="ar-EG" ><name>Arabic (Egypt)</name></choice>
+				<choice id="ar-KW" ><name>Arabic (Kuwait)</name></choice>
+				<choice id="ar-SA" ><name>Arabic (Saudi Arabia)</name></choice>
+				<choice id="bg-BG" ><name>Bulgarian (Bulgaria)</name></choice>
+				<choice id="zh-CN" ><name>Chinese (China)</name></choice>
+				<choice id="zh-TW" ><name>Chinese (Taiwan)</name></choice>
+				<choice id="hr-HR" ><name>Croatian (Croatia)</name></choice>
+				<choice id="cs-CZ" ><name>Czech (Czech Republic)</name></choice>
+				<choice id="da-DK" ><name>Danish (Denmark)</name></choice>
+				<choice id="nl-NL" ><name>Dutch (Netherlands)</name></choice>
+				<choice id="en-AU" ><name>English (Australia)</name></choice>
+				<choice id="en-GB" ><name>English (United Kingdom)</name></choice>
+				<choice id="en-US" ><name>English (United States)</name></choice>
+				<choice id="fi-FI" ><name>Finnish (Finland)</name></choice>
+				<choice id="fr-FR" ><name>French (France)</name></choice>
+				<choice id="de-DE" ><name>German (Germany)</name></choice>
+				<choice id="de-CH" ><name>German (Switzerland)</name></choice>
+				<choice id="el-GR" ><name>Greek (Greece)</name></choice>
+				<choice id="he-IL" ><name>Hebrew (Israel)</name></choice>
+				<choice id="hu-HU" ><name>Hungarian (Hungary)</name></choice>
+				<choice id="id-ID" ><name>Indonesian (Indonesia)</name></choice>
+				<choice id="it-IT" ><name>Italian (Italy)</name></choice>
+				<choice id="ja-JP" ><name>Japanese (Japan)</name></choice>
+				<choice id="lt-LT" ><name>Lithuanian (Lithuania)</name></choice>
+				<choice id="mk-MK" ><name>Macedonian (Macedonia)</name></choice>
+				<choice id="ms-MY" ><name>Malay (Malaysia)</name></choice>
+				<choice id="nn-NO" ><name>Norwegian Nynorsk (Norway)</name></choice>
+				<choice id="fa-IR" ><name>Persian (Iran)</name></choice>
+				<choice id="pl-PL" ><name>Polish (Poland)</name></choice>
+				<choice id="pt-BR" ><name>Portuguese (Brazil)</name></choice>
+				<choice id="pt-PT" ><name>Portuguese (Portugal)</name></choice>
+				<choice id="ro-RO" ><name>Romanian (Romania)</name></choice>
+				<choice id="ru-RU" ><name>Russian (Russia)</name></choice>
+				<choice id="sr-RS" ><name>Serbian (Serbia)</name></choice>
+				<choice id="sk-SK" ><name>Slovak (Slovakia)</name></choice>
+				<choice id="sl-SI" ><name>Slovenian (Slovenia)</name></choice>
+				<choice id="es-AR" ><name>Spanish (Argentina)</name></choice>
+				<choice id="es-ES" ><name>Spanish (Spain)</name></choice>
+				<choice id="sv-SE" ><name>Swedish (Sweden)</name></choice>
+				<choice id="th-TH" ><name>Thai (Thailand)</name></choice>
+				<choice id="tr-TR" ><name>Turkish (Turkey)</name></choice>
+				<choice id="uk-UA" ><name>Ukrainian (Ukraine)</name></choice>
+				<choice id="vi-VN" ><name>Vietnamese (Vietnam)</name></choice>
+			</setting>
+			<setting id="timezone" type="enum" default-value="America/Los_Angeles">
+				<name>Time Zone</name>
+				<choice id="Australia/Darwin"><name>AUS Central (Australia/Darwin)</name></choice>
+				<choice id="Australia/Sydney"><name>AUS Eastern (Australia/Sydney)</name></choice>
+				<choice id="Asia/Kabul"><name>Afghanistan (Asia/Kabul)</name></choice>
+				<choice id="America/Anchorage"><name>Alaskan (America/Anchorage)</name></choice>
+				<choice id="Asia/Riyadh"><name>Arab (Asia/Riyadh)</name></choice>
+				<choice id="Asia/Muscat"><name>Arabian (Asia/Muscat)</name></choice>
+				<choice id="Asia/Baghdad"><name>Arabic (Asia/Baghdad)</name></choice>
+				<choice id="America/Halifax"><name>Atlantic (America/Halifax)</name></choice>
+				<choice id="Asia/Baku"><name>Azerbaijan (Asia/Baku)</name></choice>
+				<choice id="Atlantic/Azores"><name>Azores (Atlantic/Azores)</name></choice>
+				<choice id="America/Regina"><name>Canada Central (America/Regina)</name></choice>
+				<choice id="Atlantic/Cape_Verde"><name>Cape Verde (Atlantic/Cape_Verde)</name></choice>
+				<choice id="Asia/Yerevan"><name>Caucasus (Asia/Yerevan)</name></choice>
+				<choice id="Australia/Adelaide"><name>Cen. Australia (Australia/Adelaide)</name></choice>
+				<choice id="America/Chicago"><name>Central (America/Chicago)</name></choice>
+				<choice id="America/Guatemala"><name>Central America (America/Guatemala)</name></choice>
+				<choice id="Asia/Dhaka"><name>Central Asia (Asia/Dhaka)</name></choice>
+				<choice id="America/Manaus"><name>Central Brazilian (America/Manaus)</name></choice>
+				<choice id="Europe/Prague"><name>Central Europe (Europe/Prague)</name></choice>
+				<choice id="Europe/Warsaw"><name>Central European (Europe/Warsaw)</name></choice>
+				<choice id="Pacific/Guadalcanal"><name>Central Pacific (Pacific/Guadalcanal)</name></choice>
+				<choice id="America/Mexico_City"><name>Central Standard Time (Mexico) (America/Mexico_City)</name></choice>
+				<choice id="Asia/Shanghai"><name>China (Asia/Shanghai)</name></choice>
+				<choice id="Pacific/Kwajalein"><name>Dateline (Pacific/Kwajalein)</name></choice>
+				<choice id="Africa/Nairobi"><name>E. Africa (Africa/Nairobi)</name></choice>
+				<choice id="Australia/Brisbane"><name>E. Australia (Australia/Brisbane)</name></choice>
+				<choice id="Europe/Minsk"><name>E. Europe (Europe/Minsk)</name></choice>
+				<choice id="America/Sao_Paulo"><name>E. South America (America/Sao_Paulo)</name></choice>
+				<choice id="America/New_York"><name>Eastern (America/New_York)</name></choice>
+				<choice id="Africa/Cairo"><name>Egypt (Africa/Cairo)</name></choice>
+				<choice id="Asia/Yekaterinburg"><name>Ekaterinburg (Asia/Yekaterinburg)</name></choice>
+				<choice id="Europe/Helsinki"><name>FLE (Europe/Helsinki)</name></choice>
+				<choice id="Pacific/Fiji"><name>Fiji (Pacific/Fiji)</name></choice>
+				<choice id="Europe/London"><name>GMT (Europe/London)</name></choice>
+				<choice id="Europe/Istanbul"><name>GTB (Europe/Istanbul)</name></choice>
+				<choice id="Asia/Tbilisi"><name>Georgian (Asia/Tbilisi)</name></choice>
+				<choice id="America/Godthab"><name>Greenland (America/Godthab)</name></choice>
+				<choice id="Africa/Casablanca"><name>Greenwich (Africa/Casablanca)</name></choice>
+				<choice id="Pacific/Honolulu"><name>Hawaiian (Pacific/Honolulu)</name></choice>
+				<choice id="Asia/Calcutta"><name>India (Asia/Calcutta)</name></choice>
+				<choice id="Asia/Tehran"><name>Iran (Asia/Tehran)</name></choice>
+				<choice id="Asia/Jerusalem"><name>Israel (Asia/Jerusalem)</name></choice>
+				<choice id="Asia/Amman"><name>Jordan (Asia/Amman)</name></choice>
+				<choice id="Asia/Seoul"><name>Korea (Asia/Seoul)</name></choice>
+				<choice id="America/Noronha"><name>Mid-Atlantic (America/Noronha)</name></choice>
+				<choice id="Asia/Beirut"><name>Middle East (Asia/Beirut)</name></choice>
+				<choice id="America/Montevideo"><name>Montevideo (America/Montevideo)</name></choice>
+				<choice id="America/Denver"><name>Mountain (America/Denver)</name></choice>
+				<choice id="America/Chihuahua"><name>Mountain Standard Time (Mexico) (America/Chihuahua)</name></choice>
+				<choice id="Asia/Rangoon"><name>Myanmar (Asia/Rangoon)</name></choice>
+				<choice id="Asia/Novosibirsk"><name>N. Central Asia (Asia/Novosibirsk)</name></choice>
+				<choice id="Africa/Windhoek"><name>Namibia (Africa/Windhoek)</name></choice>
+				<choice id="Asia/Katmandu"><name>Nepal (Asia/Katmandu)</name></choice>
+				<choice id="Pacific/Auckland"><name>New Zealand (Pacific/Auckland)</name></choice>
+				<choice id="America/St_Johns"><name>Newfoundland (America/St_Johns)</name></choice>
+				<choice id="Asia/Krasnoyarsk"><name>North Asia (Asia/Krasnoyarsk)</name></choice>
+				<choice id="Asia/Ulaanbaatar"><name>North Asia East (Asia/Ulaanbaatar)</name></choice>
+				<choice id="America/Los_Angeles"><name>Pacific (America/Los_Angeles)</name></choice>
+				<choice id="America/Santiago"><name>Pacific SA (America/Santiago)</name></choice>
+				<choice id="America/Tijuana"><name>Pacific Standard Time (Mexico) (America/Tijuana)</name></choice>
+				<choice id="Europe/Paris"><name>Romance (Europe/Paris)</name></choice>
+				<choice id="Europe/Moscow"><name>Russian (Europe/Moscow)</name></choice>
+				<choice id="America/Buenos_Aires"><name>SA Eastern (America/Buenos_Aires)</name></choice>
+				<choice id="America/Bogota"><name>SA Pacific (America/Bogota)</name></choice>
+				<choice id="America/Caracas"><name>SA Western (America/Caracas)</name></choice>
+				<choice id="Asia/Bangkok"><name>SE Asia (Asia/Bangkok)</name></choice>
+				<choice id="Pacific/Apia"><name>Samoa (Pacific/Apia)</name></choice>
+				<choice id="Asia/Singapore"><name>Singapore (Asia/Singapore)</name></choice>
+				<choice id="Africa/Johannesburg"><name>South Africa (Africa/Johannesburg)</name></choice>
+				<choice id="Asia/Colombo"><name>Sri Lanka (Asia/Colombo)</name></choice>
+				<choice id="Asia/Taipei"><name>Taipei (Asia/Taipei)</name></choice>
+				<choice id="Australia/Hobart"><name>Tasmania (Australia/Hobart)</name></choice>
+				<choice id="Asia/Tokyo"><name>Tokyo (Asia/Tokyo)</name></choice>
+				<choice id="Pacific/Tongatapu"><name>Tonga (Pacific/Tongatapu)</name></choice>
+				<choice id="America/Indianapolis"><name>US Eastern (America/Indianapolis)</name></choice>
+				<choice id="America/Phoenix"><name>US Mountain (America/Phoenix)</name></choice>
+				<choice id="Asia/Vladivostok"><name>Vladivostok (Asia/Vladivostok)</name></choice>
+				<choice id="Australia/Perth"><name>W. Australia (Australia/Perth)</name></choice>
+				<choice id="Africa/Lagos"><name>W. Central Africa (Africa/Lagos)</name></choice>
+				<choice id="Europe/Berlin"><name>W. Europe (Europe/Berlin)</name></choice>
+				<choice id="Asia/Karachi"><name>West Asia (Asia/Karachi)</name></choice>
+				<choice id="Pacific/Guam"><name>West Pacific (Pacific/Guam)</name></choice>
+				<choice id="Asia/Yakutsk"><name>Yakutsk (Asia/Yakutsk)</name></choice>
+			</setting>
+			<setting id="currency" type="enum" default-value="USD">
+				<name>Default Currency</name>
+				<choice id="AFN"><name>Afghani</name></choice>
+				<choice id="ALL"><name>Albanian Lek</name></choice>
+				<choice id="DZD"><name>Algerian Dinar</name></choice>
+				<choice id="ADP"><name>Andorran Peseta</name></choice>
+				<choice id="AOA"><name>Angolan Kwanza</name></choice>
+				<choice id="ARA"><name>Argentine Austral</name></choice>
+				<choice id="ARS"><name>Argentine Peso</name></choice>
+				<choice id="AMD"><name>Armenian Dram</name></choice>
+				<choice id="AWG"><name>Aruban Guilder</name></choice>
+				<choice id="AUD"><name>Australian Dollar</name></choice>
+				<choice id="ATS"><name>Austrian Schilling</name></choice>
+				<choice id="BSD"><name>Bahamian Dollar</name></choice>
+				<choice id="BHD"><name>Bahraini Dinar</name></choice>
+				<choice id="BDT"><name>Bangladesh Taka</name></choice>
+				<choice id="BBD"><name>Barbados Dollar</name></choice>
+				<choice id="BYR"><name>Belarussian Ruble</name></choice>
+				<choice id="BZD"><name>Belize Dollar</name></choice>
+				<choice id="BMD"><name>Bermudan Dollar</name></choice>
+				<choice id="BTN"><name>Bhutan Ngultrum</name></choice>
+				<choice id="BOV"><name>Bolivian Mvdol</name></choice>
+				<choice id="BOP"><name>Bolivian Peso</name></choice>
+				<choice id="BOB"><name>Boliviano</name></choice>
+				<choice id="BAM"><name>Bosnia-Herzegovina Convertible Mark</name></choice>
+				<choice id="BAD"><name>Bosnia-Herzegovina Dinar</name></choice>
+				<choice id="BWP"><name>Botswanan Pula</name></choice>
+				<choice id="BRC"><name>Brazilian Cruzado</name></choice>
+				<choice id="BRN"><name>Brazilian Cruzado Novo</name></choice>
+				<choice id="BRR"><name>Brazilian Cruzeiro</name></choice>
+				<choice id="BRL"><name>Brazilian Real</name></choice>
+				<choice id="GBP"><name>British Pound Sterling</name></choice>
+				<choice id="BND"><name>Brunei Dollar</name></choice>
+				<choice id="BGN"><name>Bulgarian New Lev</name></choice>
+				<choice id="BUK"><name>Burmese Kyat</name></choice>
+				<choice id="BIF"><name>Burundi Franc</name></choice>
+				<choice id="KHR"><name>Cambodian Riel</name></choice>
+				<choice id="CAD"><name>Canadian Dollar</name></choice>
+				<choice id="CVE"><name>Cape Verde Escudo</name></choice>
+				<choice id="KYD"><name>Cayman Islands Dollar</name></choice>
+				<choice id="CLP"><name>Chilean Peso</name></choice>
+				<choice id="CLF"><name>Chilean Unidades de Fomento</name></choice>
+				<choice id="CNY"><name>Chinese Yuan Renminbi</name></choice>
+				<choice id="COP"><name>Colombian Peso</name></choice>
+				<choice id="KMF"><name>Comoro Franc</name></choice>
+				<choice id="CDF"><name>Congolese Franc Congolais</name></choice>
+				<choice id="CRC"><name>Costa Rican Colon</name></choice>
+				<choice id="HRK"><name>Croatian Kuna</name></choice>
+				<choice id="CUP"><name>Cuban Peso</name></choice>
+				<choice id="CYP"><name>Cyprus Pound</name></choice>
+				<choice id="DKK"><name>Danish Krone</name></choice>
+				<choice id="DEM"><name>Deutsche Mark</name></choice>
+				<choice id="DJF"><name>Djibouti Franc</name></choice>
+				<choice id="DOP"><name>Dominican Peso</name></choice>
+				<choice id="XCD"><name>East Caribbean Dollar</name></choice>
+				<choice id="ECS"><name>Ecuador Sucre</name></choice>
+				<choice id="EGP"><name>Egyptian Pound</name></choice>
+				<choice id="SVC"><name>El Salvador Colon</name></choice>
+				<choice id="GQE"><name>Equatorial Guinea Ekwele Guineana</name></choice>
+				<choice id="ERN"><name>Eritrean Nakfa</name></choice>
+				<choice id="EEK"><name>Estonian Kroon</name></choice>
+				<choice id="ETB"><name>Ethiopian Birr</name></choice>
+				<choice id="EUR"><name>Euro</name></choice>
+				<choice id="FKP"><name>Falkland Islands Pound</name></choice>
+				<choice id="FJD"><name>Fiji Dollar</name></choice>
+				<choice id="FIM"><name>Finnish Markka</name></choice>
+				<choice id="GMD"><name>Gambia Dalasi</name></choice>
+				<choice id="GEK"><name>Georgian Kupon Larit</name></choice>
+				<choice id="GHS"><name>Ghana Cedi</name></choice>
+				<choice id="GIP"><name>Gibraltar Pound</name></choice>
+				<choice id="GRD"><name>Greek Drachma</name></choice>
+				<choice id="GTQ"><name>Guatemala Quetzal</name></choice>
+				<choice id="GNF"><name>Guinea Franc</name></choice>
+				<choice id="GNS"><name>Guinea Syli</name></choice>
+				<choice id="GWP"><name>Guinea-Bissau Peso</name></choice>
+				<choice id="GYD"><name>Guyana Dollar</name></choice>
+				<choice id="HTG"><name>Haitian Gourde</name></choice>
+				<choice id="HNL"><name>Honduras Lempira</name></choice>
+				<choice id="HKD"><name>Hong Kong Dollar</name></choice>
+				<choice id="HUF"><name>Hungarian Forint</name></choice>
+				<choice id="ISK"><name>Icelandic Krona</name></choice>
+				<choice id="INR"><name>Indian Rupee</name></choice>
+				<choice id="IDR"><name>Indonesian Rupiah</name></choice>
+				<choice id="IRR"><name>Iranian Rial</name></choice>
+				<choice id="IQD"><name>Iraqi Dinar</name></choice>
+				<choice id="IEP"><name>Irish Pound</name></choice>
+				<choice id="ILS"><name>Israeli New Sheqel</name></choice>
+				<choice id="ITL"><name>Italian Lira</name></choice>
+				<choice id="JMD"><name>Jamaican Dollar</name></choice>
+				<choice id="JPY"><name>Japanese Yen</name></choice>
+				<choice id="JOD"><name>Jordanian Dinar</name></choice>
+				<choice id="KZT"><name>Kazakhstan Tenge</name></choice>
+				<choice id="KES"><name>Kenyan Shilling</name></choice>
+				<choice id="KWD"><name>Kuwaiti Dinar</name></choice>
+				<choice id="KGS"><name>Kyrgystan Som</name></choice>
+				<choice id="LAK"><name>Laotian Kip</name></choice>
+				<choice id="LVL"><name>Latvian Lats</name></choice>
+				<choice id="LBP"><name>Lebanese Pound</name></choice>
+				<choice id="LSL"><name>Lesotho Loti</name></choice>
+				<choice id="LRD"><name>Liberian Dollar</name></choice>
+				<choice id="LYD"><name>Libyan Dinar</name></choice>
+				<choice id="LTL"><name>Lithuanian Lita</name></choice>
+				<choice id="LTT"><name>Lithuanian Talonas</name></choice>
+				<choice id="LUF"><name>Luxembourg Franc</name></choice>
+				<choice id="MOP"><name>Macao Pataca</name></choice>
+				<choice id="MKD"><name>Macedonian Denar</name></choice>
+				<choice id="MGA"><name>Madagascar Ariary</name></choice>
+				<choice id="MGF"><name>Madagascar Franc</name></choice>
+				<choice id="MWK"><name>Malawi Kwacha</name></choice>
+				<choice id="MYR"><name>Malaysian Ringgit</name></choice>
+				<choice id="MVR"><name>Maldive Islands Rufiyaa</name></choice>
+				<choice id="MLF"><name>Mali Franc</name></choice>
+				<choice id="LSM"><name>Maloti</name></choice>
+				<choice id="MTL"><name>Maltese Lira</name></choice>
+				<choice id="MTP"><name>Maltese Pound</name></choice>
+				<choice id="MRO"><name>Mauritania Ouguiya</name></choice>
+				<choice id="MUR"><name>Mauritius Rupee</name></choice>
+				<choice id="MXN"><name>Mexican Peso</name></choice>
+				<choice id="MDL"><name>Moldovan Leu</name></choice>
+				<choice id="MNT"><name>Mongolian Tugrik</name></choice>
+				<choice id="MAD"><name>Moroccan Dirham</name></choice>
+				<choice id="MAF"><name>Moroccan Franc</name></choice>
+				<choice id="MZE"><name>Mozambique Escudo</name></choice>
+				<choice id="MZN"><name>Mozambique Metical</name></choice>
+				<choice id="MMK"><name>Myanmar Kyat</name></choice>
+				<choice id="NAD"><name>Namibia Dollar</name></choice>
+				<choice id="NPR"><name>Nepalese Rupee</name></choice>
+				<choice id="ANG"><name>Netherlands Antillan Guilder</name></choice>
+				<choice id="TRY"><name>New Turkish Lira</name></choice>
+				<choice id="NZD"><name>New Zealand Dollar</name></choice>
+				<choice id="NIC"><name>Nicaraguan Cordoba</name></choice>
+				<choice id="NGN"><name>Nigerian Naira</name></choice>
+				<choice id="KPW"><name>North Korean Won</name></choice>
+				<choice id="NOK"><name>Norwegian Krone</name></choice>
+				<choice id="OMR"><name>Oman Rial</name></choice>
+				<choice id="PKR"><name>Pakistan Rupee</name></choice>
+				<choice id="PAB"><name>Panamanian Balboa</name></choice>
+				<choice id="PGK"><name>Papua New Guinea Kina</name></choice>
+				<choice id="PYG"><name>Paraguay Guarani</name></choice>
+				<choice id="PEI"><name>Peruvian Inti</name></choice>
+				<choice id="PES"><name>Peruvian Sol</name></choice>
+				<choice id="PHP"><name>Philippine Peso</name></choice>
+				<choice id="PLN"><name>Polish Zloty</name></choice>
+				<choice id="QAR"><name>Qatari Rial</name></choice>
+				<choice id="RHD"><name>Rhodesian Dollar</name></choice>
+				<choice id="RON"><name>Romanian Leu</name></choice>
+				<choice id="RUB"><name>Russian Ruble</name></choice>
+				<choice id="RWF"><name>Rwandan Franc</name></choice>
+				<choice id="SHP"><name>Saint Helena Pound</name></choice>
+				<choice id="STD"><name>Sao Tome and Principe Dobra</name></choice>
+				<choice id="SAR"><name>Saudi Riyal</name></choice>
+				<choice id="RSD"><name>Serbian Dinar</name></choice>
+				<choice id="SCR"><name>Seychelles Rupee</name></choice>
+				<choice id="SLL"><name>Sierra Leone Leone</name></choice>
+				<choice id="SGD"><name>Singapore Dollar</name></choice>
+				<choice id="SKK"><name>Slovak Koruna</name></choice>
+				<choice id="SIT"><name>Slovenia Tolar</name></choice>
+				<choice id="SBD"><name>Solomon Islands Dollar</name></choice>
+				<choice id="SOS"><name>Somali Shilling</name></choice>
+				<choice id="ZAR"><name>South African Rand</name></choice>
+				<choice id="KRW"><name>South Korean Won</name></choice>
+				<choice id="LKR"><name>Sri Lanka Rupee</name></choice>
+				<choice id="SDG"><name>Sudanese Pound</name></choice>
+				<choice id="SRD"><name>Surinam Dollar</name></choice>
+				<choice id="SRG"><name>Suriname Guilder</name></choice>
+				<choice id="SZL"><name>Swaziland Lilangeni</name></choice>
+				<choice id="SEK"><name>Swedish Krona</name></choice>
+				<choice id="CHF"><name>Swiss Franc</name></choice>
+				<choice id="SYP"><name>Syrian Pound</name></choice>
+				<choice id="TWD"><name>Taiwan New Dollar</name></choice>
+				<choice id="TJR"><name>Tajikistan Ruble</name></choice>
+				<choice id="TJS"><name>Tajikistan Somoni</name></choice>
+				<choice id="TZS"><name>Tanzanian Shilling</name></choice>
+				<choice id="THB"><name>Thai Baht</name></choice>
+				<choice id="TPE"><name>Timor Escudo</name></choice>
+				<choice id="TOP"><name>Tonga Paʻanga</name></choice>
+				<choice id="TTD"><name>Trinidad and Tobago Dollar</name></choice>
+				<choice id="TND"><name>Tunisian Dinar</name></choice>
+				<choice id="TMM"><name>Turkmenistan Manat</name></choice>
+				<choice id="USD"><name>US Dollar</name></choice>
+				<choice id="UGX"><name>Ugandan Shilling</name></choice>
+				<choice id="UAH"><name>Ukrainian Hryvnia</name></choice>
+				<choice id="COU"><name>Unidad de Valor Real</name></choice>
+				<choice id="AED"><name>United Arab Emirates Dirham</name></choice>
+				<choice id="UYU"><name>Uruguay Peso Uruguayo</name></choice>
+				<choice id="UZS"><name>Uzbekistan Sum</name></choice>
+				<choice id="VUV"><name>Vanuatu Vatu</name></choice>
+				<choice id="VEB"><name>Venezuelan Bolivar</name></choice>
+				<choice id="VND"><name>Vietnamese Dong</name></choice>
+				<choice id="CHE"><name>WIR Euro</name></choice>
+				<choice id="CHW"><name>WIR Franc</name></choice>
+				<choice id="WST"><name>Western Samoa Tala</name></choice>
+				<choice id="YER"><name>Yemeni Rial</name></choice>
+				<choice id="ZRN"><name>Zairean New Zaire</name></choice>
+				<choice id="ZRZ"><name>Zairean Zaire</name></choice>
+				<choice id="ZMK"><name>Zambian Kwacha</name></choice>
+				<choice id="ZWD"><name>Zimbabwe Dollar</name></choice>
+			</setting>
+		</group>
+		<group>
+			<name>Installation preferences</name>
+      <setting id="encryption_key" type="string" installation-only="true" regex="^[0-9a-zA-Z_\-]*">
+        <name>Encryption key</name>
+	<description>Magento uses this key to encrypt passwords, credit cards and more.</description>
+        <error-message>'Encryption key' is not correct. Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db" xmlns:apache="http://apstandard.com/ns/1/apache">
+    <php:version min="5.2.13"/>
+    <php:safe-mode>false</php:safe-mode>
+	<php:memory-limit>67108846</php:memory-limit>
+	<php:max-execution-time>18000</php:max-execution-time>
+
+	<php:extension>curl</php:extension>
+    <php:extension>pdo_mysql</php:extension>
+    <php:extension>SimpleXML</php:extension>
+    <php:extension>mcrypt</php:extension>
+    
+    <php:extension>hash</php:extension>    
+    <php:extension>gd</php:extension>
+    <php:extension>dom</php:extension>
+    <php:extension>iconv</php:extension>
+
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>magento</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>4.1.20</db:server-min-version>
+    </db:db>
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:permissions writable="true"/>
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    <mapping url="var">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="downloader">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="media">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="app">
+      <php:permissions writable="true"/>
+    </mapping>
+    <mapping url="includes">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+</application>

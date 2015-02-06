@@ -1,0 +1,131 @@
+<application xmlns="http://apstandard.com/ns/1">
+	<name>FormTools</name>
+	<packager-uri>uuid:3f2c57a0-6894-772e-123a-2fe71e10b8b1</packager-uri>
+	<version>2.0.5</version>
+	<release>4</release>
+	<homepage>http://www.formtools.org/</homepage>
+	<package-homepage>http://www.softec-internet.com/</package-homepage>
+  	<default-prefix>formtools</default-prefix>
+  	
+  	<summary>Form Tools is an open source (free!) PHP / MySQL script that provides any existing web form with a backend database and a user-friendly interface to manage the form submission data, plus a wealth of tools for managing and manipulating your form data.</summary>
+  	<summary xml:lang="en-US">Form Tools is an open source (free!) PHP / MySQL script that provides any existing web form with a backend database and a user-friendly interface to manage the form submission data, plus a wealth of tools for managing and manipulating your form data.</summary>
+  	
+	<description>
+		Form Tools is an open source (free!) PHP/MySQL script that provides any existing web form with a backend database and a user-friendly interface to manage the form submission data, plus a wealth of tools for managing and manipulating your form data. Whether you create your forms by hand or through a script, whether your form is in HTML, Flash, Silverlight or anything else Form Tools can help!  
+  	</description>
+  	<description xml:lang="en-US">
+		Form Tools is an open source (free!) PHP/MySQL script that provides any existing web form with a backend database and a user-friendly interface to manage the form submission data, plus a wealth of tools for managing and manipulating your form data. Whether you create your forms by hand or through a script, whether your form is in HTML, Flash, Silverlight or anything else Form Tools can help!
+  	</description>
+  	
+  	<icon path="images/icon.png"/>
+  	
+  	<screenshot path="images/Background.png">
+  		<description>Home Page.</description>
+	  	<description xml:lang="en-US">Home page.</description>
+  	</screenshot>
+  	
+  	<license must-accept="true">
+    	<text>
+      		<name>GNU General Public License </name>
+			<file>htdocs/global/license.txt</file>
+    	</text>
+    	<text xml:lang="en-US">
+      		<name>GNU General Public License </name>
+			<file>htdocs/global/license.txt</file>
+    	</text>
+  	</license>  
+	
+	<configuration-script-language>php</configuration-script-language>
+		
+	<changelog>
+		<version version="2.0.5" release="4">
+			<entry>Corrections have been made ​​in the sql schema</entry>
+		</version>
+		<version version="2.0.5" release="3">
+			<entry>Compatibility permissions on the themes folder</entry>
+			<entry xml:lang="en-US">Compatibility permissions on the themes folder</entry>
+		</version>
+		<version version="2.0.5" release="2">
+			<entry>Description updated</entry>
+			<entry xml:lang="en-US">Description updated</entry>
+		</version>
+		<version version="2.0.5" release="1">
+			<entry>Packaged into APS 1.0.</entry>
+			<entry xml:lang="en-US">Packaged into APS 1.0.</entry>
+		</version>
+	</changelog>
+		
+	<installed-size>9646080</installed-size>
+  	
+  	<categories>
+		<category>Web/Tools</category>
+  	</categories>
+	
+	<languages>
+    	<language>en</language>
+  	</languages>
+	
+	<settings>
+		<group>
+			<name>Administrator's preferences</name>
+			<name xml:lang="en-US">Administrator's preferences</name>
+    		
+    		<setting id="admin_first_name" type="string">
+				<name>First name</name>
+				<name xml:lang="en-US">First name</name>
+			</setting>
+			
+			<setting id="admin_last_name" type="string">
+				<name>Last name</name>
+				<name xml:lang="en-US">Last name</name>
+			</setting>
+			    		
+			<setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-zA-Z][0-9a-zA-Z_\-]*">
+				<name>Login</name>
+				<name xml:lang="en-US">Login</name>
+	    		<error-message>Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+				<error-message xml:lang="en-US">Please make sure the text you entered starts with a letter and continues with either numbers, letters, underscores or hyphens.</error-message>
+			</setting>
+				
+			<setting id="admin_password" type="password" min-length="1" >
+				<name>Password</name>
+				<name xml:lang="en-US">Password</name>
+			</setting>
+			
+			<setting id="admin_email" type="email">
+				<name>Email</name>
+				<name xml:lang="en-US">Email</name>
+			</setting>				
+		</group>
+	</settings>
+		
+	<requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+		<php:version min="4.3.0"/>
+		<php:extension>mysql</php:extension>
+		<php:safe-mode>false</php:safe-mode>
+
+		<db:db>
+			<db:id>main</db:id>
+			<db:default-name>formtools</db:default-name>
+			<db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+			<db:server-type>mysql</db:server-type>
+			<db:server-min-version>4.0.0</db:server-min-version>
+		</db:db>
+	</requirements>
+
+	<mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+		<php:handler>
+			<php:extension>php</php:extension>
+		</php:handler>
+
+		<mapping url="themes">
+			<php:permissions writable="true"/>
+			<mapping url="default"><php:permissions writable="true"/>
+				<mapping url="cache"><php:permissions writable="true"/></mapping>
+			</mapping>						
+		</mapping>
+		<mapping url="upload"><php:permissions writable="true"/></mapping>
+	</mapping>
+
+</application>
+

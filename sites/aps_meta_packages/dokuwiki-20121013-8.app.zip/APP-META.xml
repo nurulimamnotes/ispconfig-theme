@@ -1,0 +1,151 @@
+<!--
+Copyright (c) 2010 Parallels Software International, Inc.
+All rights reserved.
+http://www.parallels.com (http://www.parallels.com/)
+-->
+<application xmlns="http://apstandard.com/ns/1">
+  <name>dokuwiki</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>20121013</version>
+  <release>8</release>
+  <homepage>http://splitbrain.org/</homepage>
+  <package-homepage>http://www.glowtouch.com/</package-homepage>	
+  <default-prefix>docuwiki</default-prefix>
+
+  <summary>DokuWiki is a standards compliant, simple to use Wiki.</summary>
+  <description>
+    DokuWiki is a standards compliant, simple to use Wiki, mainly aimed at creating 
+    documentation of any kind. It is targeted at developer teams, workgroups and small 
+    companies. It has a simple but powerful syntax which makes sure the datafiles remain 
+    readable outside the Wiki and eases the creation of structured texts. All data is 
+    stored in plain text files . no database is required.
+  </description>
+
+  <icon path="images/logo.png"/>
+
+  <screenshot path="images/main_screenshot.jpg">
+    <description>
+      This is the screen where you add new text and graphics to your site. You can preview 
+      the page before publishing and set up publishing at a specific time.  
+    </description>
+  </screenshot>
+
+  <license must-accept="true">
+    <text>
+      <name>GPLv2</name>
+      <file>htdocs/COPYING</file>
+    </text>
+  </license>
+
+  <configuration-script-language>php</configuration-script-language>
+  <patchable-from version="20080505" release="2"/>
+
+  <upgradable-from version="2007_06_26b" release="8"/>
+
+  <changelog>
+    <version release="8" version="20121013">
+    	<entry>Changes in selinium script</entry>
+    </version><version release="7" version="20121013">
+    	<entry>Changes in APP META</entry>
+    </version><version release="6" version="20121013">
+    	<entry>Changes in App Meta</entry>
+    </version><version release="3" version="20121013">
+    	<entry>Changes in App meta</entry>
+    </version><version release="1" version="20121013">
+    	<entry>Release notes: http://www.dokuwiki.org/changes</entry>
+    </version><version version="20091225c" release="7">
+      <entry>Release notes: http://www.dokuwiki.org/changes</entry>
+    </version>
+    <version version="20080505" release="4">
+      <entry>Collaboration/Portals category removed</entry>
+    </version>
+    <version version="20080505" release="3">
+      <entry>Updated version</entry>
+    </version>
+    <version version="2007-06-26b" release="9">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+
+  
+
+  <installed-size>1214743</installed-size>
+
+  <categories>
+	  <category>Collaboration/Portal</category>
+  </categories>
+
+  <languages>
+    <language>en</language>
+  </languages>
+
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_name" type="string" default-value="admin" min-length="1" max-length="32" regex="^[a-z][0-9a-z_\-]*">
+        <name>Administrator's login</name>
+        <error-message>Please make sure the text you entered starts with a lowercase letter and continues with either numbers, lowercase letters, underscores or hyphens.</error-message>
+      </setting>
+      <setting id="admin_p_name" type="string" default-value="Administrator" min-length="1">
+        <name>Administrator's name</name>
+      </setting>
+      <setting id="admin_password" type="password" min-length="1" >
+        <name>Password</name>
+      </setting>
+      <setting id="admin_email" type="email">
+        <name>Administrator's email</name>
+      </setting>
+      <setting id="title" type="string" min-length="1">
+        <name>Wiki title</name>
+      </setting>
+    </group>
+    <group>
+      <name>Other preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+        <choice id="de-DE" >
+          <name>German</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+
+
+  <requirements xmlns:php="http://apstandard.com/ns/1/php">
+    <php:version min="5.1.2"/>
+	<php:safe-mode>false</php:safe-mode>
+	<php:register-globals>false</php:register-globals>
+
+  </requirements>
+
+
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+    
+    <mapping url="data">
+      <php:permissions writable="true"/>
+	  <mapping url="tmp">
+		<php:permissions writable="true"/>
+	  </mapping>
+    </mapping>
+	<mapping url="lib">
+	  <php:permissions writable="true"/>
+	  <mapping url="plugins">
+		<php:permissions writable="true"/>
+	  </mapping>
+	</mapping>
+    <mapping url="conf">
+      <php:permissions writable="true"/>
+    </mapping>
+  </mapping>
+
+</application>

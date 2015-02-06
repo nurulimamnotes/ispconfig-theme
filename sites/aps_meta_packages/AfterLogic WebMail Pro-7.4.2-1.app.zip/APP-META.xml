@@ -1,0 +1,969 @@
+<application xmlns="http://apstandard.com/ns/1">
+	
+	<name>AfterLogic WebMail Pro</name>
+	<version>7.4.2</version>
+	<release>1</release>
+	<homepage>http://www.afterlogic.com/webmail-client</homepage>
+	<package-homepage>http://www.afterlogic.com/download/webmail-pro</package-homepage>
+	
+	<default-prefix>/webmail/</default-prefix>
+	
+	<summary>Webmail front-end for your Plesk e-mail server.</summary>
+  
+	<description>
+AfterLogic WebMail Pro is a browser-based e-mail and personal calendar, designed to work with your existing Plesk Panel server. Installs easily, works fast, and supports change password option for Plesk accounts. Provides mobile sync for calendar, contacts, and e-mail. The user can have multiple e-mail accounts attached.
+Note: support for calendars and mobile sync requires PHP 5.3 or higher.
+	</description>
+
+
+	<icon path="images/wm_logo_64x64.png"/>
+  
+	<screenshot path="images/wmp_sb21.png">
+		<description>Messages List screen with preview pane</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb31.png">
+		<description>Messages List screen with preview pane</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb32.png">
+		<description>View Message screen with View Full Headers popup</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb41.png">
+		<description>Contacts screen with Edit Contact form</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb42.png">
+		<description>Contact screen with Edit Group form</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb51.png">
+		<description>Settings screen</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb61.png">
+		<description>Choose from a variety of skins</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb62.png">
+		<description>Choose from a variety of skins</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb71.png">
+		<description>Administration Panel interface</description>
+	</screenshot>
+	<screenshot path="images/wmp_sb72.png">
+		<description>Administration Panel interface</description>
+	</screenshot>
+	<screenshot path="images/wmp_scb1.png">
+		<description>Calendar interface with Edit Event popup</description>
+	</screenshot>
+	<screenshot path="images/wmp_scb2.png">
+		<description>Calendar interface</description>
+	</screenshot>
+	<screenshot path="images/wmp_scb3.png">
+		<description>Calendar interface with Edit Event popup</description>
+	</screenshot>
+	<screenshot path="images/wmp_scb4.png">
+		<description>Calendar interface</description>
+	</screenshot>
+ 
+	<license must-accept="true">
+		<text>
+			<name>License Agreement</name>
+			<file>htdocs/LICENSE</file>
+		</text>
+	</license>
+  
+	<configuration-script-language>php</configuration-script-language>
+	
+	<upgradable-from version="6.3.0" release="1"/>
+	
+	<changelog>
+<version version="7.4.2" release="1">
+<entry>[+] AdminPanel: Option to create users without checking on IMAP</entry>
+<entry>[+] AdminPanel: Option to set port for external IMAP/SMTP server names (for iOS profiles) (Pro)</entry>
+<entry>[+] settings.xml: RedirectToHttps option</entry>
+<entry>[+] config.php: X-Frame-Options to prevent clickjacking attacks</entry>
+<entry>[+] Import .eml files in a mail folder with drag-n-drop</entry>
+<entry>[+] Import .ics files in calendar with drag-n-drop or calendar menu (Pro)</entry>
+<entry>[+] Export and import contacts as .vcf file (vCard)</entry>
+<entry>[+] Improved sorting of mail threads</entry>
+<entry>[+] New keyboard shortcuts on compose screen</entry>
+<entry>[+] Folding multiple "Re:" into one in Subject field</entry>
+<entry>[+] Show the reason of failed attachment upload if the reason is "the file is too large"</entry>
+<entry>[+] Mail prefetch consumes less traffic and prefetches more types of emails</entry>
+<entry>[+] Performance improvements for large list of folders</entry>
+<entry>[+] "Attach" icon is now paperclip</entry>
+<entry>[+] Insert picture in Signature</entry>
+<entry>[+] Folder sorting when adding a new folder</entry>
+<entry>[+] Autodetection of user language (from browser settings)</entry>
+<entry>[+] Autodetection of user timezone when displaying public calendar (from browser settings) (Pro)</entry>
+<entry>[+] More accurate resizing</entry>
+<entry>[+] Localizable text of the iOS profile (Pro)</entry>
+<entry>[+] Italian translation update</entry>
+<entry>[+] 100+ bugfixes</entry>
+</version>
+<version version="7.4.1" release="1">
+<entry>[+] "New contact" button redesigned</entry>
+<entry>[+] License info added to all source code files</entry>
+<entry>[+] Favicon now shows unread e-mail count</entry>
+<entry>[+] "All" folder added to contacts (Aurora only)</entry>
+<entry>[+] MS Office documents viewer</entry>
+<entry>[+] mailto association tool in Settings</entry>
+<entry>[+] Admin panel allows for disabling webmail tab and selecting default tab</entry>
+<entry>[+] Bugfixes</entry>
+</version>
+<version version="7.4.0" release="1">
+<entry>[+] Export contacts to VCF</entry>
+<entry>[+] OpenPGP support (Pro)</entry>
+<entry>[+] Files storage (Pro)</entry>
+<entry>[+] Google Drive and Dropbox integration</entry>
+<entry>[+] New skins</entry>
+<entry>[+] Branding (custom logo) (Pro)</entry>
+<entry>[+] ownCloud Single-Sign-On</entry>
+<entry>[+] Desktop notifications on new message arrival</entry>
+<entry>[+] Show full headers</entry>
+<entry>[+] Copy messages via drag-n-drop (with Ctrl)</entry>
+<entry>[+] Bugfixes</entry>
+</version>
+<version version="7.3.0" release="1">
+<entry>[+] Mobile version (Pro)</entry>
+<entry>[*] Advanced search</entry>
+<entry>[+] "Open winmail.dat" plugin</entry>
+<entry>[+] "Open zip attachments" plugin</entry>
+<entry>[+] Show Importance status in message list</entry>
+<entry>[+] PostgreSQL support (experimental)</entry>
+</version>
+<version version="7.2.1" release="1">
+<entry>[*] Miscellaneous fixes and improvements</entry>
+</version>
+<version version="7.2.0" release="1">
+<entry>[*] New layout of compose.</entry>
+<entry>[*] New layout of message preview pane.</entry>
+<entry>[+] White skin (and skin selector).</entry>
+<entry>[*] Conversion of email addresses in To/CC/BCC to blue tags.</entry>
+<entry>[*] Attachment thumbnails in preview pane (available when PHP has GD extension enabled)</entry>
+<entry>[+] Highlighting links in HTML messages.</entry>
+<entry>[*] Add account on the same server made easier (Pro).</entry>
+<entry>[+] Fold/unfold folders.</entry>
+<entry>[+] Show how many items are selected for move to trash, spam.</entry>
+<entry>[+] Zip all attachments (available when PHP has zip extension enabled).</entry>
+<entry>[+] Replacement of your own email address with "me".</entry>
+<entry>[+] Folded thread highlighting if unread messages exist in thread.</entry>
+<entry>[+] Register webmail as mailto: handler.</entry>
+<entry>[+] Save replied messages to current folder setting.</entry>
+<entry>[+] "Email to this group" feature in Contacts.</entry>
+<entry>[+] Groups in autocomplete.</entry>
+<entry>[*] cPanel installer supports new cPanel.</entry>
+<entry>[+] Search allows for email:addr_1,addr2,addr_n syntax to search for multiple email addresses in headers at once.</entry>
+</version>
+<version version="7.1.1.1" release="1">
+<entry>[*] Bug fixes</entry>
+</version>
+<version version="7.1.1" release="1">
+<entry>[*] Bug fixes and misc. improvements</entry>
+</version>
+<version version="7.1.0" release="1">
+<entry>[*] Aurora release</entry>
+<entry>[*] All-new calendar module</entry>
+<entry>[*] Mail threading</entry>
+<entry>[*] "Starred" folder in Mail</entry>
+<entry>[*] Bug fixes and misc. improvements</entry>
+</version>
+<version version="7.0.2" release="1">
+<entry>[*] Right-to-left layout (for Arabic and Hebrew)</entry>
+<entry>[*] New fields for contacts (such as Skype ID)</entry>
+<entry>[*] Bug fixes and misc. improvements</entry>
+</version>
+<version version="7.0.1" release="1">
+<entry>[*] POPPASSD support</entry>
+<entry>[*] VCARD support</entry>
+<entry>[*] ICAL support</entry>
+<entry>[*] Integration documentation</entry>
+<entry>[*] API feature to show unread count of INBOX on any page of external app.</entry>
+<entry>[*] Multiple minor issues fixed.</entry>
+</version>
+<version version="7.0.0" release="1">
+<entry>[*] Frontend and backend for contacts and mail are rewritten from scratch, calendar currently stays in legacy mode</entry>
+<entry>[*] Support for POP3 accounts is discontinued</entry>
+<entry>[*] New interface skin and template-based layout</entry>
+<entry>[*] Substantial IMAP optimization</entry>
+<entry>[*] Memory consumption significantly reduced, memory limits of PHP should no longer cause issues</entry>
+</version>
+<version version="6.6.0" release="1">
+<entry>[*] Multiple minor issues fixed.</entry>
+</version>
+<version version="6.5.1" release="1">
+<entry>[*] WebMail is now compatible with PHP 5.2 (calendar and mobile sync will not be available).</entry>
+<entry>[*] Better error handling when server or connection error occurs.</entry>
+<entry>[*] Bug with displaying formatted dates fixed.</entry>
+<entry>[*] System folders now correctly detected in Gmail accounts.</entry>
+<entry>[*] Folder list of deleted account no longer displayed.</entry>
+<entry>[*] Fixed the approach for timezone-related calculations when displaying date and time information.</entry>
+<entry>[*] Multiple minor issues fixed.</entry>
+</version>
+<version version="6.5.0" release="1">
+<entry>[+] CardDAV for Address Book (enables syncing contacts on iPhone, etc)</entry>
+<entry>[*] New screen of Mobile Settings</entry>
+<entry>[+] Icons for .ics, .vcard attachments</entry>
+<entry>[+] Export to iCal</entry>
+<entry>[+] Per-user logging in a file (for debugging purposes, see labs.log.specified-by-user parameter in http://www.afterlogic.com/wiki/Advanced_configuration_via_config.php_file_(WebMail_Pro_6_PHP) )</entry>
+<entry>[*] Auto-checkmail no longer interferes with other operations</entry>
+<entry>[*] Faster prefetch of e-mails</entry>
+<entry>[+] Search in e-mails includes СС</entry>
+<entry>[+] Cancel search</entry>
+<entry>[*] IMAP quota indicator is more accurate</entry>
+<entry>[+] Periodic calendar refresh</entry>
+<entry>[*] More accurate counting of unread e-mails</entry>
+<entry>[*] Multiple minor issues fixed.</entry>
+</version>
+<version version="6.4.3" release="1">
+<entry>[*] Multiple minor issues fixed.</entry>
+</version>
+<version version="6.4.2" release="1">
+<entry>[*] Calendar backend has been modified, now WebMail uses API of DAV server which allows for improving calendar performance.</entry>
+<entry>[*] Multiple minor issues fixed in calendar client of WebMail.</entry>
+</version>
+<version version="6.4.1" release="1">
+<entry>[*] PHP: Saving calendar settings is fixed.</entry>
+<entry>[*] JS: Saving data in account settings tabs is fixed.</entry>
+</version>
+<version version="6.4.0" release="1">
+<entry>[+] PHP: CalDAV storage is used for calendar, database storage is no longer supported.</entry>
+<entry>[+] PHP: Syncing calendars with mobile devices via CalDAV protocol. Funambol sync is discontinued.</entry>
+<entry>[+] PHP: Profiling of mail and calendar accounts for iOS devices</entry>
+<entry>[*] PHP: Outdated code purged.</entry>
+<entry>[-] PHP, JS: Spellcheck and PDA interface version removed.</entry>
+</version>
+<version version="6.3.10" release="1">
+<entry>[*] Time fixed in Last login information.</entry>
+<entry>[*] Feature of adding subadmins without domain (IsOwner = true). When removing such subadmin, all domains and users are removed as well (POA).</entry>
+<entry>[+] JS, PHP: Global address book tab in contacts list.</entry>
+<entry>[*] JS: Request for frequently used contacts was causing endless loop in Google Chrome.</entry>
+<entry>[+] PHP: Storage quota for MailSuite.</entry>
+<entry>[*] PHP: Disabling address book screen was ignored from calendar screen.</entry>
+<entry>[*] JS: Forward button is added for message from Sent Items folder opened in new window.</entry>
+<entry>[+] DB: Two database indexes are added (use_frequency, view_email) to speed up handling contacts.</entry>
+<entry>[*] CSS: fixed a crash which occured when opening WebMail right after MSN website.</entry>
+</version>
+<version version="6.3.9" release="1">
+<entry>[+] CSS, JS: Icon for PPT and PPTX files added for displaying in attachments list.</entry>
+<entry>[*] JS: Check mail button freezing is fixed.</entry>
+<entry>[*] JS: Mails were not removed from Drafts folder upon sending, fixed.</entry>
+<entry>[+] JS, PHP: Option for exporting contacts is added.</entry>
+<entry>[+] JS, PHP: Information on last login date/time displayed at login page.</entry>
+<entry>[+] JS: Outdated browser alert issued prior to redirecting to PDA version (in case if xmlHttpRequest object cannot be created).</entry>
+<entry>[+] JS: Autocompletion on login page.</entry>
+<entry>[+] JS: Fixes for Persian and Romanian translations.</entry>
+</version>
+<version version="6.3.8" release="1">
+<entry>[*] PHP: Fixed detecting inline attachments via IMAP body structure.</entry>
+<entry>[*] PHP: Fixed key validity check.</entry>
+<entry>[*] PHP: Additional processing of server response is performed when searching for Message-ID and locating matching UID.</entry>
+<entry>[-] PHP: "Use specified login" option for SMTP authentication has been removed from default domain settings as its actually never used there.</entry>
+<entry>[*] PHP, JS: System setting added for disabling autosave to Drafts.</entry>
+<entry>[*] JS: If first autosave attempt is unsuccessful, autosave is cancelled.</entry>
+<entry>[*] JS: In case if autosave is in progress when send is performed, sending is delayed till autosave is over.</entry>
+</version>
+<version version="6.3.7" release="1">
+<entry>[*] PHP: Non-system folders are considered when syncing folders, provided they're made default ones via plugin.</entry>
+<entry>[+] PHP: Configuration option added for creating required folders on each login.</entry>
+<entry>[*] PHP: Method added for moving messages in IMAP using Append, callback allows for modifying a message.</entry>
+</version>
+<version version="6.3.6" release="1">
+<entry>[+] PHP, JS: Special folder access mode is added for IMAP, when that mode is enabled folder subscription is ignored and all the folders are always treated as subscribed. The Subscribed column in Manage Folders screen is blocked.</entry>
+<entry>[*] PHP: Fixed issue with sorting system folders which caused their duplication in some cases.</entry>
+</version>
+<version version="6.3.5" release="1">
+<entry>[*] JS: Fixed reply button in horizontal layout view.</entry>
+</version>
+<version version="6.3.4" release="1">
+<entry>[*] PHP: Updates in POP3 module in order to comply with nodb mode.</entry>
+<entry>[*] JS: Login JavaScript error fixed.</entry>
+</version>
+<version version="6.3.3" release="1">
+<entry>[*] JS: Print function didn't work in view message in 'new window' mode</entry>
+<entry>[*] JS: Autosave in compose screen in pop3 accounts closed compose window.</entry>
+</version>
+<version version="6.3.2" release="1">
+<entry>[*] JS: Fixed switching between html and plain modes in compose screen when signature is on.</entry>
+</version>
+<version version="6.3.1" release="1">
+<entry>[*] PHP: Links like www.domain.com were opened incorrectly in web browser.</entry>
+<entry>[*] JS: Fixed filtering loop of AJAX requests for non-default accounts.</entry>
+<entry>[*] JS: Resizer position between folders pane and message list was not saved, resizing caused content selection, both the issues are fixed.</entry>
+</version>
+<version version="6.3.0" release="1">
+<entry>[+] PHP, JS: Support and managing of forwards, filters and vacation messages via Sieve.</entry>
+<entry>[*] PHP: Improved plugin system, allows for easy adding of plugins for changing passwords, forwards, autoresponders.</entry>
+<entry>[*] PHP, JS: Opening published calendar is fixed.</entry>
+<entry>[*] PHP, JS: Sorting by date is always applied even if the server doesn't support sorting mails.</entry>
+<entry>[+] PHP, JS: When composing messages, they are autosaved to Drafts periodically.</entry>
+<entry>[*] PHP: Additional setting which allows for better date sorting.</entry>
+<entry>[*] PHP: Fixed issue in Compose screen which resulted in error on email autcompletion with address book disabled.</entry>
+<entry>[*] PHP: Fixed issue with adding attachments caused by json_encode function not available in PHP.</entry>
+<entry>[*] PHP: Improved hyperlinks highlight in message.</entry>
+<entry>[+] JS: Right-mouse button menu in message list added.</entry>
+<entry>[*] JS: Fixed error on using color palette in IE9.</entry>
+<entry>[*] JS: In Manage Folders screen, real folder names are displayed. If a particular folder is used as a system one, that is indicated next to folder name (e.g.: used as Sent Items).</entry>
+<entry>[*] JS: Email autocompletion in Compose screen does not cover emails which are present in To/Cc/Bcc fields.</entry>
+<entry>[*] JS: When replying to message which has email address in Reply-To equal to one in From, the latter is used since it might have display name we need to use.</entry>
+<entry>[*] JS: When closing WebMail window, all the windows invoked by it are closed as well.</entry>
+<entry>[*] JS: For Drafts folder, total number of messages is displayed, while for other folders number of unread mails is displayed.</entry>
+<entry>[*] JS: Message list was selected on drag'n'drop, fixed.</entry>
+<entry>[*] JS: When message is sent from a separate window, that window is closed.</entry>
+<entry>[*] JS: When forwarding message in new windows, attachments are no longer lost.</entry>
+<entry>[*] JS: Error which occured when using integration to enter any other screen than message list, is now fixed.</entry>
+<entry>[*] PHP, JS: Many minor improvements and fixes.</entry>
+</version>
+<version version="6.2.0" release="1">
+<entry>[*] PHP: AdminPanel was not displaying list of domains when it exceeded certain number of records.</entry>
+<entry>[+] PHP: Error message added for login screen, it's shown when mail server is not accessible.</entry>
+<entry>[+] PHP: Sieve plugin added.</entry>
+<entry>[*] PHP: Fixed error of saving calendar settings when certain time format used.</entry>
+<entry>[*] JS: Color palette couldn't be opened in Signature editor.</entry>
+<entry>[*] JS: New Message screen was not using Use Signature setting.</entry>
+<entry>[*] JS: When replying to message, signature was added after quoting, now it's before quoting.</entry>
+<entry>[*] JS: On adding filter, "no filters specified yet" text was still displayed.</entry>
+<entry>[-] JS: Outdated code for implementing demo account is removed.</entry>
+</version>
+<version version="6.1.8" release="1">
+<entry>[+] PHP, .NET, JS: Identities support</entry>
+<entry>[*] JS: Significantly simplified check mail, now it goes much faster</entry>
+<entry>[*] PHP: Plugin system functionality extension</entry>
+<entry>[*] PHP: Lots of small internal changes.</entry>
+</version>
+<version version="6.1.7" release="1">
+<entry>[*] PHP: "New user" button added in AdminPanel.</entry>
+<entry>[*] PHP: added hook and usage example for Global Signature plugin.</entry>
+</version>
+<version version="6.1.6" release="1">
+<entry>[*] PHP: Occasionally, inline images were not added for filename-specific reasons.</entry>
+<entry>[*] PHP: Verbose error messages for POPPASSD plugin.</entry>
+<entry>[*] .NET: Layout issues fixed for new window opened with double click.</entry>
+</version>
+<version version="6.1.5" release="1">
+<entry>[*] JS: It's possible to show new password field when users aren't allowed to change settings.</entry>
+<entry>[*] JS: Changing password issue corrected.</entry>
+<entry>[+] .NET, PHP: Additional setting which can forbid adding new accounts on login.</entry>
+<entry>[*] PHP: Date formatting fixed for exporting to iCal.</entry>
+<entry>[*] .NET: Sorting in IMAP corrected.</entry>
+</version>
+<version version="6.1.3" release="1">
+<entry>[+] PHP: New plugin available for changing user password via poppassd.</entry>
+<entry>[*] PHP: When opening a message in separate window and doing Forward, message body was empty.</entry>
+<entry>[*] JS: Current folder is excluded from folders list in "Move to folder" dropdown.</entry>
+<entry>[*] JS: If deleting messages or doing checkmail right before viewing message, that message could become unread again, and deleted messages could become visible again for a while.</entry>
+<entry>[*] JS: Sorting by attachments and flags is removed for IMAP since this is not supported by servers.</entry>
+<entry>[*] JS: window.opener related checks were removed, they were causing glitches in Compose and Quick Reply modes.</entry>
+<entry>[*] JS: Quick Reply wasn't working in new window due to animation.</entry>
+<entry>[*] JS: Issues with displaying attachments in IE6,7.</entry>
+<entry>[*] JS: The "Autocheck mail every" setting was not applied unless the window is refreshed</entry>
+<entry>[*] JS: After Check mail, mail deleted by other client was still there</entry>
+<entry>[*] JS: In Compose mode, when choosing contacts by clicking To, CC, BCC, area for adding attachments was visible underneath the contacts list.</entry>
+<entry>[*] JS: HTML editor was rendered incorrectly in IE6,7.</entry>
+</version>
+<version version="6.1.2" release="1">
+<entry>[+] PHP: Finnish translation added.</entry>
+<entry>[*] PHP: Bugfix related to POP3 accounts (errors when creating folders).</entry>
+<entry>[+] PHP, JS: Corrections for "Forwarded" flag detection.</entry>
+<entry>[*] JS: Decection for number of previous messages when replying/forwarding (Re[x], Fwd[x]).</entry>
+</version>
+<version version="6.1.1" release="1">
+<entry>[+] PHP: amr2wav_convert.sh script for convert .amr files to .wav added to /data/convert/ directory</entry>
+<entry>[*] JS: Fixed issue of message list sorting in IMAP mode</entry>
+</version>
+<version version="6.1.0" release="1">
+<entry>[+] PHP: Voice Message support (.AMR playback)</entry>
+<entry>[*] PHP: Functions names have been refactored.</entry>
+<entry>[*] JS: New look for attachments pane.</entry>
+<entry>[*] JS: Was not possible to use Quick Reply for sending mail to yourself. Fixed.</entry>
+<entry>[*] PHP: Incorrect check for external images added.</entry>
+<entry>[+] JS: Quick Reply pane is animated when sending message.</entry>
+<entry>[*] PHP: Accounts are now email-based. For accounts added in Advanced Login mode, subsequent logins don't require this mode.</entry>
+</version>
+<version version="6.0.3" release="1">
+<entry>[*] PHP: Plesk integration is operational now.</entry>
+<entry>[*] PHP: Mailadm and subadmins passwords are hashed.</entry>
+<entry>[*] PHP: Bugfix: incoming mail port was used for SMTP in Advanced Login mode.</entry>
+</version>
+<version version="6.0.2" release="1">
+<entry>[*] JS: Corrections for blinking favicon used as notification for new messages.</entry>
+<entry>[*] JS: Corrections related to precaching functionality.</entry>
+<entry>[+] PHP, .NET, JS: Forwarded flag is back.</entry>
+<entry>[*] PHP: Corrections for dates in calendar.</entry>
+<entry>[*] PHP: Fixed issue of creating and displaying folders with international names.</entry>
+<entry>[*] JS: Cursor autofocus is corrected on login form.</entry>
+<entry>[*] PHP: Default domain was not saving Global Address book setting, fixed.</entry>
+</version>
+<version version="*:" release="1">
+<entry>[*] JS: When Sent Items folder is selected, Forward button became available.</entry>
+<entry>[*] PHP: Correct processing of OverrideSettings in domain options.</entry>
+<entry>[*] PHP: Fixed issue of sorting folders in Manage Folders screen (IdParent was not set correctly for folders when adding to database)</entry>
+<entry>[*] PHP: Fixed issue of search in all mail folders in POP3</entry>
+<entry>[+] PHP, .NET, JS: Added XLIST support (gmail.com)</entry>
+<entry>[+] PHP, .NET: Fixed issue of assigning system folders (previously, it wasn't possible to set system assignment for a subfolder).</entry>
+<entry>[+] PHP, .NET, JS: It is now possible to configure AdvancedLogin via settings.xml file.</entry>
+<entry>[*] .NET: Several fixes for hMailServer integration.</entry>
+<entry>[*] .NET: Fixed error of searching for users in AdminPanel.</entry>
+</version>
+<version version="6.0.1" release="1">
+<entry>[*] JS, PHP, .NET: fix for adding attachments (file size limit was ignored).</entry>
+<entry>[*] JS: Fix for changing skin in user account settings (the proper skin didn't always apply).</entry>
+<entry>[*] JS: The problem of missing message list pages switcher is fixed.</entry>
+<entry>[*] PHP, .NET: Autocompletion of email addresses is corrected. Email addresses added to autocompletion list when sending mail are no longer displayed in Contacts screen.</entry>
+<entry>[*] PHP: XML data packets encoding is fixed, headers and attachment names are displayed correctly.</entry>
+<entry>[*] .NET: Fix for fetching mails in All/Nee Messages and All/New Headers sync modes for IMAP accounts.</entry>
+<entry>[*] JS: Bugfix for search in messages and contacts refusing to work after searching for empty value.</entry>
+<entry>[*] JS: Fix for switching language in user settings (not all language constants' values were updated immediately).</entry>
+<entry>[+] PHP: Examples of using new API are added to examples directory.</entry>
+<entry>[+] JS: In Import Contacts mode, link to relevant documentation page is available.</entry>
+</version>
+<version version="6.0.0" release="1">
+<entry>[*] PHP, .NET: AdminPanel is rewritten from scratch;</entry>
+<entry>[*] PHP, .NET: totally new screen of user account settings;</entry>
+<entry>[+] PHP, .NET: modern AJAX-based file uploader instead of Flash-based one;</entry>
+<entry>[+] PHP: separate MySQL master/slave (read/write) MySQL;</entry>
+<entry>[+] PHP, .NET: reading/composing mail in new tab/window by pressing Shift;</entry>
+<entry>[+] PHP, .NET: Print and Save tools in preview pane;</entry>
+<entry>[+] PHP, .NET: window/tab "New Messages" icon with number of new messages displayed;</entry>
+<entry>[+] PHP, .NET: instead of full reload, message list is dynamically updated after deleting/moving mails;</entry>
+<entry>[+] PHP, .NET: quota indicator is back in 3-pane view.</entry>
+<entry>[-] PHP, .NET: Advanced Login mode deprecated, "out of domain" user cannot be created;</entry>
+<entry>[-] PHP, .NET: compliated synchronization modes options removed (IMAP: Direct Mode only; POP3: Entire Messages only);</entry>
+<entry>[-] PHP, .NET: Selecting default charset no longer available, only UTF-8 is used;</entry>
+<entry>[-] .NET: MS Access support for ASP.NET edition discontinued;</entry>
+<entry>[-] PHP: MS SQL support for PHP edition discontinued.</entry>
+</version>
+<version version="5.1.11" release="1">
+<entry>[*] PHP: The issue with empty messages list in POP3 Inbox (Direct Mode) has been fixed</entry>
+<entry>[*] JS: Spam button is now available in IMAP account if Spam system folder exists</entry>
+<entry>[*] JS: Search bar was disappearing when navigating back to messages list</entry>
+</version>
+<version version="5.1.10" release="1">
+<entry>[*] PHP: Under certain circumstances, full list of contacts was not available.</entry>
+<entry>[+] PHP: Save in Sent setting is stored per-account in cookies.</entry>
+</version>
+<version version="5.1.9" release="1">
+<entry>[*] PHP: 5.1.8 minor bug fixes.</entry>
+</version>
+<version version="5.1.8" release="1">
+<entry>[*] PHP: Double database connection is performed (read/write)</entry>
+<entry>[*] PHP: Alphabetical index in contacts (disabled by default)</entry>
+<entry>[*] PHP: Minor fixes, code refactoring</entry>
+<entry>[*] PHP: Required indexes are added to the database</entry>
+</version>
+<version version="5.1.7" release="1">
+<entry>[*] PHP: Renaming folders now processes re-subscription correctly.</entry>
+<entry>[*] PHP: Forced security check of incoming parameters.</entry>
+<entry>[*] PHP: Message size detection before sending or saving has been fixed.</entry>
+<entry>[*] PHP: Calendar queries are now subject to additional checks.</entry>
+<entry>[*] PHP: Inline attachments detection improved.</entry>
+</version>
+<version version="5.1.6" release="1">
+<entry>[*] PHP: Mandatory password check on IMAP server while logging in.</entry>
+<entry>[*] PHP: HTML part is no longer created when plaintext message is sent.</entry>
+<entry>[*] PHP: Message list sorting after search in Direct Mode fixed.</entry>
+<entry>[*] PHP: Server capability check is made when required, not right after connect.</entry>
+<entry>[*] PHP: MySQL query for contact list search fixed.</entry>
+<entry>[*] Calendar Js: Bug with incorrect appointment time for external user invitation fixed.</entry>
+<entry>[*] PHP: Minor refactoring.</entry>
+</version>
+<version version="5.1.5" release="1">
+<entry>[*] PHP: Save In Sent Items functionality corrected.</entry>
+<entry>[*] PHP: Message date detection fixed.</entry>
+</version>
+<version version="5.1.4" release="1">
+<entry>[*] PHP, .NET: Added new predefined setting in AdminPanel: Save In Sent Items.</entry>
+<entry>[*] PHP: Autoresponce save fixed.</entry>
+</version>
+<version version="5.1.1" release="1">
+<entry>[*] PHP: Fixed the problem with lines terminated by LF and not CRLF on sending message.</entry>
+<entry>[*] PHP: Fixed mailcheck issues with filters.</entry>
+</version>
+<version version="5.1.0" release="1">
+<entry>[*] .NET: Bugfix: Message were marked as read on mailcheck in direct mode.</entry>
+<entry>[*] .NET: Bugfix: WebMail Pro crashed after deleting message.</entry>
+<entry>[*] PHP, .NET: "Show pictures in messages" applies to external images only.</entry>
+<entry>[*] PHP, .NET: Default date setting in calendar work correctly.</entry>
+<entry>[*] PHP, .NET: Bugfix: Address autocompletion didn't work starting from the 3rd recipient.</entry>
+<entry>[*] PHP, .NET: "Reply to all" now covers sender ("From:") of the original mail.</entry>
+<entry>[*] PHP, .NET: "background" attribute was not properly processed when hiding images.</entry>
+<entry>[*] PHP, .NET: On adding contact, Name field gains focus automatically.</entry>
+<entry>[*] PHP, .NET: For mails with empty subject, "No subject" is displayed.</entry>
+<entry>[*] PHP, .NET: Embedded documentation is replaced by wiki-based one.</entry>
+<entry>[*] PHP, .NET: Error messages, status reports and mailcheck notification no longer overlap.</entry>
+<entry>[*] PHP, .NET: Message list is cleared during search.</entry>
+<entry>[*] PHP, .NET: Direct mode is default for IMAP now.</entry>
+<entry>[*] PHP, .NET: Few bugfixes in calendar.</entry>
+<entry>[*] .NET: AdminPanel core rewritten, performance is now increased.</entry>
+<entry>[*] .NET: Folders and files structure modified.</entry>
+<entry>[+] PHP, .NET: Option for saving message to Sent Items added.</entry>
+</version>
+<version version="5.0.6" release="1">
+<entry>[*] PHP: Saving to Drafts corrected.</entry>
+<entry>[*] PHP: Mail composing rewritten in order to ensure lower spam scores.</entry>
+<entry>[*] Calendar: Placing wrong hashes to event invitation mails corrected.</entry>
+</version>
+<version version="5.0.5" release="1">
+<entry>[*] .NET: Fixed bug with POP3 mail mode and autocheck interval.</entry>
+</version>
+<version version="5.0.4" release="1">
+<entry>[*] .NET: Several language files updated.</entry>
+<entry>[*] .NET: Fixed bug with forwarding messages with attachments.</entry>
+</version>
+<version version="5.0.3" release="1">
+<entry>[*] .NET: Fixed conflict with namespaces.</entry>
+<entry>[*] PHP: Detailed error messages in installer for /data/ folder troubleshooting.</entry>
+<entry>[*] PHP: Messages with embedded images - fix in editor.</entry>
+<entry>[*] JS: "Search" field text localization implemented.</entry>
+<entry>[*] JS: Search results header fixed</entry>
+<entry>[*] Calendar: Shared calendars presentation fixed</entry>
+<entry>[*] Calendar: Skin selection fixed</entry>
+</version>
+<version version="5.0.0" release="1">
+<entry>[*] JS Calendar: Code refactoring and optimization.</entry>
+<entry>[*] .NET: Code refactoring and optimization.</entry>
+<entry>[+] JS: PHP, .NET: New (three pane view) main window layout</entry>
+<entry>[+] PHP: Mobile sync</entry>
+<entry>[+] PHP, .NET: Two-way syncing of contacts and calendar events</entry>
+<entry>[*] .NET: Optimized memory usage</entry>
+<entry>[*] .NET, PHP: Multiple minor fixes.</entry>
+<entry>[*] JS: Contacts screen scrolling issue fixed.</entry>
+<entry>[*] .NET: Subadmins management issue with MySQL used is fixed.</entry>
+<entry>[*] .NET: Database update script corrected.</entry>
+<entry>[+] .NET: Update script is updating adminpanel.xml file now as well.</entry>
+</version>
+<version version="4.10.0" release="1">
+<entry>[*] JS Calendar: Several visual issues fixed.</entry>
+<entry>[*] JS Calendar: The issue with deleting events repeated at specific weekdays fixed.</entry>
+<entry>[*] JS Calendar: Behavior of inline editing of event name corrected.</entry>
+<entry>[+] .NET, PHP: Automated mailcheck at specified time interval.</entry>
+<entry>[+] .NET, PHP: Global address-book, either domain- or system-wide, is added as a set of hints for message composing screen.</entry>
+<entry>[+] PHP: Folder sync on login (configured within constants).</entry>
+<entry>[+] .NET, PHP: Multiple admins (sub-admins with domain-specific permissions granted).</entry>
+<entry>[+] PHP: Few API methods added for dealing with accounts.</entry>
+<entry>[+] .NET, PHP: Support for Chinese Simplified and Chinese Traditional added.</entry>
+<entry>[+] .NET, PHP: Uploading attachments using Flash when available.</entry>
+<entry>[*] .NET, PHP: Multiple minor fixes.</entry>
+</version>
+<version version="4.9.10" release="1">
+<entry>[*] PHP: Code added for prolonging cookies of "Sign me in" parameters.</entry>
+<entry>[*] JS: Method creating message body request fixed (size wasn't added under certain conditions).</entry>
+</version>
+<version version="4.9.9" release="1">
+<entry>[*] PHP: Bugfix: CAPTCHA was checked even if not displayed on login screen.</entry>
+<entry>[*] JS: Message uniqueness is no longer checked based on its size.</entry>
+</version>
+<version version="4.9.8" release="1">
+<entry>[+] PHP: Any message header can be processed by filters through custom layer functionality.</entry>
+<entry>[+] PHP Sync Plugin: fixed the issue with dates for all-day events not saved correctly after synchronization.</entry>
+<entry>[*] .NET: The class dealing with POP3 modified.</entry>
+<entry>[*] .NET: Database updating script modified.</entry>
+</version>
+<version version="4.9.7" release="1">
+<entry>[*] PHP: Session-related fixes.</entry>
+<entry>[*] PHP: Sorting by date in IMAP4 with Direct Mode used for folder is improved.</entry>
+<entry>[*] PHP: IMAP folder is now selected using SELECT command.</entry>
+<entry>[*] PHP: IMAP folder is always SELECTed even if it was selected before (to update IMAP server cache).</entry>
+</version>
+<version version="4.9.6" release="1">
+<entry>[*] PHP: STARTTLS support added for SMTP.</entry>
+<entry>[*] PHP: Rules for parsing encoded message headers updated.</entry>
+<entry>[*] PHP: Saving primary_hostname value ("Default Domain") fixed in adminpanel.</entry>
+<entry>[*] PHP: Several translations added.</entry>
+<entry>[*] PHP, JS : Few minor fixes.</entry>
+<entry>[+] JS: Condition added for displaying currently selected message on XML server packet arrival.</entry>
+<entry>[*] .NET: adminpanel.xml file fixed.</entry>
+</version>
+<version version="4.9.5" release="1">
+<entry>[*] .NET: Bugfix: calendar settings saved incorrectly</entry>
+<entry>[*] .NET: Bugfix: attached files with the same file names accessed incorrectly</entry>
+</version>
+<version version="4.9.4" release="1">
+<entry>[*] JS: Small visual fixes.</entry>
+<entry>[+] JS: HideSpamButton variable added in JS code.</entry>
+<entry>[*] PHP: Encoding message headers corrected, long words are no longer splitt when charset is other than UTF-8.</entry>
+<entry>[*] .NET: Issue with SET NAMES use for MySQL fixed.</entry>
+</version>
+<version version="4.9.3" release="1">
+<entry>[*] PHP: Calendar settings request fix.</entry>
+</version>
+<version version="4.9.2" release="1">
+<entry>[*] .NET: Fixed bug with limited body length when composing a message.</entry>
+<entry>[*] JS: Fix domain selector on login form.</entry>
+</version>
+<version version="4.9.1" release="1">
+<entry>[*] PHP: Minor modifications of language constants.</entry>
+<entry>[*] PHP: Support for demo package building.</entry>
+<entry>[*] JS Calendar: Bugfix: Invalid time selection for event with AM/PM time format enabled.</entry>
+<entry>[*] JS Calendar: Few visual bugs fixed.</entry>
+</version>
+<version version="4.9.0" release="1">
+<entry>[+] PHP: LDAP support added (LDAP authentication and server contact list). This is custom-project only option.</entry>
+<entry>[+] JS, PHP, .NET: filter list interface beautified.</entry>
+<entry>[+] PHP: AfterLogic Outlook Sync Plugin support added.</entry>
+<entry>[+] JS, PHP, .NET: Visual indication as to the priority and confidentiality of the message. This option available in Message List, Preview and Full pane.</entry>
+<entry>[+] JS: Syntax check of email addresses before sending a message.</entry>
+<entry>[+] JS: Cancel message composing ability.</entry>
+<entry>[+] JS, PHP: no-reply answers.</entry>
+<entry>[+] JS: Subject and Body Lengths. Body counter and remaining allowed characters.</entry>
+<entry>[+] JS: The size of the attachment has to be verified upon sending.</entry>
+<entry>[+] PHP: logging level and events logging.</entry>
+<entry>[+] Calendar: Added event reminders.</entry>
+<entry>[+] Calendar: Added a feature for inviting other users to participate in events.</entry>
+<entry>[+] Calendar: Calendars display status is saved to the database and restored on next login.</entry>
+<entry>[*] JS, PHP, .NET: Spam folder along with "Spam"  "Not Spam" buttons added to every protocol.</entry>
+<entry>[*] JS, PHP, .NET: Message can be deleted from server immediately if it's not possible to move it to Trash folder.</entry>
+<entry>[*] PHP: Message sorting in IMAP4 folders configured for Direct Mode access has been enhanced.</entry>
+<entry>[*] JS Calendar: Bugfix: time of event end was selected incorrectly when selecting time of event start.</entry>
+<entry>[*] JS Calendar: Bugfix: calendar cells were selected incorrectly if system fonts were of too big or too small size.</entry>
+<entry>[*] .NET: a fix for dealing with charset used in MySQL has been applied.</entry>
+</version>
+<version version="4.8.20" release="1">
+<entry>[*] .NET: Bugfix: IMAP optimization.</entry>
+</version>
+<version version="4.8.19" release="1">
+<entry>[*] .NET: Some bugfixes.</entry>
+</version>
+<version version="4.8.18" release="1">
+<entry>[*] .NET: MySQL issue in Windows 64-bit fixed.</entry>
+</version>
+<version version="4.8.17" release="1">
+<entry>[*] .NET: "Issue of December" fixed in calendar.</entry>
+</version>
+<version version="4.8.16" release="1">
+<entry>[*] .NET: Some bugfixes.</entry>
+</version>
+<version version="4.8.15" release="1">
+<entry>[*] .NET: Bugfix: test connection to MySQL database in the installer.</entry>
+<entry>[*] .NET: Bugfix: JavaScript error on "Database Settings" screen in Admin Panel.</entry>
+<entry>[*] PHP: Bugfix: default sync mode for POP3 accounts.</entry>
+</version>
+<version version="4.8.13" release="1">
+<entry>[*] .NET: Bugfix: reply to found message (in search) for native XMail accounts</entry>
+<entry>[*] .NET: Bugfix: on deleting (moving to "Trash" folder in "Don't synchronize" mode), read message bacame unread (IMAP4).</entry>
+<entry>[+] .NET, PHP: 5-Users license added.</entry>
+</version>
+<version version="4.8.12" release="1">
+<entry>[*] PHP: Minor bugfix in licensing system.</entry>
+<entry>[*] JS: Bugfix: changing password in native XMail account (PHP version).</entry>
+<entry>[*] .NET: Additional checks added to the installation script.</entry>
+</version>
+<version version="4.8.10" release="1">
+<entry>[*] .NET: Bugfix: pre-fetch in IMAP.</entry>
+<entry>[*] .NET: Bugfix: IMAP optimization.</entry>
+<entry>[*] .NET: Bugfix: some messages in IMAP accounts were displayed incorrectly.</entry>
+<entry>[*] JS: Bugfix: changing password in native XMail account.</entry>
+</version>
+<version version="4.8.9" release="1">
+<entry>[+] .NET: On adding domains and users which exist on mail server, but don't exist in WebMail database, the users are added into WebMail database.</entry>
+<entry>[*] .NET: MailBee.NET.dll updated.</entry>
+<entry>[-] JS: Logging in Manage Folders screen removed.</entry>
+</version>
+<version version="4.8.8" release="1">
+<entry>[*] PHP Calendar: A bug in synchronizing with Outlook fixed. Only the last calendar was synchronized.</entry>
+<entry>[*] .NET: Exception handling and logging subsystem improved.</entry>
+<entry>[*] .NET: Missing constants added to language files.</entry>
+<entry>[*] PHP: Bugfix: UTF-7 decoding imap folder names with  in name.</entry>
+<entry>[*] PHP: Bugfix: JS handler was not added to mailto links.</entry>
+<entry>[*] PHP: Bugfix: logout in PDA version didn't clear Sign Me cookie.</entry>
+<entry>[*] JS: Multiple pre-fetch query message_body returned back.</entry>
+</version>
+<version version="4.8.7" release="1">
+<entry>[+] .NET: mailto links now go to message compose screen.</entry>
+<entry>[*] JS: bugfix: displaying border of "contact info" form in IE.</entry>
+<entry>[*] JS: bugfix: selecting contacts in contacts list.</entry>
+<entry>[*] PHP: Changed error message about file being imported is empty.</entry>
+<entry>[*] PHP: Missing language constants added.</entry>
+<entry>[*] .NET, PHP: Arabic language updated.</entry>
+</version>
+<version version="4.8.6" release="1">
+<entry>[+] JS, PHP: mailto links now go to message compose screen.</entry>
+<entry>[+] .NET, PHP: Japanese translation added.</entry>
+<entry>[*] .NET: a bug with editing domains settings in Admin Panel fixed.</entry>
+</version>
+<version version="4.8.5" release="1">
+<entry>[*] JS: Irrelevant parts in message_body request removed.</entry>
+<entry>[*] JS: message_body request is now performed multiple times, but it doesn't request all messages on page anymore, but only 5 (configurable - preFetchMsgLimit in _defines.js).</entry>
+<entry>[*] JS: UsePrefetch flag added to _defines.js for disabling message_body requests.</entry>
+<entry>[+] .NET, PHP: Two license types added (25 and 250 users).</entry>
+<entry>[*] .NET: Some adjustments in installation routine.</entry>
+<entry>[*] .PHP: Bugfix: messages are now sent with attachments with names UTF-8 encoded. This resolves the issue with empty names when, e.g. cyrillic - turkish conversion.</entry>
+</version>
+<version version="4.8.4" release="1">
+<entry>[*] JS: Folders sorting in Manage Folders screen fixed.</entry>
+<entry>[*] .NET: Error on login in PDA version fixed, it occured with Advanced Login disabled.</entry>
+<entry>[*] .NET: Minor issues within integration methods fixed.</entry>
+</version>
+<version version="4.8.3" release="1">
+<entry>[-] JS: unnecessary AJAX requests removed.</entry>
+<entry>[-] PHP: Removed extra JS code from index.php.</entry>
+<entry>[-] PHP: Inbox removed from folder list in folder_base request.</entry>
+<entry>[*] .NET, PHP: Removed setting extra /seen flag on mailcheck.</entry>
+<entry>[*] JS Calendar: Bugfix: calculation of events repeated in custom way (Mon - Wed - Sat - ...).</entry>
+<entry>[*] JS Calendar: Bugfix: date shifted to next day when start time set to midnight.</entry>
+<entry>[*] JS Calendar: Bugfix: calculation of events repeated once a month with given number of iterations or end date set.</entry>
+<entry>[*] JS Calendar: Bugfix: event edit window shadow in Internet Explorer 8.</entry>
+<entry>[*] JS Calendar: Bugfix: edit window not removed after deleting event lasting several days.</entry>
+</version>
+<version version="4.8.2" release="1">
+<entry>[*] .NET: Bugfix: language selection at login screen</entry>
+<entry>[*] .NET: Some bugfixes in PDA version.</entry>
+<entry>[*] .NET: Improved logging errors subsystem.</entry>
+</version>
+<version version="4.8.1" release="1">
+<entry>[*] .NET: Some bugfixes in calendar</entry>
+</version>
+<version version="4.8.0" release="1">
+<entry>[*] JS: View link for PNG images added.</entry>
+<entry>[*] NET: Import contacts from CSV file function changed. Now, contacts failed to be processed are just skipped without stopping entire importing process.</entry>
+<entry>[*] NET, PHP: New PDA version of the UI replaced the old "classic HTML" version. "Classic HTML" mode is not available anymore.</entry>
+<entry>[*] NET, PHP: Outlook Sync Plug-in added.</entry>
+<entry>[*] NET, PHP: "E-mail identities" implemented.</entry>
+<entry>[*] NET, PHP: Many minor bugfixes and improvements.</entry>
+</version>
+<version version="4.7.14" release="1">
+<entry>[*] .NET: MailBee.NET.dll updated.</entry>
+<entry>[*] .NET: Bugfix: null reference error on switching folders in direct mode</entry>
+</version>
+<version version="4.7.12" release="1">
+<entry>[*] .NET: Some minor optimizations and improvements.</entry>
+</version>
+<version version="4.7.11" release="1">
+<entry>[*] .NET: Significantly optimized memory usage.</entry>
+<entry>[*] .NET: Bugfix: message read flag was not set.</entry>
+<entry>[*] .NET: Bugfix: attachments larger than 20KB was not loaded in case of using IMAP.</entry>
+<entry>[*] .NET, PHP: Cross-site scripting vulnerability resolved.</entry>
+</version>
+<version version="4.7.10" release="1">
+<entry>[*] .NET: AdminPanel is not a separate web application, but a part of WebMail application now.</entry>
+<entry>[*] .NET: Saving settings in POP3 account bug fixed.</entry>
+<entry>[*] .NET: Bug with deleting mail in Full-view fixed.</entry>
+<entry>[*] .NET: A bug in native protocol is fixed. If a message was deleted from mail server, it was impossible to delete it from the database.</entry>
+</version>
+<version version="4.7.9" release="1">
+<entry>[*] .NET: Bugfix: issue with duplicate messages in trash folder (Direct Mode, POP3).</entry>
+</version>
+<version version="4.7.8" release="1">
+<entry>[*] JS: Fixed issue with system folder names not translated when message list is displayed.</entry>
+<entry>[*] .NET: Fixed issue with messages not deleted from the database when sending messages from Drafts.</entry>
+</version>
+<version version="4.7.7" release="1">
+<entry>[*] .NET: Fixed issue with displaying attachment size in IMAP when message size is over 20Kb.</entry>
+<entry>[*] .NET: Fixed encoding issue in IMAP when message subject is not explicitly specified.</entry>
+<entry>[*] .NET: Folders in native mode are created in Utf7Modified encoding for non-latin characters.</entry>
+<entry>[*] .NET: Fixed issue with deleting messages from database in New Headers sync.mode for Imap4DeleteLikePop3 = 1.</entry>
+</version>
+<version version="4.7.6" release="1">
+<entry>[*] PHP: Fixed checking license key in AJAX queries.</entry>
+<entry>[*] JS: System folders names are now localized in IMAP mode.</entry>
+<entry>[+] PHP: Completed localizations for several languages.</entry>
+</version>
+<version version="4.7.5" release="1">
+<entry>[*] .NET: Bugfix: A problem with signature encoding in case of MS Access or MySQL database engine.</entry>
+<entry>[*] PHP: Processing literals in BODYSTRUCTURE queries added.</entry>
+<entry>[*] PHP: Bugfix: Incorrect "Location" headers.</entry>
+</version>
+<version version="4.7.4" release="1">
+<entry>[+] PHP: Migration to PHP 5.1.0 (added "clone" operator using in Admin Panel + install script now checks if PHP version is = 5.1.0). PHP 4.X and 5.0 is not supported anymore.</entry>
+<entry>[*] .NET: Some optimizations in native AfterLogic XMail Server mode.</entry>
+<entry>[*] .NET: Bugfix: inc.calendar-settings.js was not loaded.</entry>
+<entry>[*] PHP: Bugfix: "Enable to open site" in Admin Panel in IE.</entry>
+<entry>[+] PHP: Additional condition for detecting attachments in BODYSTRUCTURE queries added.</entry>
+</version>
+<version version="4.7.3" release="1">
+<entry>[*] .NET: "Parsing 'url(' - Not enough )'s" error fixed.</entry>
+</version>
+<version version="4.7.2" release="1">
+<entry>[*] PHP: Bugfix: sign-up on logging in</entry>
+<entry>[*] PHP: Bugfix: caching displayed messages in POP3 accounts worked incorrectly in case of StoreMailsInDb enabled.</entry>
+<entry>[*] .NET: Bugfix: creating and getting domains list through API in case of MS Access database engine.</entry>
+<entry>[*] .NET: Bugfix: Imap4DeleteLikePop3 parameter was not processed in AdminPanel.</entry>
+<entry>[*] .NET: Bugfix: user settings were not deleted and "number of users allowed by license" limit was not updated when account was deleted through API.</entry>
+<entry>[*] .NET, PHP: Adding users behavior changed in case when "number of users allowed by license" limit exceeded. Now, users are not created.</entry>
+<entry>[*] .NET: Bugfix: "wmx_" prefix for "background" parameter. Now only "src" � "url(" (parameters/styles) are removed.</entry>
+</version>
+<version version="4.7.1" release="1">
+<entry>[*] JS Calendar: Fixed bug with event which continues in the next year.</entry>
+<entry>[*] JS Calendar: Bugfix: In IE6, border of event editing/saving window was displayed incorrectly.</entry>
+<entry>[*] PHP, .NET: All calendar JS files moved to js folder for better project structure.</entry>
+<entry>[*] .NET: Messages are moved to Trash folder on deleting in DIRECT MODE.</entry>
+<entry>[*] .NET: Bugfix: "True" was always saved to User Friendly Name filed in case of MS Access database.</entry>
+<entry>[*] PHP: Bugfix: "wmx_" prefix for "background" parameter. Now only "src" � "url(" (parameters/styles) are removed.</entry>
+<entry>[*] PHP: Some language constants updated.</entry>
+</version>
+<version version="4.7" release="1">
+<entry>[*] .NET Calendar: Bugfix: editing recurrent event caused JS-error and non-saving the event.</entry>
+<entry>[*] JS Calendar: Bugfix: In IE 6-7, after deleting/saving/creating recurrent events, recurrence area was displayed (should be hidden) on opening edit window.</entry>
+<entry>[+] PHP, .NET: Retrieving BODYSTRUCTURE for messages larger than 20KB in IMAP (getting only data which is currently relevant).</entry>
+<entry>[+] PHP: Getting message list via a single IMAP query.</entry>
+<entry>[+] PHP, .NET, JS: Folders mapping (now, it's possible to map any WebMail folder to any IMAP server folder).</entry>
+<entry>[*] PHP: Improvement: when IMAP quotas enabled, WebMail gets not only mailbox limit, but also amount of space used on server.</entry>
+<entry>[*] PHP, .NET: All JS files are moved to js folder for better project structure.</entry>
+<entry>[+] PHP, .NET: Request Read Confirmation feature implemented.</entry>
+<entry>[*] PHP: Files with class_ prefix moved to common folder for better project structure. Now, the root folder contains only files which should be available for accessing through web.</entry>
+<entry>[*] PHP: "Customization classes" (wm_Custom, ap_Custom) improved. Now, all the calls are static and don't require instantiating the appropriate class in the code.</entry>
+<entry>[*] JS: On forwarding message in a folder in Direct Mode, forward icon is not set anymore ("forwarded" isn't a standard IMAP flag) as it caused a visual bug.</entry>
+<entry>[+] JS: Added caching of contacts/groups lists under some circumstances (sending message, importing contacts, adding to group through menu).</entry>
+<entry>[+] JS: Added scrollbar on moving from message to message in Full View mode.</entry>
+<entry>[+] JS: Processing of "enter" key added to settings of address book.</entry>
+<entry>[*] JS: Bugfix: message was not loaded to compose screen when opened from Drafts.</entry>
+<entry>[*] JS: Bugfix: folders and messages lists were not displayed if WebMail started from compose message screen.</entry>
+<entry>[*] .NET: Bugfix: BCC header was not removed when message sent through native XMail account.</entry>
+<entry>[*] JS Calendar: Bugfix: on last days of year, recurrent events continuing in the next year were not displayed.</entry>
+<entry>[*] JS Calendar: Bugfix: recurrence end date was reset on changing recurrence period.</entry>
+</version>
+<version version="4.6.13" release="1">
+<entry>[*] .NET: A problem with Friendly Name encoding is fixed.</entry>
+</version>
+<version version="4.6.12" release="1">
+<entry>[*] .NET: Bugfix: obtaining shared calendars</entry>
+<entry>[*] JS: Bugfix: storing data into session</entry>
+</version>
+<version version="4.6.11" release="1">
+<entry>[*] .NET: Added support of folders with nesting level more than 2.</entry>
+</version>
+<version version="4.6.10" release="1">
+<entry>[*] .NET: Fixed bug with calculating "trial days left" for permanent keys.</entry>
+<entry>[*] .NET: "Allow Users Manage XMail Accounts" setting is ignored in case of creating accounts and domains through Integration API.</entry>
+<entry>[*] .NET: The following DLLs signed: CheckKey.dll, LitJson.dll, WebMailPro.dll</entry>
+<entry>[*] .NET: LitJson.dll updated. Compiled from original sources.</entry>
+</version>
+<version version="4.6.9" release="1">
+<entry>[*] .NET: "Object reference not set to an instance of an object" bug on automatic creating account on login is fixed.</entry>
+</version>
+<version version="4.6.8" release="1">
+<entry>[*] .NET: Improvement for compatibility with Hi-Trust mode (fixed saving logs).</entry>
+<entry>[*] .NET: Fixed a bug in licensing system.</entry>
+<entry>[*] .NET: Integration API improved.</entry>
+</version>
+<version version="4.6.7" release="1">
+<entry>[*] .NET AdminPanel: Added Store mail in the User's Server Mailbox setting on managing forwarding rules screen for XMail users in Admin Panel.</entry>
+<entry>[*] .NET AdminPanel: Forwards were not saved on creating Forwarded Domain. Fixed.</entry>
+<entry>[*] .NET: On sending a message in native mode, the message is created in temporary folder first and then is moved to "local" folder.</entry>
+<entry>[*] .NET: "Cast is not valid" is fixed for MS Access database.</entry>
+<entry>[*] .NET AdminPanel: Update routine is fixed for MS Access database.</entry>
+<entry>[*] .NET: License key processing class fixed a bit.</entry>
+</version>
+<version version="4.6.6" release="1">
+<entry>[*] PHP: Added Store mail in the User's Server Mailbox setting on managing forwarding rules screen for XMail users in Admin Panel.</entry>
+<entry>[*] PHP: A bug with search in Direct Mode fixed. Additional search query without charset definition added.</entry>
+<entry>[*] PHP: A bug in Admin Panel fixed. Direct mode is default setting was not saved and Allow users to change accounts which can be used to log in setting was not disabled properly.</entry>
+</version>
+<version version="4.6.5" release="1">
+<entry>[*] PHP: Resizing users/domains list in Admin Panel is fixed.</entry>
+<entry>[*] JS Calendar: Autochanging time is added to Edit Event form. For example, if date is till = 24:00 24.06.09 or 12�� 24.06.09, it's automatically changed to 00:00 25.06.09 or 12AM 25.06.09.</entry>
+<entry>[*] JS Calendar: Event length (in the top section of Day and Week views) was greater by 1 than real length. Fixed.</entry>
+<entry>[*] JS Calendar, .NET: Description field was filled with null under some circumstances. Fixed.</entry>
+<entry>[*] JS Calendar: JS-error on creating event fixed. Occured under some specific circumstances.</entry>
+<entry>[*] PHP: Paths to non-existing files are fixed (icons.ico and some images of AfterLogic_Dark skin)</entry>
+<entry>[*] JS, PHP, .NET: Setting focus to the first field added to login pages of WebMail and AdminPanel.</entry>
+</version>
+<version version="4.6.4" release="1">
+<entry>[*] PHP: Fix for bug with double gzipping in case when zlib.output_compression enabled in php.ini.</entry>
+<entry>[+] PHP: UpdateSocketTimeouts custom method added.</entry>
+</version>
+<version version="4.6.3" release="1">
+<entry>[*] JS: Fix for bug which prevented logging into WebMail with disabled Advanced Login.</entry>
+<entry>[*] .NET: Fixed bug with flags field in awm_messages table.</entry>
+<entry>[*] .NET: Language selection list was not hidden when disabled in settings. Fixed.</entry>
+<entry>[*] .NET: Database update script fixed.</entry>
+<entry>[*] .NET: Access database updated.</entry>
+<entry>[*] .NET: MailBee.NET.dll updated.</entry>
+</version>
+<version version="4.6.1" release="1">
+<entry>[*] .Net: Log location error fixed.</entry>
+</version>
+<version version="4.6.0" release="1">
+<entry>[*] JS: Deleting message in Full View causes moving to next message.</entry>
+<entry>[*] PHP: On full search, moving to 2nd page worked incorrectly in AJAX version. Fixed.</entry>
+<entry>[+] JS: Blocking some buttons on pressing (Check Mail, Send, Save).</entry>
+<entry>[+] .Net, PHP, JS: New approach of choosing interface language.</entry>
+<entry>[+] PHP: Enabled compressing and merging JS files. Compressing all AJAX data and index.php file.</entry>
+<entry>[+] PHP, .Net: Ukrainian language added.</entry>
+</version>
+	</changelog>
+
+	<entry-points>
+		<entry>
+			<path>/adminpanel/index.php</path>
+			<label>Admin Panel</label>
+		</entry>
+		<entry>
+			<path>/index.php</path>
+			<label>WebMail interface</label>
+		</entry>
+	</entry-points>
+
+	<installed-size>19860284</installed-size>
+  
+	<categories>
+		<category>Collaboration/Email</category>
+	</categories>
+  
+	<languages>
+		<language>en</language>
+ 		<language>ar</language>
+ 		<language>zh</language>
+ 		<language>da</language>
+ 		<language>nl</language>
+ 		<language>fr</language>
+ 		<language>de</language>
+ 		<language>el</language>
+ 		<language>he</language>
+ 		<language>hu</language>
+ 		<language>it</language>
+ 		<language>ja</language>
+ 		<language>no</language>
+ 		<language>pl</language>
+ 		<language>pt</language>
+ 		<language>ru</language>
+ 		<language>es</language>
+ 		<language>sv</language>
+ 		<language>th</language>
+ 		<language>tr</language>
+ 		<language>uk</language>
+	</languages>
+  
+  
+	<settings>
+		<setting id="admin_panel_username" type="string">
+			<name>Username</name>
+			<description>WebMail Pro Admin Panel login</description>
+		</setting>
+		<setting id="admin_panel_password" type="password" >
+			<name>Password</name>
+			<description>WebMail Pro Admin Panel password</description>
+		</setting>
+		<setting id="license_key" type="string" default-value="TRIAL">
+			<name>License key</name>
+			<description>WebMail Pro license key</description>
+		</setting>
+	</settings>
+
+
+  
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version min="5.3.0"/>
+    <php:extension>mysql</php:extension>
+    <php:safe-mode>false</php:safe-mode>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>webmail</db:default-name>
+      <db:can-use-tables-prefix>true</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>5.0</db:server-min-version>
+    </db:db>
+  </requirements>
+  
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+	
+	<mapping url="tmp">
+      <php:permissions writable="true"/>
+    </mapping>
+	
+	<mapping url="data">
+      <php:permissions writable="true"/>
+    </mapping>
+	
+  </mapping>
+  
+</application>

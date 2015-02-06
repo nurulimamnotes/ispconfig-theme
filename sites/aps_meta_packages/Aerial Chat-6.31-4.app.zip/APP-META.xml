@@ -1,0 +1,78 @@
+<application xmlns="http://apstandard.com/ns/1">
+  <name>Aerial Chat</name>
+  <packager-uri>uuid:714f0a7b-85d6-4eb8-b68e-40f9acbb3103</packager-uri>
+  <version>6.31</version>
+  <release>4</release>
+  <homepage>http://aerialchat.sourceforge.net/</homepage>
+  <package-homepage>http://swsoft.com/</package-homepage>
+  <default-prefix>/aerialchat/</default-prefix>
+  <summary>A powerful chat, optimizing bandwidth</summary>
+  <description>Features: clean code; bandwidth optimization; easy to install; does not 'blink', because of DHTML layers; uses the port 80, and is accessible behind the majority of firewalls; multi channels; private messages; mp3 sounds; colors; includes a telescriptor; insertion of images or links; easy smiley management; jail and pause mode; graphic effects; nice design</description>
+  <icon path="images/icon.png"/>
+  <screenshot path="images/screenshot1.jpg">
+    <description>Example view</description>
+  </screenshot>
+  <license must-accept="false">
+    <text>
+      <name>No license</name>
+      <file>htdocs/LICENSE</file>
+    </text>
+  </license>
+  <configuration-script-language>php</configuration-script-language>
+  <changelog>
+    <version version="6.31" release="3">
+      <entry>Changed the default name for the administrator from "Admin" to "admin"</entry>
+    </version>
+    <version version="6.31" release="1">
+      <entry>Initial package version</entry>
+    </version>
+  </changelog>
+  <installed-size>760398</installed-size>
+  <categories>
+    <category>Collaboration/Chat</category>
+  </categories>
+  <languages>
+    <language>en</language>
+  </languages>
+  <settings>
+    <group>
+      <name>Administrator's preferences</name>
+      <setting id="admin_password" type="password" min-length="1">
+        <name>Password</name>
+      </setting>
+    </group>
+    <group>
+      <name>Default preferences</name>
+      <setting id="locale" type="enum" default-value="en-US">
+        <name>Interface language</name>
+        <choice id="en-US" >
+          <name>English</name>
+        </choice>
+        <choice id="fr-FR" >
+          <name>French</name>
+        </choice>
+      </setting>
+    </group>
+  </settings>
+  <requirements xmlns:php="http://apstandard.com/ns/1/php" xmlns:db="http://apstandard.com/ns/1/db">
+    <php:version/>
+    <php:extension>mysql</php:extension>
+    <db:db>
+      <db:id>main</db:id>
+      <db:default-name>aerialch</db:default-name>
+      <db:can-use-tables-prefix>false</db:can-use-tables-prefix>
+      <db:server-type>mysql</db:server-type>
+      <db:server-min-version>1.0.0</db:server-min-version>
+      
+      
+      
+    </db:db>
+  </requirements>
+  <mapping url="/" path="htdocs" xmlns:php="http://apstandard.com/ns/1/php">
+    <php:handler>
+      <php:extension>php</php:extension>
+    </php:handler>
+    
+  </mapping>
+  
+</application>
